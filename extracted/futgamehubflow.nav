@@ -1,0 +1,458 @@
+{
+	"name":"futGameHubFlow"
+	,"initial":
+	{
+		"targets":["hubEntry"]
+	}
+	,"onEnter":
+	[		
+		["loadViewModel",["futsecuritycheckpointviewmodel"]]
+	]
+	,"onExit":
+	[
+		["unloadViewModel",["futsecuritycheckpointviewmodel"]]		
+	]
+	,"states":
+	[
+		{
+			"name":"hubEntry"
+			,"onEnter":
+			[
+				["sendAction", ["advanceRequest"]]
+			]
+			,"onExit":[]
+			,"transitions":
+			[
+				{
+					"event":"GotoSecurity"
+					,"targets":["security"]
+				}
+				,{
+					"event":"GotoHub"
+					,"targets":["hub"]
+				}
+			]
+		}
+		,{
+			"name":"hubCentral_DoNotUse"
+			,"onEnter":
+			[		
+				["loadViewModel",["FluxViewModel"]]
+				,["loadViewModel",["futgamehubviewmodel"]]
+			]
+			,"onExit":
+			[
+				["unloadViewModel",["futgamehubviewmodel"]]	
+				,["unloadViewModel",["FluxViewModel"]]		
+			]
+			,"states":
+			[
+				{
+					"name":"hub"
+					,"onEnter":
+					[						
+						["loadView",["screen", "external/ion_fut/screens/gameHub/GameHub"]]
+					]
+					,"onExit":
+					[
+						["unloadView",["screen", "external/ion_fut/screens/gameHub/GameHub"]]
+					]
+				}
+				,{
+					"name":"hub_none"
+				}
+				,{
+					"name":"quickLink_OfflineSeason"
+					,"onEnter":
+					[
+						["sendAction", ["setRestorePoint","1|1"]]
+						,["invoke", ["GotoOfflineSeasons"]] 
+					]
+				}
+				,{
+					"name":"quickLink_AuctionSearch"
+					,"onEnter":
+					[
+						["sendAction", ["setRestorePoint","2|0"]]
+						,["invoke", ["GotoAuctionSearch"]] 
+					]
+				}
+				,{
+					"name":"legacyQuickLink_OfflineTournament"
+					,"onEnter":
+					[
+						["sendAction", ["setRestorePoint","1|0"]]
+						,["sendScreenEvent", ["LegacyQuickLink_OfflineTournament",""]]
+					]
+				}
+				,{
+					"name":"legacyQuickLink_Store"
+					,"onEnter":
+					[
+						["loadView",["screen", "external/ion_fut/screens/futBlank"]]
+						,["sendAction", ["setRestorePoint","3|0"]]
+						,["sendScreenEvent", ["LegacyQuickLink_Store",""]]	
+					]
+				}
+				,{
+					"name":"legacyQuickLink_GoldPack"
+					,"onEnter":
+					[
+						["loadView",["screen", "external/ion_fut/screens/futBlank"]]
+						,["sendAction", ["setRestorePoint","3|1"]]
+						,["sendScreenEvent", ["LegacyQuickLink_GoldPack",""]]
+					]
+				}
+				,{
+					"name":"legacyQuickLink_FIFAPoints"
+					,"onEnter":
+					[
+						["loadView",["screen", "external/ion_fut/screens/futBlank"]]
+						,["sendAction", ["setRestorePoint","3|2"]]
+						,["sendScreenEvent", ["LegacyQuickLink_FIFAPoints",""]]
+					]
+				}
+				,{
+					"name":"legacyQuickLink_backToLegacyScreen"
+					,"onEnter":
+					[
+						["sendScreenEvent", ["LegacyQuickLink_BackToLegacyScreen",""]]
+					]
+				}
+				
+			]
+			,"transitions":
+			[
+				{
+					"event":"back"
+					,"targets":["back"]
+				}
+				,{
+					"event":"GotoDeleteClub"
+					,"targets":["deleteClub"]
+				}
+				,{
+					"event":"GotoEATrax"
+					,"targets":["EATrax"]
+				}
+				,{
+					"event":"GotoOfflineSeasons"
+					,"targets":["offlineSeasons"]
+				}
+				,{
+					"event":"GotoOnlineSeasons"
+					,"targets":["onlineSeasons"]
+				}
+				,{
+					"event":"GotoFUTPAFInvite"
+					,"targets":["futPAFInvite"]
+				}
+				,{
+					"event":"GotoFUTFriendlySeasons"
+					,"targets":["futFriendlySeasonsFlow"]
+				}
+				,{
+					"event":"GotoNewItemsViaDebug"
+					,"targets":["newItemsDebug"]
+				}
+				,{
+					"event":"TeamBuilding"
+					,"targets":["TeamBuilding"]
+				}
+				,{
+					"event":"GotoAuctionSearch"
+					,"targets":["auctionSearch"]
+				}
+				,{
+					"event":"GotoAuctionSearch2"
+					,"targets":["auctionSearch2"]
+				}
+				,{
+					"event":"GotoAuctionResult"
+					,"targets":["auctionResult"]
+				}
+				,{
+					"event":"GotoTradePile"
+					,"targets":["futTradePile"]
+				}
+				,{
+					"event":"GotoWatchList"
+					,"targets":["futWatchList"]
+				}
+				,{
+					"event":"GotoAuctionSearch_ViaLegacy"
+					,"targets":["futAuctionSearch_ViaLegacy"]
+				}
+				,{
+					"event":"GotoOfflineSeasons_ViaLegacy"
+					,"targets":["futOfflineSeasons_ViaLegacy"]					
+				}
+				,{
+					"event":"GotoAuctionResult_ViaLegacy"
+					,"targets":["futAuctionResult_ViaLegacy"]
+				}
+				,{
+					"event":"GotoSecurity_Debug"
+					,"targets":["security"]
+				}
+				,{
+					"event":"changeClubName"
+					,"targets":["ChangeClubName"]
+				}
+				,{
+					"event":"GotoInGame"
+					,"targets":["inGame"]
+				}
+				,{
+					"event":"GotoWorldCup"
+					,"targets":["worldCup"]
+				}
+				,{
+					"event":"GotoWorldCup_GotoStore"
+					,"targets":["EnterWC_GotoStore"]
+				}
+			]
+		}
+		,{
+			"name":"security"
+			,"onEnter":
+			[
+				["loadView",["screen", "external/ion_fut/screens/security/futSecurityQuestion"]]
+			]
+			,"onExit":
+			[
+				["unloadView",["screen", "external/ion_fut/screens/security/futSecurityQuestion"]]
+			]
+			,"transitions":
+			[
+				{
+					"event":"advance"
+					,"targets":["hub"]
+				}
+				,{
+					"event":"back"
+					,"targets":["back"]
+				}
+			]
+		}
+		,{
+			"name":"deleteClub"
+			,"type":"external"
+			,"file":"fut/futDeleteClubFlow.nav"
+			,"outputs":
+			{
+				"back":"hubEntry"
+				,"deleteClubLogout":"deleteClubLogout"
+			}
+		}
+		,{
+			"name":"EATrax"
+			,"onEnter":
+			[
+				["loadView",["screen", "external/ion_sports07/screens/misc/01_trax"]]
+			]
+			,"onExit":
+			[
+				["unloadView",["screen", "external/ion_sports07/screens/misc/01_trax"]]
+			]
+			,"transitions":
+			[
+				{
+					"event":"back"
+					,"targets":["hubEntry"]
+				}
+			]
+		}
+		,{
+			"name":"offlineSeasons"
+			,"type":"external"
+			,"file":"fut/season/futOfflineSeasonsFlow.nav"
+			,"outputs":
+			{
+				"back":"hubEntry"
+			}
+		}
+		,{
+			"name":"onlineSeasons"
+			,"type":"external"
+			,"file":"fut/season/futOnlineSeasonsFlow.nav"
+			,"outputs":
+			{
+				"back":"hubEntry"
+			}
+		}
+		,{
+			"name":"futAuctionSearch_ViaLegacy"
+			,"type":"external"
+			,"file":"fut/trading/futAuctionSearchFlow.nav"
+			,"outputs":
+			{
+				"back":"legacyQuickLink_backToLegacyScreen"
+			}
+		}
+		,{
+			"name":"futOfflineSeasons_ViaLegacy"
+			,"type":"external"
+			,"file":"fut/season/futOfflineSeasonsFlow.nav"
+			,"outputs":
+			{
+				"back":"legacyQuickLink_backToLegacyScreen"
+			}
+		}
+		,{
+			"name":"futAuctionResult_ViaLegacy"
+			,"type":"external"
+			,"file":"fut/trading/futAuctionResultFlow.nav"
+			,"outputs":
+			{
+				"back":"legacyQuickLink_backToLegacyScreen"
+			}
+		}
+		,{
+			"name":"futAuctionSearch"
+			,"type":"external"
+			,"file":"fut/trading/futAuctionSearchFlow.nav"
+			,"inputs":
+			{
+				"auctionSearch":"auctionSearch"
+				,"auctionSearch2":"auctionSearch2"
+				,"auctionResult":"auctionResult"
+			}
+			,"outputs":
+			{
+				"back":"hubEntry"
+			}
+		}
+		,{
+			"name":"futWatchList"
+			,"type":"external"
+			,"file":"fut/trading/futWatchListFlow.nav"
+			,"outputs":
+			{
+				"back":"hubEntry"
+			}
+		}
+		,{
+			"name":"futTradePile"
+			,"type":"external"
+			,"file":"fut/trading/futTradePileFlow.nav"
+			,"outputs":
+			{
+				"back":"hubEntry"
+			}
+		}
+		,{
+			"name":"futPAFInvite"
+			,"type":"external"
+			,"file":"fut/futPAFIFlow.nav"
+			,"outputs":
+			{
+				"gamehub":"hubEntry"
+			}
+		}
+		,{
+			"name":"futFriendlySeasonsFlow"
+			,"type":"external"
+			,"file":"fut/season/futFriendlySeasonsFlow.nav"
+			,"outputs":
+			{
+				"gamehub":"hubEntry"
+			}
+		}
+		,{
+			"name":"newItemsDebug"
+			,"type":"external"
+			,"file":"fut/futNewItemsFlow.nav"
+			,"outputs":
+			{
+				"back":"hubEntry"
+			}
+		}
+		,{
+			"name":"TeamBuilding"
+			,"type":"external"
+			,"file":"fut/futTeamBuildingFlow.nav"
+			,"outputs":
+			{
+				"back":"hubEntry" 
+				,"offlineTournament":"legacyQuickLink_OfflineTournament"
+			}
+		}
+		,{
+			"name":"ChangeClubName"
+			,"onEnter":
+			[
+				["loadView",["screen", "external/ion_fut/screens/FutChangeClubName"]]
+			]
+			,"onExit":
+			[
+				["unloadView",["screen", "external/ion_fut/screens/FutChangeClubName"]]
+			]
+			,"transitions":
+			[
+				{
+					"event":"advance"
+					,"targets":["hubEntry"]
+				},
+				{
+					"event":"back"
+					,"targets":["hubEntry"]
+				}
+			]
+		}
+		,{
+			"name":"inGame"
+			,"type":"external"
+			,"file":"fut/inGame/futInGameFlow.nav"
+			,"outputs":
+			{
+				"back":"hub_none" 
+			}
+		}
+		,{
+			"name":"worldCup"
+			,"type":"external"
+			,"file":"fut/futEnterWCFlow.nav"
+			,"inputs":
+			{
+				"EnterWC_GotoStore":"EnterWC_GotoStore"
+			}
+			,"outputs":
+			{
+				"back":"reloginFUT"
+			}
+		}
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

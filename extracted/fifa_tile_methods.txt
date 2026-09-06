@@ -1,0 +1,136 @@
+EXE: C:\Program Files\EA Games\FIFA 14\Game\fifa14.exe
+ImageBase: 0x00400000
+
+Sections:
+  .text    RVA=0x00001000 RAW=0x00001000 VSIZE=0x03829000 RAWSIZE=0x01749A00
+  .rdata   RVA=0x0382A000 RAW=0x0174AA00 VSIZE=0x00390A00 RAWSIZE=0x00390A00
+  .data    RVA=0x03BBB000 RAW=0x01ADB400 VSIZE=0x00FAFFF8 RAWSIZE=0x002BD000
+  .tls     RVA=0x04B6B000 RAW=0x01D98400 VSIZE=0x0000000A RAWSIZE=0x00000200
+  .rsrc    RVA=0x04B6C000 RAW=0x01D98600 VSIZE=0x0000D040 RAWSIZE=0x0000D200
+
+==========================================================================================
+
+vtable+0x28: RVA=0x00D691A0 VA=0x011691A0
+------------------------------------------------------------------------------------------
+   FILE=0x00D69160 VA=0x01169160 69 6E 78 3A A1 4B 89         imul     ebp, dword ptr [esi + 0x78], 0x894ba13a
+   FILE=0x00D69167 VA=0x01169167 4F                           dec      edi
+   FILE=0x00D69168 VA=0x01169168 9A 52 04 F1 53 3F D0         lcall    0xd03f, 0x53f10452
+   FILE=0x00D6916F VA=0x0116916F 7C D0                        jl       0x1169141
+   FILE=0x00D69171 VA=0x01169171 30 DB                        xor      bl, bl
+   FILE=0x00D69173 VA=0x01169173 E0 A1                        loopne   0x1169116
+   FILE=0x00D69175 VA=0x01169175 00 81 6E 88 28 B8            add      byte ptr [ecx - 0x47d77792], al
+   FILE=0x00D6917B VA=0x0116917B 4F                           dec      edi
+   FILE=0x00D6917C VA=0x0116917C 20 2D 69 B9 92 AF            and      byte ptr [0xaf92b969], ch
+   FILE=0x00D69182 VA=0x01169182 CB                           retf     
+   FILE=0x00D69183 VA=0x01169183 72 15                        jb       0x116919a
+   FILE=0x00D69185 VA=0x01169185 75 25                        jne      0x11691ac
+   FILE=0x00D69187 VA=0x01169187 F3 5C                        pop      esp
+   FILE=0x00D69189 VA=0x01169189 E3 90                        jecxz    0x116911b
+   FILE=0x00D6918B VA=0x0116918B DC 4B 94                     fmul     qword ptr [ebx - 0x6c]
+   FILE=0x00D6918E VA=0x0116918E 83 A1 90 7B 2E F3 37         and      dword ptr [ecx - 0xcd18470], 0x37
+   FILE=0x00D69195 VA=0x01169195 C9                           leave    
+   FILE=0x00D69196 VA=0x01169196 57                           push     edi
+   FILE=0x00D69197 VA=0x01169197 C3                           ret      
+   FILE=0x00D69198 VA=0x01169198 AA                           stosb    byte ptr es:[edi], al
+   FILE=0x00D69199 VA=0x01169199 13 24 94                     adc      esp, dword ptr [esp + edx*4]
+   FILE=0x00D6919C VA=0x0116919C 0E                           push     cs
+   FILE=0x00D6919D VA=0x0116919D F8                           clc      
+   FILE=0x00D6919E VA=0x0116919E 67 53                        push     ebx
+>> FILE=0x00D691A0 VA=0x011691A0 3F                           aas      
+   FILE=0x00D691A1 VA=0x011691A1 8D 78 4A                     lea      edi, [eax + 0x4a]
+   FILE=0x00D691A4 VA=0x011691A4 96                           xchg     esi, eax
+   FILE=0x00D691A5 VA=0x011691A5 F6 B9 1D F1 36 29            idiv     byte ptr [ecx + 0x2936f11d]
+   FILE=0x00D691AB VA=0x011691AB 02 69 53                     add      ch, byte ptr [ecx + 0x53]
+   FILE=0x00D691AE VA=0x011691AE DE F1                        fdivrp   st(1)
+   FILE=0x00D691B0 VA=0x011691B0 6D                           insd     dword ptr es:[edi], dx
+   FILE=0x00D691B1 VA=0x011691B1 F1                           int1     
+   FILE=0x00D691B2 VA=0x011691B2 C1 18 8D                     rcr      dword ptr [eax], 0x8d
+   FILE=0x00D691B5 VA=0x011691B5 59                           pop      ecx
+   FILE=0x00D691B6 VA=0x011691B6 35 07 6A 3C 6D               xor      eax, 0x6d3c6a07
+   FILE=0x00D691BB VA=0x011691BB 16                           push     ss
+   FILE=0x00D691BC VA=0x011691BC DD D3                        fst      st(3)
+   FILE=0x00D691BE VA=0x011691BE 6E                           outsb    dx, byte ptr [esi]
+==========================================================================================
+
+vtable+0x34: RVA=0x00D691C0 VA=0x011691C0
+------------------------------------------------------------------------------------------
+   FILE=0x00D69180 VA=0x01169180 92                           xchg     edx, eax
+   FILE=0x00D69181 VA=0x01169181 AF                           scasd    eax, dword ptr es:[edi]
+   FILE=0x00D69182 VA=0x01169182 CB                           retf     
+   FILE=0x00D69183 VA=0x01169183 72 15                        jb       0x116919a
+   FILE=0x00D69185 VA=0x01169185 75 25                        jne      0x11691ac
+   FILE=0x00D69187 VA=0x01169187 F3 5C                        pop      esp
+   FILE=0x00D69189 VA=0x01169189 E3 90                        jecxz    0x116911b
+   FILE=0x00D6918B VA=0x0116918B DC 4B 94                     fmul     qword ptr [ebx - 0x6c]
+   FILE=0x00D6918E VA=0x0116918E 83 A1 90 7B 2E F3 37         and      dword ptr [ecx - 0xcd18470], 0x37
+   FILE=0x00D69195 VA=0x01169195 C9                           leave    
+   FILE=0x00D69196 VA=0x01169196 57                           push     edi
+   FILE=0x00D69197 VA=0x01169197 C3                           ret      
+   FILE=0x00D69198 VA=0x01169198 AA                           stosb    byte ptr es:[edi], al
+   FILE=0x00D69199 VA=0x01169199 13 24 94                     adc      esp, dword ptr [esp + edx*4]
+   FILE=0x00D6919C VA=0x0116919C 0E                           push     cs
+   FILE=0x00D6919D VA=0x0116919D F8                           clc      
+   FILE=0x00D6919E VA=0x0116919E 67 53                        push     ebx
+   FILE=0x00D691A0 VA=0x011691A0 3F                           aas      
+   FILE=0x00D691A1 VA=0x011691A1 8D 78 4A                     lea      edi, [eax + 0x4a]
+   FILE=0x00D691A4 VA=0x011691A4 96                           xchg     esi, eax
+   FILE=0x00D691A5 VA=0x011691A5 F6 B9 1D F1 36 29            idiv     byte ptr [ecx + 0x2936f11d]
+   FILE=0x00D691AB VA=0x011691AB 02 69 53                     add      ch, byte ptr [ecx + 0x53]
+   FILE=0x00D691AE VA=0x011691AE DE F1                        fdivrp   st(1)
+   FILE=0x00D691B0 VA=0x011691B0 6D                           insd     dword ptr es:[edi], dx
+   FILE=0x00D691B1 VA=0x011691B1 F1                           int1     
+   FILE=0x00D691B2 VA=0x011691B2 C1 18 8D                     rcr      dword ptr [eax], 0x8d
+   FILE=0x00D691B5 VA=0x011691B5 59                           pop      ecx
+   FILE=0x00D691B6 VA=0x011691B6 35 07 6A 3C 6D               xor      eax, 0x6d3c6a07
+   FILE=0x00D691BB VA=0x011691BB 16                           push     ss
+   FILE=0x00D691BC VA=0x011691BC DD D3                        fst      st(3)
+   FILE=0x00D691BE VA=0x011691BE 6E                           outsb    dx, byte ptr [esi]
+==========================================================================================
+
+vtable+0x38: RVA=0x00D691B0 VA=0x011691B0
+------------------------------------------------------------------------------------------
+   FILE=0x00D69170 VA=0x01169170 D0 30                        sal      byte ptr [eax], 1
+   FILE=0x00D69172 VA=0x01169172 DB E0                        feni8087_nop 
+   FILE=0x00D69174 VA=0x01169174 A1 00 81 6E 88               mov      eax, dword ptr [0x886e8100]
+   FILE=0x00D69179 VA=0x01169179 28 B8 4F 20 2D 69            sub      byte ptr [eax + 0x692d204f], bh
+   FILE=0x00D6917F VA=0x0116917F B9 92 AF CB 72               mov      ecx, 0x72cbaf92
+   FILE=0x00D69184 VA=0x01169184 15 75 25 F3 5C               adc      eax, 0x5cf32575
+   FILE=0x00D69189 VA=0x01169189 E3 90                        jecxz    0x116911b
+   FILE=0x00D6918B VA=0x0116918B DC 4B 94                     fmul     qword ptr [ebx - 0x6c]
+   FILE=0x00D6918E VA=0x0116918E 83 A1 90 7B 2E F3 37         and      dword ptr [ecx - 0xcd18470], 0x37
+   FILE=0x00D69195 VA=0x01169195 C9                           leave    
+   FILE=0x00D69196 VA=0x01169196 57                           push     edi
+   FILE=0x00D69197 VA=0x01169197 C3                           ret      
+   FILE=0x00D69198 VA=0x01169198 AA                           stosb    byte ptr es:[edi], al
+   FILE=0x00D69199 VA=0x01169199 13 24 94                     adc      esp, dword ptr [esp + edx*4]
+   FILE=0x00D6919C VA=0x0116919C 0E                           push     cs
+   FILE=0x00D6919D VA=0x0116919D F8                           clc      
+   FILE=0x00D6919E VA=0x0116919E 67 53                        push     ebx
+   FILE=0x00D691A0 VA=0x011691A0 3F                           aas      
+   FILE=0x00D691A1 VA=0x011691A1 8D 78 4A                     lea      edi, [eax + 0x4a]
+   FILE=0x00D691A4 VA=0x011691A4 96                           xchg     esi, eax
+   FILE=0x00D691A5 VA=0x011691A5 F6 B9 1D F1 36 29            idiv     byte ptr [ecx + 0x2936f11d]
+   FILE=0x00D691AB VA=0x011691AB 02 69 53                     add      ch, byte ptr [ecx + 0x53]
+   FILE=0x00D691AE VA=0x011691AE DE F1                        fdivrp   st(1)
+>> FILE=0x00D691B0 VA=0x011691B0 6D                           insd     dword ptr es:[edi], dx
+   FILE=0x00D691B1 VA=0x011691B1 F1                           int1     
+   FILE=0x00D691B2 VA=0x011691B2 C1 18 8D                     rcr      dword ptr [eax], 0x8d
+   FILE=0x00D691B5 VA=0x011691B5 59                           pop      ecx
+   FILE=0x00D691B6 VA=0x011691B6 35 07 6A 3C 6D               xor      eax, 0x6d3c6a07
+   FILE=0x00D691BB VA=0x011691BB 16                           push     ss
+   FILE=0x00D691BC VA=0x011691BC DD D3                        fst      st(3)
+   FILE=0x00D691BE VA=0x011691BE 6E                           outsb    dx, byte ptr [esi]
+==========================================================================================
+
+
+LITERAL VA REFERENCES
+==========================================================================================
+
+vtable+0x28: VA=0x011691A0 refs=1
+  file offset 0x0188508C
+
+vtable+0x34: VA=0x011691C0 refs=1
+  file offset 0x01885098
+
+vtable+0x38: VA=0x011691B0 refs=1
+  file offset 0x0188509C

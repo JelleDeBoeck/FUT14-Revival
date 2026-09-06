@@ -1,0 +1,1470 @@
+[INFO] DLL        : C:\Program Files\EA Games\FIFA 14\Game\CardsDLLzf.dll
+[INFO] image base : 0x10000000
+
+====================================================================================================
+WC provider method
+====================================================================================================
+target file : 0x86130
+target VA   : 0x10086D30
+range       : 0x86130 - 0x86930
+
+file=0x00086130  VA=0x10086D30  55                       push     ebp   <== TARGET
+file=0x00086131  VA=0x10086D31  8B EC                    mov      ebp, esp
+file=0x00086133  VA=0x10086D33  8B 0D 98 73 1D 10        mov      ecx, dword ptr [0x101d7398]
+file=0x00086139  VA=0x10086D39  8B 15 68 0F 1C 10        mov      edx, dword ptr [0x101c0f68]
+file=0x0008613F  VA=0x10086D3F  83 EC 20                 sub      esp, 0x20
+file=0x00086142  VA=0x10086D42  57                       push     edi
+file=0x00086143  VA=0x10086D43  8B 7D 08                 mov      edi, dword ptr [ebp + 8]
+file=0x00086146  VA=0x10086D46  8B 07                    mov      eax, dword ptr [edi]
+file=0x00086148  VA=0x10086D48  8B 40 10                 mov      eax, dword ptr [eax + 0x10]
+file=0x0008614B  VA=0x10086D4B  51                       push     ecx
+file=0x0008614C  VA=0x10086D4C  52                       push     edx
+file=0x0008614D  VA=0x10086D4D  8B CF                    mov      ecx, edi
+file=0x0008614F  VA=0x10086D4F  FF D0                    call     eax
+file=0x00086151  VA=0x10086D51  A1 9C 73 1D 10           mov      eax, dword ptr [0x101d739c]
+file=0x00086156  VA=0x10086D56  8B 0D 70 0F 1C 10        mov      ecx, dword ptr [0x101c0f70]
+file=0x0008615C  VA=0x10086D5C  8B 17                    mov      edx, dword ptr [edi]
+file=0x0008615E  VA=0x10086D5E  8B 52 10                 mov      edx, dword ptr [edx + 0x10]
+file=0x00086161  VA=0x10086D61  50                       push     eax
+file=0x00086162  VA=0x10086D62  51                       push     ecx
+file=0x00086163  VA=0x10086D63  8B CF                    mov      ecx, edi
+file=0x00086165  VA=0x10086D65  FF D2                    call     edx
+file=0x00086167  VA=0x10086D67  83 3D 9C 73 1D 10 02     cmp      dword ptr [0x101d739c], 2
+file=0x0008616E  VA=0x10086D6E  0F 85 38 01 00 00        jne      0x10086eac
+file=0x00086174  VA=0x10086D74  8B 07                    mov      eax, dword ptr [edi]
+file=0x00086176  VA=0x10086D76  8B 50 38                 mov      edx, dword ptr [eax + 0x38]
+file=0x00086179  VA=0x10086D79  8B CF                    mov      ecx, edi
+file=0x0008617B  VA=0x10086D7B  FF D2                    call     edx
+file=0x0008617D  VA=0x10086D7D  89 45 F4                 mov      dword ptr [ebp - 0xc], eax
+file=0x00086180  VA=0x10086D80  C7 45 FC 00 00 00 00     mov      dword ptr [ebp - 4], 0
+file=0x00086187  VA=0x10086D87  85 C0                    test     eax, eax
+file=0x00086189  VA=0x10086D89  0F 8E 1D 01 00 00        jle      0x10086eac
+file=0x0008618F  VA=0x10086D8F  53                       push     ebx
+file=0x00086190  VA=0x10086D90  56                       push     esi
+file=0x00086191  VA=0x10086D91  8B 4D FC                 mov      ecx, dword ptr [ebp - 4]
+file=0x00086194  VA=0x10086D94  8B 07                    mov      eax, dword ptr [edi]
+file=0x00086196  VA=0x10086D96  8B 50 3C                 mov      edx, dword ptr [eax + 0x3c]
+file=0x00086199  VA=0x10086D99  51                       push     ecx
+file=0x0008619A  VA=0x10086D9A  8B CF                    mov      ecx, edi
+file=0x0008619C  VA=0x10086D9C  FF D2                    call     edx
+file=0x0008619E  VA=0x10086D9E  8B 17                    mov      edx, dword ptr [edi]
+file=0x000861A0  VA=0x10086DA0  68 6C 10 19 10           push     0x1019106c
+file=0x000861A5  VA=0x10086DA5  89 45 F0                 mov      dword ptr [ebp - 0x10], eax
+file=0x000861A8  VA=0x10086DA8  50                       push     eax
+file=0x000861A9  VA=0x10086DA9  8B 42 48                 mov      eax, dword ptr [edx + 0x48]
+file=0x000861AC  VA=0x10086DAC  8B CF                    mov      ecx, edi
+file=0x000861AE  VA=0x10086DAE  FF D0                    call     eax
+file=0x000861B0  VA=0x10086DB0  8B 70 0C                 mov      esi, dword ptr [eax + 0xc]
+file=0x000861B3  VA=0x10086DB3  8B 58 14                 mov      ebx, dword ptr [eax + 0x14]
+file=0x000861B6  VA=0x10086DB6  8B 40 08                 mov      eax, dword ptr [eax + 8]
+file=0x000861B9  VA=0x10086DB9  8B CE                    mov      ecx, esi
+file=0x000861BB  VA=0x10086DBB  2B C8                    sub      ecx, eax
+file=0x000861BD  VA=0x10086DBD  8D 51 01                 lea      edx, [ecx + 1]
+file=0x000861C0  VA=0x10086DC0  89 5D EC                 mov      dword ptr [ebp - 0x14], ebx
+file=0x000861C3  VA=0x10086DC3  89 45 F8                 mov      dword ptr [ebp - 8], eax
+file=0x000861C6  VA=0x10086DC6  89 4D 08                 mov      dword ptr [ebp + 8], ecx
+file=0x000861C9  VA=0x10086DC9  83 FA 01                 cmp      edx, 1
+file=0x000861CC  VA=0x10086DCC  76 25                    jbe      0x10086df3
+file=0x000861CE  VA=0x10086DCE  6A 00                    push     0
+file=0x000861D0  VA=0x10086DD0  6A 00                    push     0
+file=0x000861D2  VA=0x10086DD2  6A 00                    push     0
+file=0x000861D4  VA=0x10086DD4  6A 00                    push     0
+file=0x000861D6  VA=0x10086DD6  53                       push     ebx
+file=0x000861D7  VA=0x10086DD7  52                       push     edx
+file=0x000861D8  VA=0x10086DD8  E8 83 B8 F7 FF           call     0x10002660
+file=0x000861DD  VA=0x10086DDD  8B 4D 08                 mov      ecx, dword ptr [ebp + 8]
+file=0x000861E0  VA=0x10086DE0  8B D8                    mov      ebx, eax
+file=0x000861E2  VA=0x10086DE2  8B 45 08                 mov      eax, dword ptr [ebp + 8]
+file=0x000861E5  VA=0x10086DE5  40                       inc      eax
+file=0x000861E6  VA=0x10086DE6  83 C4 18                 add      esp, 0x18
+file=0x000861E9  VA=0x10086DE9  03 C3                    add      eax, ebx
+file=0x000861EB  VA=0x10086DEB  89 45 E8                 mov      dword ptr [ebp - 0x18], eax
+file=0x000861EE  VA=0x10086DEE  8B 45 F8                 mov      eax, dword ptr [ebp - 8]
+file=0x000861F1  VA=0x10086DF1  EB 0C                    jmp      0x10086dff
+file=0x000861F3  VA=0x10086DF3  BB 9C 53 1D 10           mov      ebx, 0x101d539c
+file=0x000861F8  VA=0x10086DF8  C7 45 E8 9D 53 1D 10     mov      dword ptr [ebp - 0x18], 0x101d539d
+file=0x000861FF  VA=0x10086DFF  51                       push     ecx
+file=0x00086200  VA=0x10086E00  50                       push     eax
+file=0x00086201  VA=0x10086E01  53                       push     ebx
+file=0x00086202  VA=0x10086E02  89 5D E0                 mov      dword ptr [ebp - 0x20], ebx
+file=0x00086205  VA=0x10086E05  FF 15 9C 51 18 10        call     dword ptr [0x1018519c]
+file=0x0008620B  VA=0x10086E0B  2B 75 F8                 sub      esi, dword ptr [ebp - 8]
+file=0x0008620E  VA=0x10086E0E  8D 4D E0                 lea      ecx, [ebp - 0x20]
+file=0x00086211  VA=0x10086E11  03 F3                    add      esi, ebx
+file=0x00086213  VA=0x10086E13  68 D8 7D 19 10           push     0x10197dd8
+file=0x00086218  VA=0x10086E18  51                       push     ecx
+file=0x00086219  VA=0x10086E19  89 75 E4                 mov      dword ptr [ebp - 0x1c], esi
+file=0x0008621C  VA=0x10086E1C  C6 06 00                 mov      byte ptr [esi], 0
+file=0x0008621F  VA=0x10086E1F  E8 BC FB FF FF           call     0x100869e0
+file=0x00086224  VA=0x10086E24  88 45 0B                 mov      byte ptr [ebp + 0xb], al
+file=0x00086227  VA=0x10086E27  8B 45 E8                 mov      eax, dword ptr [ebp - 0x18]
+file=0x0008622A  VA=0x10086E2A  2B C3                    sub      eax, ebx
+file=0x0008622C  VA=0x10086E2C  83 C4 14                 add      esp, 0x14
+file=0x0008622F  VA=0x10086E2F  83 F8 01                 cmp      eax, 1
+file=0x00086232  VA=0x10086E32  7E 0D                    jle      0x10086e41
+file=0x00086234  VA=0x10086E34  85 DB                    test     ebx, ebx
+file=0x00086236  VA=0x10086E36  74 09                    je       0x10086e41
+file=0x00086238  VA=0x10086E38  53                       push     ebx
+file=0x00086239  VA=0x10086E39  E8 B2 B7 F7 FF           call     0x100025f0
+file=0x0008623E  VA=0x10086E3E  83 C4 04                 add      esp, 4
+file=0x00086241  VA=0x10086E41  80 7D 0B 00              cmp      byte ptr [ebp + 0xb], 0
+file=0x00086245  VA=0x10086E45  75 24                    jne      0x10086e6b
+file=0x00086247  VA=0x10086E47  8B 45 FC                 mov      eax, dword ptr [ebp - 4]
+file=0x0008624A  VA=0x10086E4A  40                       inc      eax
+file=0x0008624B  VA=0x10086E4B  89 45 FC                 mov      dword ptr [ebp - 4], eax
+file=0x0008624E  VA=0x10086E4E  3B 45 F4                 cmp      eax, dword ptr [ebp - 0xc]
+file=0x00086251  VA=0x10086E51  0F 8C 3A FF FF FF        jl       0x10086d91
+file=0x00086257  VA=0x10086E57  8B 17                    mov      edx, dword ptr [edi]
+file=0x00086259  VA=0x10086E59  8B 42 68                 mov      eax, dword ptr [edx + 0x68]
+file=0x0008625C  VA=0x10086E5C  5E                       pop      esi
+file=0x0008625D  VA=0x10086E5D  5B                       pop      ebx
+file=0x0008625E  VA=0x10086E5E  6A 01                    push     1
+file=0x00086260  VA=0x10086E60  8B CF                    mov      ecx, edi
+file=0x00086262  VA=0x10086E62  FF D0                    call     eax
+file=0x00086264  VA=0x10086E64  5F                       pop      edi
+file=0x00086265  VA=0x10086E65  8B E5                    mov      esp, ebp
+file=0x00086267  VA=0x10086E67  5D                       pop      ebp
+file=0x00086268  VA=0x10086E68  C2 04 00                 ret      4
+file=0x0008626B  VA=0x10086E6B  8B 17                    mov      edx, dword ptr [edi]
+file=0x0008626D  VA=0x10086E6D  8B 75 F0                 mov      esi, dword ptr [ebp - 0x10]
+file=0x00086270  VA=0x10086E70  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00086273  VA=0x10086E73  68 90 80 19 10           push     0x10198090
+file=0x00086278  VA=0x10086E78  68 90 6D 19 10           push     0x10196d90
+file=0x0008627D  VA=0x10086E7D  56                       push     esi
+file=0x0008627E  VA=0x10086E7E  8B CF                    mov      ecx, edi
+file=0x00086280  VA=0x10086E80  FF D0                    call     eax
+file=0x00086282  VA=0x10086E82  8B 17                    mov      edx, dword ptr [edi]
+file=0x00086284  VA=0x10086E84  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00086287  VA=0x10086E87  68 80 80 19 10           push     0x10198080
+file=0x0008628C  VA=0x10086E8C  68 78 80 19 10           push     0x10198078
+file=0x00086291  VA=0x10086E91  56                       push     esi
+file=0x00086292  VA=0x10086E92  8B CF                    mov      ecx, edi
+file=0x00086294  VA=0x10086E94  FF D0                    call     eax
+file=0x00086296  VA=0x10086E96  8B 17                    mov      edx, dword ptr [edi]
+file=0x00086298  VA=0x10086E98  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x0008629B  VA=0x10086E9B  68 C4 7D 19 10           push     0x10197dc4
+file=0x000862A0  VA=0x10086EA0  68 6C 10 19 10           push     0x1019106c
+file=0x000862A5  VA=0x10086EA5  56                       push     esi
+file=0x000862A6  VA=0x10086EA6  8B CF                    mov      ecx, edi
+file=0x000862A8  VA=0x10086EA8  FF D0                    call     eax
+file=0x000862AA  VA=0x10086EAA  5E                       pop      esi
+file=0x000862AB  VA=0x10086EAB  5B                       pop      ebx
+file=0x000862AC  VA=0x10086EAC  8B 17                    mov      edx, dword ptr [edi]
+file=0x000862AE  VA=0x10086EAE  8B 42 68                 mov      eax, dword ptr [edx + 0x68]
+file=0x000862B1  VA=0x10086EB1  6A 01                    push     1
+file=0x000862B3  VA=0x10086EB3  8B CF                    mov      ecx, edi
+file=0x000862B5  VA=0x10086EB5  FF D0                    call     eax
+file=0x000862B7  VA=0x10086EB7  5F                       pop      edi
+file=0x000862B8  VA=0x10086EB8  8B E5                    mov      esp, ebp
+file=0x000862BA  VA=0x10086EBA  5D                       pop      ebp
+file=0x000862BB  VA=0x10086EBB  C2 04 00                 ret      4
+file=0x000862BE  VA=0x10086EBE  CC                       int3     
+file=0x000862BF  VA=0x10086EBF  CC                       int3     
+file=0x000862C0  VA=0x10086EC0  55                       push     ebp
+file=0x000862C1  VA=0x10086EC1  8B EC                    mov      ebp, esp
+file=0x000862C3  VA=0x10086EC3  56                       push     esi
+file=0x000862C4  VA=0x10086EC4  8B F1                    mov      esi, ecx
+file=0x000862C6  VA=0x10086EC6  E8 45 FD FF FF           call     0x10086c10
+file=0x000862CB  VA=0x10086ECB  F6 45 08 01              test     byte ptr [ebp + 8], 1
+file=0x000862CF  VA=0x10086ECF  74 09                    je       0x10086eda
+file=0x000862D1  VA=0x10086ED1  56                       push     esi
+file=0x000862D2  VA=0x10086ED2  E8 F9 B6 F7 FF           call     0x100025d0
+file=0x000862D7  VA=0x10086ED7  83 C4 04                 add      esp, 4
+file=0x000862DA  VA=0x10086EDA  8B C6                    mov      eax, esi
+file=0x000862DC  VA=0x10086EDC  5E                       pop      esi
+file=0x000862DD  VA=0x10086EDD  5D                       pop      ebp
+file=0x000862DE  VA=0x10086EDE  C2 04 00                 ret      4
+file=0x000862E1  VA=0x10086EE1  CC                       int3     
+file=0x000862E2  VA=0x10086EE2  CC                       int3     
+file=0x000862E3  VA=0x10086EE3  CC                       int3     
+file=0x000862E4  VA=0x10086EE4  CC                       int3     
+file=0x000862E5  VA=0x10086EE5  CC                       int3     
+file=0x000862E6  VA=0x10086EE6  CC                       int3     
+file=0x000862E7  VA=0x10086EE7  CC                       int3     
+file=0x000862E8  VA=0x10086EE8  CC                       int3     
+file=0x000862E9  VA=0x10086EE9  CC                       int3     
+file=0x000862EA  VA=0x10086EEA  CC                       int3     
+file=0x000862EB  VA=0x10086EEB  CC                       int3     
+file=0x000862EC  VA=0x10086EEC  CC                       int3     
+file=0x000862ED  VA=0x10086EED  CC                       int3     
+file=0x000862EE  VA=0x10086EEE  CC                       int3     
+file=0x000862EF  VA=0x10086EEF  CC                       int3     
+file=0x000862F0  VA=0x10086EF0  55                       push     ebp
+file=0x000862F1  VA=0x10086EF1  8B EC                    mov      ebp, esp
+file=0x000862F3  VA=0x10086EF3  8B 45 0C                 mov      eax, dword ptr [ebp + 0xc]
+file=0x000862F6  VA=0x10086EF6  53                       push     ebx
+file=0x000862F7  VA=0x10086EF7  56                       push     esi
+file=0x000862F8  VA=0x10086EF8  57                       push     edi
+file=0x000862F9  VA=0x10086EF9  8B F1                    mov      esi, ecx
+file=0x000862FB  VA=0x10086EFB  8B 4D 08                 mov      ecx, dword ptr [ebp + 8]
+file=0x000862FE  VA=0x10086EFE  50                       push     eax
+file=0x000862FF  VA=0x10086EFF  51                       push     ecx
+file=0x00086300  VA=0x10086F00  8B CE                    mov      ecx, esi
+file=0x00086302  VA=0x10086F02  E8 29 E1 08 00           call     0x10115030
+file=0x00086307  VA=0x10086F07  C7 86 8C 00 00 00 10 6D 19 10 mov      dword ptr [esi + 0x8c], 0x10196d10
+file=0x00086311  VA=0x10086F11  C7 06 14 80 19 10        mov      dword ptr [esi], 0x10198014
+file=0x00086317  VA=0x10086F17  C7 86 8C 00 00 00 08 80 19 10 mov      dword ptr [esi + 0x8c], 0x10198008
+file=0x00086321  VA=0x10086F21  8D 9E 90 00 00 00        lea      ebx, [esi + 0x90]
+file=0x00086327  VA=0x10086F27  C7 03 C0 7F 19 10        mov      dword ptr [ebx], 0x10197fc0
+file=0x0008632D  VA=0x10086F2D  E8 AE 0B 09 00           call     0x10117ae0
+file=0x00086332  VA=0x10086F32  89 86 A0 00 00 00        mov      dword ptr [esi + 0xa0], eax
+file=0x00086338  VA=0x10086F38  C7 86 A4 00 00 00 01 00 00 00 mov      dword ptr [esi + 0xa4], 1
+file=0x00086342  VA=0x10086F42  C7 86 A8 00 00 00 0C 69 18 10 mov      dword ptr [esi + 0xa8], 0x1018690c
+file=0x0008634C  VA=0x10086F4C  68 09 69 18 10           push     0x10186909
+file=0x00086351  VA=0x10086F51  68 09 69 18 10           push     0x10186909
+file=0x00086356  VA=0x10086F56  8D 8E 94 00 00 00        lea      ecx, [esi + 0x94]
+file=0x0008635C  VA=0x10086F5C  C7 86 94 00 00 00 9C 53 1D 10 mov      dword ptr [esi + 0x94], 0x101d539c
+file=0x00086366  VA=0x10086F66  C7 86 98 00 00 00 9C 53 1D 10 mov      dword ptr [esi + 0x98], 0x101d539c
+file=0x00086370  VA=0x10086F70  C7 86 9C 00 00 00 9D 53 1D 10 mov      dword ptr [esi + 0x9c], 0x101d539d
+file=0x0008637A  VA=0x10086F7A  E8 91 9F F9 FF           call     0x10020f10
+file=0x0008637F  VA=0x10086F7F  E8 5C 0B 09 00           call     0x10117ae0
+file=0x00086384  VA=0x10086F84  89 86 B8 00 00 00        mov      dword ptr [esi + 0xb8], eax
+file=0x0008638A  VA=0x10086F8A  C7 86 BC 00 00 00 01 00 00 00 mov      dword ptr [esi + 0xbc], 1
+file=0x00086394  VA=0x10086F94  C7 86 C0 00 00 00 0C 69 18 10 mov      dword ptr [esi + 0xc0], 0x1018690c
+file=0x0008639E  VA=0x10086F9E  68 09 69 18 10           push     0x10186909
+file=0x000863A3  VA=0x10086FA3  68 09 69 18 10           push     0x10186909
+file=0x000863A8  VA=0x10086FA8  8D 8E AC 00 00 00        lea      ecx, [esi + 0xac]
+file=0x000863AE  VA=0x10086FAE  C7 86 AC 00 00 00 9C 53 1D 10 mov      dword ptr [esi + 0xac], 0x101d539c
+file=0x000863B8  VA=0x10086FB8  C7 86 B0 00 00 00 9C 53 1D 10 mov      dword ptr [esi + 0xb0], 0x101d539c
+file=0x000863C2  VA=0x10086FC2  C7 86 B4 00 00 00 9D 53 1D 10 mov      dword ptr [esi + 0xb4], 0x101d539d
+file=0x000863CC  VA=0x10086FCC  E8 3F 9F F9 FF           call     0x10020f10
+file=0x000863D1  VA=0x10086FD1  E8 0A E9 08 00           call     0x101158e0
+file=0x000863D6  VA=0x10086FD6  8B 10                    mov      edx, dword ptr [eax]
+file=0x000863D8  VA=0x10086FD8  8B C8                    mov      ecx, eax
+file=0x000863DA  VA=0x10086FDA  8B 42 18                 mov      eax, dword ptr [edx + 0x18]
+file=0x000863DD  VA=0x10086FDD  68 11 4B D8 0E           push     0xed84b11
+file=0x000863E2  VA=0x10086FE2  FF D0                    call     eax
+file=0x000863E4  VA=0x10086FE4  33 FF                    xor      edi, edi
+file=0x000863E6  VA=0x10086FE6  3B C7                    cmp      eax, edi
+file=0x000863E8  VA=0x10086FE8  74 13                    je       0x10086ffd
+file=0x000863EA  VA=0x10086FEA  8B 10                    mov      edx, dword ptr [eax]
+file=0x000863EC  VA=0x10086FEC  8B C8                    mov      ecx, eax
+file=0x000863EE  VA=0x10086FEE  8B 42 0C                 mov      eax, dword ptr [edx + 0xc]
+file=0x000863F1  VA=0x10086FF1  68 12 4B D8 0E           push     0xed84b12
+file=0x000863F6  VA=0x10086FF6  FF D0                    call     eax
+file=0x000863F8  VA=0x10086FF8  89 45 0C                 mov      dword ptr [ebp + 0xc], eax
+file=0x000863FB  VA=0x10086FFB  EB 05                    jmp      0x10087002
+file=0x000863FD  VA=0x10086FFD  89 7D 0C                 mov      dword ptr [ebp + 0xc], edi
+file=0x00086400  VA=0x10087000  8B C7                    mov      eax, edi
+file=0x00086402  VA=0x10087002  8B 10                    mov      edx, dword ptr [eax]
+file=0x00086404  VA=0x10087004  8B C8                    mov      ecx, eax
+file=0x00086406  VA=0x10087006  8B 82 E4 01 00 00        mov      eax, dword ptr [edx + 0x1e4]
+file=0x0008640C  VA=0x1008700C  6A 01                    push     1
+file=0x0008640E  VA=0x1008700E  FF D0                    call     eax
+file=0x00086410  VA=0x10087010  E8 CB E8 08 00           call     0x101158e0
+file=0x00086415  VA=0x10087015  8B 10                    mov      edx, dword ptr [eax]
+file=0x00086417  VA=0x10087017  8B C8                    mov      ecx, eax
+file=0x00086419  VA=0x10087019  8B 42 18                 mov      eax, dword ptr [edx + 0x18]
+file=0x0008641C  VA=0x1008701C  68 43 8A F2 0E           push     0xef28a43
+file=0x00086421  VA=0x10087021  FF D0                    call     eax
+file=0x00086423  VA=0x10087023  3B C7                    cmp      eax, edi
+file=0x00086425  VA=0x10087025  74 10                    je       0x10087037
+file=0x00086427  VA=0x10087027  8B 10                    mov      edx, dword ptr [eax]
+file=0x00086429  VA=0x10087029  8B C8                    mov      ecx, eax
+file=0x0008642B  VA=0x1008702B  8B 42 0C                 mov      eax, dword ptr [edx + 0xc]
+file=0x0008642E  VA=0x1008702E  68 44 8A F2 0E           push     0xef28a44
+file=0x00086433  VA=0x10087033  FF D0                    call     eax
+file=0x00086435  VA=0x10087035  8B F8                    mov      edi, eax
+file=0x00086437  VA=0x10087037  8B 17                    mov      edx, dword ptr [edi]
+file=0x00086439  VA=0x10087039  8B 42 30                 mov      eax, dword ptr [edx + 0x30]
+file=0x0008643C  VA=0x1008703C  6A 01                    push     1
+file=0x0008643E  VA=0x1008703E  53                       push     ebx
+file=0x0008643F  VA=0x1008703F  8B CF                    mov      ecx, edi
+file=0x00086441  VA=0x10087041  FF D0                    call     eax
+file=0x00086443  VA=0x10087043  68 4C 27 00 00           push     0x274c
+file=0x00086448  VA=0x10087048  8B CE                    mov      ecx, esi
+file=0x0008644A  VA=0x1008704A  E8 21 DE 08 00           call     0x10114e70
+file=0x0008644F  VA=0x1008704F  68 8B 13 00 00           push     0x138b
+file=0x00086454  VA=0x10087054  8B CE                    mov      ecx, esi
+file=0x00086456  VA=0x10087056  E8 15 DE 08 00           call     0x10114e70
+file=0x0008645B  VA=0x1008705B  68 8C 13 00 00           push     0x138c
+file=0x00086460  VA=0x10087060  8B CE                    mov      ecx, esi
+file=0x00086462  VA=0x10087062  E8 09 DE 08 00           call     0x10114e70
+file=0x00086467  VA=0x10087067  8B 17                    mov      edx, dword ptr [edi]
+file=0x00086469  VA=0x10087069  8B 42 04                 mov      eax, dword ptr [edx + 4]
+file=0x0008646C  VA=0x1008706C  8B CF                    mov      ecx, edi
+file=0x0008646E  VA=0x1008706E  FF D0                    call     eax
+file=0x00086470  VA=0x10087070  8B 4D 0C                 mov      ecx, dword ptr [ebp + 0xc]
+file=0x00086473  VA=0x10087073  8B 11                    mov      edx, dword ptr [ecx]
+file=0x00086475  VA=0x10087075  8B 42 04                 mov      eax, dword ptr [edx + 4]
+file=0x00086478  VA=0x10087078  FF D0                    call     eax
+file=0x0008647A  VA=0x1008707A  5F                       pop      edi
+file=0x0008647B  VA=0x1008707B  8B C6                    mov      eax, esi
+file=0x0008647D  VA=0x1008707D  5E                       pop      esi
+file=0x0008647E  VA=0x1008707E  5B                       pop      ebx
+file=0x0008647F  VA=0x1008707F  5D                       pop      ebp
+file=0x00086480  VA=0x10087080  C2 08 00                 ret      8
+file=0x00086483  VA=0x10087083  CC                       int3     
+file=0x00086484  VA=0x10087084  CC                       int3     
+file=0x00086485  VA=0x10087085  CC                       int3     
+file=0x00086486  VA=0x10087086  CC                       int3     
+file=0x00086487  VA=0x10087087  CC                       int3     
+file=0x00086488  VA=0x10087088  CC                       int3     
+file=0x00086489  VA=0x10087089  CC                       int3     
+file=0x0008648A  VA=0x1008708A  CC                       int3     
+file=0x0008648B  VA=0x1008708B  CC                       int3     
+file=0x0008648C  VA=0x1008708C  CC                       int3     
+file=0x0008648D  VA=0x1008708D  CC                       int3     
+file=0x0008648E  VA=0x1008708E  CC                       int3     
+file=0x0008648F  VA=0x1008708F  CC                       int3     
+file=0x00086490  VA=0x10087090  55                       push     ebp
+file=0x00086491  VA=0x10087091  8B EC                    mov      ebp, esp
+file=0x00086493  VA=0x10087093  81 EC 94 02 00 00        sub      esp, 0x294
+file=0x00086499  VA=0x10087099  8B 45 08                 mov      eax, dword ptr [ebp + 8]
+file=0x0008649C  VA=0x1008709C  53                       push     ebx
+file=0x0008649D  VA=0x1008709D  56                       push     esi
+file=0x0008649E  VA=0x1008709E  57                       push     edi
+file=0x0008649F  VA=0x1008709F  8B D9                    mov      ebx, ecx
+file=0x000864A1  VA=0x100870A1  C6 45 FF 01              mov      byte ptr [ebp - 1], 1
+file=0x000864A5  VA=0x100870A5  3D 89 13 00 00           cmp      eax, 0x1389
+file=0x000864AA  VA=0x100870AA  0F 8F DB 01 00 00        jg       0x1008728b
+file=0x000864B0  VA=0x100870B0  0F 84 B9 01 00 00        je       0x1008726f
+file=0x000864B6  VA=0x100870B6  48                       dec      eax
+file=0x000864B7  VA=0x100870B7  0F 84 9A 01 00 00        je       0x10087257
+file=0x000864BD  VA=0x100870BD  83 E8 25                 sub      eax, 0x25
+file=0x000864C0  VA=0x100870C0  0F 84 34 01 00 00        je       0x100871fa
+file=0x000864C6  VA=0x100870C6  83 E8 10                 sub      eax, 0x10
+file=0x000864C9  VA=0x100870C9  0F 85 AC 01 00 00        jne      0x1008727b
+file=0x000864CF  VA=0x100870CF  E8 0C E8 08 00           call     0x101158e0
+file=0x000864D4  VA=0x100870D4  50                       push     eax
+file=0x000864D5  VA=0x100870D5  8D 45 08                 lea      eax, [ebp + 8]
+file=0x000864D8  VA=0x100870D8  50                       push     eax
+file=0x000864D9  VA=0x100870D9  E8 B2 75 FF FF           call     0x1007e690
+file=0x000864DE  VA=0x100870DE  8B 4D 0C                 mov      ecx, dword ptr [ebp + 0xc]
+file=0x000864E1  VA=0x100870E1  8B 11                    mov      edx, dword ptr [ecx]
+file=0x000864E3  VA=0x100870E3  8B 52 10                 mov      edx, dword ptr [edx + 0x10]
+file=0x000864E6  VA=0x100870E6  83 C4 08                 add      esp, 8
+file=0x000864E9  VA=0x100870E9  68 00 01 00 00           push     0x100
+file=0x000864EE  VA=0x100870EE  8D 85 6C FE FF FF        lea      eax, [ebp - 0x194]
+file=0x000864F4  VA=0x100870F4  50                       push     eax
+file=0x000864F5  VA=0x100870F5  68 38 6E 19 10           push     0x10196e38
+file=0x000864FA  VA=0x100870FA  FF D2                    call     edx
+file=0x000864FC  VA=0x100870FC  6A 01                    push     1
+file=0x000864FE  VA=0x100870FE  68 0C 69 18 10           push     0x1018690c
+file=0x00086503  VA=0x10087103  8D 85 6C FE FF FF        lea      eax, [ebp - 0x194]
+file=0x00086509  VA=0x10087109  50                       push     eax
+file=0x0008650A  VA=0x1008710A  8D 4D E4                 lea      ecx, [ebp - 0x1c]
+file=0x0008650D  VA=0x1008710D  E8 0E A2 F9 FF           call     0x10021320
+file=0x00086512  VA=0x10087112  6A 00                    push     0
+file=0x00086514  VA=0x10087114  68 34 6E 19 10           push     0x10196e34
+file=0x00086519  VA=0x10087119  8D 4D E4                 lea      ecx, [ebp - 0x1c]
+file=0x0008651C  VA=0x1008711C  E8 AF 2D FE FF           call     0x10069ed0
+file=0x00086521  VA=0x10087121  8B F8                    mov      edi, eax
+file=0x00086523  VA=0x10087123  57                       push     edi
+file=0x00086524  VA=0x10087124  6A 00                    push     0
+file=0x00086526  VA=0x10087126  8D 4D 84                 lea      ecx, [ebp - 0x7c]
+file=0x00086529  VA=0x10087129  51                       push     ecx
+file=0x0008652A  VA=0x1008712A  8D 4D E4                 lea      ecx, [ebp - 0x1c]
+file=0x0008652D  VA=0x1008712D  E8 FE F8 FC FF           call     0x10056a30
+file=0x00086532  VA=0x10087132  8B 00                    mov      eax, dword ptr [eax]
+file=0x00086534  VA=0x10087134  6A 0A                    push     0xa
+file=0x00086536  VA=0x10087136  6A 00                    push     0
+file=0x00086538  VA=0x10087138  50                       push     eax
+file=0x00086539  VA=0x10087139  E8 82 E4 F8 FF           call     0x100155c0
+file=0x0008653E  VA=0x1008713E  8B 55 84                 mov      edx, dword ptr [ebp - 0x7c]
+file=0x00086541  VA=0x10087141  8B D8                    mov      ebx, eax
+file=0x00086543  VA=0x10087143  8B 45 8C                 mov      eax, dword ptr [ebp - 0x74]
+file=0x00086546  VA=0x10087146  2B C2                    sub      eax, edx
+file=0x00086548  VA=0x10087148  83 C4 0C                 add      esp, 0xc
+file=0x0008654B  VA=0x1008714B  83 F8 01                 cmp      eax, 1
+file=0x0008654E  VA=0x1008714E  7E 10                    jle      0x10087160
+file=0x00086550  VA=0x10087150  85 D2                    test     edx, edx
+file=0x00086552  VA=0x10087152  74 0C                    je       0x10087160
+file=0x00086554  VA=0x10087154  8B 4D 90                 mov      ecx, dword ptr [ebp - 0x70]
+file=0x00086557  VA=0x10087157  8B 31                    mov      esi, dword ptr [ecx]
+file=0x00086559  VA=0x10087159  50                       push     eax
+file=0x0008655A  VA=0x1008715A  52                       push     edx
+file=0x0008655B  VA=0x1008715B  8B 56 0C                 mov      edx, dword ptr [esi + 0xc]
+file=0x0008655E  VA=0x1008715E  FF D2                    call     edx
+file=0x00086560  VA=0x10087160  8B 75 08                 mov      esi, dword ptr [ebp + 8]
+file=0x00086563  VA=0x10087163  8B 06                    mov      eax, dword ptr [esi]
+file=0x00086565  VA=0x10087165  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00086568  VA=0x10087168  68 09 69 18 10           push     0x10186909
+file=0x0008656D  VA=0x1008716D  53                       push     ebx
+file=0x0008656E  VA=0x1008716E  8B CE                    mov      ecx, esi
+file=0x00086570  VA=0x10087170  FF D2                    call     edx
+file=0x00086572  VA=0x10087172  8B 45 E8                 mov      eax, dword ptr [ebp - 0x18]
+file=0x00086575  VA=0x10087175  8B 5D E4                 mov      ebx, dword ptr [ebp - 0x1c]
+file=0x00086578  VA=0x10087178  2B C3                    sub      eax, ebx
+file=0x0008657A  VA=0x1008717A  50                       push     eax
+file=0x0008657B  VA=0x1008717B  47                       inc      edi
+file=0x0008657C  VA=0x1008717C  57                       push     edi
+file=0x0008657D  VA=0x1008717D  8D 4D B4                 lea      ecx, [ebp - 0x4c]
+file=0x00086580  VA=0x10087180  51                       push     ecx
+file=0x00086581  VA=0x10087181  8D 4D E4                 lea      ecx, [ebp - 0x1c]
+file=0x00086584  VA=0x10087184  E8 A7 F8 FC FF           call     0x10056a30
+file=0x00086589  VA=0x10087189  8B 00                    mov      eax, dword ptr [eax]
+file=0x0008658B  VA=0x1008718B  6A 0A                    push     0xa
+file=0x0008658D  VA=0x1008718D  6A 00                    push     0
+file=0x0008658F  VA=0x1008718F  50                       push     eax
+file=0x00086590  VA=0x10087190  E8 2B E4 F8 FF           call     0x100155c0
+file=0x00086595  VA=0x10087195  8B 55 B4                 mov      edx, dword ptr [ebp - 0x4c]
+file=0x00086598  VA=0x10087198  8B F8                    mov      edi, eax
+file=0x0008659A  VA=0x1008719A  8B 45 BC                 mov      eax, dword ptr [ebp - 0x44]
+file=0x0008659D  VA=0x1008719D  2B C2                    sub      eax, edx
+file=0x0008659F  VA=0x1008719F  83 C4 0C                 add      esp, 0xc
+file=0x000865A2  VA=0x100871A2  83 F8 01                 cmp      eax, 1
+file=0x000865A5  VA=0x100871A5  7E 15                    jle      0x100871bc
+file=0x000865A7  VA=0x100871A7  85 D2                    test     edx, edx
+file=0x000865A9  VA=0x100871A9  74 11                    je       0x100871bc
+file=0x000865AB  VA=0x100871AB  8B 4D C0                 mov      ecx, dword ptr [ebp - 0x40]
+file=0x000865AE  VA=0x100871AE  8B 09                    mov      ecx, dword ptr [ecx]
+file=0x000865B0  VA=0x100871B0  50                       push     eax
+file=0x000865B1  VA=0x100871B1  8B C1                    mov      eax, ecx
+file=0x000865B3  VA=0x100871B3  8B 4D C0                 mov      ecx, dword ptr [ebp - 0x40]
+file=0x000865B6  VA=0x100871B6  52                       push     edx
+file=0x000865B7  VA=0x100871B7  8B 50 0C                 mov      edx, dword ptr [eax + 0xc]
+file=0x000865BA  VA=0x100871BA  FF D2                    call     edx
+file=0x000865BC  VA=0x100871BC  8B 06                    mov      eax, dword ptr [esi]
+file=0x000865BE  VA=0x100871BE  8B 50 24                 mov      edx, dword ptr [eax + 0x24]
+file=0x000865C1  VA=0x100871C1  68 09 69 18 10           push     0x10186909
+file=0x000865C6  VA=0x100871C6  57                       push     edi
+file=0x000865C7  VA=0x100871C7  8B CE                    mov      ecx, esi
+file=0x000865C9  VA=0x100871C9  FF D2                    call     edx
+file=0x000865CB  VA=0x100871CB  8B 45 EC                 mov      eax, dword ptr [ebp - 0x14]
+file=0x000865CE  VA=0x100871CE  2B C3                    sub      eax, ebx
+file=0x000865D0  VA=0x100871D0  83 F8 01                 cmp      eax, 1
+file=0x000865D3  VA=0x100871D3  7E 10                    jle      0x100871e5
+file=0x000865D5  VA=0x100871D5  85 DB                    test     ebx, ebx
+file=0x000865D7  VA=0x100871D7  74 0C                    je       0x100871e5
+file=0x000865D9  VA=0x100871D9  8B 4D F0                 mov      ecx, dword ptr [ebp - 0x10]
+file=0x000865DC  VA=0x100871DC  8B 11                    mov      edx, dword ptr [ecx]
+file=0x000865DE  VA=0x100871DE  50                       push     eax
+file=0x000865DF  VA=0x100871DF  8B 42 0C                 mov      eax, dword ptr [edx + 0xc]
+file=0x000865E2  VA=0x100871E2  53                       push     ebx
+file=0x000865E3  VA=0x100871E3  FF D0                    call     eax
+file=0x000865E5  VA=0x100871E5  8B 16                    mov      edx, dword ptr [esi]
+file=0x000865E7  VA=0x100871E7  8B 42 04                 mov      eax, dword ptr [edx + 4]
+file=0x000865EA  VA=0x100871EA  8B CE                    mov      ecx, esi
+file=0x000865EC  VA=0x100871EC  FF D0                    call     eax
+file=0x000865EE  VA=0x100871EE  8A 45 FF                 mov      al, byte ptr [ebp - 1]
+file=0x000865F1  VA=0x100871F1  5F                       pop      edi
+file=0x000865F2  VA=0x100871F2  5E                       pop      esi
+file=0x000865F3  VA=0x100871F3  5B                       pop      ebx
+file=0x000865F4  VA=0x100871F4  8B E5                    mov      esp, ebp
+file=0x000865F6  VA=0x100871F6  5D                       pop      ebp
+file=0x000865F7  VA=0x100871F7  C2 08 00                 ret      8
+file=0x000865FA  VA=0x100871FA  E8 E1 E6 08 00           call     0x101158e0
+file=0x000865FF  VA=0x100871FF  50                       push     eax
+file=0x00086600  VA=0x10087200  8D 4D 0C                 lea      ecx, [ebp + 0xc]
+file=0x00086603  VA=0x10087203  51                       push     ecx
+file=0x00086604  VA=0x10087204  E8 87 74 FF FF           call     0x1007e690
+file=0x00086609  VA=0x10087209  8B 75 0C                 mov      esi, dword ptr [ebp + 0xc]
+file=0x0008660C  VA=0x1008720C  8B 16                    mov      edx, dword ptr [esi]
+file=0x0008660E  VA=0x1008720E  8B 42 40                 mov      eax, dword ptr [edx + 0x40]
+file=0x00086611  VA=0x10087211  83 C4 08                 add      esp, 8
+file=0x00086614  VA=0x10087214  8B CE                    mov      ecx, esi
+file=0x00086616  VA=0x10087216  FF D0                    call     eax
+file=0x00086618  VA=0x10087218  E8 C3 E6 08 00           call     0x101158e0
+file=0x0008661D  VA=0x1008721D  50                       push     eax
+file=0x0008661E  VA=0x1008721E  8D 4D 0C                 lea      ecx, [ebp + 0xc]
+file=0x00086621  VA=0x10087221  51                       push     ecx
+file=0x00086622  VA=0x10087222  E8 B9 8D F9 FF           call     0x1001ffe0
+file=0x00086627  VA=0x10087227  8B 7D 0C                 mov      edi, dword ptr [ebp + 0xc]
+file=0x0008662A  VA=0x1008722A  8B 17                    mov      edx, dword ptr [edi]
+file=0x0008662C  VA=0x1008722C  8B 82 F4 01 00 00        mov      eax, dword ptr [edx + 0x1f4]
+file=0x00086632  VA=0x10087232  83 C4 08                 add      esp, 8
+file=0x00086635  VA=0x10087235  8B CF                    mov      ecx, edi
+file=0x00086637  VA=0x10087237  FF D0                    call     eax
+file=0x00086639  VA=0x10087239  8B 17                    mov      edx, dword ptr [edi]
+file=0x0008663B  VA=0x1008723B  8B 42 04                 mov      eax, dword ptr [edx + 4]
+file=0x0008663E  VA=0x1008723E  8B CF                    mov      ecx, edi
+file=0x00086640  VA=0x10087240  FF D0                    call     eax
+file=0x00086642  VA=0x10087242  8B 16                    mov      edx, dword ptr [esi]
+file=0x00086644  VA=0x10087244  8B 42 04                 mov      eax, dword ptr [edx + 4]
+file=0x00086647  VA=0x10087247  8B CE                    mov      ecx, esi
+file=0x00086649  VA=0x10087249  FF D0                    call     eax
+file=0x0008664B  VA=0x1008724B  8A 45 FF                 mov      al, byte ptr [ebp - 1]
+file=0x0008664E  VA=0x1008724E  5F                       pop      edi
+file=0x0008664F  VA=0x1008724F  5E                       pop      esi
+file=0x00086650  VA=0x10087250  5B                       pop      ebx
+file=0x00086651  VA=0x10087251  8B E5                    mov      esp, ebp
+file=0x00086653  VA=0x10087253  5D                       pop      ebp
+file=0x00086654  VA=0x10087254  C2 08 00                 ret      8
+file=0x00086657  VA=0x10087257  5F                       pop      edi
+file=0x00086658  VA=0x10087258  33 C0                    xor      eax, eax
+file=0x0008665A  VA=0x1008725A  5E                       pop      esi
+file=0x0008665B  VA=0x1008725B  A3 9C 73 1D 10           mov      dword ptr [0x101d739c], eax
+file=0x00086660  VA=0x10087260  A3 98 73 1D 10           mov      dword ptr [0x101d7398], eax
+file=0x00086665  VA=0x10087265  88 45 FF                 mov      byte ptr [ebp - 1], al
+file=0x00086668  VA=0x10087268  5B                       pop      ebx
+file=0x00086669  VA=0x10087269  8B E5                    mov      esp, ebp
+file=0x0008666B  VA=0x1008726B  5D                       pop      ebp
+file=0x0008666C  VA=0x1008726C  C2 08 00                 ret      8
+file=0x0008666F  VA=0x1008726F  6A 00                    push     0
+file=0x00086671  VA=0x10087271  68 8C 13 00 00           push     0x138c
+file=0x00086676  VA=0x10087276  E8 95 CE 08 00           call     0x10114110
+file=0x0008667B  VA=0x1008727B  5F                       pop      edi
+file=0x0008667C  VA=0x1008727C  C6 45 FF 00              mov      byte ptr [ebp - 1], 0
+file=0x00086680  VA=0x10087280  8A 45 FF                 mov      al, byte ptr [ebp - 1]
+file=0x00086683  VA=0x10087283  5E                       pop      esi
+file=0x00086684  VA=0x10087284  5B                       pop      ebx
+file=0x00086685  VA=0x10087285  8B E5                    mov      esp, ebp
+file=0x00086687  VA=0x10087287  5D                       pop      ebp
+file=0x00086688  VA=0x10087288  C2 08 00                 ret      8
+file=0x0008668B  VA=0x1008728B  3D 8A 13 00 00           cmp      eax, 0x138a
+file=0x00086690  VA=0x10087290  0F 84 E7 00 00 00        je       0x1008737d
+file=0x00086696  VA=0x10087296  3D 2B 27 00 00           cmp      eax, 0x272b
+file=0x0008669B  VA=0x1008729B  0F 84 B6 00 00 00        je       0x10087357
+file=0x000866A1  VA=0x100872A1  3D 3C 4E 00 00           cmp      eax, 0x4e3c
+file=0x000866A6  VA=0x100872A6  75 D3                    jne      0x1008727b
+file=0x000866A8  VA=0x100872A8  8B 4D 0C                 mov      ecx, dword ptr [ebp + 0xc]
+file=0x000866AB  VA=0x100872AB  8B 11                    mov      edx, dword ptr [ecx]
+file=0x000866AD  VA=0x100872AD  8B 52 10                 mov      edx, dword ptr [edx + 0x10]
+file=0x000866B0  VA=0x100872B0  68 00 01 00 00           push     0x100
+file=0x000866B5  VA=0x100872B5  8D 85 6C FE FF FF        lea      eax, [ebp - 0x194]
+file=0x000866BB  VA=0x100872BB  50                       push     eax
+file=0x000866BC  VA=0x100872BC  68 38 6E 19 10           push     0x10196e38
+file=0x000866C1  VA=0x100872C1  FF D2                    call     edx
+file=0x000866C3  VA=0x100872C3  6A 01                    push     1
+file=0x000866C5  VA=0x100872C5  68 0C 69 18 10           push     0x1018690c
+file=0x000866CA  VA=0x100872CA  8D 85 6C FE FF FF        lea      eax, [ebp - 0x194]
+file=0x000866D0  VA=0x100872D0  50                       push     eax
+file=0x000866D1  VA=0x100872D1  8D 4D E4                 lea      ecx, [ebp - 0x1c]
+file=0x000866D4  VA=0x100872D4  E8 47 A0 F9 FF           call     0x10021320
+file=0x000866D9  VA=0x100872D9  6A 0A                    push     0xa
+file=0x000866DB  VA=0x100872DB  8D 8D 6C FE FF FF        lea      ecx, [ebp - 0x194]
+file=0x000866E1  VA=0x100872E1  6A 00                    push     0
+file=0x000866E3  VA=0x100872E3  51                       push     ecx
+file=0x000866E4  VA=0x100872E4  E8 D7 E2 F8 FF           call     0x100155c0
+file=0x000866E9  VA=0x100872E9  8B F8                    mov      edi, eax
+file=0x000866EB  VA=0x100872EB  E8 F0 E5 08 00           call     0x101158e0
+file=0x000866F0  VA=0x100872F0  50                       push     eax
+file=0x000866F1  VA=0x100872F1  8D 55 0C                 lea      edx, [ebp + 0xc]
+file=0x000866F4  VA=0x100872F4  52                       push     edx
+file=0x000866F5  VA=0x100872F5  E8 E6 8C F9 FF           call     0x1001ffe0
+file=0x000866FA  VA=0x100872FA  8B 75 0C                 mov      esi, dword ptr [ebp + 0xc]
+file=0x000866FD  VA=0x100872FD  8B 06                    mov      eax, dword ptr [esi]
+file=0x000866FF  VA=0x100872FF  8B 90 E8 01 00 00        mov      edx, dword ptr [eax + 0x1e8]
+file=0x00086705  VA=0x10087305  83 C4 14                 add      esp, 0x14
+file=0x00086708  VA=0x10087308  8B CE                    mov      ecx, esi
+file=0x0008670A  VA=0x1008730A  FF D2                    call     edx
+file=0x0008670C  VA=0x1008730C  84 C0                    test     al, al
+file=0x0008670E  VA=0x1008730E  74 0D                    je       0x1008731d
+file=0x00086710  VA=0x10087310  8B 06                    mov      eax, dword ptr [esi]
+file=0x00086712  VA=0x10087312  8B 90 EC 01 00 00        mov      edx, dword ptr [eax + 0x1ec]
+file=0x00086718  VA=0x10087318  57                       push     edi
+file=0x00086719  VA=0x10087319  8B CE                    mov      ecx, esi
+file=0x0008671B  VA=0x1008731B  FF D2                    call     edx
+file=0x0008671D  VA=0x1008731D  8B 06                    mov      eax, dword ptr [esi]
+file=0x0008671F  VA=0x1008731F  8B 50 04                 mov      edx, dword ptr [eax + 4]
+file=0x00086722  VA=0x10087322  8B CE                    mov      ecx, esi
+file=0x00086724  VA=0x10087324  FF D2                    call     edx
+file=0x00086726  VA=0x10087326  8B 45 EC                 mov      eax, dword ptr [ebp - 0x14]
+file=0x00086729  VA=0x10087329  8B 55 E4                 mov      edx, dword ptr [ebp - 0x1c]
+file=0x0008672C  VA=0x1008732C  2B C2                    sub      eax, edx
+file=0x0008672E  VA=0x1008732E  83 F8 01                 cmp      eax, 1
+file=0x00086731  VA=0x10087331  0F 8E 40 02 00 00        jle      0x10087577
+file=0x00086737  VA=0x10087337  85 D2                    test     edx, edx
+file=0x00086739  VA=0x10087339  0F 84 38 02 00 00        je       0x10087577
+file=0x0008673F  VA=0x1008733F  8B 4D F0                 mov      ecx, dword ptr [ebp - 0x10]
+file=0x00086742  VA=0x10087342  8B 31                    mov      esi, dword ptr [ecx]
+file=0x00086744  VA=0x10087344  50                       push     eax
+file=0x00086745  VA=0x10087345  8B 46 0C                 mov      eax, dword ptr [esi + 0xc]
+file=0x00086748  VA=0x10087348  52                       push     edx
+file=0x00086749  VA=0x10087349  FF D0                    call     eax
+file=0x0008674B  VA=0x1008734B  8A 45 FF                 mov      al, byte ptr [ebp - 1]
+file=0x0008674E  VA=0x1008734E  5F                       pop      edi
+file=0x0008674F  VA=0x1008734F  5E                       pop      esi
+file=0x00086750  VA=0x10087350  5B                       pop      ebx
+file=0x00086751  VA=0x10087351  8B E5                    mov      esp, ebp
+file=0x00086753  VA=0x10087353  5D                       pop      ebp
+file=0x00086754  VA=0x10087354  C2 08 00                 ret      8
+file=0x00086757  VA=0x10087357  6A 00                    push     0
+file=0x00086759  VA=0x10087359  68 8B 13 00 00           push     0x138b
+file=0x0008675E  VA=0x1008735E  E8 AD CD 08 00           call     0x10114110
+file=0x00086763  VA=0x10087363  6A 00                    push     0
+file=0x00086765  VA=0x10087365  68 8C 13 00 00           push     0x138c
+file=0x0008676A  VA=0x1008736A  8B CB                    mov      ecx, ebx
+file=0x0008676C  VA=0x1008736C  E8 9F CD 08 00           call     0x10114110
+file=0x00086771  VA=0x10087371  8A 45 FF                 mov      al, byte ptr [ebp - 1]
+file=0x00086774  VA=0x10087374  5F                       pop      edi
+file=0x00086775  VA=0x10087375  5E                       pop      esi
+file=0x00086776  VA=0x10087376  5B                       pop      ebx
+file=0x00086777  VA=0x10087377  8B E5                    mov      esp, ebp
+file=0x00086779  VA=0x10087379  5D                       pop      ebp
+file=0x0008677A  VA=0x1008737A  C2 08 00                 ret      8
+file=0x0008677D  VA=0x1008737D  8B 4D 0C                 mov      ecx, dword ptr [ebp + 0xc]
+file=0x00086780  VA=0x10087380  8B 11                    mov      edx, dword ptr [ecx]
+file=0x00086782  VA=0x10087382  8B 52 10                 mov      edx, dword ptr [edx + 0x10]
+file=0x00086785  VA=0x10087385  68 00 01 00 00           push     0x100
+file=0x0008678A  VA=0x1008738A  8D 85 6C FE FF FF        lea      eax, [ebp - 0x194]
+file=0x00086790  VA=0x10087390  50                       push     eax
+file=0x00086791  VA=0x10087391  68 38 6E 19 10           push     0x10196e38
+file=0x00086796  VA=0x10087396  FF D2                    call     edx
+file=0x00086798  VA=0x10087398  6A 01                    push     1
+file=0x0008679A  VA=0x1008739A  68 0C 69 18 10           push     0x1018690c
+file=0x0008679F  VA=0x1008739F  8D 85 6C FE FF FF        lea      eax, [ebp - 0x194]
+file=0x000867A5  VA=0x100873A5  50                       push     eax
+file=0x000867A6  VA=0x100873A6  8D 4D E4                 lea      ecx, [ebp - 0x1c]
+file=0x000867A9  VA=0x100873A9  E8 72 9F F9 FF           call     0x10021320
+file=0x000867AE  VA=0x100873AE  6A 00                    push     0
+file=0x000867B0  VA=0x100873B0  68 34 6E 19 10           push     0x10196e34
+file=0x000867B5  VA=0x100873B5  8D 4D E4                 lea      ecx, [ebp - 0x1c]
+file=0x000867B8  VA=0x100873B8  E8 13 2B FE FF           call     0x10069ed0
+file=0x000867BD  VA=0x100873BD  8B F8                    mov      edi, eax
+file=0x000867BF  VA=0x100873BF  57                       push     edi
+file=0x000867C0  VA=0x100873C0  6A 00                    push     0
+file=0x000867C2  VA=0x100873C2  8D 4D 9C                 lea      ecx, [ebp - 0x64]
+file=0x000867C5  VA=0x100873C5  51                       push     ecx
+file=0x000867C6  VA=0x100873C6  8D 4D E4                 lea      ecx, [ebp - 0x1c]
+file=0x000867C9  VA=0x100873C9  E8 62 F6 FC FF           call     0x10056a30
+file=0x000867CE  VA=0x100873CE  8B 00                    mov      eax, dword ptr [eax]
+file=0x000867D0  VA=0x100873D0  6A 0A                    push     0xa
+file=0x000867D2  VA=0x100873D2  6A 00                    push     0
+file=0x000867D4  VA=0x100873D4  50                       push     eax
+file=0x000867D5  VA=0x100873D5  E8 E6 E1 F8 FF           call     0x100155c0
+file=0x000867DA  VA=0x100873DA  8B 55 9C                 mov      edx, dword ptr [ebp - 0x64]
+file=0x000867DD  VA=0x100873DD  8B F0                    mov      esi, eax
+file=0x000867DF  VA=0x100873DF  8B 45 A4                 mov      eax, dword ptr [ebp - 0x5c]
+file=0x000867E2  VA=0x100873E2  2B C2                    sub      eax, edx
+file=0x000867E4  VA=0x100873E4  83 C4 0C                 add      esp, 0xc
+file=0x000867E7  VA=0x100873E7  83 F8 01                 cmp      eax, 1
+file=0x000867EA  VA=0x100873EA  7E 15                    jle      0x10087401
+file=0x000867EC  VA=0x100873EC  85 D2                    test     edx, edx
+file=0x000867EE  VA=0x100873EE  74 11                    je       0x10087401
+file=0x000867F0  VA=0x100873F0  8B 4D A8                 mov      ecx, dword ptr [ebp - 0x58]
+file=0x000867F3  VA=0x100873F3  8B 09                    mov      ecx, dword ptr [ecx]
+file=0x000867F5  VA=0x100873F5  50                       push     eax
+file=0x000867F6  VA=0x100873F6  8B C1                    mov      eax, ecx
+file=0x000867F8  VA=0x100873F8  8B 4D A8                 mov      ecx, dword ptr [ebp - 0x58]
+file=0x000867FB  VA=0x100873FB  52                       push     edx
+file=0x000867FC  VA=0x100873FC  8B 50 0C                 mov      edx, dword ptr [eax + 0xc]
+file=0x000867FF  VA=0x100873FF  FF D2                    call     edx
+file=0x00086801  VA=0x10087401  E8 DA E4 08 00           call     0x101158e0
+file=0x00086806  VA=0x10087406  8B 10                    mov      edx, dword ptr [eax]
+file=0x00086808  VA=0x10087408  8B C8                    mov      ecx, eax
+file=0x0008680A  VA=0x1008740A  8B 42 18                 mov      eax, dword ptr [edx + 0x18]
+file=0x0008680D  VA=0x1008740D  68 43 8A F2 0E           push     0xef28a43
+file=0x00086812  VA=0x10087412  FF D0                    call     eax
+file=0x00086814  VA=0x10087414  85 C0                    test     eax, eax
+file=0x00086816  VA=0x10087416  74 13                    je       0x1008742b
+file=0x00086818  VA=0x10087418  8B 10                    mov      edx, dword ptr [eax]
+file=0x0008681A  VA=0x1008741A  8B C8                    mov      ecx, eax
+file=0x0008681C  VA=0x1008741C  8B 42 0C                 mov      eax, dword ptr [edx + 0xc]
+file=0x0008681F  VA=0x1008741F  68 44 8A F2 0E           push     0xef28a44
+file=0x00086824  VA=0x10087424  FF D0                    call     eax
+file=0x00086826  VA=0x10087426  89 45 0C                 mov      dword ptr [ebp + 0xc], eax
+file=0x00086829  VA=0x10087429  EB 0A                    jmp      0x10087435
+file=0x0008682B  VA=0x1008742B  C7 45 0C 00 00 00 00     mov      dword ptr [ebp + 0xc], 0
+file=0x00086832  VA=0x10087432  8B 45 0C                 mov      eax, dword ptr [ebp + 0xc]
+file=0x00086835  VA=0x10087435  8B 10                    mov      edx, dword ptr [eax]
+file=0x00086837  VA=0x10087437  68 09 69 18 10           push     0x10186909
+file=0x0008683C  VA=0x1008743C  8B C8                    mov      ecx, eax
+file=0x0008683E  VA=0x1008743E  8B 42 24                 mov      eax, dword ptr [edx + 0x24]
+file=0x00086841  VA=0x10087441  56                       push     esi
+file=0x00086842  VA=0x10087442  FF D0                    call     eax
+file=0x00086844  VA=0x10087444  6A 01                    push     1
+file=0x00086846  VA=0x10087446  68 0C 69 18 10           push     0x1018690c
+file=0x0008684B  VA=0x1008744B  68 24 6E 19 10           push     0x10196e24
+file=0x00086850  VA=0x10087450  8D 4D CC                 lea      ecx, [ebp - 0x34]
+file=0x00086853  VA=0x10087453  E8 C8 9E F9 FF           call     0x10021320
+file=0x00086858  VA=0x10087458  8B 75 CC                 mov      esi, dword ptr [ebp - 0x34]
+file=0x0008685B  VA=0x1008745B  8B C6                    mov      eax, esi
+file=0x0008685D  VA=0x1008745D  8D 50 01                 lea      edx, [eax + 1]
+file=0x00086860  VA=0x10087460  8A 08                    mov      cl, byte ptr [eax]
+file=0x00086862  VA=0x10087462  40                       inc      eax
+file=0x00086863  VA=0x10087463  84 C9                    test     cl, cl
+file=0x00086865  VA=0x10087465  75 F9                    jne      0x10087460
+file=0x00086867  VA=0x10087467  2B C2                    sub      eax, edx
+file=0x00086869  VA=0x10087469  03 C6                    add      eax, esi
+file=0x0008686B  VA=0x1008746B  50                       push     eax
+file=0x0008686C  VA=0x1008746C  56                       push     esi
+file=0x0008686D  VA=0x1008746D  8D 8B 94 00 00 00        lea      ecx, [ebx + 0x94]
+file=0x00086873  VA=0x10087473  E8 98 9A F9 FF           call     0x10020f10
+file=0x00086878  VA=0x10087478  8B 45 D4                 mov      eax, dword ptr [ebp - 0x2c]
+file=0x0008687B  VA=0x1008747B  2B C6                    sub      eax, esi
+file=0x0008687D  VA=0x1008747D  83 F8 01                 cmp      eax, 1
+file=0x00086880  VA=0x10087480  7E 10                    jle      0x10087492
+file=0x00086882  VA=0x10087482  85 F6                    test     esi, esi
+file=0x00086884  VA=0x10087484  74 0C                    je       0x10087492
+file=0x00086886  VA=0x10087486  8B 4D D8                 mov      ecx, dword ptr [ebp - 0x28]
+file=0x00086889  VA=0x10087489  8B 11                    mov      edx, dword ptr [ecx]
+file=0x0008688B  VA=0x1008748B  50                       push     eax
+file=0x0008688C  VA=0x1008748C  8B 42 0C                 mov      eax, dword ptr [edx + 0xc]
+file=0x0008688F  VA=0x1008748F  56                       push     esi
+file=0x00086890  VA=0x10087490  FF D0                    call     eax
+file=0x00086892  VA=0x10087492  8B 4D E8                 mov      ecx, dword ptr [ebp - 0x18]
+file=0x00086895  VA=0x10087495  2B 4D E4                 sub      ecx, dword ptr [ebp - 0x1c]
+file=0x00086898  VA=0x10087498  47                       inc      edi
+file=0x00086899  VA=0x10087499  51                       push     ecx
+file=0x0008689A  VA=0x1008749A  57                       push     edi
+file=0x0008689B  VA=0x1008749B  8D 95 6C FF FF FF        lea      edx, [ebp - 0x94]
+file=0x000868A1  VA=0x100874A1  52                       push     edx
+file=0x000868A2  VA=0x100874A2  8D 4D E4                 lea      ecx, [ebp - 0x1c]
+file=0x000868A5  VA=0x100874A5  E8 86 F5 FC FF           call     0x10056a30
+file=0x000868AA  VA=0x100874AA  8B 00                    mov      eax, dword ptr [eax]
+file=0x000868AC  VA=0x100874AC  50                       push     eax
+file=0x000868AD  VA=0x100874AD  8B CB                    mov      ecx, ebx
+file=0x000868AF  VA=0x100874AF  E8 5C F4 FF FF           call     0x10086910
+file=0x000868B4  VA=0x100874B4  8B 95 6C FF FF FF        mov      edx, dword ptr [ebp - 0x94]
+file=0x000868BA  VA=0x100874BA  8B F0                    mov      esi, eax
+file=0x000868BC  VA=0x100874BC  8B 85 74 FF FF FF        mov      eax, dword ptr [ebp - 0x8c]
+file=0x000868C2  VA=0x100874C2  2B C2                    sub      eax, edx
+file=0x000868C4  VA=0x100874C4  83 F8 01                 cmp      eax, 1
+file=0x000868C7  VA=0x100874C7  7E 13                    jle      0x100874dc
+file=0x000868C9  VA=0x100874C9  85 D2                    test     edx, edx
+file=0x000868CB  VA=0x100874CB  74 0F                    je       0x100874dc
+file=0x000868CD  VA=0x100874CD  8B 8D 78 FF FF FF        mov      ecx, dword ptr [ebp - 0x88]
+file=0x000868D3  VA=0x100874D3  8B 39                    mov      edi, dword ptr [ecx]
+file=0x000868D5  VA=0x100874D5  50                       push     eax
+file=0x000868D6  VA=0x100874D6  8B 47 0C                 mov      eax, dword ptr [edi + 0xc]
+file=0x000868D9  VA=0x100874D9  52                       push     edx
+file=0x000868DA  VA=0x100874DA  FF D0                    call     eax
+file=0x000868DC  VA=0x100874DC  6A 0A                    push     0xa
+file=0x000868DE  VA=0x100874DE  8D 8D 6C FD FF FF        lea      ecx, [ebp - 0x294]
+file=0x000868E4  VA=0x100874E4  51                       push     ecx
+file=0x000868E5  VA=0x100874E5  56                       push     esi
+file=0x000868E6  VA=0x100874E6  E8 D5 DE F8 FF           call     0x100153c0
+file=0x000868EB  VA=0x100874EB  83 C4 0C                 add      esp, 0xc
+file=0x000868EE  VA=0x100874EE  6A 01                    push     1
+file=0x000868F0  VA=0x100874F0  68 0C 69 18 10           push     0x1018690c
+file=0x000868F5  VA=0x100874F5  8D 95 6C FD FF FF        lea      edx, [ebp - 0x294]
+file=0x000868FB  VA=0x100874FB  52                       push     edx
+file=0x000868FC  VA=0x100874FC  8D 4D CC                 lea      ecx, [ebp - 0x34]
+file=0x000868FF  VA=0x100874FF  E8 1C 9E F9 FF           call     0x10021320
+file=0x00086904  VA=0x10087504  8B 75 CC                 mov      esi, dword ptr [ebp - 0x34]
+file=0x00086907  VA=0x10087507  8B C6                    mov      eax, esi
+file=0x00086909  VA=0x10087509  8D 50 01                 lea      edx, [eax + 1]
+file=0x0008690C  VA=0x1008750C  8D 64 24 00              lea      esp, [esp]
+file=0x00086910  VA=0x10087510  8A 08                    mov      cl, byte ptr [eax]
+file=0x00086912  VA=0x10087512  40                       inc      eax
+file=0x00086913  VA=0x10087513  84 C9                    test     cl, cl
+file=0x00086915  VA=0x10087515  75 F9                    jne      0x10087510
+file=0x00086917  VA=0x10087517  2B C2                    sub      eax, edx
+file=0x00086919  VA=0x10087519  03 C6                    add      eax, esi
+file=0x0008691B  VA=0x1008751B  50                       push     eax
+file=0x0008691C  VA=0x1008751C  56                       push     esi
+file=0x0008691D  VA=0x1008751D  8D 8B AC 00 00 00        lea      ecx, [ebx + 0xac]
+file=0x00086923  VA=0x10087523  E8 E8 99 F9 FF           call     0x10020f10
+file=0x00086928  VA=0x10087528  8B 45 D4                 mov      eax, dword ptr [ebp - 0x2c]
+file=0x0008692B  VA=0x1008752B  2B C6                    sub      eax, esi
+file=0x0008692D  VA=0x1008752D  83 F8 01                 cmp      eax, 1
+
+====================================================================================================
+Normal provider method
+====================================================================================================
+target file : 0x87810
+target VA   : 0x10088410
+range       : 0x87810 - 0x88010
+
+file=0x00087810  VA=0x10088410  55                       push     ebp   <== TARGET
+file=0x00087811  VA=0x10088411  8B EC                    mov      ebp, esp
+file=0x00087813  VA=0x10088413  8B 0D A0 73 1D 10        mov      ecx, dword ptr [0x101d73a0]
+file=0x00087819  VA=0x10088419  8B 15 80 0F 1C 10        mov      edx, dword ptr [0x101c0f80]
+file=0x0008781F  VA=0x1008841F  81 EC 20 02 00 00        sub      esp, 0x220
+file=0x00087825  VA=0x10088425  53                       push     ebx
+file=0x00087826  VA=0x10088426  56                       push     esi
+file=0x00087827  VA=0x10088427  8B 75 08                 mov      esi, dword ptr [ebp + 8]
+file=0x0008782A  VA=0x1008842A  8B 06                    mov      eax, dword ptr [esi]
+file=0x0008782C  VA=0x1008842C  8B 40 10                 mov      eax, dword ptr [eax + 0x10]
+file=0x0008782F  VA=0x1008842F  57                       push     edi
+file=0x00087830  VA=0x10088430  51                       push     ecx
+file=0x00087831  VA=0x10088431  52                       push     edx
+file=0x00087832  VA=0x10088432  8B CE                    mov      ecx, esi
+file=0x00087834  VA=0x10088434  FF D0                    call     eax
+file=0x00087836  VA=0x10088436  A1 A4 73 1D 10           mov      eax, dword ptr [0x101d73a4]
+file=0x0008783B  VA=0x1008843B  8B 0D 88 0F 1C 10        mov      ecx, dword ptr [0x101c0f88]
+file=0x00087841  VA=0x10088441  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087843  VA=0x10088443  8B 52 10                 mov      edx, dword ptr [edx + 0x10]
+file=0x00087846  VA=0x10088446  50                       push     eax
+file=0x00087847  VA=0x10088447  51                       push     ecx
+file=0x00087848  VA=0x10088448  8B CE                    mov      ecx, esi
+file=0x0008784A  VA=0x1008844A  FF D2                    call     edx
+file=0x0008784C  VA=0x1008844C  A1 A4 73 1D 10           mov      eax, dword ptr [0x101d73a4]
+file=0x00087851  VA=0x10088451  33 FF                    xor      edi, edi
+file=0x00087853  VA=0x10088453  3B C7                    cmp      eax, edi
+file=0x00087855  VA=0x10088455  0F 85 2D 06 00 00        jne      0x10088a88
+file=0x0008785B  VA=0x1008845B  E8 80 D4 08 00           call     0x101158e0
+file=0x00087860  VA=0x10088460  8B 10                    mov      edx, dword ptr [eax]
+file=0x00087862  VA=0x10088462  8B C8                    mov      ecx, eax
+file=0x00087864  VA=0x10088464  8B 42 18                 mov      eax, dword ptr [edx + 0x18]
+file=0x00087867  VA=0x10088467  68 11 4B D8 0E           push     0xed84b11
+file=0x0008786C  VA=0x1008846C  FF D0                    call     eax
+file=0x0008786E  VA=0x1008846E  3B C7                    cmp      eax, edi
+file=0x00087870  VA=0x10088470  74 10                    je       0x10088482
+file=0x00087872  VA=0x10088472  8B 10                    mov      edx, dword ptr [eax]
+file=0x00087874  VA=0x10088474  8B C8                    mov      ecx, eax
+file=0x00087876  VA=0x10088476  8B 42 0C                 mov      eax, dword ptr [edx + 0xc]
+file=0x00087879  VA=0x10088479  68 12 4B D8 0E           push     0xed84b12
+file=0x0008787E  VA=0x1008847E  FF D0                    call     eax
+file=0x00087880  VA=0x10088480  8B F8                    mov      edi, eax
+file=0x00087882  VA=0x10088482  8B 17                    mov      edx, dword ptr [edi]
+file=0x00087884  VA=0x10088484  8B 82 C4 01 00 00        mov      eax, dword ptr [edx + 0x1c4]
+file=0x0008788A  VA=0x1008848A  8B CF                    mov      ecx, edi
+file=0x0008788C  VA=0x1008848C  89 7D FC                 mov      dword ptr [ebp - 4], edi
+file=0x0008788F  VA=0x1008848F  FF D0                    call     eax
+file=0x00087891  VA=0x10088491  8B 17                    mov      edx, dword ptr [edi]
+file=0x00087893  VA=0x10088493  8B 82 A4 01 00 00        mov      eax, dword ptr [edx + 0x1a4]
+file=0x00087899  VA=0x10088499  8B CF                    mov      ecx, edi
+file=0x0008789B  VA=0x1008849B  FF D0                    call     eax
+file=0x0008789D  VA=0x1008849D  8B 17                    mov      edx, dword ptr [edi]
+file=0x0008789F  VA=0x1008849F  89 45 08                 mov      dword ptr [ebp + 8], eax
+file=0x000878A2  VA=0x100884A2  8B 82 E4 00 00 00        mov      eax, dword ptr [edx + 0xe4]
+file=0x000878A8  VA=0x100884A8  8B CF                    mov      ecx, edi
+file=0x000878AA  VA=0x100884AA  FF D0                    call     eax
+file=0x000878AC  VA=0x100884AC  8B 16                    mov      edx, dword ptr [esi]
+file=0x000878AE  VA=0x100884AE  8A D8                    mov      bl, al
+file=0x000878B0  VA=0x100884B0  8B 42 50                 mov      eax, dword ptr [edx + 0x50]
+file=0x000878B3  VA=0x100884B3  8B CE                    mov      ecx, esi
+file=0x000878B5  VA=0x100884B5  84 DB                    test     bl, bl
+file=0x000878B7  VA=0x100884B7  74 09                    je       0x100884c2
+file=0x000878B9  VA=0x100884B9  BF 01 00 00 00           mov      edi, 1
+file=0x000878BE  VA=0x100884BE  6A 02                    push     2
+file=0x000878C0  VA=0x100884C0  EB 12                    jmp      0x100884d4
+file=0x000878C2  VA=0x100884C2  6A 00                    push     0
+file=0x000878C4  VA=0x100884C4  BF 02 00 00 00           mov      edi, 2
+file=0x000878C9  VA=0x100884C9  FF D0                    call     eax
+file=0x000878CB  VA=0x100884CB  8B 16                    mov      edx, dword ptr [esi]
+file=0x000878CD  VA=0x100884CD  8B 42 50                 mov      eax, dword ptr [edx + 0x50]
+file=0x000878D0  VA=0x100884D0  6A 01                    push     1
+file=0x000878D2  VA=0x100884D2  8B CE                    mov      ecx, esi
+file=0x000878D4  VA=0x100884D4  FF D0                    call     eax
+file=0x000878D6  VA=0x100884D6  8B 4D 08                 mov      ecx, dword ptr [ebp + 8]
+file=0x000878D9  VA=0x100884D9  83 79 04 07              cmp      dword ptr [ecx + 4], 7
+file=0x000878DD  VA=0x100884DD  68 09 69 18 10           push     0x10186909
+file=0x000878E2  VA=0x100884E2  8B CE                    mov      ecx, esi
+file=0x000878E4  VA=0x100884E4  0F 84 7C 01 00 00        je       0x10088666
+file=0x000878EA  VA=0x100884EA  8B 16                    mov      edx, dword ptr [esi]
+file=0x000878EC  VA=0x100884EC  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x000878EF  VA=0x100884EF  68 18 89 19 10           push     0x10198918
+file=0x000878F4  VA=0x100884F4  57                       push     edi
+file=0x000878F5  VA=0x100884F5  FF D0                    call     eax
+file=0x000878F7  VA=0x100884F7  8B 16                    mov      edx, dword ptr [esi]
+file=0x000878F9  VA=0x100884F9  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x000878FC  VA=0x100884FC  68 09 69 18 10           push     0x10186909
+file=0x00087901  VA=0x10088501  68 10 89 19 10           push     0x10198910
+file=0x00087906  VA=0x10088506  57                       push     edi
+file=0x00087907  VA=0x10088507  8B CE                    mov      ecx, esi
+file=0x00087909  VA=0x10088509  FF D0                    call     eax
+file=0x0008790B  VA=0x1008850B  8B 4D 08                 mov      ecx, dword ptr [ebp + 8]
+file=0x0008790E  VA=0x1008850E  8B 41 04                 mov      eax, dword ptr [ecx + 4]
+file=0x00087911  VA=0x10088511  A8 01                    test     al, 1
+file=0x00087913  VA=0x10088513  75 6D                    jne      0x10088582
+file=0x00087915  VA=0x10088515  B8 F8 88 19 10           mov      eax, 0x101988f8
+file=0x0008791A  VA=0x1008851A  84 DB                    test     bl, bl
+file=0x0008791C  VA=0x1008851C  75 05                    jne      0x10088523
+file=0x0008791E  VA=0x1008851E  B8 DC 88 19 10           mov      eax, 0x101988dc
+file=0x00087923  VA=0x10088523  8B 15 94 0F 1C 10        mov      edx, dword ptr [0x101c0f94]
+file=0x00087929  VA=0x10088529  50                       push     eax
+file=0x0008792A  VA=0x1008852A  52                       push     edx
+file=0x0008792B  VA=0x1008852B  8D 85 E0 FD FF FF        lea      eax, [ebp - 0x220]
+file=0x00087931  VA=0x10088531  50                       push     eax
+file=0x00087932  VA=0x10088532  E8 69 D5 F8 FF           call     0x10015aa0
+file=0x00087937  VA=0x10088537  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087939  VA=0x10088539  8B 52 28                 mov      edx, dword ptr [edx + 0x28]
+file=0x0008793C  VA=0x1008853C  83 C4 0C                 add      esp, 0xc
+file=0x0008793F  VA=0x1008853F  8D 85 E0 FD FF FF        lea      eax, [ebp - 0x220]
+file=0x00087945  VA=0x10088545  50                       push     eax
+file=0x00087946  VA=0x10088546  68 70 6D 19 10           push     0x10196d70
+file=0x0008794B  VA=0x1008854B  57                       push     edi
+file=0x0008794C  VA=0x1008854C  8B CE                    mov      ecx, esi
+file=0x0008794E  VA=0x1008854E  FF D2                    call     edx
+file=0x00087950  VA=0x10088550  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087952  VA=0x10088552  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087955  VA=0x10088555  68 09 69 18 10           push     0x10186909
+file=0x0008795A  VA=0x1008855A  68 64 6D 19 10           push     0x10196d64
+file=0x0008795F  VA=0x1008855F  57                       push     edi
+file=0x00087960  VA=0x10088560  8B CE                    mov      ecx, esi
+file=0x00087962  VA=0x10088562  FF D2                    call     edx
+file=0x00087964  VA=0x10088564  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087966  VA=0x10088566  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087969  VA=0x10088569  68 C0 88 19 10           push     0x101988c0
+file=0x0008796E  VA=0x1008856E  68 90 6D 19 10           push     0x10196d90
+file=0x00087973  VA=0x10088573  57                       push     edi
+file=0x00087974  VA=0x10088574  8B CE                    mov      ecx, esi
+file=0x00087976  VA=0x10088576  FF D2                    call     edx
+file=0x00087978  VA=0x10088578  68 2C 82 19 10           push     0x1019822c
+file=0x0008797D  VA=0x1008857D  E9 D9 04 00 00           jmp      0x10088a5b
+file=0x00087982  VA=0x10088582  A8 02                    test     al, 2
+file=0x00087984  VA=0x10088584  75 6C                    jne      0x100885f2
+file=0x00087986  VA=0x10088586  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087988  VA=0x10088588  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x0008798B  VA=0x1008858B  68 A8 88 19 10           push     0x101988a8
+file=0x00087990  VA=0x10088590  68 90 6D 19 10           push     0x10196d90
+file=0x00087995  VA=0x10088595  57                       push     edi
+file=0x00087996  VA=0x10088596  8B CE                    mov      ecx, esi
+file=0x00087998  VA=0x10088598  FF D2                    call     edx
+file=0x0008799A  VA=0x1008859A  B8 90 88 19 10           mov      eax, 0x10198890
+file=0x0008799F  VA=0x1008859F  84 DB                    test     bl, bl
+file=0x000879A1  VA=0x100885A1  75 05                    jne      0x100885a8
+file=0x000879A3  VA=0x100885A3  B8 78 88 19 10           mov      eax, 0x10198878
+file=0x000879A8  VA=0x100885A8  50                       push     eax
+file=0x000879A9  VA=0x100885A9  A1 94 0F 1C 10           mov      eax, dword ptr [0x101c0f94]
+file=0x000879AE  VA=0x100885AE  50                       push     eax
+file=0x000879AF  VA=0x100885AF  8D 8D E0 FD FF FF        lea      ecx, [ebp - 0x220]
+file=0x000879B5  VA=0x100885B5  51                       push     ecx
+file=0x000879B6  VA=0x100885B6  E8 E5 D4 F8 FF           call     0x10015aa0
+file=0x000879BB  VA=0x100885BB  8B 16                    mov      edx, dword ptr [esi]
+file=0x000879BD  VA=0x100885BD  8B 52 28                 mov      edx, dword ptr [edx + 0x28]
+file=0x000879C0  VA=0x100885C0  83 C4 0C                 add      esp, 0xc
+file=0x000879C3  VA=0x100885C3  8D 85 E0 FD FF FF        lea      eax, [ebp - 0x220]
+file=0x000879C9  VA=0x100885C9  50                       push     eax
+file=0x000879CA  VA=0x100885CA  68 70 6D 19 10           push     0x10196d70
+file=0x000879CF  VA=0x100885CF  57                       push     edi
+file=0x000879D0  VA=0x100885D0  8B CE                    mov      ecx, esi
+file=0x000879D2  VA=0x100885D2  FF D2                    call     edx
+file=0x000879D4  VA=0x100885D4  8B 06                    mov      eax, dword ptr [esi]
+file=0x000879D6  VA=0x100885D6  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x000879D9  VA=0x100885D9  68 09 69 18 10           push     0x10186909
+file=0x000879DE  VA=0x100885DE  68 64 6D 19 10           push     0x10196d64
+file=0x000879E3  VA=0x100885E3  57                       push     edi
+file=0x000879E4  VA=0x100885E4  8B CE                    mov      ecx, esi
+file=0x000879E6  VA=0x100885E6  FF D2                    call     edx
+file=0x000879E8  VA=0x100885E8  68 C4 7D 19 10           push     0x10197dc4
+file=0x000879ED  VA=0x100885ED  E9 69 04 00 00           jmp      0x10088a5b
+file=0x000879F2  VA=0x100885F2  A8 04                    test     al, 4
+file=0x000879F4  VA=0x100885F4  0F 85 70 04 00 00        jne      0x10088a6a
+file=0x000879FA  VA=0x100885FA  8B 06                    mov      eax, dword ptr [esi]
+file=0x000879FC  VA=0x100885FC  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x000879FF  VA=0x100885FF  68 60 88 19 10           push     0x10198860
+file=0x00087A04  VA=0x10088604  68 90 6D 19 10           push     0x10196d90
+file=0x00087A09  VA=0x10088609  57                       push     edi
+file=0x00087A0A  VA=0x1008860A  8B CE                    mov      ecx, esi
+file=0x00087A0C  VA=0x1008860C  FF D2                    call     edx
+file=0x00087A0E  VA=0x1008860E  B8 4C 88 19 10           mov      eax, 0x1019884c
+file=0x00087A13  VA=0x10088613  84 DB                    test     bl, bl
+file=0x00087A15  VA=0x10088615  75 05                    jne      0x1008861c
+file=0x00087A17  VA=0x10088617  B8 34 88 19 10           mov      eax, 0x10198834
+file=0x00087A1C  VA=0x1008861C  50                       push     eax
+file=0x00087A1D  VA=0x1008861D  A1 94 0F 1C 10           mov      eax, dword ptr [0x101c0f94]
+file=0x00087A22  VA=0x10088622  50                       push     eax
+file=0x00087A23  VA=0x10088623  8D 8D E0 FD FF FF        lea      ecx, [ebp - 0x220]
+file=0x00087A29  VA=0x10088629  51                       push     ecx
+file=0x00087A2A  VA=0x1008862A  E8 71 D4 F8 FF           call     0x10015aa0
+file=0x00087A2F  VA=0x1008862F  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087A31  VA=0x10088631  8B 52 28                 mov      edx, dword ptr [edx + 0x28]
+file=0x00087A34  VA=0x10088634  83 C4 0C                 add      esp, 0xc
+file=0x00087A37  VA=0x10088637  8D 85 E0 FD FF FF        lea      eax, [ebp - 0x220]
+file=0x00087A3D  VA=0x1008863D  50                       push     eax
+file=0x00087A3E  VA=0x1008863E  68 70 6D 19 10           push     0x10196d70
+file=0x00087A43  VA=0x10088643  57                       push     edi
+file=0x00087A44  VA=0x10088644  8B CE                    mov      ecx, esi
+file=0x00087A46  VA=0x10088646  FF D2                    call     edx
+file=0x00087A48  VA=0x10088648  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087A4A  VA=0x1008864A  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087A4D  VA=0x1008864D  68 09 69 18 10           push     0x10186909
+file=0x00087A52  VA=0x10088652  68 64 6D 19 10           push     0x10196d64
+file=0x00087A57  VA=0x10088657  57                       push     edi
+file=0x00087A58  VA=0x10088658  8B CE                    mov      ecx, esi
+file=0x00087A5A  VA=0x1008865A  FF D2                    call     edx
+file=0x00087A5C  VA=0x1008865C  68 DC 82 19 10           push     0x101982dc
+file=0x00087A61  VA=0x10088661  E9 F5 03 00 00           jmp      0x10088a5b
+file=0x00087A66  VA=0x10088666  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087A68  VA=0x10088668  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087A6B  VA=0x1008866B  68 2C 88 19 10           push     0x1019882c
+file=0x00087A70  VA=0x10088670  57                       push     edi
+file=0x00087A71  VA=0x10088671  FF D2                    call     edx
+file=0x00087A73  VA=0x10088673  8B 45 08                 mov      eax, dword ptr [ebp + 8]
+file=0x00087A76  VA=0x10088676  8B 00                    mov      eax, dword ptr [eax]
+file=0x00087A78  VA=0x10088678  83 C0 FE                 add      eax, -2
+file=0x00087A7B  VA=0x1008867B  83 F8 05                 cmp      eax, 5
+file=0x00087A7E  VA=0x1008867E  0F 87 1D 03 00 00        ja       0x100889a1
+file=0x00087A84  VA=0x10088684  FF 24 85 D8 8B 08 10     jmp      dword ptr [eax*4 + 0x10088bd8]
+file=0x00087A8B  VA=0x1008868B  B8 14 88 19 10           mov      eax, 0x10198814
+file=0x00087A90  VA=0x10088690  84 DB                    test     bl, bl
+file=0x00087A92  VA=0x10088692  75 05                    jne      0x10088699
+file=0x00087A94  VA=0x10088694  B8 FC 87 19 10           mov      eax, 0x101987fc
+file=0x00087A99  VA=0x10088699  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087A9B  VA=0x1008869B  50                       push     eax
+file=0x00087A9C  VA=0x1008869C  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087A9F  VA=0x1008869F  68 90 6D 19 10           push     0x10196d90
+file=0x00087AA4  VA=0x100886A4  57                       push     edi
+file=0x00087AA5  VA=0x100886A5  8B CE                    mov      ecx, esi
+file=0x00087AA7  VA=0x100886A7  FF D0                    call     eax
+file=0x00087AA9  VA=0x100886A9  B8 09 69 18 10           mov      eax, 0x10186909
+file=0x00087AAE  VA=0x100886AE  84 DB                    test     bl, bl
+file=0x00087AB0  VA=0x100886B0  75 05                    jne      0x100886b7
+file=0x00087AB2  VA=0x100886B2  B8 E4 87 19 10           mov      eax, 0x101987e4
+file=0x00087AB7  VA=0x100886B7  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087AB9  VA=0x100886B9  50                       push     eax
+file=0x00087ABA  VA=0x100886BA  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087ABD  VA=0x100886BD  68 78 80 19 10           push     0x10198078
+file=0x00087AC2  VA=0x100886C2  57                       push     edi
+file=0x00087AC3  VA=0x100886C3  8B CE                    mov      ecx, esi
+file=0x00087AC5  VA=0x100886C5  FF D0                    call     eax
+file=0x00087AC7  VA=0x100886C7  84 DB                    test     bl, bl
+file=0x00087AC9  VA=0x100886C9  74 2F                    je       0x100886fa
+file=0x00087ACB  VA=0x100886CB  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087ACD  VA=0x100886CD  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087AD0  VA=0x100886D0  68 D4 87 19 10           push     0x101987d4
+file=0x00087AD5  VA=0x100886D5  68 2C 88 19 10           push     0x1019882c
+file=0x00087ADA  VA=0x100886DA  57                       push     edi
+file=0x00087ADB  VA=0x100886DB  8B CE                    mov      ecx, esi
+file=0x00087ADD  VA=0x100886DD  FF D0                    call     eax
+file=0x00087ADF  VA=0x100886DF  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087AE1  VA=0x100886E1  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087AE4  VA=0x100886E4  68 09 69 18 10           push     0x10186909
+file=0x00087AE9  VA=0x100886E9  68 10 89 19 10           push     0x10198910
+file=0x00087AEE  VA=0x100886EE  57                       push     edi
+file=0x00087AEF  VA=0x100886EF  8B CE                    mov      ecx, esi
+file=0x00087AF1  VA=0x100886F1  FF D0                    call     eax
+file=0x00087AF3  VA=0x100886F3  B8 C0 87 19 10           mov      eax, 0x101987c0
+file=0x00087AF8  VA=0x100886F8  EB 05                    jmp      0x100886ff
+file=0x00087AFA  VA=0x100886FA  B8 AC 87 19 10           mov      eax, 0x101987ac
+file=0x00087AFF  VA=0x100886FF  8B 0D 94 0F 1C 10        mov      ecx, dword ptr [0x101c0f94]
+file=0x00087B05  VA=0x10088705  50                       push     eax
+file=0x00087B06  VA=0x10088706  51                       push     ecx
+file=0x00087B07  VA=0x10088707  8D 95 E0 FD FF FF        lea      edx, [ebp - 0x220]
+file=0x00087B0D  VA=0x1008870D  52                       push     edx
+file=0x00087B0E  VA=0x1008870E  E8 8D D3 F8 FF           call     0x10015aa0
+file=0x00087B13  VA=0x10088713  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087B15  VA=0x10088715  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087B18  VA=0x10088718  83 C4 0C                 add      esp, 0xc
+file=0x00087B1B  VA=0x1008871B  8D 8D E0 FD FF FF        lea      ecx, [ebp - 0x220]
+file=0x00087B21  VA=0x10088721  51                       push     ecx
+file=0x00087B22  VA=0x10088722  68 70 6D 19 10           push     0x10196d70
+file=0x00087B27  VA=0x10088727  57                       push     edi
+file=0x00087B28  VA=0x10088728  8B CE                    mov      ecx, esi
+file=0x00087B2A  VA=0x1008872A  FF D2                    call     edx
+file=0x00087B2C  VA=0x1008872C  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087B2E  VA=0x1008872E  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087B31  VA=0x10088731  68 09 69 18 10           push     0x10186909
+file=0x00087B36  VA=0x10088736  68 64 6D 19 10           push     0x10196d64
+file=0x00087B3B  VA=0x1008873B  57                       push     edi
+file=0x00087B3C  VA=0x1008873C  8B CE                    mov      ecx, esi
+file=0x00087B3E  VA=0x1008873E  FF D2                    call     edx
+file=0x00087B40  VA=0x10088740  68 0C 83 19 10           push     0x1019830c
+file=0x00087B45  VA=0x10088745  E9 11 03 00 00           jmp      0x10088a5b
+file=0x00087B4A  VA=0x1008874A  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087B4C  VA=0x1008874C  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087B4F  VA=0x1008874F  68 9C 87 19 10           push     0x1019879c
+file=0x00087B54  VA=0x10088754  68 90 6D 19 10           push     0x10196d90
+file=0x00087B59  VA=0x10088759  57                       push     edi
+file=0x00087B5A  VA=0x1008875A  8B CE                    mov      ecx, esi
+file=0x00087B5C  VA=0x1008875C  FF D2                    call     edx
+file=0x00087B5E  VA=0x1008875E  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087B60  VA=0x10088760  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087B63  VA=0x10088763  68 09 69 18 10           push     0x10186909
+file=0x00087B68  VA=0x10088768  68 78 80 19 10           push     0x10198078
+file=0x00087B6D  VA=0x1008876D  57                       push     edi
+file=0x00087B6E  VA=0x1008876E  8B CE                    mov      ecx, esi
+file=0x00087B70  VA=0x10088770  FF D2                    call     edx
+file=0x00087B72  VA=0x10088772  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087B74  VA=0x10088774  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087B77  VA=0x10088777  68 D4 87 19 10           push     0x101987d4
+file=0x00087B7C  VA=0x1008877C  68 2C 88 19 10           push     0x1019882c
+file=0x00087B81  VA=0x10088781  57                       push     edi
+file=0x00087B82  VA=0x10088782  8B CE                    mov      ecx, esi
+file=0x00087B84  VA=0x10088784  FF D2                    call     edx
+file=0x00087B86  VA=0x10088786  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087B88  VA=0x10088788  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087B8B  VA=0x1008878B  68 09 69 18 10           push     0x10186909
+file=0x00087B90  VA=0x10088790  68 10 89 19 10           push     0x10198910
+file=0x00087B95  VA=0x10088795  57                       push     edi
+file=0x00087B96  VA=0x10088796  8B CE                    mov      ecx, esi
+file=0x00087B98  VA=0x10088798  FF D2                    call     edx
+file=0x00087B9A  VA=0x1008879A  B8 90 87 19 10           mov      eax, 0x10198790
+file=0x00087B9F  VA=0x1008879F  84 DB                    test     bl, bl
+file=0x00087BA1  VA=0x100887A1  75 05                    jne      0x100887a8
+file=0x00087BA3  VA=0x100887A3  B8 84 87 19 10           mov      eax, 0x10198784
+file=0x00087BA8  VA=0x100887A8  50                       push     eax
+file=0x00087BA9  VA=0x100887A9  A1 94 0F 1C 10           mov      eax, dword ptr [0x101c0f94]
+file=0x00087BAE  VA=0x100887AE  50                       push     eax
+file=0x00087BAF  VA=0x100887AF  8D 8D E0 FD FF FF        lea      ecx, [ebp - 0x220]
+file=0x00087BB5  VA=0x100887B5  51                       push     ecx
+file=0x00087BB6  VA=0x100887B6  E8 E5 D2 F8 FF           call     0x10015aa0
+file=0x00087BBB  VA=0x100887BB  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087BBD  VA=0x100887BD  8B 52 28                 mov      edx, dword ptr [edx + 0x28]
+file=0x00087BC0  VA=0x100887C0  83 C4 0C                 add      esp, 0xc
+file=0x00087BC3  VA=0x100887C3  8D 85 E0 FD FF FF        lea      eax, [ebp - 0x220]
+file=0x00087BC9  VA=0x100887C9  50                       push     eax
+file=0x00087BCA  VA=0x100887CA  68 70 6D 19 10           push     0x10196d70
+file=0x00087BCF  VA=0x100887CF  57                       push     edi
+file=0x00087BD0  VA=0x100887D0  8B CE                    mov      ecx, esi
+file=0x00087BD2  VA=0x100887D2  FF D2                    call     edx
+file=0x00087BD4  VA=0x100887D4  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087BD6  VA=0x100887D6  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087BD9  VA=0x100887D9  68 09 69 18 10           push     0x10186909
+file=0x00087BDE  VA=0x100887DE  68 64 6D 19 10           push     0x10196d64
+file=0x00087BE3  VA=0x100887E3  57                       push     edi
+file=0x00087BE4  VA=0x100887E4  8B CE                    mov      ecx, esi
+file=0x00087BE6  VA=0x100887E6  FF D2                    call     edx
+file=0x00087BE8  VA=0x100887E8  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087BEA  VA=0x100887EA  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087BED  VA=0x100887ED  68 44 87 19 10           push     0x10198744
+file=0x00087BF2  VA=0x100887F2  68 38 87 19 10           push     0x10198738
+file=0x00087BF7  VA=0x100887F7  57                       push     edi
+file=0x00087BF8  VA=0x100887F8  8B CE                    mov      ecx, esi
+file=0x00087BFA  VA=0x100887FA  FF D2                    call     edx
+file=0x00087BFC  VA=0x100887FC  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087BFE  VA=0x100887FE  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087C01  VA=0x10088801  68 C8 82 19 10           push     0x101982c8
+file=0x00087C06  VA=0x10088806  68 6C 10 19 10           push     0x1019106c
+file=0x00087C0B  VA=0x1008880B  57                       push     edi
+file=0x00087C0C  VA=0x1008880C  8B CE                    mov      ecx, esi
+file=0x00087C0E  VA=0x1008880E  FF D2                    call     edx
+file=0x00087C10  VA=0x10088810  B8 28 87 19 10           mov      eax, 0x10198728
+file=0x00087C15  VA=0x10088815  84 DB                    test     bl, bl
+file=0x00087C17  VA=0x10088817  75 05                    jne      0x1008881e
+file=0x00087C19  VA=0x10088819  B8 1C 87 19 10           mov      eax, 0x1019871c
+file=0x00087C1E  VA=0x1008881E  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087C20  VA=0x10088820  50                       push     eax
+file=0x00087C21  VA=0x10088821  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087C24  VA=0x10088824  68 14 87 19 10           push     0x10198714
+file=0x00087C29  VA=0x10088829  57                       push     edi
+file=0x00087C2A  VA=0x1008882A  8B CE                    mov      ecx, esi
+file=0x00087C2C  VA=0x1008882C  FF D0                    call     eax
+file=0x00087C2E  VA=0x1008882E  8B 4D FC                 mov      ecx, dword ptr [ebp - 4]
+file=0x00087C31  VA=0x10088831  8B 01                    mov      eax, dword ptr [ecx]
+file=0x00087C33  VA=0x10088833  8B 50 04                 mov      edx, dword ptr [eax + 4]
+file=0x00087C36  VA=0x10088836  FF D2                    call     edx
+file=0x00087C38  VA=0x10088838  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087C3A  VA=0x1008883A  8B 42 68                 mov      eax, dword ptr [edx + 0x68]
+file=0x00087C3D  VA=0x1008883D  6A 01                    push     1
+file=0x00087C3F  VA=0x1008883F  8B CE                    mov      ecx, esi
+file=0x00087C41  VA=0x10088841  FF D0                    call     eax
+file=0x00087C43  VA=0x10088843  5F                       pop      edi
+file=0x00087C44  VA=0x10088844  5E                       pop      esi
+file=0x00087C45  VA=0x10088845  5B                       pop      ebx
+file=0x00087C46  VA=0x10088846  8B E5                    mov      esp, ebp
+file=0x00087C48  VA=0x10088848  5D                       pop      ebp
+file=0x00087C49  VA=0x10088849  C2 04 00                 ret      4
+file=0x00087C4C  VA=0x1008884C  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087C4E  VA=0x1008884E  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087C51  VA=0x10088851  68 F8 86 19 10           push     0x101986f8
+file=0x00087C56  VA=0x10088856  68 90 6D 19 10           push     0x10196d90
+file=0x00087C5B  VA=0x1008885B  57                       push     edi
+file=0x00087C5C  VA=0x1008885C  8B CE                    mov      ecx, esi
+file=0x00087C5E  VA=0x1008885E  FF D0                    call     eax
+file=0x00087C60  VA=0x10088860  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087C62  VA=0x10088862  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087C65  VA=0x10088865  68 DC 86 19 10           push     0x101986dc
+file=0x00087C6A  VA=0x1008886A  68 78 80 19 10           push     0x10198078
+file=0x00087C6F  VA=0x1008886F  57                       push     edi
+file=0x00087C70  VA=0x10088870  8B CE                    mov      ecx, esi
+file=0x00087C72  VA=0x10088872  FF D0                    call     eax
+file=0x00087C74  VA=0x10088874  84 DB                    test     bl, bl
+file=0x00087C76  VA=0x10088876  74 2F                    je       0x100888a7
+file=0x00087C78  VA=0x10088878  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087C7A  VA=0x1008887A  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087C7D  VA=0x1008887D  68 09 69 18 10           push     0x10186909
+file=0x00087C82  VA=0x10088882  68 2C 88 19 10           push     0x1019882c
+file=0x00087C87  VA=0x10088887  57                       push     edi
+file=0x00087C88  VA=0x10088888  8B CE                    mov      ecx, esi
+file=0x00087C8A  VA=0x1008888A  FF D0                    call     eax
+file=0x00087C8C  VA=0x1008888C  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087C8E  VA=0x1008888E  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087C91  VA=0x10088891  68 D4 87 19 10           push     0x101987d4
+file=0x00087C96  VA=0x10088896  68 10 89 19 10           push     0x10198910
+file=0x00087C9B  VA=0x1008889B  57                       push     edi
+file=0x00087C9C  VA=0x1008889C  8B CE                    mov      ecx, esi
+file=0x00087C9E  VA=0x1008889E  FF D0                    call     eax
+file=0x00087CA0  VA=0x100888A0  B8 C0 86 19 10           mov      eax, 0x101986c0
+file=0x00087CA5  VA=0x100888A5  EB 05                    jmp      0x100888ac
+file=0x00087CA7  VA=0x100888A7  B8 A8 86 19 10           mov      eax, 0x101986a8
+file=0x00087CAC  VA=0x100888AC  8B 0D 94 0F 1C 10        mov      ecx, dword ptr [0x101c0f94]
+file=0x00087CB2  VA=0x100888B2  50                       push     eax
+file=0x00087CB3  VA=0x100888B3  51                       push     ecx
+file=0x00087CB4  VA=0x100888B4  8D 95 E0 FD FF FF        lea      edx, [ebp - 0x220]
+file=0x00087CBA  VA=0x100888BA  52                       push     edx
+file=0x00087CBB  VA=0x100888BB  E8 E0 D1 F8 FF           call     0x10015aa0
+file=0x00087CC0  VA=0x100888C0  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087CC2  VA=0x100888C2  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087CC5  VA=0x100888C5  83 C4 0C                 add      esp, 0xc
+file=0x00087CC8  VA=0x100888C8  8D 8D E0 FD FF FF        lea      ecx, [ebp - 0x220]
+file=0x00087CCE  VA=0x100888CE  51                       push     ecx
+file=0x00087CCF  VA=0x100888CF  68 70 6D 19 10           push     0x10196d70
+file=0x00087CD4  VA=0x100888D4  57                       push     edi
+file=0x00087CD5  VA=0x100888D5  8B CE                    mov      ecx, esi
+file=0x00087CD7  VA=0x100888D7  FF D2                    call     edx
+file=0x00087CD9  VA=0x100888D9  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087CDB  VA=0x100888DB  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087CDE  VA=0x100888DE  68 09 69 18 10           push     0x10186909
+file=0x00087CE3  VA=0x100888E3  68 64 6D 19 10           push     0x10196d64
+file=0x00087CE8  VA=0x100888E8  57                       push     edi
+file=0x00087CE9  VA=0x100888E9  8B CE                    mov      ecx, esi
+file=0x00087CEB  VA=0x100888EB  FF D2                    call     edx
+file=0x00087CED  VA=0x100888ED  68 10 7E 19 10           push     0x10197e10
+file=0x00087CF2  VA=0x100888F2  E9 64 01 00 00           jmp      0x10088a5b
+file=0x00087CF7  VA=0x100888F7  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087CF9  VA=0x100888F9  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087CFC  VA=0x100888FC  68 8C 86 19 10           push     0x1019868c
+file=0x00087D01  VA=0x10088901  68 90 6D 19 10           push     0x10196d90
+file=0x00087D06  VA=0x10088906  57                       push     edi
+file=0x00087D07  VA=0x10088907  8B CE                    mov      ecx, esi
+file=0x00087D09  VA=0x10088909  FF D2                    call     edx
+file=0x00087D0B  VA=0x1008890B  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087D0D  VA=0x1008890D  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087D10  VA=0x10088910  68 70 86 19 10           push     0x10198670
+file=0x00087D15  VA=0x10088915  68 78 80 19 10           push     0x10198078
+file=0x00087D1A  VA=0x1008891A  57                       push     edi
+file=0x00087D1B  VA=0x1008891B  8B CE                    mov      ecx, esi
+file=0x00087D1D  VA=0x1008891D  FF D2                    call     edx
+file=0x00087D1F  VA=0x1008891F  84 DB                    test     bl, bl
+file=0x00087D21  VA=0x10088921  74 2F                    je       0x10088952
+file=0x00087D23  VA=0x10088923  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087D25  VA=0x10088925  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087D28  VA=0x10088928  68 09 69 18 10           push     0x10186909
+file=0x00087D2D  VA=0x1008892D  68 2C 88 19 10           push     0x1019882c
+file=0x00087D32  VA=0x10088932  57                       push     edi
+file=0x00087D33  VA=0x10088933  8B CE                    mov      ecx, esi
+file=0x00087D35  VA=0x10088935  FF D2                    call     edx
+file=0x00087D37  VA=0x10088937  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087D39  VA=0x10088939  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087D3C  VA=0x1008893C  68 D4 87 19 10           push     0x101987d4
+file=0x00087D41  VA=0x10088941  68 10 89 19 10           push     0x10198910
+file=0x00087D46  VA=0x10088946  57                       push     edi
+file=0x00087D47  VA=0x10088947  8B CE                    mov      ecx, esi
+file=0x00087D49  VA=0x10088949  FF D2                    call     edx
+file=0x00087D4B  VA=0x1008894B  B8 58 86 19 10           mov      eax, 0x10198658
+file=0x00087D50  VA=0x10088950  EB 05                    jmp      0x10088957
+file=0x00087D52  VA=0x10088952  B8 40 86 19 10           mov      eax, 0x10198640
+file=0x00087D57  VA=0x10088957  50                       push     eax
+file=0x00087D58  VA=0x10088958  A1 94 0F 1C 10           mov      eax, dword ptr [0x101c0f94]
+file=0x00087D5D  VA=0x1008895D  50                       push     eax
+file=0x00087D5E  VA=0x1008895E  8D 8D E0 FD FF FF        lea      ecx, [ebp - 0x220]
+file=0x00087D64  VA=0x10088964  51                       push     ecx
+file=0x00087D65  VA=0x10088965  E8 36 D1 F8 FF           call     0x10015aa0
+file=0x00087D6A  VA=0x1008896A  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087D6C  VA=0x1008896C  8B 52 28                 mov      edx, dword ptr [edx + 0x28]
+file=0x00087D6F  VA=0x1008896F  83 C4 0C                 add      esp, 0xc
+file=0x00087D72  VA=0x10088972  8D 85 E0 FD FF FF        lea      eax, [ebp - 0x220]
+file=0x00087D78  VA=0x10088978  50                       push     eax
+file=0x00087D79  VA=0x10088979  68 70 6D 19 10           push     0x10196d70
+file=0x00087D7E  VA=0x1008897E  57                       push     edi
+file=0x00087D7F  VA=0x1008897F  8B CE                    mov      ecx, esi
+file=0x00087D81  VA=0x10088981  FF D2                    call     edx
+file=0x00087D83  VA=0x10088983  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087D85  VA=0x10088985  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087D88  VA=0x10088988  68 09 69 18 10           push     0x10186909
+file=0x00087D8D  VA=0x1008898D  68 64 6D 19 10           push     0x10196d64
+file=0x00087D92  VA=0x10088992  57                       push     edi
+file=0x00087D93  VA=0x10088993  8B CE                    mov      ecx, esi
+file=0x00087D95  VA=0x10088995  FF D2                    call     edx
+file=0x00087D97  VA=0x10088997  68 28 7E 19 10           push     0x10197e28
+file=0x00087D9C  VA=0x1008899C  E9 BA 00 00 00           jmp      0x10088a5b
+file=0x00087DA1  VA=0x100889A1  B8 28 86 19 10           mov      eax, 0x10198628
+file=0x00087DA6  VA=0x100889A6  84 DB                    test     bl, bl
+file=0x00087DA8  VA=0x100889A8  75 05                    jne      0x100889af
+file=0x00087DAA  VA=0x100889AA  B8 10 86 19 10           mov      eax, 0x10198610
+file=0x00087DAF  VA=0x100889AF  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087DB1  VA=0x100889B1  50                       push     eax
+file=0x00087DB2  VA=0x100889B2  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087DB5  VA=0x100889B5  68 90 6D 19 10           push     0x10196d90
+file=0x00087DBA  VA=0x100889BA  57                       push     edi
+file=0x00087DBB  VA=0x100889BB  8B CE                    mov      ecx, esi
+file=0x00087DBD  VA=0x100889BD  FF D0                    call     eax
+file=0x00087DBF  VA=0x100889BF  B8 09 69 18 10           mov      eax, 0x10186909
+file=0x00087DC4  VA=0x100889C4  84 DB                    test     bl, bl
+file=0x00087DC6  VA=0x100889C6  75 05                    jne      0x100889cd
+file=0x00087DC8  VA=0x100889C8  B8 F8 85 19 10           mov      eax, 0x101985f8
+file=0x00087DCD  VA=0x100889CD  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087DCF  VA=0x100889CF  50                       push     eax
+file=0x00087DD0  VA=0x100889D0  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087DD3  VA=0x100889D3  68 78 80 19 10           push     0x10198078
+file=0x00087DD8  VA=0x100889D8  57                       push     edi
+file=0x00087DD9  VA=0x100889D9  8B CE                    mov      ecx, esi
+file=0x00087DDB  VA=0x100889DB  FF D0                    call     eax
+file=0x00087DDD  VA=0x100889DD  84 DB                    test     bl, bl
+file=0x00087DDF  VA=0x100889DF  74 2F                    je       0x10088a10
+file=0x00087DE1  VA=0x100889E1  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087DE3  VA=0x100889E3  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087DE6  VA=0x100889E6  68 D4 87 19 10           push     0x101987d4
+file=0x00087DEB  VA=0x100889EB  68 2C 88 19 10           push     0x1019882c
+file=0x00087DF0  VA=0x100889F0  57                       push     edi
+file=0x00087DF1  VA=0x100889F1  8B CE                    mov      ecx, esi
+file=0x00087DF3  VA=0x100889F3  FF D0                    call     eax
+file=0x00087DF5  VA=0x100889F5  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087DF7  VA=0x100889F7  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087DFA  VA=0x100889FA  68 09 69 18 10           push     0x10186909
+file=0x00087DFF  VA=0x100889FF  68 10 89 19 10           push     0x10198910
+file=0x00087E04  VA=0x10088A04  57                       push     edi
+file=0x00087E05  VA=0x10088A05  8B CE                    mov      ecx, esi
+file=0x00087E07  VA=0x10088A07  FF D0                    call     eax
+file=0x00087E09  VA=0x10088A09  B8 E0 85 19 10           mov      eax, 0x101985e0
+file=0x00087E0E  VA=0x10088A0E  EB 05                    jmp      0x10088a15
+file=0x00087E10  VA=0x10088A10  B8 C8 85 19 10           mov      eax, 0x101985c8
+file=0x00087E15  VA=0x10088A15  8B 0D 94 0F 1C 10        mov      ecx, dword ptr [0x101c0f94]
+file=0x00087E1B  VA=0x10088A1B  50                       push     eax
+file=0x00087E1C  VA=0x10088A1C  51                       push     ecx
+file=0x00087E1D  VA=0x10088A1D  8D 95 E0 FD FF FF        lea      edx, [ebp - 0x220]
+file=0x00087E23  VA=0x10088A23  52                       push     edx
+file=0x00087E24  VA=0x10088A24  E8 77 D0 F8 FF           call     0x10015aa0
+file=0x00087E29  VA=0x10088A29  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087E2B  VA=0x10088A2B  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087E2E  VA=0x10088A2E  83 C4 0C                 add      esp, 0xc
+file=0x00087E31  VA=0x10088A31  8D 8D E0 FD FF FF        lea      ecx, [ebp - 0x220]
+file=0x00087E37  VA=0x10088A37  51                       push     ecx
+file=0x00087E38  VA=0x10088A38  68 70 6D 19 10           push     0x10196d70
+file=0x00087E3D  VA=0x10088A3D  57                       push     edi
+file=0x00087E3E  VA=0x10088A3E  8B CE                    mov      ecx, esi
+file=0x00087E40  VA=0x10088A40  FF D2                    call     edx
+file=0x00087E42  VA=0x10088A42  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087E44  VA=0x10088A44  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087E47  VA=0x10088A47  68 09 69 18 10           push     0x10186909
+file=0x00087E4C  VA=0x10088A4C  68 64 6D 19 10           push     0x10196d64
+file=0x00087E51  VA=0x10088A51  57                       push     edi
+file=0x00087E52  VA=0x10088A52  8B CE                    mov      ecx, esi
+file=0x00087E54  VA=0x10088A54  FF D2                    call     edx
+file=0x00087E56  VA=0x10088A56  68 F8 82 19 10           push     0x101982f8
+file=0x00087E5B  VA=0x10088A5B  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087E5D  VA=0x10088A5D  8B 50 28                 mov      edx, dword ptr [eax + 0x28]
+file=0x00087E60  VA=0x10088A60  68 6C 10 19 10           push     0x1019106c
+file=0x00087E65  VA=0x10088A65  57                       push     edi
+file=0x00087E66  VA=0x10088A66  8B CE                    mov      ecx, esi
+file=0x00087E68  VA=0x10088A68  FF D2                    call     edx
+file=0x00087E6A  VA=0x10088A6A  8B 4D FC                 mov      ecx, dword ptr [ebp - 4]
+file=0x00087E6D  VA=0x10088A6D  8B 01                    mov      eax, dword ptr [ecx]
+file=0x00087E6F  VA=0x10088A6F  8B 50 04                 mov      edx, dword ptr [eax + 4]
+file=0x00087E72  VA=0x10088A72  FF D2                    call     edx
+file=0x00087E74  VA=0x10088A74  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087E76  VA=0x10088A76  8B 42 68                 mov      eax, dword ptr [edx + 0x68]
+file=0x00087E79  VA=0x10088A79  6A 01                    push     1
+file=0x00087E7B  VA=0x10088A7B  8B CE                    mov      ecx, esi
+file=0x00087E7D  VA=0x10088A7D  FF D0                    call     eax
+file=0x00087E7F  VA=0x10088A7F  5F                       pop      edi
+file=0x00087E80  VA=0x10088A80  5E                       pop      esi
+file=0x00087E81  VA=0x10088A81  5B                       pop      ebx
+file=0x00087E82  VA=0x10088A82  8B E5                    mov      esp, ebp
+file=0x00087E84  VA=0x10088A84  5D                       pop      ebp
+file=0x00087E85  VA=0x10088A85  C2 04 00                 ret      4
+file=0x00087E88  VA=0x10088A88  83 F8 03                 cmp      eax, 3
+file=0x00087E8B  VA=0x10088A8B  0F 85 30 01 00 00        jne      0x10088bc1
+file=0x00087E91  VA=0x10088A91  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087E93  VA=0x10088A93  8B 50 38                 mov      edx, dword ptr [eax + 0x38]
+file=0x00087E96  VA=0x10088A96  8B CE                    mov      ecx, esi
+file=0x00087E98  VA=0x10088A98  FF D2                    call     edx
+file=0x00087E9A  VA=0x10088A9A  89 45 F4                 mov      dword ptr [ebp - 0xc], eax
+file=0x00087E9D  VA=0x10088A9D  89 7D FC                 mov      dword ptr [ebp - 4], edi
+file=0x00087EA0  VA=0x10088AA0  3B C7                    cmp      eax, edi
+file=0x00087EA2  VA=0x10088AA2  0F 8E 19 01 00 00        jle      0x10088bc1
+file=0x00087EA8  VA=0x10088AA8  8B 4D FC                 mov      ecx, dword ptr [ebp - 4]
+file=0x00087EAB  VA=0x10088AAB  8B 06                    mov      eax, dword ptr [esi]
+file=0x00087EAD  VA=0x10088AAD  8B 50 3C                 mov      edx, dword ptr [eax + 0x3c]
+file=0x00087EB0  VA=0x10088AB0  51                       push     ecx
+file=0x00087EB1  VA=0x10088AB1  8B CE                    mov      ecx, esi
+file=0x00087EB3  VA=0x10088AB3  FF D2                    call     edx
+file=0x00087EB5  VA=0x10088AB5  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087EB7  VA=0x10088AB7  68 6C 10 19 10           push     0x1019106c
+file=0x00087EBC  VA=0x10088ABC  89 45 E0                 mov      dword ptr [ebp - 0x20], eax
+file=0x00087EBF  VA=0x10088ABF  50                       push     eax
+file=0x00087EC0  VA=0x10088AC0  8B 42 48                 mov      eax, dword ptr [edx + 0x48]
+file=0x00087EC3  VA=0x10088AC3  8B CE                    mov      ecx, esi
+file=0x00087EC5  VA=0x10088AC5  FF D0                    call     eax
+file=0x00087EC7  VA=0x10088AC7  8B 78 0C                 mov      edi, dword ptr [eax + 0xc]
+file=0x00087ECA  VA=0x10088ACA  8B 58 14                 mov      ebx, dword ptr [eax + 0x14]
+file=0x00087ECD  VA=0x10088ACD  8B 40 08                 mov      eax, dword ptr [eax + 8]
+file=0x00087ED0  VA=0x10088AD0  8B CF                    mov      ecx, edi
+file=0x00087ED2  VA=0x10088AD2  2B C8                    sub      ecx, eax
+file=0x00087ED4  VA=0x10088AD4  8D 51 01                 lea      edx, [ecx + 1]
+file=0x00087ED7  VA=0x10088AD7  89 5D F0                 mov      dword ptr [ebp - 0x10], ebx
+file=0x00087EDA  VA=0x10088ADA  89 45 F8                 mov      dword ptr [ebp - 8], eax
+file=0x00087EDD  VA=0x10088ADD  89 4D 08                 mov      dword ptr [ebp + 8], ecx
+file=0x00087EE0  VA=0x10088AE0  83 FA 01                 cmp      edx, 1
+file=0x00087EE3  VA=0x10088AE3  76 25                    jbe      0x10088b0a
+file=0x00087EE5  VA=0x10088AE5  6A 00                    push     0
+file=0x00087EE7  VA=0x10088AE7  6A 00                    push     0
+file=0x00087EE9  VA=0x10088AE9  6A 00                    push     0
+file=0x00087EEB  VA=0x10088AEB  6A 00                    push     0
+file=0x00087EED  VA=0x10088AED  53                       push     ebx
+file=0x00087EEE  VA=0x10088AEE  52                       push     edx
+file=0x00087EEF  VA=0x10088AEF  E8 6C 9B F7 FF           call     0x10002660
+file=0x00087EF4  VA=0x10088AF4  8B 4D 08                 mov      ecx, dword ptr [ebp + 8]
+file=0x00087EF7  VA=0x10088AF7  8B D8                    mov      ebx, eax
+file=0x00087EF9  VA=0x10088AF9  8B 45 08                 mov      eax, dword ptr [ebp + 8]
+file=0x00087EFC  VA=0x10088AFC  40                       inc      eax
+file=0x00087EFD  VA=0x10088AFD  83 C4 18                 add      esp, 0x18
+file=0x00087F00  VA=0x10088B00  03 C3                    add      eax, ebx
+file=0x00087F02  VA=0x10088B02  89 45 EC                 mov      dword ptr [ebp - 0x14], eax
+file=0x00087F05  VA=0x10088B05  8B 45 F8                 mov      eax, dword ptr [ebp - 8]
+file=0x00087F08  VA=0x10088B08  EB 0C                    jmp      0x10088b16
+file=0x00087F0A  VA=0x10088B0A  BB 9C 53 1D 10           mov      ebx, 0x101d539c
+file=0x00087F0F  VA=0x10088B0F  C7 45 EC 9D 53 1D 10     mov      dword ptr [ebp - 0x14], 0x101d539d
+file=0x00087F16  VA=0x10088B16  51                       push     ecx
+file=0x00087F17  VA=0x10088B17  50                       push     eax
+file=0x00087F18  VA=0x10088B18  53                       push     ebx
+file=0x00087F19  VA=0x10088B19  89 5D E4                 mov      dword ptr [ebp - 0x1c], ebx
+file=0x00087F1C  VA=0x10088B1C  FF 15 9C 51 18 10        call     dword ptr [0x1018519c]
+file=0x00087F22  VA=0x10088B22  2B 7D F8                 sub      edi, dword ptr [ebp - 8]
+file=0x00087F25  VA=0x10088B25  8D 4D E4                 lea      ecx, [ebp - 0x1c]
+file=0x00087F28  VA=0x10088B28  03 FB                    add      edi, ebx
+file=0x00087F2A  VA=0x10088B2A  68 D8 7D 19 10           push     0x10197dd8
+file=0x00087F2F  VA=0x10088B2F  51                       push     ecx
+file=0x00087F30  VA=0x10088B30  89 7D E8                 mov      dword ptr [ebp - 0x18], edi
+file=0x00087F33  VA=0x10088B33  C6 07 00                 mov      byte ptr [edi], 0
+file=0x00087F36  VA=0x10088B36  E8 A5 DE FF FF           call     0x100869e0
+file=0x00087F3B  VA=0x10088B3B  88 45 0B                 mov      byte ptr [ebp + 0xb], al
+file=0x00087F3E  VA=0x10088B3E  8B 45 EC                 mov      eax, dword ptr [ebp - 0x14]
+file=0x00087F41  VA=0x10088B41  2B C3                    sub      eax, ebx
+file=0x00087F43  VA=0x10088B43  83 C4 14                 add      esp, 0x14
+file=0x00087F46  VA=0x10088B46  83 F8 01                 cmp      eax, 1
+file=0x00087F49  VA=0x10088B49  7E 0D                    jle      0x10088b58
+file=0x00087F4B  VA=0x10088B4B  85 DB                    test     ebx, ebx
+file=0x00087F4D  VA=0x10088B4D  74 09                    je       0x10088b58
+file=0x00087F4F  VA=0x10088B4F  53                       push     ebx
+file=0x00087F50  VA=0x10088B50  E8 9B 9A F7 FF           call     0x100025f0
+file=0x00087F55  VA=0x10088B55  83 C4 04                 add      esp, 4
+file=0x00087F58  VA=0x10088B58  80 7D 0B 00              cmp      byte ptr [ebp + 0xb], 0
+file=0x00087F5C  VA=0x10088B5C  75 24                    jne      0x10088b82
+file=0x00087F5E  VA=0x10088B5E  8B 45 FC                 mov      eax, dword ptr [ebp - 4]
+file=0x00087F61  VA=0x10088B61  40                       inc      eax
+file=0x00087F62  VA=0x10088B62  89 45 FC                 mov      dword ptr [ebp - 4], eax
+file=0x00087F65  VA=0x10088B65  3B 45 F4                 cmp      eax, dword ptr [ebp - 0xc]
+file=0x00087F68  VA=0x10088B68  0F 8C 3A FF FF FF        jl       0x10088aa8
+file=0x00087F6E  VA=0x10088B6E  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087F70  VA=0x10088B70  8B 42 68                 mov      eax, dword ptr [edx + 0x68]
+file=0x00087F73  VA=0x10088B73  6A 01                    push     1
+file=0x00087F75  VA=0x10088B75  8B CE                    mov      ecx, esi
+file=0x00087F77  VA=0x10088B77  FF D0                    call     eax
+file=0x00087F79  VA=0x10088B79  5F                       pop      edi
+file=0x00087F7A  VA=0x10088B7A  5E                       pop      esi
+file=0x00087F7B  VA=0x10088B7B  5B                       pop      ebx
+file=0x00087F7C  VA=0x10088B7C  8B E5                    mov      esp, ebp
+file=0x00087F7E  VA=0x10088B7E  5D                       pop      ebp
+file=0x00087F7F  VA=0x10088B7F  C2 04 00                 ret      4
+file=0x00087F82  VA=0x10088B82  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087F84  VA=0x10088B84  8B 7D E0                 mov      edi, dword ptr [ebp - 0x20]
+file=0x00087F87  VA=0x10088B87  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087F8A  VA=0x10088B8A  68 90 80 19 10           push     0x10198090
+file=0x00087F8F  VA=0x10088B8F  68 90 6D 19 10           push     0x10196d90
+file=0x00087F94  VA=0x10088B94  57                       push     edi
+file=0x00087F95  VA=0x10088B95  8B CE                    mov      ecx, esi
+file=0x00087F97  VA=0x10088B97  FF D0                    call     eax
+file=0x00087F99  VA=0x10088B99  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087F9B  VA=0x10088B9B  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087F9E  VA=0x10088B9E  68 80 80 19 10           push     0x10198080
+file=0x00087FA3  VA=0x10088BA3  68 78 80 19 10           push     0x10198078
+file=0x00087FA8  VA=0x10088BA8  57                       push     edi
+file=0x00087FA9  VA=0x10088BA9  8B CE                    mov      ecx, esi
+file=0x00087FAB  VA=0x10088BAB  FF D0                    call     eax
+file=0x00087FAD  VA=0x10088BAD  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087FAF  VA=0x10088BAF  8B 42 28                 mov      eax, dword ptr [edx + 0x28]
+file=0x00087FB2  VA=0x10088BB2  68 C4 7D 19 10           push     0x10197dc4
+file=0x00087FB7  VA=0x10088BB7  68 6C 10 19 10           push     0x1019106c
+file=0x00087FBC  VA=0x10088BBC  57                       push     edi
+file=0x00087FBD  VA=0x10088BBD  8B CE                    mov      ecx, esi
+file=0x00087FBF  VA=0x10088BBF  FF D0                    call     eax
+file=0x00087FC1  VA=0x10088BC1  8B 16                    mov      edx, dword ptr [esi]
+file=0x00087FC3  VA=0x10088BC3  8B 42 68                 mov      eax, dword ptr [edx + 0x68]
+file=0x00087FC6  VA=0x10088BC6  6A 01                    push     1
+file=0x00087FC8  VA=0x10088BC8  8B CE                    mov      ecx, esi
+file=0x00087FCA  VA=0x10088BCA  FF D0                    call     eax
+file=0x00087FCC  VA=0x10088BCC  5F                       pop      edi
+file=0x00087FCD  VA=0x10088BCD  5E                       pop      esi
+file=0x00087FCE  VA=0x10088BCE  5B                       pop      ebx
+file=0x00087FCF  VA=0x10088BCF  8B E5                    mov      esp, ebp
+file=0x00087FD1  VA=0x10088BD1  5D                       pop      ebp
+file=0x00087FD2  VA=0x10088BD2  C2 04 00                 ret      4
+file=0x00087FD5  VA=0x10088BD5  8D 49 00                 lea      ecx, [ecx]
+file=0x00087FD8  VA=0x10088BD8  8B 86 08 10 A1 89        mov      eax, dword ptr [esi - 0x765eeff8]
+file=0x00087FDE  VA=0x10088BDE  08 10                    or       byte ptr [eax], dl
+file=0x00087FE0  VA=0x10088BE0  F7 88 08 10 4C 88 08 10 A1 89 test     dword ptr [eax - 0x77b3eff8], 0x89a11008
+file=0x00087FEA  VA=0x10088BEA  08 10                    or       byte ptr [eax], dl
+file=0x00087FEC  VA=0x10088BEC  4A                       dec      edx
+file=0x00087FED  VA=0x10088BED  87 08                    xchg     dword ptr [eax], ecx
+file=0x00087FEF  VA=0x10088BEF  10 55 8B                 adc      byte ptr [ebp - 0x75], dl
+file=0x00087FF2  VA=0x10088BF2  EC                       in       al, dx
+file=0x00087FF3  VA=0x10088BF3  56                       push     esi
+file=0x00087FF4  VA=0x10088BF4  8B F1                    mov      esi, ecx
+file=0x00087FF6  VA=0x10088BF6  E8 B5 F6 FF FF           call     0x100882b0
+file=0x00087FFB  VA=0x10088BFB  F6 45 08 01              test     byte ptr [ebp + 8], 1
+file=0x00087FFF  VA=0x10088BFF  74 09                    je       0x10088c0a
+file=0x00088001  VA=0x10088C01  56                       push     esi
+file=0x00088002  VA=0x10088C02  E8 C9 99 F7 FF           call     0x100025d0
+file=0x00088007  VA=0x10088C07  83 C4 04                 add      esp, 4
+file=0x0008800A  VA=0x10088C0A  8B C6                    mov      eax, esi
+file=0x0008800C  VA=0x10088C0C  5E                       pop      esi
+file=0x0008800D  VA=0x10088C0D  5D                       pop      ebp
+
+[DONE]

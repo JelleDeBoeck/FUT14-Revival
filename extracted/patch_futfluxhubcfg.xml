@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<root DATE="TO THE FUTURE!">
+	<hub_settings>
+		<artasset_paths DEFAULT_TAB_ICONPATH="external/ion_fut/artAssets/GameHubTab/GameHubTab_%s.swf" DEFAULT_TILES_IMAGEPATH="external/ion_fut/imgAssets/GameHub/GameHub_%s.dds" />
+		<text_colors DEFAULT_UNHIGHLIGTH_COLOR="6579300" DEFAULT_HIGHLIGHT_COLOR="15132390" DEFAULT_HEADERTEXT_Y="6" DEFAULT_HEADERTEXT_X="10" />
+		<tile_path TILE_PATH="external/ion_fut/components/Tile/FluxTile_Generic.swf" TILE_NAME="TILE_GENERIC" />
+		<tile_path TILE_PATH="external/ion_fut/components/Tile/FluxTile_Nested.swf" TILE_NAME="TILE_NESTED" />
+		<tile_path TILE_PATH="external/ion_fut/components/Tile/MetroPanel_MessageBanner.swf" TILE_NAME="TILE_MESSAGEBANNER" />
+		<tile_path TILE_PATH="external/ion_fut/components/Tile/MetroPanel_HighlightUsingImg.swf" TILE_NAME="TILE_HLUSINGIMG" />
+		<tile_path TILE_PATH="external/ion_fut/components/Tile/FluxTile_HighlightUsing2Img.swf" TILE_NAME="TILE_HLUSING2IMG" />
+		<tile_path TILE_PATH="external/ion_fut/components/Tile/MetroPanel_Starting11.swf" TILE_NAME="TILE_STARTING11" />
+		<tile_path TILE_PATH="external/ion_fut/components/Tile/MetroPanel_TOTWChallenge.swf" TILE_NAME="TILE_TOTW" />
+		<tile_path TILE_PATH="external/ion_fut/components/Tile/MetroPanel_StoreBig.swf" TILE_NAME="TILE_STORE_BIG" />
+		<tile_path TILE_PATH="external/ion_fut/components/Tile/MetroPanel_StoreSmall.swf" TILE_NAME="TILE_STORE_SMALL" />
+		<tile_path TILE_PATH="external/ion_fut/components/TileSeason/LeaderboardTile.swf" TILE_NAME="TILE_LEADERBOARD" />
+	</hub_settings>
+	<panel_set>
+		<entries numberofpanels="6" />
+		<!-- PANEL_ID needs to be in sync with GameHub::eMenu enums in C++ -->
+		<panel PANEL_ID="0" NAME="FUT_CENTRAL" IS_TAB="TRUE"/>
+		<panel PANEL_ID="1" NAME="FUT_PLAY_MATCH" IS_TAB="TRUE"/>
+		<panel PANEL_ID="2" NAME="FUT_UC_SQUADS" IS_TAB="TRUE"/>
+		<panel PANEL_ID="3" NAME="FUT_STORE" IS_TAB="TRUE"/>
+		<panel PANEL_ID="4" NAME="FUT_TRADING" IS_TAB="TRUE"/>
+		<panel PANEL_ID="5" NAME="FUT_MY_CLUB" IS_TAB="TRUE"/>
+	</panel_set>
+	<panel_0 DESCRIPTION="FUT_CENTRAL" >
+		<entries numberoftiles="5" />
+		<tile>
+			<tileid tileid="0"/>
+			<label LABEL="World Cup" />
+			<settings FILE_PATH="TILE_HLUSING2IMG" HL_TEXT_COLOR="6330136" UHL_TEXT_COLOR="11392881" WIDTH="562" HEIGHT="278" X="0" Y="0" />
+			<main_tile TEXT="" TEXT2="" TEXT3="" 
+					FG_PATH="WorldCupDefault"	
+					FG_PATH_ALT=""
+					DESTINATION="GOTO_WORLD_CUP" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_WORLD_CUP_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_WORLD_CUP_1" PATH="" FORMAT="H_MEDIUM" X="8" Y="32" />
+				<data LINE="1" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="70" />
+			
+		</tile>
+		<tile>
+			<tileid tileid="1" />
+			<label LABEL="Dynamic Small" />
+			<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="562" HEIGHT="136" X="0" Y="284" />
+			<main_tile TEXT="" TEXT2="" TEXT3="" 
+					FG_PATH="CentralLastGameMode"
+					FG_PATH_ALT="CentralLastGameModeOff"				 
+					DESTINATION="GOTO_OFFLINE_SEASON" PRE_TRANSLATED="false" />
+			<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_RETURNTOONLINESEASON_0" FORMAT="H_MEDIUM" X="8" Y="2"/>
+			<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_RETURNTOONLINESEASON_1" FORMAT="H_MEDIUM" X="8" Y="32"/>
+			<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="369" PATH="" FORMAT="" X="10" Y="37" />
+			<data LINE="3" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="70" />
+		</tile>
+		<tile>
+			<tileid tileid="2" />
+			<label LABEL="Dynamic Big" />
+			<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="562" HEIGHT="420" X="0" Y="0" />
+			<main_tile TEXT="" TEXT2="" TEXT3="" 
+					FG_PATH="CentralLastGameMode"
+					FG_PATH_ALT="CentralLastGameModeOff"				 
+					DESTINATION="GOTO_OFFLINE_SEASON" PRE_TRANSLATED="false" />
+			<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_RETURNTOONLINESEASON_0" FORMAT="H_LARGE" X="6" Y="0"/>
+			<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_RETURNTOONLINESEASON_1" FORMAT="H_LARGE" X="6" Y="42"/>
+			<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="369" PATH="" FORMAT="" X="6" Y="52" />
+			<data LINE="3" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="90" />
+		</tile>
+		<tile>
+			<tileid tileid="3"/>
+			<settings FILE_PATH="TILE_LEADERBOARD" WIDTH="562" HEIGHT="278" X="568" Y="0" />
+			<main_tile 
+				ID="101"
+				TEXT="FUT_GH_LEADERBOARDS_0" TEXT2="" TEXT3="" 
+				FG_PATH=""
+				FG_PATH_ALT=""				 
+				DESTINATION="GOTO_LEADERBOARD" PRE_TRANSLATED="false"/>
+		</tile>
+		<tile>
+			<tileid tileid="4" />
+			<label LABEL="Banner" />
+			<settings FILE_PATH="TILE_MESSAGEBANNER" WIDTH="562" HEIGHT="136" X="568" Y="284" />
+			<main_tile />
+		</tile>
+	</panel_0>
+	<panel_1 DESCRIPTION="FUT_PLAY_MATCH" >
+		<entries numberoftiles="7" />
+			<tile>
+				<tileid tileid="0"/>
+				<label LABEL="Offline Season" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="562" HEIGHT="136" X="0" Y="0" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="OfflineSeasonDefault"	
+						FG_PATH_ALT=""
+						DESTINATION="GOTO_OFFLINE_SEASON" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_OFFLINESEASON_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="37" />
+			</tile>
+			<tile>
+				<tileid tileid="1"/>
+				<label LABEL="Offline Tournament" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="562" HEIGHT="136" X="0" Y="142" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="OfflineTournamentDefault"	
+						FG_PATH_ALT=""
+						DESTINATION="GOTO_OFFLINE_TOURNAMENT" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_OFFLINETOURNAMENT_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_OFFLINETOURNAMENT_1" PATH="" FORMAT="H_MEDIUM" X="8" Y="32" />
+				<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="70" />
+			</tile>
+			<tile>
+				<tileid tileid="2"/>
+				<label LABEL="Online Season" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="562" HEIGHT="136" X="568" Y="0" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="OnlineSeasonDefault"	
+						FG_PATH_ALT=""
+						DESTINATION="GOTO_ONLINE_SEASON" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_ONLINESEASON_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="37" />
+			</tile>
+			<tile>
+				<tileid tileid="3"/>
+				<label LABEL="Online Tournament" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="562" HEIGHT="136" X="568" Y="142" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="OnlineTournamentDefault"	
+						FG_PATH_ALT=""
+						DESTINATION="GOTO_ONLINE_TOURNAMENT" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_ONLINETOURNAMENT_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_ONLINETOURNAMENT_1" PATH="" FORMAT="H_MEDIUM" X="8" Y="32" />
+				<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="70" />
+			</tile>
+			<tile>
+				<tileid tileid="4" />
+				<label LABEL="TOTW" />
+				<settings FILE_PATH="TILE_TOTW" WIDTH="562" HEIGHT="136" X="0" Y="284" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="TOTWDefault"		
+						FG_PATH_ALT="TOTWDefaultOff"						 
+						DESTINATION="GOTO_TOTW_CHALLENGE" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="LINEUP_SMALL" PARAM="" PATH="" FORMAT="" X="" Y="" />
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_TOTW_C_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="37" />
+			</tile>
+			<tile>
+				<tileid tileid="5" />
+				<label LABEL="Single Online Game" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="278" HEIGHT="136" X="568" Y="284" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="OneOnlineDefault"
+						FG_PATH_ALT="OneOnlineDefaultOff"					
+						DESTINATION="GOTO_ONLINE_SINGLE_GAME" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_SINGLE_ONLINE_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_SINGLE_ONLINE_1" PATH="" FORMAT="H_MEDIUM" X="8" Y="32" />
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_SINGLE_ONLINE_2" PATH="" FORMAT="H_MEDIUM" X="8" Y="62" />
+				<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="135" PATH="" FORMAT="" X="10" Y="100" />
+			</tile>
+			<tile>
+				<tileid tileid="6"/>
+				<settings FILE_PATH="TILE_NESTED" WIDTH="278" HEIGHT="136" X="852" Y="284" />
+				<main_tile />
+				<number_of_subtiles LENGTH="2" />
+				<subtile1 SUBTILE_TYPE="TILE_HLUSING2IMG" 
+					ID="401"
+					TEXT="" TEXT2="" TEXT3="" 
+					FG_PATH="PAFIDefault"
+					FG_PATH_ALT="PAFIDefaultOff"				 
+					DESTINATION="GOTO_PAF_INVITE" PRE_TRANSLATED="false" >
+					<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_PAF_I_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+					<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_PAF_I_1" PATH="" FORMAT="H_MEDIUM" X="8" Y="32" />
+					<data LINE="2" TYPE="TYPE_HEADER" PARAM="FUT_GH_PAF_I_2" PATH="" FORMAT="H_MEDIUM" X="10" Y="62" />
+					<data LINE="3" TYPE="TYPE_DIVIDER" PARAM="135" PATH="" FORMAT="" X="10" Y="100" />
+				</subtile1> 
+				<subtile2 SUBTILE_TYPE="TILE_HLUSING2IMG" 
+					ID="402"
+					TEXT="" TEXT2="" TEXT3="" 
+					FG_PATH="PAFCDefault"
+					FG_PATH_ALT="PAFCDefaultOff"				 
+					DESTINATION="GOTO_PAF_CHALLENGE" PRE_TRANSLATED="false" >
+					<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_PAF_C_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+					<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_PAF_C_1" PATH="" FORMAT="H_MEDIUM" X="8" Y="32" />
+					<data LINE="2" TYPE="TYPE_HEADER" PARAM="FUT_GH_PAF_C_2" PATH="" FORMAT="H_MEDIUM" X="10" Y="62" />
+					<data LINE="3" TYPE="TYPE_DIVIDER" PARAM="135" PATH="" FORMAT="" X="10" Y="100" />
+				</subtile2> 
+			</tile>
+	</panel_1>
+	<panel_2 DESCRIPTION="FUT_UC_SQUADS" >
+		<entries numberoftiles="3" />
+			<tile>
+				<tileid tileid="0" />
+				<label LABEL="Squad" />
+				<settings FILE_PATH="TILE_STARTING11" WIDTH="562" HEIGHT="420" X="0" Y="0" />
+				<main_tile TEXT="FUT_GH_SQUAD_0" TEXT2="FUT_GH_SQUAD_1" TEXT3="" 
+						FG_PATH="SquadDefault"	
+						FG_PATH_ALT="SquadDefaultOff"
+						DESTINATION="GOTO_SQUAD" PRE_TRANSLATED="false" />
+			</tile>
+			<tile>
+				<tileid tileid="1" />
+				<label LABEL="Squad Selector" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="562" HEIGHT="207" X="568" Y="0" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="SquadSelectDefault"	
+						FG_PATH_ALT="SquadSelectDefaultOff"
+						DESTINATION="GOTO_SQUAD_SELECTOR" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_SQUADSELECT_0" FORMAT="H_LARGE" X="6" Y="0"/>
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_SQUADSELECT_1" FORMAT="H_LARGE" X="6" Y="42"/>
+				<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="90" />
+			</tile>
+			<tile>
+				<tileid tileid="2" />
+				<label LABEL="Manager Quest" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="562" HEIGHT="207" X="568" Y="213" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="ManagerQuestDefault"	
+						FG_PATH_ALT="ManagerQuestDefaultOff"
+						DESTINATION="GOTO_MANAGER_QUEST" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_MQ_0" FORMAT="H_LARGE" X="6" Y="0"/>
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_MQ_1" FORMAT="H_LARGE" X="6" Y="42"/>
+				<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="90" />
+			</tile>
+	</panel_2>
+	<panel_3 DESCRIPTION="FUT_STORE" >
+		<entries numberoftiles="4" />
+			<tile>
+				<tileid tileid="0" />
+				<label LABEL="Store" />
+				<settings FILE_PATH="TILE_STORE_BIG" WIDTH="562" HEIGHT="420" X="0" Y="0" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="StoreDefault"
+						FG_PATH_ALT="StoreDefaultOff"						
+						DESTINATION="GOTO_STORE" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_STORE_0" PATH="" FORMAT="H_LARGE" X="6" Y="0" />
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_STORE_1" PATH="" FORMAT="H_LARGE" X="6" Y="42" />
+				<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="90" />
+			</tile>
+			<tile>
+				<tileid tileid="1" />
+				<label LABEL="GOLD PACKS" />
+				<settings FILE_PATH="TILE_STORE_SMALL" WIDTH="562" HEIGHT="136" X="568" Y="142" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="Store1"
+						FG_PATH_ALT="Store1Off"
+						DESTINATION="GOTO_STORE_GOLDPACK" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_GOLDPACK_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_GOLDPACK_1" PATH="" FORMAT="H_MEDIUM" X="8" Y="32" />
+				<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="70" />
+			</tile>
+			<tile>
+				<tileid tileid="2" />
+				<label LABEL="FIFA POINTS" />
+				<settings FILE_PATH="TILE_STORE_SMALL" WIDTH="562" HEIGHT="136" X="568" Y="0" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="Store0"
+						FG_PATH_ALT="Store0Off"
+						DESTINATION="GOTO_STORE_FIFAPOINTS" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_FIFAPOINTS_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_FIFAPOINTS_1" PATH="" FORMAT="H_MEDIUM" X="8" Y="32" />
+				<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="70" />
+			</tile>
+			<tile>
+			  <tileid tileid="3" />
+			  <label LABEL="Banner" />
+			  <settings FILE_PATH="TILE_MESSAGEBANNER" WIDTH="562" HEIGHT="136" X="568" Y="284" />
+			  <main_tile />
+			</tile>
+			
+	</panel_3>
+	<panel_4 DESCRIPTION="FUT_TRADING" >
+		<entries numberoftiles="6" />
+			<tile>
+				<tileid tileid="0" />
+				<label LABEL="Auction Search" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="562" HEIGHT="278" X="0" Y="0" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="AuctionSearchDefault"	
+						FG_PATH_ALT="AuctionSearchDefaultOff"						
+						DESTINATION="GOTO_AUCTION_SEARCH" PRE_TRANSLATED="false" />
+			<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_AUCTIONSEARCH_0" FORMAT="H_LARGE" X="6" Y="0"/>
+			<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_AUCTIONSEARCH_1" FORMAT="H_LARGE" X="6" Y="42"/>
+			<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="90" />
+			</tile>
+			<tile>
+				<tileid tileid="1" />
+				<label LABEL="Trade Pile" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="562" HEIGHT="136" X="568" Y="0" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="TradePileDefault"	
+						FG_PATH_ALT="TradePileDefaultOff"
+						DESTINATION="GOTO_TRADE_PILE" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_TRADEPILE_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="37" />
+			</tile>
+			<tile>
+				<tileid tileid="2" />
+				<label LABEL="Watch List" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="562" HEIGHT="136" X="568" Y="142" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="WatchListDefault"	
+						FG_PATH_ALT="WatchListDefaultOff"
+						DESTINATION="GOTO_WATCH_LIST" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_WATCHLIST_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="37" />
+			</tile>
+			<tile>
+				<tileid tileid="3" />
+				<label LABEL="Gold Search" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="562" HEIGHT="136" X="0" Y="284" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="AuctionSearch0"	
+						FG_PATH_ALT="AuctionSearch0Off"
+						DESTINATION="GOTO_CUSTOMSEARCH_1" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_GOLDPLAYERSEARCH_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_GOLDPLAYERSEARCH_1" PATH="" FORMAT="H_MEDIUM" X="8" Y="32" />
+				<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="70" />
+			</tile>
+			<tile>
+				<tileid tileid="4" />
+				<label LABEL="Contract Search" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="278" HEIGHT="136" X="852" Y="284" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="AuctionSearch1"
+						FG_PATH_ALT="AuctionSearch1Off"
+						DESTINATION="GOTO_CUSTOMSEARCH_3" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_CONTRACTSEARCH_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_CONTRACTSEARCH_1" PATH="" FORMAT="H_MEDIUM" X="8" Y="32" />
+				<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="135" PATH="" FORMAT="" X="10" Y="70" />
+			</tile>
+			<tile>
+				<tileid tileid="5" />
+				<label LABEL="Supported Club Search" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="278" HEIGHT="136" X="568" Y="284" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH=""			 
+						FG_PATH_ALT=""			 
+						DESTINATION="GOTO_CUSTOMSEARCH_4" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_SUPPORTEDCLUBSEARCH_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_SUPPORTEDCLUBSEARCH_1" PATH="" FORMAT="H_MEDIUM" X="8" Y="32" />
+				<data LINE="2" TYPE="TYPE_HEADER" PARAM="FUT_GH_SUPPORTEDCLUBSEARCH_2" PATH="" FORMAT="H_MEDIUM" X="10" Y="62" />
+				<data LINE="3" TYPE="TYPE_DIVIDER" PARAM="135" PATH="" FORMAT="" X="10" Y="100" />
+			</tile>
+	</panel_4>
+	<panel_5 DESCRIPTION="FUT_MY_CLUB" >
+		<entries numberoftiles="5" />
+			<tile>
+				<tileid tileid="0" />
+				<label LABEL="Club" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="562" HEIGHT="278" X="0" Y="0" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="ClubsDefault"			 
+						FG_PATH_ALT="ClubsDefaultOff"			 
+						DESTINATION="GOTO_MY_CLUB" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_CLUB_0" PATH="" FORMAT="H_LARGE" X="6" Y="0" />
+				<data LINE="1" TYPE="TYPE_DIVIDER" PARAM="190" PATH="" FORMAT="" X="10" Y="50" />
+			</tile>
+			<tile>
+				<tileid tileid="1" />
+				<label LABEL="PAF:C Result" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="278" HEIGHT="136" X="568" Y="284" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="ChallengeStatsDefault"			 
+						FG_PATH_ALT="ChallengeStatsDefaultOff"			 
+						DESTINATION="GOTO_PAF_RESULT" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_PAFC_RESULT_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_PAFC_RESULT_1" PATH="" FORMAT="H_MEDIUM" X="10" Y="32" />
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_PAFC_RESULT_2" PATH="" FORMAT="H_MEDIUM" X="10" Y="62" />
+				<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="135" PATH="" FORMAT="" X="10" Y="100" />
+			</tile>
+			<tile>
+				<tileid tileid="2" />
+				<label LABEL="Leaderboard" />
+				<settings FILE_PATH="TILE_LEADERBOARD" WIDTH="562" HEIGHT="278" X="568" Y="0" />
+				<main_tile TEXT="FUT_GH_LEADERBOARDS_0" TEXT2="" TEXT3="" 
+						DESTINATION="GOTO_LEADERBOARD" PRE_TRANSLATED="false" />
+			</tile>
+			<tile>
+				<tileid tileid="3" />
+				<label LABEL="Player Stats" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="562" HEIGHT="136" X="0" Y="284" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH="PlayerStatsDefault"			 
+						FG_PATH_ALT="PlayerStatsDefaultOff"			 
+						DESTINATION="GOTO_PLAYER_STATS" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_PLAYERSTATS_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_DIVIDER" PARAM="225" PATH="" FORMAT="" X="10" Y="37" />
+			</tile>
+			<tile>
+				<tileid tileid="4" />
+				<label LABEL="Delete Club" />
+				<settings FILE_PATH="TILE_HLUSING2IMG" WIDTH="278" HEIGHT="136" X="852" Y="284" />
+				<main_tile TEXT="" TEXT2="" TEXT3="" 
+						FG_PATH=""			 
+						FG_PATH_ALT=""			 
+						DESTINATION="GOTO_DELETE_CLUB" PRE_TRANSLATED="false" />
+				<data LINE="0" TYPE="TYPE_HEADER" PARAM="FUT_GH_DELETECLUB_0" PATH="" FORMAT="H_MEDIUM" X="8" Y="2" />
+				<data LINE="1" TYPE="TYPE_HEADER" PARAM="FUT_GH_DELETECLUB_1" PATH="" FORMAT="H_MEDIUM" X="8" Y="32" />
+				<data LINE="2" TYPE="TYPE_DIVIDER" PARAM="135" PATH="" FORMAT="" X="10" Y="70" />
+			</tile>
+	</panel_5>
+	<panel_6 DESCRIPTION="DEBUG" >
+		<entries numberoftiles="14" />
+			<tile>
+				<tileid tileid="0" />
+				<label LABEL="New Item Screen" />
+				<settings FILE_PATH="TILE_GENERIC" WIDTH="128" HEIGHT="128" X="0" Y="0" />
+				<main_tile TEXT="New Item Screen" DESTINATION="GOTO_NEW_ITEM_SCREEN" PRE_TRANSLATED="false" />
+			</tile>
+			<tile>
+				<tileid tileid="1" />
+				<label LABEL="Create Card" />
+				<settings FILE_PATH="TILE_GENERIC" WIDTH="128" HEIGHT="128" X="150" Y="0" />
+				<main_tile TEXT="Create Card" DESTINATION="GOTO_CREATE_CARD" PRE_TRANSLATED="false" />
+			</tile>
+			<tile>
+				<tileid tileid="2" />
+				<label LABEL="FUT 12 Single Offline Game" />
+				<settings FILE_PATH="TILE_GENERIC" WIDTH="128" HEIGHT="128" X="300" Y="0" />
+				<main_tile TEXT="FUT 12 Single Offline Game" DESTINATION="GOTO_OFFLINE_SIGNLE_GAME" PRE_TRANSLATED="false" />
+			</tile>
+			<tile>
+				<tileid tileid="3" />
+				<label LABEL="Change Club Name" />
+				<settings FILE_PATH="TILE_GENERIC" WIDTH="128" HEIGHT="128" X="450" Y="0" />
+				<main_tile TEXT="Change Club Name" DESTINATION="GOTO_CHANGE_CLUBNAME" PRE_TRANSLATED="false" />
+			</tile>	
+			<tile>
+				<tileid tileid="4" />
+				<label LABEL="Audio Test" />
+				<settings FILE_PATH="TILE_GENERIC" WIDTH="128" HEIGHT="128" X="600" Y="0" />
+				<main_tile TEXT="Audio Test" DESTINATION="GOTO_AUDIO_TEST" PRE_TRANSLATED="false" />
+			</tile>
+			<tile>
+				<tileid tileid="5" />
+				<label LABEL="Sand Box" />
+				<settings FILE_PATH="TILE_GENERIC" WIDTH="128" HEIGHT="128" X="750" Y="0" />
+				<main_tile TEXT="Sand Box" DESTINATION="GOTO_SAND_BOX" PRE_TRANSLATED="false" />
+			</tile>
+			<tile>
+				<tileid tileid="6" />
+				<label LABEL="Starter Squad" />
+				<settings FILE_PATH="TILE_GENERIC" WIDTH="128" HEIGHT="128" X="900" Y="0" />
+				<main_tile TEXT="Starter Squad" TEXT="Starter Squad" DESTINATION="GOTO_DEBUG_STARTERSQUAD" PRE_TRANSLATED="false" />
+			</tile>
+			<tile>
+				<tileid tileid="7" />
+				<label LABEL="EA Trax" />
+				<settings FILE_PATH="TILE_GENERIC" WIDTH="128" HEIGHT="128" X="0" Y="150" />
+				<main_tile TEXT="EA Trax" DESTINATION="GOTO_EA_TRAX" PRE_TRANSLATED="false" />
+			</tile>	
+			<tile>
+				<tileid tileid="8" />
+				<label LABEL="WishList" />
+				<settings FILE_PATH="TILE_GENERIC" WIDTH="128" HEIGHT="128" X="150" Y="150" />
+				<main_tile TEXT="WishList" DESTINATION="GOTO_WISHLIST" PRE_TRANSLATED="false" />
+			</tile>
+			<tile>
+				<tileid tileid="9" />
+				<label LABEL="Security: Setup" />
+				<settings FILE_PATH="TILE_GENERIC" WIDTH="128" HEIGHT="128" X="300" Y="150" />
+				<main_tile TEXT="Security: Setup" DESTINATION="GOTO_DEBUG_SECURITY_SCREEN_SETUP" PRE_TRANSLATED="false" />
+			</tile>
+			<tile>
+				<tileid tileid="10" />
+				<label LABEL="Security: Challenge" />
+				<settings FILE_PATH="TILE_GENERIC" WIDTH="128" HEIGHT="128" X="450" Y="150" />
+				<main_tile TEXT="Security: Challenge" DESTINATION="GOTO_DEBUG_SECURITY_SCREEN_CHALLENGE" PRE_TRANSLATED="false" />
+			</tile>
+			<tile>
+				<tileid tileid="11" />
+				<label LABEL="DEMO Sell Screen" />
+				<settings FILE_PATH="TILE_GENERIC" WIDTH="128" HEIGHT="128" X="600" Y="150" />
+				<main_tile TEXT="DEMO Sell Screen" DESTINATION="GOTO_DDP_SCREEN" PRE_TRANSLATED="false" />
+			</tile>
+			<tile>
+				<tileid tileid="12" />
+				<label LABEL="Old Auction Search" />
+				<settings FILE_PATH="TILE_GENERIC" WIDTH="128" HEIGHT="128" X="750" Y="150" />
+				<main_tile TEXT="Old Auction Search" DESTINATION="GOTO_AUCTION_SEARCH_2" PRE_TRANSLATED="false" />
+			</tile>
+			<tile>
+				<tileid tileid="13" />
+				<label LABEL="Friendly Seasons" />
+				<settings FILE_PATH="TILE_GENERIC" WIDTH="128" HEIGHT="128" X="900" Y="150" />
+				<main_tile TEXT="Friendly Seasons" DESTINATION="GOTO_ONLINE_FRIENDLY_SEASON" PRE_TRANSLATED="false" />
+			</tile>
+	</panel_6>
+</root>
+
+
+

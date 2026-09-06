@@ -1,0 +1,40 @@
+APT movie
+  pointer size : 4 bytes (32-bit)
+  decoupled    : yes
+  SWF version  : 7
+  header tag   : "Apt Data:1:7:4\u{1a}"
+  dimensions   : 1280 x 720
+  frame rate   : 83 ms/frame (~12.0 fps)
+  frames       : 1
+  characters   : 12
+  imports      : 4
+  exports      : 1
+  by type      :
+      Animation(root)  1
+      Bitmap           1
+      Font             2
+      Shape            1
+      Sprite           1
+      Text             2
+      empty            4
+  exported symbols:
+      mcStarterPack -> character 8
+  imported symbols:
+      game/components/FIFA_stdControls:game.components.classes.TextScroller -> character 7
+      external/ion_fut/components/CardStackHorz:CardStackHorz -> character 9
+      external/ion_fut/components/OpenPackAnimation:OpenPackAnimation -> character 10
+      external/ion_fut/components/Card:Card -> character 11
+
+Characters:
+  [   0] Root (Animation)
+  [   1] Bitmap
+  [   2] Shape bounds=(-83,-113)-(82,112)
+  [   3] Font "EA HelveticaNeue Med" (0 glyphs)
+  [   4] EditText font=#3 text="WWW"
+  [   5] Font "EA HelveticaNeue Con Bold" (0 glyphs)
+  [   6] EditText font=#5 text="STARTER PACK"
+  [   7] <empty / import slot>
+  [   8] Sprite (1 frames)
+  [   9] <empty / import slot>
+  [  10] <empty / import slot>
+  [  11] <empty / import slot>
