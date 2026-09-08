@@ -11,7 +11,7 @@ CONST = Path(
     r"\helperfunctions_inner\02_1"
 )
 
-TARGET = b"gFutHelpersGetWorldCupMode"
+TARGET = b"GetWorldCupMode"
 
 apt = APT.read_bytes()
 const = CONST.read_bytes()

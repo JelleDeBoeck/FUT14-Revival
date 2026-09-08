@@ -124,29 +124,6 @@ let wcIndex1Seen = false;
 let wcObject = null;
 
 function install(m) {
-
-    try {
-        Interceptor.attach(m.base.add(0x73AF0), {
-            onEnter() {
-                const holder = m.base.add(0x1D6B5C).readPointer();
-                const vt = holder.readPointer();
-                const target = vt.add(0x70).readPointer();
-
-                console.log(
-                    "[WC-LOADACTIVE] HIT wrapper | holder=" + holder +
-                    " vt=" + vt +
-                    " target+0x70=" + target +
-                    " | " + moduleInfo(target)
-                );
-            }
-        });
-
-        console.log("[WC-LOADACTIVE] hook actief @ CardsDLLzf+0x73AF0");
-
-    } catch (e) {
-        console.log("[WC-LOADACTIVE] hook fout: " + e);
-    }
-
     if (installed) return;
     installed = true;
 
@@ -543,26 +520,6 @@ function install(m) {
                     vt.add(0x1C).readPointer();
 
                 console.log(
-                    "[WC-SQUAD-PROBE] FCC vtable=" +
-                    vt
-                );
-
-                for (let off = 0; off <= 0x80; off += 4) {
-                    try {
-                        const target = vt.add(off).readPointer();
-
-                        console.log(
-                            "[WC-SQUAD-PROBE] slot+0x" +
-                            off.toString(16) +
-                            " = " +
-                            target +
-                            " | " +
-                            moduleInfo(target)
-                        );
-                    } catch (_) {}
-                }
-
-                console.log(
                     "[WC-CARDSDOWNLOADED] late target=" +
                     cardsDownloadedTarget +
                     " | " +
@@ -576,6 +533,58 @@ function install(m) {
                         onEnter() {
                             console.log("[WC-CARDSDOWNLOADED] FIRED");
 
+                            if (wcC4450HooksInstalled) {
+                                return;
+                            }
+
+                            wcC4450HooksInstalled = true;
+
+                            try {
+                                const exe =
+                                    Process.getModuleByName("fifa14.exe");
+
+                                const c4450 =
+                                    exe.base.add(0xC4450);
+
+                                Interceptor.attach(
+                                    c4450.add(0x0C),
+                                    {
+                                        onEnter() {
+                                            console.log(
+                                                "[WC-C445C] EDX target = " +
+                                                this.context.edx +
+                                                " | " +
+                                                moduleInfo(this.context.edx)
+                                            );
+                                        }
+                                    }
+                                );
+
+                                Interceptor.attach(
+                                    c4450.add(0x16),
+                                    {
+                                        onEnter() {
+                                            console.log(
+                                                "[WC-C4466] EDX target = " +
+                                                this.context.edx +
+                                                " | " +
+                                                moduleInfo(this.context.edx)
+                                            );
+                                        }
+                                    }
+                                );
+
+                                console.log(
+                                    "[WC-C4450] call-target hooks actief"
+                                );
+
+                            } catch (e) {
+                                console.log(
+                                    "[WC-C4450] hook fout: " + e
+                                );
+
+                                wcC4450HooksInstalled = false;
+                            }
                         }
                     });
 
@@ -1084,11 +1093,7 @@ setTimeout(() => {
 }, 15000);
 
 let wcCardsDownloadedHooked = false;
-let wcSquadEventProbeInstalled = false;
-let wcLoadActiveSquadHooked = false;
-let wcLoadActiveSquadTarget = null;
-let wcSquadEventProbeCount = 0;
-let wcLoadActiveSquadSeen = false;
+let wcC4450HooksInstalled = false;
 setInterval(() => {
 
     if (installed) return;

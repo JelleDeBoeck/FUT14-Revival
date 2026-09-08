@@ -124,29 +124,6 @@ let wcIndex1Seen = false;
 let wcObject = null;
 
 function install(m) {
-
-    try {
-        Interceptor.attach(m.base.add(0x73AF0), {
-            onEnter() {
-                const holder = m.base.add(0x1D6B5C).readPointer();
-                const vt = holder.readPointer();
-                const target = vt.add(0x70).readPointer();
-
-                console.log(
-                    "[WC-LOADACTIVE] HIT wrapper | holder=" + holder +
-                    " vt=" + vt +
-                    " target+0x70=" + target +
-                    " | " + moduleInfo(target)
-                );
-            }
-        });
-
-        console.log("[WC-LOADACTIVE] hook actief @ CardsDLLzf+0x73AF0");
-
-    } catch (e) {
-        console.log("[WC-LOADACTIVE] hook fout: " + e);
-    }
-
     if (installed) return;
     installed = true;
 

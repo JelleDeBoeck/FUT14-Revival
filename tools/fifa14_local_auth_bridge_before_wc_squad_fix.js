@@ -143,6 +143,31 @@ function install(m) {
 
         console.log("[WC-LOADACTIVE] hook actief @ CardsDLLzf+0x73AF0");
 
+        Interceptor.attach(m.base.add(0x75250), {
+            onEnter(args) {
+                const mgr = ptr(this.context.esi);
+                const vt = mgr.readPointer();
+                const asyncTarget = vt.add(0x18).readPointer();
+
+                console.log(
+                    "[WC-LOADACTIVE-NATIVE] ENTER" +
+                    " esi=" + mgr +
+                    " vt=" + vt +
+                    " async+0x18=" + asyncTarget +
+                    " | " + moduleInfo(asyncTarget) +
+                    " arg0=" + args[0] +
+                    " arg1=" + args[1]
+                );
+            },
+            onLeave(retval) {
+                console.log(
+                    "[WC-LOADACTIVE-NATIVE] RETURN retval=" + retval
+                );
+            }
+        });
+
+        console.log("[WC-LOADACTIVE-NATIVE] hook actief @ CardsDLLzf+0x75250");
+
     } catch (e) {
         console.log("[WC-LOADACTIVE] hook fout: " + e);
     }

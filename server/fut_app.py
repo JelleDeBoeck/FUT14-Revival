@@ -111,7 +111,7 @@ WC_STATE: dict[str, Any] = {
     #
     # Geen normal-FUT Icebreaker spelers of Gold cards
     # mogen automatisch in deze state terechtkomen.
-    "club_created": True,
+    "club_created": False,
     "starter_pack_claimed": False,
 
     "club_name": LOCAL_CLUB_NAME,
@@ -1362,6 +1362,50 @@ def fut_match_ready():
 # FUT user
 # ============================================================
 
+def provision_wc_starter_club() -> None:
+    if WC_STATE["starter_pack_claimed"]:
+        return
+
+    fixture = load_icebreaker_fixture()
+    pack = fixture["packList"][1]
+    validate_icebreaker_pack(pack)
+
+    players = [
+        build_starter_player(pack, index)
+        for index in range(23)
+    ]
+
+    ratings = [
+        bounded_int(
+            rating,
+            0,
+            minimum=0,
+            maximum=99,
+        )
+        for rating in pack["Rating"]
+    ]
+
+    WC_STATE["starter_pack_claimed"] = True
+    WC_STATE["active_squad_id"] = STARTER_SQUAD_ID
+    WC_STATE["formation"] = str(
+        pack.get("formation") or "f442"
+    )
+    WC_STATE["squad_name"] = "World Cup"
+    WC_STATE["players"] = players
+    WC_STATE["chemistry"] = 0
+    WC_STATE["star_rating"] = (
+        int(sum(ratings) / len(ratings))
+        if ratings
+        else 0
+    )
+
+    print(
+        "[WC] starter squad provisioned "
+        f"players={len(players)} "
+        f"formation={WC_STATE['formation']}"
+    )
+
+
 @app.api_route(
     "/ut/game/fifa14/user",
     methods=[
@@ -1369,15 +1413,46 @@ def fut_match_ready():
         "POST",
     ],
 )
-def fut_user(
+async def fut_user(
     request: Request,
 ):
-    state = state_for_request(request)
+    if (
+        request.method == "POST"
+        and is_world_cup_request(request)
+    ):
+        raw = await request.body()
 
-    if is_world_cup_request(request):
-        profile_state = FUT_STATE
-    else:
-        profile_state = state
+        print(
+            "[WC] POST /user body =",
+            raw.decode(
+                "utf-8",
+                errors="replace",
+            ),
+        )
+
+        body = json.loads(raw or b"{}")
+
+        WC_STATE["support_nation"] = (
+            body.get("clubName")
+        )
+
+        WC_STATE["team_id"] = bounded_int(
+            body.get("clubName"),
+            0,
+            minimum=0,
+        )
+
+        WC_STATE["club_created"] = True
+
+        provision_wc_starter_club()
+
+        print(
+            "[WC] support_nation saved =",
+            WC_STATE["support_nation"],
+        )
+
+    state = state_for_request(request)
+    profile_state = state
 
     if profile_state["club_created"]:
         return {
@@ -1465,7 +1540,6 @@ def fut_user(
         "userClubList":
             [],
     }
-
 
 # ============================================================
 # Club profile update
@@ -1833,12 +1907,21 @@ def fut_user_action(
 )
 def fut_user_action_update(
     action_name: str,
+    request: Request,
 ):
     normalized = (
         action_name
         .strip()
         .upper()
     )
+
+    if (
+        is_world_cup_request(request)
+        and normalized == "CHARITY_MATCH_PLAYED"
+    ):
+        print("[WC] CHARITY_MATCH_PLAYED hook reached")
+
+        print("[WC] TEST: injected purchased_items =", len(WC_STATE["purchased_items"]))
 
     print(
         "[FUT] user action: "
@@ -1866,10 +1949,7 @@ async def fut_purchased_items(
     request: Request,
 ):
     if request.method == "GET":
-        items = FUT_STATE.get(
-            "purchased_items",
-            [],
-        )
+        items = state_for_request(request).get("purchased_items", [])
 
         print(
             "[FUT PACKS] Returning New Items: "
@@ -2003,14 +2083,15 @@ def fut_club_staff_stats():
     "/ut/game/fifa14/clubUser"
 )
 def fut_club_user(
+    request: Request,
     start: int = 0,
     count: int = 50,
 ):
+    state = state_for_request(request)
+
     all_items = []
 
-    for player in (
-        FUT_STATE["players"]
-    ):
+    for player in state["players"]:
         item_data = player.get(
             "itemData"
         )
@@ -2220,6 +2301,7 @@ async def fut_update_squad(
     return save_squad_document(
         squad_id,
         document,
+        state=state_for_request(request),
     )
 
 

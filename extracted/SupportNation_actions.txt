@@ -1,0 +1,2566 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.03s
+     Running `target\debug\aptinfo.exe -a ..\..\extracted\SupportNation.apt`
+APT movie
+  pointer size : 4 bytes (32-bit)
+  decoupled    : yes
+  SWF version  : 7
+  header tag   : "Apt Data:1:7:4\u{1a}"
+  dimensions   : 1280 x 720
+  frame rate   : 16 ms/frame (~62.5 fps)
+  frames       : 1
+  characters   : 51
+  imports      : 7
+  exports      : 22
+  by type      :
+      Animation(root)  1
+      Bitmap           10
+      Font             2
+      Shape            8
+      Sprite           11
+      Text             12
+      empty            7
+  exported symbols:
+      GroupName -> character 5
+      GroupHighlight -> character 8
+      GroupName -> character 5
+      CountryHighlight -> character 12
+      CountryRow -> character 16
+      CountryRow -> character 16
+      CountryRow -> character 16
+      CountryRow -> character 16
+      Group -> character 17
+      CountryRow -> character 16
+      GroupHighlight -> character 8
+      CountryHighlight -> character 12
+      ConfirmationHighlight -> character 22
+      ConfirmationRow -> character 24
+      ConfirmationHighlight -> character 22
+      ConfirmationPopup -> character 32
+      CountryWidget -> character 43
+      CountryWidget -> character 43
+      ConfirmationPopup -> character 32
+      external.ion_fut.screens.worldcup.SupportNation -> character 49
+      external.ion_fut.screens.worldcup.SupportNation -> character 49
+      __Packages.external.ion_fut.screens.worldcup.SupportNation -> character 50
+  imported symbols:
+      external/ion_sports07/platform/proxy/art/A:A -> character 11
+      game/components/FIFA_stdControls:game.components.classes.TextScroller -> character 13
+      external/ion_sports07/components/stdControls:ImageLoader -> character 14
+      game\components\MouseButton:MouseButton -> character 15
+      external/ion_sports07/components/stdControls:RowControl -> character 31
+      game/components/GridControl:game.components.GridControl -> character 46
+      external/ion_fut/components/FUTControls:ScreenDimmer -> character 48
+
+Action streams:
+  -- root frame 0 DoInitAction --
+  DefineDictionary (322 items)
+  EA:PushGlobalVariable
+  DictRef { kind: ByteGetMember, index: 1 }
+  Not
+  Not
+  BranchIfTrue { target: 12 }
+  EA:PushGlobalVariable
+  DictRef { kind: PushByte, index: 1 }
+  EA:Push0
+  DictRef { kind: PushByte, index: 2 }
+  NewObject
+  SetMember
+  Pop
+  EA:PushGlobalVariable
+  DictRef { kind: ByteGetMember, index: 1 }
+  DictRef { kind: ByteGetMember, index: 3 }
+  Not
+  Not
+  BranchIfTrue { target: 26 }
+  EA:PushGlobalVariable
+  DictRef { kind: ByteGetMember, index: 1 }
+  DictRef { kind: PushByte, index: 3 }
+  EA:Push0
+  DictRef { kind: PushByte, index: 2 }
+  NewObject
+  SetMember
+  Pop
+  EA:PushGlobalVariable
+  DictRef { kind: ByteGetMember, index: 1 }
+  DictRef { kind: ByteGetMember, index: 3 }
+  DictRef { kind: ByteGetMember, index: 4 }
+  Not
+  Not
+  BranchIfTrue { target: 42 }
+  EA:PushGlobalVariable
+  DictRef { kind: ByteGetMember, index: 1 }
+  DictRef { kind: ByteGetMember, index: 3 }
+  DictRef { kind: PushByte, index: 4 }
+  EA:Push0
+  DictRef { kind: PushByte, index: 2 }
+  NewObject
+  SetMember
+  Pop
+  EA:PushGlobalVariable
+  DictRef { kind: ByteGetMember, index: 1 }
+  DictRef { kind: ByteGetMember, index: 3 }
+  DictRef { kind: ByteGetMember, index: 4 }
+  DictRef { kind: ByteGetMember, index: 5 }
+  Not
+  Not
+  BranchIfTrue { target: 60 }
+  EA:PushGlobalVariable
+  DictRef { kind: ByteGetMember, index: 1 }
+  DictRef { kind: ByteGetMember, index: 3 }
+  DictRef { kind: ByteGetMember, index: 4 }
+  DictRef { kind: PushByte, index: 5 }
+  EA:Push0
+  DictRef { kind: PushByte, index: 2 }
+  NewObject
+  SetMember
+  Pop
+  EA:PushGlobalVariable
+  DictRef { kind: ByteGetMember, index: 1 }
+  DictRef { kind: ByteGetMember, index: 3 }
+  DictRef { kind: ByteGetMember, index: 4 }
+  DictRef { kind: ByteGetMember, index: 5 }
+  DictRef { kind: ByteGetMember, index: 6 }
+  Not
+  Not
+  BranchIfTrue { target: 332 }
+  DictRef { kind: ByteGetVar, index: 1 }
+  DictRef { kind: ByteGetMember, index: 3 }
+  DictRef { kind: ByteGetMember, index: 4 }
+  DictRef { kind: ByteGetMember, index: 5 }
+  DictRef { kind: PushByte, index: 6 }
+  DefineFunction2 ""() {
+    EA:Push0
+    PushRegister(2)
+    EA:PushUndefined
+    EA:CallMethodPop
+    DictRef { kind: PushByte, index: 7 }
+    Trace
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushFalse
+    SetMember
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 9 }
+    DictRef { kind: ByteGetMember, index: 10 }
+    DictRef { kind: ByteGetMember, index: 11 }
+    EA:Push1
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 12 }
+    DictRef { kind: CallMethodPop, index: 13 }
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 14 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 15 }
+    SetMember
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 16 }
+    EA:Push0
+    SetMember
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 17 }
+    EA:Push0
+    SetMember
+    DictRef { kind: PushByte, index: 18 }
+    DictRef { kind: PushByte, index: 19 }
+    DictRef { kind: PushByte, index: 20 }
+    DictRef { kind: PushByte, index: 21 }
+    DictRef { kind: PushByte, index: 22 }
+    DictRef { kind: PushByte, index: 23 }
+    DictRef { kind: PushByte, index: 24 }
+    DictRef { kind: PushByte, index: 25 }
+    PushByte(8)
+    InitArray
+    StoreRegister(11)
+    Pop
+    PushWord(167)
+    PushByte(40)
+    PushByte(97)
+    PushByte(7)
+    PushByte(4)
+    InitArray
+    PushByte(95)
+    PushByte(117)
+    PushByte(38)
+    PushByte(21)
+    PushByte(4)
+    InitArray
+    PushWord(133)
+    PushWord(161)
+    PushByte(8)
+    PushByte(52)
+    PushByte(4)
+    InitArray
+    PushByte(81)
+    PushByte(18)
+    PushByte(57)
+    PushByte(47)
+    PushByte(4)
+    InitArray
+    PushByte(27)
+    PushByte(14)
+    PushByte(72)
+    PushByte(60)
+    PushByte(4)
+    InitArray
+    PushWord(163)
+    PushByte(108)
+    PushByte(22)
+    PushByte(56)
+    PushByte(4)
+    InitArray
+    PushWord(195)
+    PushByte(55)
+    PushByte(34)
+    PushByte(45)
+    PushByte(4)
+    InitArray
+    PushByte(103)
+    PushByte(83)
+    PushByte(10)
+    PushByte(54)
+    PushByte(4)
+    InitArray
+    PushByte(8)
+    InitArray
+    StoreRegister(9)
+    Pop
+    PushWord(974)
+    PushWord(1357)
+    PushDWord(111448)
+    PushWord(1325)
+    PushByte(4)
+    InitArray
+    PushWord(1387)
+    PushDWord(111462)
+    PushWord(1354)
+    PushWord(1337)
+    PushByte(4)
+    InitArray
+    PushWord(1393)
+    PushDWord(111115)
+    PushDWord(105013)
+    PushWord(1369)
+    PushByte(4)
+    InitArray
+    PushDWord(111548)
+    PushWord(1335)
+    PushDWord(111465)
+    PushWord(1364)
+    PushByte(4)
+    InitArray
+    PushWord(1343)
+    PushWord(1318)
+    PushWord(1383)
+    PushWord(1377)
+    PushByte(4)
+    InitArray
+    PushWord(1411)
+    PushDWord(111112)
+    PushWord(1338)
+    PushDWord(111109)
+    PushByte(4)
+    InitArray
+    PushWord(1415)
+    PushDWord(111459)
+    PushDWord(105035)
+    PushWord(1362)
+    PushByte(4)
+    InitArray
+    PushWord(1395)
+    PushWord(1386)
+    PushWord(1328)
+    PushWord(1370)
+    PushByte(4)
+    InitArray
+    PushByte(8)
+    InitArray
+    StoreRegister(10)
+    Pop
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 26 }
+    EA:Push0
+    DictRef { kind: PushByte, index: 27 }
+    NewObject
+    SetMember
+    EA:Push0
+    StoreRegister(6)
+    Pop
+    PushRegister(6)
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 28 }
+    LessThan2
+    Not
+    BranchIfTrue { target: 288 }
+    EA:Push0
+    DictRef { kind: PushByte, index: 2 }
+    NewObject
+    StoreRegister(8)
+    Pop
+    PushRegister(8)
+    DictRef { kind: PushByte, index: 29 }
+    DictRef { kind: PushByte, index: 30 }
+    PushRegister(11)
+    PushRegister(6)
+    GetMember
+    Add2
+    EA:Push1
+    PushRegister(3)
+    DictRef { kind: PushByte, index: 31 }
+    CallMethod
+    SetMember
+    PushRegister(8)
+    DictRef { kind: PushByte, index: 32 }
+    EA:Push0
+    DictRef { kind: PushByte, index: 27 }
+    NewObject
+    SetMember
+    EA:Push0
+    StoreRegister(5)
+    Pop
+    PushRegister(5)
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 33 }
+    LessThan2
+    Not
+    BranchIfTrue { target: 278 }
+    EA:Push0
+    DictRef { kind: PushByte, index: 2 }
+    NewObject
+    StoreRegister(4)
+    Pop
+    PushRegister(4)
+    DictRef { kind: PushByte, index: 34 }
+    PushRegister(9)
+    PushRegister(6)
+    GetMember
+    PushRegister(5)
+    GetMember
+    SetMember
+    PushRegister(4)
+    DictRef { kind: PushByte, index: 35 }
+    PushRegister(10)
+    PushRegister(6)
+    GetMember
+    PushRegister(5)
+    GetMember
+    SetMember
+    PushRegister(4)
+    DictRef { kind: PushByte, index: 29 }
+    PushRegister(9)
+    PushRegister(6)
+    GetMember
+    PushRegister(5)
+    GetMember
+    EA:Push1
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 36 }
+    DictRef { kind: PushByte, index: 37 }
+    CallMethod
+    DictRef { kind: ByteGetMember, index: 38 }
+    SetMember
+    PushRegister(9)
+    PushRegister(6)
+    GetMember
+    PushRegister(5)
+    GetMember
+    EA:Push1
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 39 }
+    DictRef { kind: PushByte, index: 40 }
+    CallMethod
+    StoreRegister(7)
+    Pop
+    PushRegister(4)
+    DictRef { kind: PushByte, index: 41 }
+    PushRegister(7)
+    DictRef { kind: ByteGetMember, index: 42 }
+    SetMember
+    PushRegister(4)
+    DictRef { kind: PushByte, index: 43 }
+    PushRegister(7)
+    DictRef { kind: ByteGetMember, index: 44 }
+    SetMember
+    PushRegister(4)
+    DictRef { kind: PushByte, index: 45 }
+    PushRegister(7)
+    DictRef { kind: ByteGetMember, index: 46 }
+    SetMember
+    PushRegister(4)
+    EA:Push1
+    PushRegister(8)
+    DictRef { kind: ByteGetMember, index: 32 }
+    DictRef { kind: CallMethodPop, index: 47 }
+    PushRegister(5)
+    Increment
+    StoreRegister(5)
+    Pop
+    BranchAlways { target: 196 }
+    PushRegister(8)
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    DictRef { kind: CallMethodPop, index: 47 }
+    PushRegister(6)
+    Increment
+    StoreRegister(6)
+    Pop
+    BranchAlways { target: 160 }
+    EA:Push0
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 48 }
+    DictRef { kind: ByteGetMember, index: 49 }
+    DictRef { kind: CallMethodPop, index: 50 }
+    EA:Push0
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 51 }
+    DictRef { kind: CallMethodPop, index: 52 }
+    EA:Push0
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 48 }
+    DictRef { kind: ByteGetMember, index: 53 }
+    DictRef { kind: PushByte, index: 54 }
+    CallMethod
+    StoreRegister(13)
+    Pop
+    PushRegister(13)
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 55 }
+    DictRef { kind: ByteGetMember, index: 56 }
+    DictRef { kind: ByteGetMember, index: 57 }
+    Equals2
+    Not
+    Not
+    BranchIfTrue { target: 332 }
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 55 }
+    DictRef { kind: ByteGetMember, index: 56 }
+    DictRef { kind: ByteGetMember, index: 57 }
+    EA:Push1
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 48 }
+    DictRef { kind: ByteGetMember, index: 53 }
+    DictRef { kind: CallMethodPop, index: 58 }
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 59 }
+    DictRef { kind: ByteGetMember, index: 60 }
+    DictRef { kind: ByteGetMember, index: 61 }
+    EA:Push1
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 48 }
+    DictRef { kind: ByteGetMember, index: 53 }
+    DictRef { kind: CallMethodPop, index: 62 }
+    EA:PushNull
+    DictRef { kind: PushByte, index: 63 }
+    PushByte(2)
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 64 }
+    DictRef { kind: ByteGetMember, index: 65 }
+    DictRef { kind: CallMethodPop, index: 66 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 67 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    EA:Push1
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 48 }
+    DictRef { kind: ByteGetMember, index: 72 }
+    DictRef { kind: CallMethodPop, index: 73 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 74 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    EA:Push1
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 75 }
+    DictRef { kind: CallMethodPop, index: 76 }
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 77 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 78 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 77 }
+    DictRef { kind: PushByte, index: 79 }
+    PushByte(2)
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 64 }
+    DictRef { kind: CallMethodPop, index: 80 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 81 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 82 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 83 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    PushByte(3)
+    InitArray
+    StoreRegister(12)
+    Pop
+    EA:PushFalse
+    PushRegister(12)
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 84 }
+    PushByte(3)
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 85 }
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 86 }
+    EA:PushNull
+    DictRef { kind: PushByte, index: 87 }
+    PushByte(3)
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 64 }
+    DictRef { kind: ByteGetMember, index: 65 }
+    DictRef { kind: CallMethodPop, index: 88 }
+  }
+  StoreRegister(1)
+  SetMember
+  DictRef { kind: ByteGetVar, index: 1 }
+  DictRef { kind: ByteGetMember, index: 3 }
+  DictRef { kind: ByteGetMember, index: 4 }
+  DictRef { kind: ByteGetMember, index: 5 }
+  DictRef { kind: ByteGetMember, index: 6 }
+  DictRef { kind: ByteGetVar, index: 89 }
+  DictRef { kind: ByteGetMember, index: 90 }
+  DictRef { kind: ByteGetMember, index: 91 }
+  Extends
+  PushRegister(1)
+  DictRef { kind: ByteGetMember, index: 92 }
+  StoreRegister(2)
+  Pop
+  EA:PushGlobalVariable
+  DictRef { kind: ByteGetMember, index: 93 }
+  DictRef { kind: ByteGetMember, index: 94 }
+  DictRef { kind: ByteGetMember, index: 95 }
+  EA:Push1
+  EA:PushGlobalVariable
+  DictRef { kind: ByteGetMember, index: 1 }
+  DictRef { kind: ByteGetMember, index: 3 }
+  DictRef { kind: ByteGetMember, index: 4 }
+  DictRef { kind: ByteGetMember, index: 5 }
+  DictRef { kind: ByteGetMember, index: 6 }
+  ImplementsOp
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 83 }
+  DefineFunction2 ""() {
+    DictRef { kind: PushByte, index: 96 }
+    Trace
+    DictRef { kind: ByteGetVar, index: 93 }
+    DictRef { kind: ByteGetMember, index: 94 }
+    DictRef { kind: ByteGetMember, index: 97 }
+    DictRef { kind: ByteGetMember, index: 98 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 93 }
+    DictRef { kind: ByteGetMember, index: 94 }
+    DictRef { kind: ByteGetMember, index: 99 }
+    DictRef { kind: CallMethodPop, index: 100 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 82 }
+  DefineFunction2 ""() {
+    DictRef { kind: PushByte, index: 101 }
+    Trace
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushFalse
+    SetMember
+    EA:Push0
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 12 }
+    DictRef { kind: PushByte, index: 103 }
+    CallMethod
+    StoreRegister(3)
+    Pop
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 104 }
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushFalse
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 104 }
+    DictRef { kind: ByteGetMember, index: 105 }
+    DictRef { kind: PushByte, index: 106 }
+    PushRegister(3)
+    DictRef { kind: ByteGetMember, index: 107 }
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 104 }
+    DictRef { kind: ByteGetMember, index: 108 }
+    DictRef { kind: PushByte, index: 106 }
+    DictRef { kind: PushByte, index: 109 }
+    EA:Push1
+    PushRegister(2)
+    DictRef { kind: PushByte, index: 31 }
+    CallMethod
+    SetMember
+    DictRef { kind: PushByte, index: 110 }
+    PushWord(200)
+    DictRef { kind: PushByte, index: 111 }
+    PushByte(30)
+    DictRef { kind: PushByte, index: 112 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 113 }
+    DictRef { kind: PushByte, index: 114 }
+    EA:Push0
+    DictRef { kind: PushByte, index: 115 }
+    EA:PushFalse
+    DictRef { kind: PushByte, index: 116 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 113 }
+    DictRef { kind: PushByte, index: 117 }
+    DictRef { kind: PushByte, index: 118 }
+    DictRef { kind: PushByte, index: 119 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 120 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    DictRef { kind: PushByte, index: 121 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 122 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    DictRef { kind: PushByte, index: 123 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 124 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    DictRef { kind: PushByte, index: 125 }
+    EA:PushFalse
+    PushByte(11)
+    InitObject
+    StoreRegister(4)
+    Pop
+    PushRegister(4)
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 104 }
+    DictRef { kind: ByteGetMember, index: 126 }
+    DictRef { kind: CallMethodPop, index: 127 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 128 }
+    DictRef { kind: PushByte, index: 106 }
+    DictRef { kind: PushByte, index: 129 }
+    EA:Push1
+    PushRegister(2)
+    DictRef { kind: PushByte, index: 31 }
+    CallMethod
+    SetMember
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 130 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 81 }
+  DefineFunction2 ""() {
+    DictRef { kind: PushByte, index: 131 }
+    Trace
+    EA:Push0
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 48 }
+    DictRef { kind: ByteGetMember, index: 132 }
+    DictRef { kind: CallMethodPop, index: 133 }
+    PushRegister(1)
+    EA:Push1
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 48 }
+    DictRef { kind: ByteGetMember, index: 132 }
+    DictRef { kind: CallMethodPop, index: 134 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 135 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    PushRegister(1)
+    PushByte(2)
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 48 }
+    DictRef { kind: ByteGetMember, index: 132 }
+    DictRef { kind: CallMethodPop, index: 136 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 135 }
+  DefineFunction2 ""() {
+    DictRef { kind: PushByte, index: 137 }
+    Trace
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 138 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    EA:Push1
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 48 }
+    DictRef { kind: ByteGetMember, index: 139 }
+    DictRef { kind: CallMethodPop, index: 140 }
+    EA:Push0
+    DictRef { kind: ByteGetVar, index: 93 }
+    DictRef { kind: ByteGetMember, index: 141 }
+    DictRef { kind: ByteGetMember, index: 142 }
+    DictRef { kind: CallMethodPop, index: 143 }
+    DictRef { kind: ByteGetVar, index: 93 }
+    DictRef { kind: ByteGetMember, index: 94 }
+    DictRef { kind: ByteGetMember, index: 144 }
+    DictRef { kind: ByteGetMember, index: 145 }
+    EA:Push1
+    DictRef { kind: ByteGetVar, index: 93 }
+    DictRef { kind: ByteGetMember, index: 94 }
+    DictRef { kind: ByteGetMember, index: 99 }
+    DictRef { kind: CallMethodPop, index: 146 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 67 }
+  DefineFunction2 ""() {
+    DictRef { kind: PushByte, index: 147 }
+    Trace
+    PushRegister(1)
+    EA:Push1
+    DictRef { kind: ByteGetVar, index: 93 }
+    DictRef { kind: ByteGetMember, index: 94 }
+    DictRef { kind: ByteGetMember, index: 99 }
+    DictRef { kind: CallMethodPop, index: 148 }
+    EA:Push0
+    DictRef { kind: ByteGetVar, index: 93 }
+    DictRef { kind: ByteGetMember, index: 141 }
+    DictRef { kind: ByteGetMember, index: 142 }
+    DictRef { kind: CallMethodPop, index: 149 }
+    EA:PushNull
+    EA:Push1
+    DictRef { kind: ByteGetVar, index: 93 }
+    DictRef { kind: ByteGetMember, index: 141 }
+    DictRef { kind: ByteGetMember, index: 142 }
+    DictRef { kind: CallMethodPop, index: 76 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 150 }
+    DictRef { kind: CallMethodPop, index: 151 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 152 }
+    DictRef { kind: CallMethodPop, index: 153 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 77 }
+    DictRef { kind: PushByte, index: 79 }
+    PushByte(2)
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 64 }
+    DictRef { kind: CallMethodPop, index: 154 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 151 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 155 }
+  DefineFunction2 ""(publishObject, dpID) {
+    DictRef { kind: PushByte, index: 156 }
+    PushRegister(1)
+    Add2
+    Trace
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 138 }
+  DefineFunction2 ""(keyCode, controllerId) {
+    PushRegister(3)
+    StoreRegister(0)
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 157 }
+    DictRef { kind: ByteGetMember, index: 158 }
+    StrictEquals
+    BranchIfTrue { target: 38 }
+    PushRegister(0)
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 157 }
+    DictRef { kind: ByteGetMember, index: 159 }
+    StrictEquals
+    BranchIfTrue { target: 42 }
+    PushRegister(0)
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 157 }
+    DictRef { kind: ByteGetMember, index: 160 }
+    StrictEquals
+    BranchIfTrue { target: 46 }
+    PushRegister(0)
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 157 }
+    DictRef { kind: ByteGetMember, index: 161 }
+    StrictEquals
+    BranchIfTrue { target: 94 }
+    PushRegister(0)
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 157 }
+    DictRef { kind: ByteGetMember, index: 162 }
+    StrictEquals
+    BranchIfTrue { target: 142 }
+    PushRegister(0)
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 157 }
+    DictRef { kind: ByteGetMember, index: 163 }
+    StrictEquals
+    BranchIfTrue { target: 158 }
+    BranchAlways { target: 174 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 164 }
+    BranchAlways { target: 175 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 165 }
+    BranchAlways { target: 175 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 14 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 15 }
+    Equals2
+    Not
+    BranchIfTrue { target: 62 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 150 }
+    DictRef { kind: CallMethodPop, index: 166 }
+    BranchAlways { target: 93 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 14 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 167 }
+    Equals2
+    Not
+    BranchIfTrue { target: 77 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 168 }
+    BranchAlways { target: 93 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 14 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 169 }
+    Equals2
+    Not
+    BranchIfTrue { target: 93 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 104 }
+    DictRef { kind: ByteGetMember, index: 126 }
+    DictRef { kind: CallMethodPop, index: 170 }
+    BranchAlways { target: 175 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 14 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 15 }
+    Equals2
+    Not
+    BranchIfTrue { target: 110 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 150 }
+    DictRef { kind: CallMethodPop, index: 171 }
+    BranchAlways { target: 141 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 14 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 167 }
+    Equals2
+    Not
+    BranchIfTrue { target: 125 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 172 }
+    BranchAlways { target: 141 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 14 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 169 }
+    Equals2
+    Not
+    BranchIfTrue { target: 141 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 104 }
+    DictRef { kind: ByteGetMember, index: 126 }
+    DictRef { kind: CallMethodPop, index: 173 }
+    BranchAlways { target: 175 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 14 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 15 }
+    Equals2
+    Not
+    BranchIfTrue { target: 157 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 150 }
+    DictRef { kind: CallMethodPop, index: 174 }
+    BranchAlways { target: 175 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 14 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 15 }
+    Equals2
+    Not
+    BranchIfTrue { target: 173 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 150 }
+    DictRef { kind: CallMethodPop, index: 175 }
+    BranchAlways { target: 175 }
+    BranchAlways { target: 175 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 120 }
+  DefineFunction2 ""(row, index) {
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 176 }
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushFalse
+    SetMember
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 177 }
+    DictRef { kind: PushByte, index: 178 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 179 }
+    SetMember
+    PushRegister(3)
+    StoreRegister(0)
+    EA:Push0
+    StrictEquals
+    BranchIfTrue { target: 25 }
+    PushRegister(0)
+    EA:Push1
+    StrictEquals
+    BranchIfTrue { target: 35 }
+    BranchAlways { target: 45 }
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 177 }
+    DictRef { kind: PushByte, index: 106 }
+    DictRef { kind: PushByte, index: 180 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 31 }
+    CallMethod
+    SetMember
+    BranchAlways { target: 45 }
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 177 }
+    DictRef { kind: PushByte, index: 106 }
+    DictRef { kind: PushByte, index: 181 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 31 }
+    CallMethod
+    SetMember
+    BranchAlways { target: 45 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 122 }
+  DefineFunction2 ""(row, index) {
+    DictRef { kind: PushByte, index: 182 }
+    Trace
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 176 }
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushTrue
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 177 }
+    DictRef { kind: PushByte, index: 178 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 183 }
+    SetMember
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 124 }
+  DefineFunction2 ""(row, index) {
+    DictRef { kind: PushByte, index: 184 }
+    Trace
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 176 }
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushFalse
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 177 }
+    DictRef { kind: PushByte, index: 178 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 179 }
+    SetMember
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 185 }
+  DefineFunction2 ""() {
+    DictRef { kind: PushByte, index: 186 }
+    Trace
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 14 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 15 }
+    SetMember
+    EA:Push0
+    StoreRegister(2)
+    Pop
+    PushRegister(2)
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 33 }
+    LessThan2
+    Not
+    BranchIfTrue { target: 53 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 16 }
+    GetMember
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(2)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 188 }
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushFalse
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 16 }
+    GetMember
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(2)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 189 }
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushFalse
+    SetMember
+    PushRegister(2)
+    Increment
+    StoreRegister(2)
+    Pop
+    BranchAlways { target: 14 }
+    EA:PushTrue
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 150 }
+    DictRef { kind: CallMethodPop, index: 190 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 191 }
+  DefineFunction2 ""() {
+    DictRef { kind: PushByte, index: 192 }
+    Trace
+    EA:Push0
+    DictRef { kind: PushByte, index: 2 }
+    NewObject
+    StoreRegister(3)
+    Pop
+    PushRegister(3)
+    DictRef { kind: PushByte, index: 193 }
+    DictRef { kind: PushByte, index: 194 }
+    SetMember
+    PushRegister(3)
+    DictRef { kind: PushByte, index: 195 }
+    DictRef { kind: PushByte, index: 194 }
+    SetMember
+    PushRegister(3)
+    DictRef { kind: PushByte, index: 196 }
+    PushByte(2)
+    SetMember
+    PushRegister(3)
+    DictRef { kind: PushByte, index: 197 }
+    EA:Push1
+    SetMember
+    PushRegister(3)
+    DictRef { kind: PushByte, index: 198 }
+    DictRef { kind: PushByte, index: 180 }
+    SetMember
+    PushRegister(3)
+    DictRef { kind: PushByte, index: 199 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 200 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    SetMember
+    PushRegister(3)
+    DictRef { kind: PushByte, index: 201 }
+    DictRef { kind: PushByte, index: 202 }
+    SetMember
+    PushRegister(3)
+    DictRef { kind: PushByte, index: 203 }
+    EA:PushNull
+    SetMember
+    PushRegister(3)
+    EA:Push1
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 48 }
+    DictRef { kind: ByteGetMember, index: 204 }
+    DictRef { kind: CallMethodPop, index: 205 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 200 }
+  DefineFunction2 ""() {
+    DictRef { kind: PushByte, index: 206 }
+    Trace
+    EA:PushNull
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 48 }
+    DictRef { kind: ByteGetMember, index: 139 }
+    DictRef { kind: CallMethodPop, index: 140 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 51 }
+    DictRef { kind: CallMethodPop, index: 207 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 51 }
+    DictRef { kind: CallMethodPop, index: 208 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 74 }
+  DefineFunction2 ""() {
+    EA:PushUndefined
+    StoreRegister(2)
+    Pop
+    EA:Push0
+    DictRef { kind: PushByte, index: 27 }
+    NewObject
+    StoreRegister(2)
+    Pop
+    DictRef { kind: PushByte, index: 209 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 31 }
+    CallMethod
+    DictRef { kind: PushByte, index: 159 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 31 }
+    CallMethod
+    DictRef { kind: PushByte, index: 159 }
+    PushByte(3)
+    DictRef { kind: ByteGetVar, index: 89 }
+    DictRef { kind: ByteGetMember, index: 210 }
+    DictRef { kind: ByteGetMember, index: 211 }
+    DictRef { kind: PushByte, index: 212 }
+    CallMethod
+    EA:Push1
+    PushRegister(2)
+    DictRef { kind: CallMethodPop, index: 47 }
+    DictRef { kind: PushByte, index: 213 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 31 }
+    CallMethod
+    DictRef { kind: PushByte, index: 213 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 31 }
+    CallMethod
+    DictRef { kind: PushByte, index: 158 }
+    PushByte(3)
+    DictRef { kind: ByteGetVar, index: 89 }
+    DictRef { kind: ByteGetMember, index: 210 }
+    DictRef { kind: ByteGetMember, index: 211 }
+    DictRef { kind: PushByte, index: 212 }
+    CallMethod
+    EA:Push1
+    PushRegister(2)
+    DictRef { kind: CallMethodPop, index: 47 }
+    PushRegister(2)
+    Return
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 214 }
+  DefineFunction2 ""() {
+    DictRef { kind: PushByte, index: 215 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 216 }
+    Add2
+    Trace
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 217 }
+    EA:Push0
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 218 }
+    DictRef { kind: PushByte, index: 219 }
+    CallMethod
+    EA:Push1
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 51 }
+    DictRef { kind: PushByte, index: 220 }
+    CallMethod
+    StoreRegister(3)
+    Pop
+    DictRef { kind: PushByte, index: 215 }
+    PushRegister(3)
+    Add2
+    Trace
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 216 }
+    ToString
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 221 }
+    DictRef { kind: ByteGetMember, index: 222 }
+    DictRef { kind: ByteGetMember, index: 223 }
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 93 }
+    DictRef { kind: ByteGetMember, index: 94 }
+    DictRef { kind: ByteGetMember, index: 99 }
+    DictRef { kind: CallMethodPop, index: 146 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 224 }
+  DefineFunction2 ""(buttonIndex) {
+    DictRef { kind: PushByte, index: 225 }
+    PushRegister(1)
+    Add2
+    Trace
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 226 }
+  DefineFunction2 ""(buttonIndex) {
+    DictRef { kind: PushByte, index: 227 }
+    PushRegister(2)
+    Add2
+    Trace
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 165 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 228 }
+  DefineFunction2 ""(index) {
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 16 }
+    GetMember
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 17 }
+    GetMember
+    DictRef { kind: ByteGetMember, index: 189 }
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushFalse
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 16 }
+    GetMember
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 189 }
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushTrue
+    SetMember
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 17 }
+    PushRegister(3)
+    SetMember
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 218 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 16 }
+    GetMember
+    DictRef { kind: ByteGetMember, index: 32 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 29 }
+    SetMember
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 216 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 16 }
+    GetMember
+    DictRef { kind: ByteGetMember, index: 32 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 35 }
+    SetMember
+    EA:PushFalse
+    EA:PushFalse
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 16 }
+    GetMember
+    DictRef { kind: ByteGetMember, index: 32 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 35 }
+    DictRef { kind: PushByte, index: 229 }
+    PushByte(4)
+    PushRegister(2)
+    DictRef { kind: PushByte, index: 230 }
+    CallMethod
+    StoreRegister(4)
+    Pop
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushTrue
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: ByteGetMember, index: 231 }
+    DictRef { kind: PushByte, index: 232 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 233 }
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: ByteGetMember, index: 231 }
+    DictRef { kind: PushByte, index: 234 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 233 }
+    SetMember
+    EA:PushNull
+    PushRegister(4)
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: ByteGetMember, index: 231 }
+    DictRef { kind: CallMethodPop, index: 235 }
+    EA:PushNull
+    PushRegister(4)
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 104 }
+    DictRef { kind: ByteGetMember, index: 236 }
+    DictRef { kind: CallMethodPop, index: 235 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 104 }
+    DictRef { kind: ByteGetMember, index: 236 }
+    DictRef { kind: PushByte, index: 232 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 237 }
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 104 }
+    DictRef { kind: ByteGetMember, index: 236 }
+    DictRef { kind: PushByte, index: 234 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 237 }
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 104 }
+    DictRef { kind: ByteGetMember, index: 238 }
+    DictRef { kind: PushByte, index: 106 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 218 }
+    DictRef { kind: PushByte, index: 239 }
+    PushByte(2)
+    PushRegister(2)
+    DictRef { kind: PushByte, index: 240 }
+    CallMethod
+    DictRef { kind: PushByte, index: 241 }
+    Add2
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 218 }
+    EA:Push1
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 242 }
+    DictRef { kind: PushByte, index: 243 }
+    CallMethod
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: ByteGetMember, index: 244 }
+    DictRef { kind: CallMethodPop, index: 245 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 246 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: ByteGetMember, index: 244 }
+    DictRef { kind: CallMethodPop, index: 247 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 179 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: ByteGetMember, index: 244 }
+    DictRef { kind: CallMethodPop, index: 248 }
+    PushWord(209)
+    PushByte(39)
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: ByteGetMember, index: 244 }
+    DictRef { kind: CallMethodPop, index: 249 }
+    EA:PushTrue
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: ByteGetMember, index: 244 }
+    DictRef { kind: CallMethodPop, index: 250 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: ByteGetMember, index: 244 }
+    DictRef { kind: CallMethodPop, index: 251 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: ByteGetMember, index: 252 }
+    DictRef { kind: PushByte, index: 106 }
+    DictRef { kind: PushByte, index: 253 }
+    EA:Push1
+    PushRegister(2)
+    DictRef { kind: PushByte, index: 31 }
+    CallMethod
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: ByteGetMember, index: 43 }
+    DictRef { kind: PushByte, index: 106 }
+    DictRef { kind: PushByte, index: 254 }
+    EA:Push1
+    PushRegister(2)
+    DictRef { kind: PushByte, index: 31 }
+    CallMethod
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: ByteGetMember, index: 45 }
+    DictRef { kind: PushByte, index: 106 }
+    DictRef { kind: PushByte, index: 255 }
+    EA:Push1
+    PushRegister(2)
+    DictRef { kind: PushByte, index: 31 }
+    CallMethod
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: PushWord, index: 256 }
+    GetMember
+    DictRef { kind: PushByte, index: 106 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 16 }
+    GetMember
+    DictRef { kind: ByteGetMember, index: 32 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 41 }
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: PushWord, index: 257 }
+    GetMember
+    DictRef { kind: PushByte, index: 106 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 16 }
+    GetMember
+    DictRef { kind: ByteGetMember, index: 32 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 43 }
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 102 }
+    DictRef { kind: PushWord, index: 258 }
+    GetMember
+    DictRef { kind: PushByte, index: 106 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 16 }
+    GetMember
+    DictRef { kind: ByteGetMember, index: 32 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 45 }
+    SetMember
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 168 }
+  DefineFunction2 ""() {
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 17 }
+    EA:Push0
+    Greater
+    Not
+    BranchIfTrue { target: 13 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 17 }
+    EA:Push1
+    Subtract
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 228 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 172 }
+  DefineFunction2 ""() {
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 17 }
+    PushByte(3)
+    LessThan2
+    Not
+    BranchIfTrue { target: 13 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 17 }
+    EA:Push1
+    Add2
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 228 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushWord, index: 259 }
+  DefineFunction2 ""(buttonIndex) {
+    DictRef { kind: PushWord, index: 260 }
+    PushRegister(2)
+    Add2
+    Trace
+    PushRegister(2)
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 228 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushWord, index: 261 }
+  DefineFunction2 ""(clip, nRow, nColumn, nIndex) {
+    DictRef { kind: PushWord, index: 262 }
+    PushRegister(8)
+    Add2
+    DictRef { kind: PushWord, index: 263 }
+    Add2
+    PushRegister(10)
+    Add2
+    Trace
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    PushRegister(9)
+    GetMember
+    StoreRegister(4)
+    Pop
+    PushRegister(7)
+    DictRef { kind: PushWord, index: 264 }
+    GetMember
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushFalse
+    SetMember
+    PushRegister(7)
+    DictRef { kind: PushWord, index: 265 }
+    GetMember
+    DictRef { kind: ByteGetMember, index: 29 }
+    DictRef { kind: PushByte, index: 106 }
+    PushRegister(4)
+    DictRef { kind: ByteGetMember, index: 29 }
+    SetMember
+    PushRegister(4)
+    DictRef { kind: PushByte, index: 187 }
+    PushRegister(7)
+    DictRef { kind: PushWord, index: 266 }
+    GetMember
+    PushRegister(7)
+    DictRef { kind: PushWord, index: 267 }
+    GetMember
+    PushRegister(7)
+    DictRef { kind: PushWord, index: 268 }
+    GetMember
+    PushRegister(7)
+    DictRef { kind: PushWord, index: 269 }
+    GetMember
+    PushByte(4)
+    DictRef { kind: PushByte, index: 27 }
+    NewObject
+    SetMember
+    EA:Push0
+    StoreRegister(3)
+    Pop
+    PushRegister(3)
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 33 }
+    LessThan2
+    Not
+    BranchIfTrue { target: 207 }
+    PushRegister(4)
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 189 }
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushFalse
+    SetMember
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 179 }
+    EA:Push1
+    PushRegister(4)
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 244 }
+    DictRef { kind: CallMethodPop, index: 248 }
+    PushRegister(4)
+    DictRef { kind: ByteGetMember, index: 32 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 29 }
+    EA:Push1
+    PushRegister(4)
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 244 }
+    DictRef { kind: CallMethodPop, index: 245 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: PushWord, index: 270 }
+    GetMember
+    EA:Push1
+    PushRegister(4)
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 244 }
+    DictRef { kind: CallMethodPop, index: 247 }
+    PushByte(110)
+    PushByte(39)
+    PushByte(2)
+    PushRegister(4)
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 244 }
+    DictRef { kind: CallMethodPop, index: 249 }
+    EA:Push0
+    PushRegister(4)
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 244 }
+    DictRef { kind: CallMethodPop, index: 251 }
+    EA:PushFalse
+    EA:PushFalse
+    PushRegister(4)
+    DictRef { kind: ByteGetMember, index: 32 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 35 }
+    DictRef { kind: PushWord, index: 271 }
+    PushByte(4)
+    PushRegister(2)
+    DictRef { kind: PushByte, index: 230 }
+    CallMethod
+    StoreRegister(6)
+    Pop
+    EA:PushNull
+    PushRegister(6)
+    PushByte(2)
+    PushRegister(4)
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: PushWord, index: 272 }
+    GetMember
+    DictRef { kind: CallMethodPop, index: 235 }
+    PushRegister(4)
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 188 }
+    StoreRegister(5)
+    Pop
+    PushRegister(5)
+    DictRef { kind: PushWord, index: 273 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 226 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    SetMember
+    PushRegister(5)
+    DictRef { kind: PushWord, index: 274 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 224 }
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    SetMember
+    PushRegister(5)
+    DictRef { kind: PushWord, index: 275 }
+    PushRegister(1)
+    DictRef { kind: PushWord, index: 259 }
+    GetMember
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    SetMember
+    PushRegister(5)
+    DictRef { kind: PushWord, index: 276 }
+    PushRegister(3)
+    SetMember
+    EA:Push0
+    PushRegister(5)
+    DictRef { kind: PushWord, index: 277 }
+    EA:CallMethodPop
+    PushRegister(5)
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushFalse
+    SetMember
+    PushRegister(3)
+    Increment
+    StoreRegister(3)
+    Pop
+    BranchAlways { target: 49 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushWord, index: 278 }
+  DefineFunction2 ""(rowMc, nRow, nColumn, nIndex) {
+    DictRef { kind: PushWord, index: 279 }
+    PushRegister(3)
+    Add2
+    Trace
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 16 }
+    PushRegister(3)
+    SetMember
+    PushRegister(4)
+    DictRef { kind: PushWord, index: 264 }
+    GetMember
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushTrue
+    SetMember
+    EA:Push0
+    StoreRegister(2)
+    Pop
+    PushRegister(2)
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 33 }
+    LessThan2
+    Not
+    BranchIfTrue { target: 48 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 183 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(2)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 244 }
+    DictRef { kind: CallMethodPop, index: 248 }
+    PushRegister(2)
+    Increment
+    StoreRegister(2)
+    Pop
+    BranchAlways { target: 17 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 150 }
+    DictRef { kind: PushWord, index: 280 }
+    GetMember
+    DictRef { kind: PushWord, index: 281 }
+    GetMember
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushFalse
+    SetMember
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushWord, index: 282 }
+  DefineFunction2 ""(rowMc, nRow, nColumn, nIndex) {
+    DictRef { kind: PushWord, index: 283 }
+    Trace
+    PushRegister(4)
+    DictRef { kind: PushWord, index: 264 }
+    GetMember
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushFalse
+    SetMember
+    EA:Push0
+    StoreRegister(2)
+    Pop
+    PushRegister(2)
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 33 }
+    LessThan2
+    Not
+    BranchIfTrue { target: 42 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 179 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    PushRegister(3)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(2)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 244 }
+    DictRef { kind: CallMethodPop, index: 248 }
+    PushRegister(2)
+    Increment
+    StoreRegister(2)
+    Pop
+    BranchAlways { target: 11 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushWord, index: 284 }
+  DefineFunction2 ""(rowMc, nRow, nColumn, nIndex) {
+    DictRef { kind: PushWord, index: 285 }
+    Trace
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 165 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 165 }
+  DefineFunction2 ""() {
+    DictRef { kind: PushWord, index: 286 }
+    Trace
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 14 }
+    StoreRegister(0)
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 15 }
+    StrictEquals
+    BranchIfTrue { target: 32 }
+    PushRegister(0)
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 167 }
+    StrictEquals
+    BranchIfTrue { target: 81 }
+    PushRegister(0)
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 169 }
+    StrictEquals
+    BranchIfTrue { target: 102 }
+    BranchAlways { target: 124 }
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 14 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 167 }
+    SetMember
+    EA:PushFalse
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 150 }
+    DictRef { kind: CallMethodPop, index: 190 }
+    EA:Push0
+    StoreRegister(2)
+    Pop
+    PushRegister(2)
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 33 }
+    LessThan2
+    Not
+    BranchIfTrue { target: 76 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 26 }
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 16 }
+    GetMember
+    DictRef { kind: ByteGetMember, index: 187 }
+    PushRegister(2)
+    GetMember
+    DictRef { kind: ByteGetMember, index: 188 }
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushTrue
+    SetMember
+    PushRegister(2)
+    Increment
+    StoreRegister(2)
+    Pop
+    BranchAlways { target: 49 }
+    EA:Push0
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 228 }
+    BranchAlways { target: 124 }
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 14 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 169 }
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 104 }
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushTrue
+    SetMember
+    EA:PushTrue
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 152 }
+    DictRef { kind: PushWord, index: 287 }
+    EA:CallMethodPop
+    BranchAlways { target: 124 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 104 }
+    DictRef { kind: ByteGetMember, index: 126 }
+    DictRef { kind: PushWord, index: 288 }
+    CallMethod
+    EA:Push0
+    Equals2
+    Not
+    BranchIfTrue { target: 120 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 214 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: PushWord, index: 289 }
+    EA:CallMethodPop
+    BranchAlways { target: 123 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 164 }
+    BranchAlways { target: 124 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 164 }
+  DefineFunction2 ""() {
+    DictRef { kind: PushWord, index: 290 }
+    Trace
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 14 }
+    StoreRegister(0)
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 15 }
+    StrictEquals
+    BranchIfTrue { target: 32 }
+    PushRegister(0)
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 167 }
+    StrictEquals
+    BranchIfTrue { target: 36 }
+    PushRegister(0)
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 169 }
+    StrictEquals
+    BranchIfTrue { target: 40 }
+    BranchAlways { target: 61 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 191 }
+    BranchAlways { target: 61 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 185 }
+    BranchAlways { target: 61 }
+    PushRegister(1)
+    DictRef { kind: PushByte, index: 14 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: ByteGetMember, index: 167 }
+    SetMember
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 104 }
+    DictRef { kind: PushByte, index: 8 }
+    EA:PushFalse
+    SetMember
+    EA:PushFalse
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 152 }
+    DictRef { kind: PushWord, index: 287 }
+    EA:CallMethodPop
+    BranchAlways { target: 61 }
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushWord, index: 291 }
+  DefineFunction ""(nRow, nCol, nIndex) {
+    EA:PushTrue
+    Return
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 130 }
+  DefineFunction2 ""() {
+    DictRef { kind: PushWord, index: 292 }
+    Trace
+    PushRegister(1)
+    DictRef { kind: PushWord, index: 291 }
+    GetMember
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    PushRegister(1)
+    DictRef { kind: PushWord, index: 284 }
+    GetMember
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    PushRegister(1)
+    DictRef { kind: PushWord, index: 282 }
+    GetMember
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    PushRegister(1)
+    DictRef { kind: PushWord, index: 278 }
+    GetMember
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    PushRegister(1)
+    DictRef { kind: PushWord, index: 261 }
+    GetMember
+    PushRegister(1)
+    PushByte(2)
+    DictRef { kind: ByteGetVar, index: 68 }
+    DictRef { kind: ByteGetMember, index: 69 }
+    DictRef { kind: ByteGetMember, index: 70 }
+    DictRef { kind: PushByte, index: 71 }
+    CallMethod
+    DictRef { kind: PushWord, index: 293 }
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: PushWord, index: 294 }
+    GetMember
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: PushWord, index: 295 }
+    GetMember
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: PushWord, index: 296 }
+    GetMember
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: PushWord, index: 296 }
+    GetMember
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: PushWord, index: 297 }
+    GetMember
+    DictRef { kind: ByteGetVar, index: 1 }
+    DictRef { kind: ByteGetMember, index: 3 }
+    DictRef { kind: ByteGetMember, index: 4 }
+    DictRef { kind: ByteGetMember, index: 5 }
+    DictRef { kind: ByteGetMember, index: 6 }
+    DictRef { kind: PushWord, index: 297 }
+    GetMember
+    PushByte(12)
+    DictRef { kind: ByteGetVar, index: 93 }
+    DictRef { kind: PushWord, index: 298 }
+    GetMember
+    DictRef { kind: PushWord, index: 299 }
+    NewMethod
+    StoreRegister(2)
+    Pop
+    EA:Push0
+    PushRegister(2)
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 150 }
+    DictRef { kind: PushWord, index: 300 }
+    EA:CallMethodPop
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 150 }
+    DictRef { kind: PushWord, index: 301 }
+    EA:CallMethodPop
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 150 }
+    DictRef { kind: PushWord, index: 302 }
+    EA:CallMethodPop
+    EA:Push0
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 150 }
+    DictRef { kind: PushWord, index: 303 }
+    EA:CallMethodPop
+    EA:Push0
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 150 }
+    DictRef { kind: PushWord, index: 304 }
+    EA:CallMethodPop
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushWord, index: 305 }
+  DefineFunction ""(mcGroup) {
+    DictRef { kind: PushWord, index: 306 }
+    Trace
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushWord, index: 289 }
+  DefineFunction2 ""() {
+    DictRef { kind: PushWord, index: 307 }
+    Trace
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 51 }
+    DictRef { kind: PushWord, index: 308 }
+    EA:CallMethodPop
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 79 }
+    DictRef { kind: PushWord, index: 289 }
+    EA:CallMethodPop
+  }
+  SetMember
+  PushRegister(2)
+  DictRef { kind: PushByte, index: 78 }
+  DefineFunction2 ""(event, eventData) {
+    DictRef { kind: PushWord, index: 309 }
+    PushRegister(3)
+    PushRegister(2)
+    PushByte(2)
+    InitArray
+    Add2
+    Trace
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 51 }
+    DictRef { kind: PushWord, index: 310 }
+    EA:CallMethodPop
+    PushRegister(2)
+    StoreRegister(0)
+    DictRef { kind: PushWord, index: 311 }
+    StrictEquals
+    BranchIfTrue { target: 22 }
+    PushRegister(0)
+    DictRef { kind: PushWord, index: 312 }
+    StrictEquals
+    BranchIfTrue { target: 33 }
+    BranchAlways { target: 39 }
+    DictRef { kind: ByteGetVar, index: 93 }
+    DictRef { kind: ByteGetMember, index: 94 }
+    DictRef { kind: ByteGetMember, index: 144 }
+    DictRef { kind: PushWord, index: 313 }
+    GetMember
+    EA:Push1
+    DictRef { kind: ByteGetVar, index: 93 }
+    DictRef { kind: ByteGetMember, index: 94 }
+    DictRef { kind: ByteGetMember, index: 99 }
+    DictRef { kind: CallMethodPop, index: 146 }
+    BranchAlways { target: 40 }
+    DictRef { kind: PushWord, index: 314 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: PushWord, index: 315 }
+    EA:CallMethodPop
+    BranchAlways { target: 40 }
+    BranchAlways { target: 40 }
+  }
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushByte, index: 84 }
+  DictRef { kind: PushWord, index: 316 }
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushByte, index: 28 }
+  PushByte(8)
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushByte, index: 33 }
+  PushByte(4)
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushWord, index: 297 }
+  PushByte(2)
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushWord, index: 296 }
+  PushByte(4)
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushWord, index: 295 }
+  PushWord(204)
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushWord, index: 294 }
+  PushWord(194)
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushByte, index: 233 }
+  PushByte(66)
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushByte, index: 237 }
+  PushByte(40)
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushByte, index: 113 }
+  PushByte(2)
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushByte, index: 179 }
+  PushWord(3172)
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushByte, index: 183 }
+  PushDWord(15132390)
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushByte, index: 15 }
+  EA:Push0
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushByte, index: 167 }
+  EA:Push1
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushByte, index: 169 }
+  PushByte(2)
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushByte, index: 217 }
+  PushByte(3)
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushWord, index: 270 }
+  PushByte(18)
+  DictRef { kind: ByteGetVar, index: 93 }
+  DictRef { kind: ByteGetMember, index: 141 }
+  DictRef { kind: PushWord, index: 317 }
+  GetMember
+  DictRef { kind: PushWord, index: 318 }
+  GetMember
+  PushByte(2)
+  DictRef { kind: PushWord, index: 319 }
+  NewObject
+  SetMember
+  PushRegister(1)
+  DictRef { kind: PushByte, index: 246 }
+  PushByte(26)
+  DictRef { kind: ByteGetVar, index: 93 }
+  DictRef { kind: ByteGetMember, index: 141 }
+  DictRef { kind: PushWord, index: 317 }
+  GetMember
+  DictRef { kind: PushWord, index: 320 }
+  GetMember
+  PushByte(2)
+  DictRef { kind: PushWord, index: 319 }
+  NewObject
+  SetMember
+  EA:Push1
+  EA:PushNull
+  DictRef { kind: ByteGetVar, index: 1 }
+  DictRef { kind: ByteGetMember, index: 3 }
+  DictRef { kind: ByteGetMember, index: 4 }
+  DictRef { kind: ByteGetMember, index: 5 }
+  DictRef { kind: ByteGetMember, index: 6 }
+  DictRef { kind: ByteGetMember, index: 92 }
+  PushByte(3)
+  DictRef { kind: PushWord, index: 321 }
+  CallFunction
+  Pop
+  End
+  -- root frame 0 DoInitAction --
+  DefineDictionary (3 items)
+  DictRef { kind: ByteGetVar, index: 0 }
+  DictRef { kind: PushByte, index: 0 }
+  PushByte(2)
+  DictRef { kind: ByteGetVar, index: 1 }
+  DictRef { kind: CallMethodPop, index: 2 }
+  End

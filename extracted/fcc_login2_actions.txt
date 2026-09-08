@@ -1,5 +1,3 @@
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.53s
-     Running `target\debug\aptinfo.exe -a D:\Afbeeldingen\FUT14-Revival\extracted\fcc_login2.apt`
 APT movie
   pointer size : 4 bytes (32-bit)
   decoupled    : yes

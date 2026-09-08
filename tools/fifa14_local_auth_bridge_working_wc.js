@@ -124,29 +124,6 @@ let wcIndex1Seen = false;
 let wcObject = null;
 
 function install(m) {
-
-    try {
-        Interceptor.attach(m.base.add(0x73AF0), {
-            onEnter() {
-                const holder = m.base.add(0x1D6B5C).readPointer();
-                const vt = holder.readPointer();
-                const target = vt.add(0x70).readPointer();
-
-                console.log(
-                    "[WC-LOADACTIVE] HIT wrapper | holder=" + holder +
-                    " vt=" + vt +
-                    " target+0x70=" + target +
-                    " | " + moduleInfo(target)
-                );
-            }
-        });
-
-        console.log("[WC-LOADACTIVE] hook actief @ CardsDLLzf+0x73AF0");
-
-    } catch (e) {
-        console.log("[WC-LOADACTIVE] hook fout: " + e);
-    }
-
     if (installed) return;
     installed = true;
 
@@ -512,21 +489,30 @@ function install(m) {
 
     Interceptor.attach(firstTimeInitWC, {
         onEnter() {
-            console.log("[WC-FCC-PATCH] FirstTimeInitWC gezien; WC guard actief");
-
             wcFirstTimeInitSeen = true;
             wcFccPatched = false;
+
+            console.log(
+                "[WC-FCC-PATCH] FirstTimeInitWC gezien; WC guard actief"
+            );
 
             try {
                 findFccLogin2Branch(true);
             } catch (e) {
-                console.log("[FCC-LOGIN2-BRANCH] FirstTimeInitWC scan fout: " + e);
+                console.log(
+                    "[WC-FCC-PATCH] scan vanuit FirstTimeInitWC fout: " + e
+                );
             }
 
             try {
-                const obj = fccObjectGlobal.readPointer();
-                const vt = obj.readPointer();
-                const fn = vt.add(0x0C).readPointer();
+                const obj =
+                    fccObjectGlobal.readPointer();
+
+                const vt =
+                    obj.readPointer();
+
+                const fn =
+                    vt.add(0x0C).readPointer();
 
                 console.log(
                     "[FirstTimeInitWC] obj=" +
@@ -538,55 +524,9 @@ function install(m) {
                     " | " +
                     moduleInfo(fn)
                 );
-
-                const cardsDownloadedTarget =
-                    vt.add(0x1C).readPointer();
-
-                console.log(
-                    "[WC-SQUAD-PROBE] FCC vtable=" +
-                    vt
-                );
-
-                for (let off = 0; off <= 0x80; off += 4) {
-                    try {
-                        const target = vt.add(off).readPointer();
-
-                        console.log(
-                            "[WC-SQUAD-PROBE] slot+0x" +
-                            off.toString(16) +
-                            " = " +
-                            target +
-                            " | " +
-                            moduleInfo(target)
-                        );
-                    } catch (_) {}
-                }
-
-                console.log(
-                    "[WC-CARDSDOWNLOADED] late target=" +
-                    cardsDownloadedTarget +
-                    " | " +
-                    moduleInfo(cardsDownloadedTarget)
-                );
-
-                if (!wcCardsDownloadedHooked) {
-                    wcCardsDownloadedHooked = true;
-
-                    Interceptor.attach(cardsDownloadedTarget, {
-                        onEnter() {
-                            console.log("[WC-CARDSDOWNLOADED] FIRED");
-
-                        }
-                    });
-
-                    console.log(
-                        "[WC-CARDSDOWNLOADED] hook actief"
-                    );
-                }
-
             } catch (e) {
                 console.log(
-                    "[WC-CARDSDOWNLOADED] late hook fout: " + e
+                    "[FirstTimeInitWC] fout: " + e
                 );
             }
         }
@@ -1020,6 +960,25 @@ function findFccLogin2Branch(patchForWC = false) {
         hits
     );
 
+    console.log(
+        "[WC-LOAD-CB] hits=" +
+        Process.enumerateRanges("r--").reduce(
+            (n, r) => {
+                try {
+                    return n + Memory.scanSync(
+                        r.base,
+                        r.size,
+                        "A2 83 26 A2 80 5A B9 01 B2 76 " +
+                        "A2 81 5A B9 01 B2 76"
+                    ).length;
+                } catch (e) {
+                    return n;
+                }
+            },
+            0
+        )
+    );
+
     return hits;
 }
 
@@ -1034,61 +993,10 @@ console.log("[WC-CARDSDOWNLOADED] target=" + cardsDownloadedTarget);
 
 // Alleen diagnostische scan bij startup.
 // Patcht NIETS.
-
-function dumpRuntimeCode(label, rva, count = 25) {
-    try {
-        const exe = Process.getModuleByName("fifa14.exe");
-        let p = exe.base.add(rva);
-
-        console.log(
-            "[WC-CALLER] ===== " +
-            label +
-            " RVA=0x" +
-            rva.toString(16) +
-            " ====="
-        );
-
-        for (let i = 0; i < count; i++) {
-            const ins = Instruction.parse(p);
-
-            console.log(
-                "[WC-CALLER] " +
-                ins.address +
-                "  " +
-                ins.mnemonic +
-                " " +
-                ins.opStr
-            );
-
-            p = ins.next;
-        }
-    } catch (e) {
-        console.log(
-            "[WC-CALLER] " +
-            label +
-            " fout: " +
-            e
-        );
-    }
-}
-
-setTimeout(() => {
-    dumpRuntimeCode("F8131", 0xF8131, 30);
-    dumpRuntimeCode("F8DBA", 0xF8DBA, 30);
-    dumpRuntimeCode("BA1AF", 0xBA1AF, 30);
-    dumpRuntimeCode("C4450", 0xC4450, 100);
-}, 16000);
-
 setTimeout(() => {
     findFccLogin2Branch(false);
 }, 15000);
 
-let wcCardsDownloadedHooked = false;
-let wcSquadEventProbeInstalled = false;
-let wcLoadActiveSquadHooked = false;
-let wcLoadActiveSquadTarget = null;
-let wcSquadEventProbeCount = 0;
-let wcLoadActiveSquadSeen = false;
 setInterval(() => {
 
     if (installed) return;
@@ -1101,92 +1009,41 @@ setInterval(() => {
 
             try {
 
-                const dispatchTable =
-                    m.base.add(0x1D5314).readPointer();
+                const ionObj = m.base.add(0x1D73B0).readPointer();
+                const ionVtable = ionObj.readPointer();
+                const cardsDownloadedTarget = ionVtable.add(0x1C).readPointer();
 
-                const dispatchTarget =
-                    dispatchTable.add(0x354).readPointer();
+                console.log("[WC-CARDSDOWNLOADED] obj=" + ionObj);
+                console.log("[WC-CARDSDOWNLOADED] vtable=" + ionVtable);
+                console.log("[WC-CARDSDOWNLOADED] target=" + cardsDownloadedTarget);
 
-                console.log(
-                    "[WC-DISPATCH] table=" +
-                    dispatchTable
-                );
+                const dispatchTable = m.base.add(0x1D5314).readPointer();
+                const dispatchTarget = dispatchTable.add(0x354).readPointer();
 
-                console.log(
-                    "[WC-DISPATCH] +0x354 target=" +
-                    dispatchTarget
-                );
+                console.log("[WC-DISPATCH] table=" + dispatchTable);
+                console.log("[WC-DISPATCH] +0x354 target=" + dispatchTarget);
+                console.log("[WC-DISPATCH] CardsDLL RVA=" + dispatchTarget.sub(m.base));
 
-                console.log(
-                    "[WC-DISPATCH] CardsDLL RVA=" +
-                    dispatchTarget.sub(m.base)
-                );
+                const dispatchModule = Process.findModuleByAddress(dispatchTarget);
 
-                const dispatchModule =
-                    Process.findModuleByAddress(dispatchTarget);
+                console.log("[WC-DISPATCH] module=" + (dispatchModule ? dispatchModule.name : "unknown"));
+                console.log("[WC-DISPATCH] moduleRVA=" + (dispatchModule ? dispatchTarget.sub(dispatchModule.base) : "n/a"));
+                console.log("[WC-DISPATCH] fifaBase=" + dispatchModule.base + " size=" + dispatchModule.size);
 
-                console.log(
-                    "[WC-DISPATCH] module=" +
-                    (
-                        dispatchModule
-                            ? dispatchModule.name
-                            : "unknown"
-                    )
-                );
+                console.log("[WC-DISPATCH] ===== RUNTIME CODE =====");
 
-                console.log(
-                    "[WC-DISPATCH] moduleRVA=" +
-                    (
-                        dispatchModule
-                            ? dispatchTarget.sub(
-                                dispatchModule.base
-                            )
-                            : "n/a"
-                    )
-                );
-
-                if (dispatchModule) {
-                    console.log(
-                        "[WC-DISPATCH] moduleBase=" +
-                        dispatchModule.base +
-                        " size=" +
-                        dispatchModule.size
-                    );
-                }
-
-                console.log(
-                    "[WC-DISPATCH] ===== RUNTIME CODE ====="
-                );
-
-                const exe =
-                    Process.getModuleByName("fifa14.exe");
-
-                let p =
-                    exe.base.add(0xC4170);
+                const exe = Process.getModuleByName("fifa14.exe");
+                
+                let p = exe.base.add(0xC4170);
 
                 for (let i = 0; i < 80; i++) {
-
-                    const ins =
-                        Instruction.parse(p);
-
-                    console.log(
-                        "[WC-DISPATCH] " +
-                        ins.address +
-                        " " +
-                        ins.mnemonic +
-                        " " +
-                        ins.opStr
-                    );
-
+                    const ins = Instruction.parse(p);
+                    console.log("[WC-DISPATCH] " + ins.address + "  " + ins.mnemonic + " " + ins.opStr);
                     p = ins.next;
                 }
 
             } catch (e) {
-
-                console.log(
-                    "[WC-DISPATCH] read failed: " +
-                    e
-                );
+                console.log("[WC-CARDSDOWNLOADED] read failed: " + e);
             }
 
             break;
@@ -1194,4 +1051,3 @@ setInterval(() => {
     }
 
 }, 100);
-
