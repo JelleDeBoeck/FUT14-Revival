@@ -135,6 +135,11 @@ WC_STATE: dict[str, Any] = {
     "support_nation": None,
     "first_time_complete": False,
 
+    # Python-only onboarding bridge:
+    # first /squad/active stays empty, then server arms the 23-player squad
+    # for the next squad read without using Frida/JS intervention.
+    "starter_active_seen": False,
+
     "clientdata": {
         "tutorialpopups": {},
         "userHubData": {},
@@ -161,6 +166,54 @@ def state_for_request(
         return WC_STATE
 
     return FUT_STATE
+
+@app.middleware("http")
+async def debug_request_mode(request: Request, call_next):
+    path = request.url.path
+    query = request.url.query
+
+    if path.startswith("/ut/"):
+        wc = is_world_cup_request(request)
+
+        print()
+        print("=" * 90)
+        print(
+            f"[REQUEST] {request.method} {path}"
+            + (f"?{query}" if query else "")
+        )
+        print(f"[REQUEST] WC_BY_QUERY={wc}")
+
+        try:
+            body = await request.body()
+
+            if body:
+                try:
+                    body_text = body.decode(
+                        "utf-8",
+                        errors="replace",
+                    )
+                except Exception:
+                    body_text = repr(body)
+
+                print(
+                    "[REQUEST BODY] "
+                    + body_text[:4000]
+                )
+        except Exception as exc:
+            print(
+                f"[REQUEST BODY ERROR] {exc}"
+            )
+
+    response = await call_next(request)
+
+    if path.startswith("/ut/"):
+        print(
+            f"[RESPONSE] {response.status_code} "
+            f"{request.method} {path}"
+        )
+        print("=" * 90)
+
+    return response
 
 # ============================================================
 # Helpers
@@ -1091,6 +1144,36 @@ def health():
         "status": "ok",
     }
 
+def reset_wc_session() -> None:
+    WC_STATE["club_created"] = False
+    WC_STATE["starter_pack_claimed"] = False
+
+    WC_STATE["club_name"] = LOCAL_CLUB_NAME
+    WC_STATE["club_abbr"] = LOCAL_CLUB_ABBR
+    WC_STATE["badge_id"] = 0
+    WC_STATE["team_id"] = 0
+
+    WC_STATE["active_squad_id"] = 1
+    WC_STATE["formation"] = "f442"
+    WC_STATE["squad_name"] = "World Cup"
+    WC_STATE["chemistry"] = 0
+    WC_STATE["star_rating"] = 0
+
+    WC_STATE["players"] = []
+    WC_STATE["purchased_items"] = []
+    WC_STATE["club_items"] = []
+
+    WC_STATE["support_nation"] = None
+    WC_STATE["first_time_complete"] = False
+    WC_STATE["starter_active_seen"] = False
+
+    WC_STATE["clientdata"] = {
+        "tutorialpopups": {},
+        "userHubData": {},
+        "managerquest": {},
+    }
+
+    print("[WC-RESET] fresh WC session")
 
 # ============================================================
 # Account info
@@ -1391,17 +1474,34 @@ def provision_wc_starter_club() -> None:
         pack.get("formation") or "f442"
     )
     WC_STATE["squad_name"] = "World Cup"
-    WC_STATE["players"] = players
+
+    # WC native starter baseline.
+    # Dit is bewust de server-state uit de eerdere run waarin FIFA zelf
+    # na LoadActiveSquad twee SaveSquad PUTs stuurde.
+    WC_STATE["players"] = []
+    WC_STATE["purchased_items"] = []
+    WC_STATE.pop("_starter_players_pending", None)
+    WC_STATE["starter_active_seen"] = False
+
+    print(
+        "[WC-NATIVE] players=0 purchased_items=0; "
+        "waiting for FIFA native starter squad"
+    )
+
+    # Native WC onboarding must look internally consistent to FIFA:
+    # the squad is still empty at this point, so report empty-squad ratings too.
     WC_STATE["chemistry"] = 0
-    WC_STATE["star_rating"] = (
-        int(sum(ratings) / len(ratings))
-        if ratings
-        else 0
+    WC_STATE["star_rating"] = 0
+
+    print(
+        "[WC-NATIVE-RATING0] empty squad metadata: "
+        "chemistry=0 starRating=0 rating=0"
     )
 
     print(
         "[WC] starter squad provisioned "
         f"players={len(players)} "
+        f"new_items={len(WC_STATE['purchased_items'])} "
         f"formation={WC_STATE['formation']}"
     )
 
@@ -1443,8 +1543,11 @@ async def fut_user(
         )
 
         WC_STATE["club_created"] = True
-
-        provision_wc_starter_club()
+        WC_STATE["starter_pack_claimed"] = False
+        WC_STATE["players"] = []
+        WC_STATE["purchased_items"] = []
+        WC_STATE["starter_active_seen"] = False
+        WC_STATE.pop("_starter_players_pending", None)
 
         print(
             "[WC] support_nation saved =",
@@ -1469,7 +1572,7 @@ async def fut_user(
                 0,
 
             "returningUser":
-                1,
+                0,
 
             "clubName":
                 profile_state[
@@ -1503,7 +1606,7 @@ async def fut_user(
             ],
 
             "INTRO_DONE":
-                True,
+                False,
         }
 
     return {
@@ -1684,6 +1787,7 @@ def fut_store_transaction():
 async def fut_tutorial_popups(
     request: Request,
 ):
+    state = state_for_request(request)
     key = "tutorialpopups"
 
     if request.method in {
@@ -1691,9 +1795,7 @@ async def fut_tutorial_popups(
         "POST",
     }:
         try:
-            body = (
-                await request.json()
-            )
+            body = await request.json()
         except Exception:
             raise HTTPException(
                 status_code=400,
@@ -1712,12 +1814,12 @@ async def fut_tutorial_popups(
                 ),
             )
 
-        FUT_STATE[
+        state[
             "clientdata"
         ][key] = body
 
     return copy.deepcopy(
-        FUT_STATE[
+        state[
             "clientdata"
         ][key]
     )
@@ -1756,6 +1858,7 @@ def fut_clientdata_pile_size():
 async def fut_clientdata_user_hub_data(
     request: Request,
 ):
+    state = state_for_request(request)
     key = "userHubData"
 
     if request.method in {
@@ -1763,9 +1866,7 @@ async def fut_clientdata_user_hub_data(
         "POST",
     }:
         try:
-            body = (
-                await request.json()
-            )
+            body = await request.json()
         except Exception:
             raise HTTPException(
                 status_code=400,
@@ -1784,12 +1885,12 @@ async def fut_clientdata_user_hub_data(
                 ),
             )
 
-        FUT_STATE[
+        state[
             "clientdata"
         ][key] = body
 
     return copy.deepcopy(
-        FUT_STATE[
+        state[
             "clientdata"
         ][key]
     )
@@ -1806,6 +1907,7 @@ async def fut_clientdata_user_hub_data(
 async def fut_clientdata_managerquest(
     request: Request,
 ):
+    state = state_for_request(request)
     key = "managerquest"
 
     if request.method in {
@@ -1813,9 +1915,7 @@ async def fut_clientdata_managerquest(
         "POST",
     }:
         try:
-            body = (
-                await request.json()
-            )
+            body = await request.json()
         except Exception:
             raise HTTPException(
                 status_code=400,
@@ -1834,12 +1934,12 @@ async def fut_clientdata_managerquest(
                 ),
             )
 
-        FUT_STATE[
+        state[
             "clientdata"
         ][key] = body
 
     return copy.deepcopy(
-        FUT_STATE[
+        state[
             "clientdata"
         ][key]
     )
@@ -1921,7 +2021,12 @@ def fut_user_action_update(
     ):
         print("[WC] CHARITY_MATCH_PLAYED hook reached")
 
-        print("[WC] TEST: injected purchased_items =", len(WC_STATE["purchased_items"]))
+        provision_wc_starter_club()
+
+        print(
+            "[WC] starter items now available =",
+            len(WC_STATE["purchased_items"]),
+        )
 
     print(
         "[FUT] user action: "
@@ -2192,25 +2297,29 @@ def fut_squad_list(
 ):
     state = state_for_request(request)
 
-    if not state[
-        "club_created"
-    ]:
-        return {
+    if not state["club_created"]:
+        document = {
             "activeSquadId": 0,
             "squad": [],
         }
-
-    return {
-        "activeSquadId":
-            state[
-                "active_squad_id"
+    else:
+        document = {
+            "activeSquadId": state["active_squad_id"],
+            "squad": [
+                compact_squad_record(state)
             ],
+        }
 
-        "squad": [
-            compact_squad_record(state)
-        ],
-    }
+    if is_world_cup_request(request):
+        print(
+            "[WC-RESPONSE] /squad/list = "
+            + json.dumps(
+                document,
+                separators=(",", ":"),
+            )
+        )
 
+    return document
 
 # ============================================================
 # Active squad
@@ -2224,8 +2333,18 @@ def fut_active_squad(
     active: bool = True,
 ):
     state = state_for_request(request)
+    document = squad_detail(state)
 
-    return squad_detail(state)
+    if is_world_cup_request(request):
+        print(
+            "[WC-RESPONSE] /squad/active = "
+            + json.dumps(
+                document,
+                separators=(",", ":"),
+            )
+        )
+
+    return document
 
 
 # ============================================================

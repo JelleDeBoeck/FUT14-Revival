@@ -1,0 +1,165 @@
+
+  extracted\futwc_db\futwc_ng_db-meta.xml:107:  </indices>
+  extracted\futwc_db\futwc_ng_db-meta.xml:108:  <table name="fcc_badgecards" shortname="atGo">
+  extracted\futwc_db\futwc_ng_db-meta.xml:109:    <fields>
+> extracted\futwc_db\futwc_ng_db-meta.xml:110:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" key="True" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:111:      <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:112:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:113:      <field name="header" shortname="VuYu" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:114:      <field name="name" shortname="vIys" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:115:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:116:      <field name="biodescription" shortname="FKtG" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:117:      <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:118:      <field name="description" shortname="JSVI" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:119:      <field name="category" shortname="jPMu" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:120:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:121:    </fields>
+  extracted\futwc_db\futwc_ng_db-meta.xml:122:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:123:  <table name="stadiumassignments" shortname="esAj" maxupdate="-1" maxinsert="600" maxdelete="600" savegroups="squads">
+  extracted\futwc_db\futwc_ng_db-meta.xml:211:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:212:  <table name="fcc_leaguelogostickers" shortname="BAMJ">
+  extracted\futwc_db\futwc_ng_db-meta.xml:213:    <fields>
+> extracted\futwc_db\futwc_ng_db-meta.xml:214:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" key="True" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:215:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:216:      <field name="name" shortname="vIys" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:217:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:218:      <field name="biodescription" shortname="FKtG" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:219:      <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="12" null="False" rangehigh="3000" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:220:      <field name="description" shortname="JSVI" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:221:      <field name="leagueid" shortname="aQrQ" type="DBOFIELDTYPE_INTEGER" depth="12" null="False" rangehigh="3000" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:222:      <field name="category" shortname="jPMu" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:223:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:224:    </fields>
+  extracted\futwc_db\futwc_ng_db-meta.xml:225:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:226:  <table name="nations" shortname="Crbb" maxupdate="-1">
+  extracted\futwc_db\futwc_ng_db-meta.xml:280:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:281:  <table name="fcc_trainingcards" shortname="OWfL">
+  extracted\futwc_db\futwc_ng_db-meta.xml:282:    <fields>
+> extracted\futwc_db\futwc_ng_db-meta.xml:283:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="31" null="False" rangehigh="2001001001" rangelow="0" key="True" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:284:      <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:285:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:286:      <field name="rating" shortname="Xxmh" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:287:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:288:      <field name="amount" shortname="ZZwZ" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:289:    </fields>
+  extracted\futwc_db\futwc_ng_db-meta.xml:290:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:347:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:348:  <table name="headcoachcards" shortname="TiUk">
+  extracted\futwc_db\futwc_ng_db-meta.xml:349:    <fields>
+> extracted\futwc_db\futwc_ng_db-meta.xml:350:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:351:      <field name="firstname" shortname="HdeP" type="DBOFIELDTYPE_STRING" depth="152" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:352:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:353:      <field name="attribute" shortname="KvvE" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="10" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:600:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:601:  <table name="fcc_kitcards" shortname="BPUM">
+  extracted\futwc_db\futwc_ng_db-meta.xml:602:    <fields>
+> extracted\futwc_db\futwc_ng_db-meta.xml:603:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="-1" key="True" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:604:      <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-1" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:605:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="255" rangelow="-1" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:606:      <field name="header" shortname="VuYu" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:607:      <field name="name" shortname="vIys" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:608:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="255" rangelow="-1" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:609:      <field name="biodescription" shortname="FKtG" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:610:      <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="255" rangelow="-1" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:611:      <field name="description" shortname="JSVI" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:612:      <field name="category" shortname="jPMu" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="255" rangelow="-1" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:613:      <field name="year" shortname="qFnd" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:614:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:615:    </fields>
+  extracted\futwc_db\futwc_ng_db-meta.xml:616:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:617:  <table name="fcc_contractcards" shortname="Bpmk">
+  extracted\futwc_db\futwc_ng_db-meta.xml:618:    <fields>
+> extracted\futwc_db\futwc_ng_db-meta.xml:619:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="31" null="False" rangehigh="2001001001" rangelow="0" key="True" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:620:      <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:621:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:622:      <field name="gold" shortname="CqVP" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:623:      <field name="silver" shortname="gTww" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:624:      <field name="rating" shortname="Xxmh" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:625:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:626:      <field name="bronze" shortname="Vcpq" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:627:    </fields>
+  extracted\futwc_db\futwc_ng_db-meta.xml:628:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:649:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:650:  <table name="fcc_balls" shortname="GuQh">
+  extracted\futwc_db\futwc_ng_db-meta.xml:651:    <fields>
+> extracted\futwc_db\futwc_ng_db-meta.xml:652:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" key="True" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:653:      <field name="detaildescription" shortname="MRSr" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:654:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:655:      <field name="name" shortname="vIys" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:656:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:657:      <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:658:      <field name="rare" shortname="cZox" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:659:      <field name="category" shortname="jPMu" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:755:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:756:  <table name="fcc_stadium" shortname="WqSK">
+  extracted\futwc_db\futwc_ng_db-meta.xml:757:    <fields>
+> extracted\futwc_db\futwc_ng_db-meta.xml:758:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" key="True" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:759:      <field name="capacity" shortname="wPID" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:760:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:761:      <field name="header" shortname="VuYu" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:762:      <field name="name" shortname="vIys" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:763:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:764:      <field name="biodescription" shortname="FKtG" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:765:      <field name="boost" shortname="ZssP" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:766:      <field name="stadiumid" shortname="fwCQ" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="511" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:767:      <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="511" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:768:      <field name="description" shortname="JSVI" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:769:      <field name="category" shortname="jPMu" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:770:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:771:    </fields>
+  extracted\futwc_db\futwc_ng_db-meta.xml:772:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:773:  <table name="customteamstyles" shortname="WpTz" maxupdate="-1" maxinsert="28" maxdelete="28" savegroups="customteamstyles">
+  extracted\futwc_db\futwc_ng_db-meta.xml:797:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:798:  <table name="fcc_healingcards" shortname="aAgi">
+  extracted\futwc_db\futwc_ng_db-meta.xml:799:    <fields>
+> extracted\futwc_db\futwc_ng_db-meta.xml:800:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="31" null="False" rangehigh="2001001001" rangelow="0" key="True" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:801:      <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:802:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:803:      <field name="rating" shortname="Xxmh" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:804:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:805:      <field name="amount" shortname="ZZwZ" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:806:    </fields>
+  extracted\futwc_db\futwc_ng_db-meta.xml:807:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:1159:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:1160:  <table name="gkcoachcards" shortname="BROZ">
+  extracted\futwc_db\futwc_ng_db-meta.xml:1161:    <fields>
+> extracted\futwc_db\futwc_ng_db-meta.xml:1162:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:1163:      <field name="firstname" shortname="HdeP" type="DBOFIELDTYPE_STRING" depth="152" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:1164:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:1165:      <field name="attribute" shortname="KvvE" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="10" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:1910:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:1911:  <table name="managercards" shortname="vjfq">
+  extracted\futwc_db\futwc_ng_db-meta.xml:1912:    <fields>
+> extracted\futwc_db\futwc_ng_db-meta.xml:1913:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:1914:      <field name="firstname" shortname="HdeP" type="DBOFIELDTYPE_STRING" depth="152" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:1915:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:1916:      <field name="formationid" shortname="oHkj" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="40" rangelow="-1" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2189:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:2190:  <table name="fitnesscoachcards" shortname="JYGQ">
+  extracted\futwc_db\futwc_ng_db-meta.xml:2191:    <fields>
+> extracted\futwc_db\futwc_ng_db-meta.xml:2192:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2193:      <field name="fieldpos" shortname="bIZj" type="DBOFIELDTYPE_INTEGER" depth="2" null="False" rangehigh="3" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2194:      <field name="firstname" shortname="HdeP" type="DBOFIELDTYPE_STRING" depth="152" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2195:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2635:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:2636:  <table name="fcc_misccards" shortname="AcEl">
+  extracted\futwc_db\futwc_ng_db-meta.xml:2637:    <fields>
+> extracted\futwc_db\futwc_ng_db-meta.xml:2638:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="31" null="False" rangehigh="2001001001" rangelow="0" key="True" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2639:      <field name="detaildescription" shortname="MRSr" type="DBOFIELDTYPE_STRING" depth="1024" null="False" rangehigh="0" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:2640:      <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2641:      <field name="name" shortname="vIys" type="DBOFIELDTYPE_STRING" depth="1024" null="False" rangehigh="0" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:2642:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2643:      <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2644:      <field name="description" shortname="JSVI" type="DBOFIELDTYPE_STRING" depth="1024" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2645:      <field name="rating" shortname="Xxmh" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+> extracted\futwc_db\futwc_ng_db-meta.xml:2646:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2647:      <field name="amount" shortname="ZZwZ" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2648:    </fields>
+  extracted\futwc_db\futwc_ng_db-meta.xml:2649:  </table>
+  extracted\futwc_db\futwc_ng_db-meta.xml:2650:  <table name="physiocards" shortname="Aguh">
+  extracted\futwc_db\futwc_ng_db-meta.xml:2651:    <fields>
+> extracted\futwc_db\futwc_ng_db-meta.xml:2652:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2653:      <field name="firstname" shortname="HdeP" type="DBOFIELDTYPE_STRING" depth="152" null="False" rangehigh="0" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2654:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+  extracted\futwc_db\futwc_ng_db-meta.xml:2655:      <field name="attribute" shortname="KvvE" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="10" rangelow="0" />
+

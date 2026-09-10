@@ -1,0 +1,30 @@
+trainingteamplayers: playerid
+trainingteamplayerlinks: playerid
+teams: assetid
+teamplayerlinks: playerid
+referee: cardstrictness
+previousteam: playerid
+players: playerid
+playerloans: playerid
+player_grudgelove: playerid
+fcc_navcoords_kc: playerid
+fcc_navcoords_hd: playerid
+fcc_myclubscategories: futcountryid
+fcc_badgecards: carddbid, cardassetid, assetid, weightrare
+fcc_stadium: carddbid, cardassetid, assetid, weightrare
+fcc_leaguelogostickers: carddbid, cardassetid, assetid, weightrare
+fcc_kitcards: carddbid, cardassetid, assetid, weightrare
+fcc_balls: carddbid, cardassetid, assetid, rare
+physiocards: carddbid, assetid, rare
+managercards: carddbid, assetid, rare
+headcoachcards: carddbid, assetid, rare
+gkcoachcards: carddbid, assetid, rare
+fitnesscoachcards: carddbid, assetid, rare
+fcc_trainingcards: carddbid, cardsubtype, cardassetid, weightrare
+fcc_misccards: carddbid, cardsubtype, cardassetid, assetid, weightrare
+fcc_managerbonusvalues: cardlevel
+fcc_leagues: futcountryid
+fcc_healingcards: carddbid, cardsubtype, cardassetid, weightrare
+fcc_contractcards: carddbid, cardsubtype, cardassetid, weightrare
+fifaGameSettings: kinfutformation1, kinfutformation5, kincombofutformation, ballfuturetrajectoryindicator, kinfutformation4, kinfutformation2, kincustomfutformation, kinfutformation3
+factory_teams: assetid

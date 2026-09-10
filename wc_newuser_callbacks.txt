@@ -1,0 +1,207 @@
+    GetMember
+    DictRef { kind: ByteGetMember, index: 112 }
+    EA:Push0
+    Equals2
+    PushDuplicate
+    BranchIfTrue { target: 24 }
+    Pop
+    DictRef { kind: ByteGetVar, index: 85 }
+    PushRegister(2)
+    GetMember
+    EA:PushNull
+    Equals2
+    Not
+    BranchIfTrue { target: 31 }
+    DictRef { kind: ByteGetVar, index: 113 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 114 }
+    BranchAlways { target: 37 }
+    DictRef { kind: ByteGetVar, index: 85 }
+    PushRegister(2)
+    GetMember
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 114 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 115 }
+  }
+  DefineFunction2 "onCreateFirstSquadSuccess"() {
+    DictRef { kind: PushByte, index: 116 }
+    Trace
+    DictRef { kind: PushByte, index: 117 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 118 }
+    DictRef { kind: PushByte, index: 119 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 118 }
+    DictRef { kind: ByteGetVar, index: 120 }
+    DictRef { kind: PushByte, index: 121 }
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 122 }
+    DictRef { kind: ByteGetVar, index: 28 }
+    DictRef { kind: PushByte, index: 123 }
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 122 }
+    DictRef { kind: PushByte, index: 123 }
+    DictRef { kind: PushByte, index: 121 }
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 124 }
+    DictRef { kind: CallMethodPop, index: 125 }
+  }
+  DefineFunction2 "onGetSquadListSuccess"() {
+    DictRef { kind: PushByte, index: 126 }
+    Trace
+    DictRef { kind: PushByte, index: 121 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 118 }
+    DictRef { kind: PushByte, index: 123 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 118 }
+    DictRef { kind: ByteGetVar, index: 127 }
+    DictRef { kind: PushByte, index: 128 }
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 122 }
+    DictRef { kind: ByteGetVar, index: 28 }
+    DictRef { kind: PushByte, index: 129 }
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 122 }
+    DictRef { kind: PushByte, index: 129 }
+    DictRef { kind: PushByte, index: 128 }
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 124 }
+    DictRef { kind: CallMethodPop, index: 130 }
+  }
+  DefineFunction2 "onLoadActiveSquadSuccess"() {
+    DictRef { kind: PushByte, index: 131 }
+    Trace
+    DictRef { kind: PushByte, index: 128 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 118 }
+    DictRef { kind: PushByte, index: 129 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 118 }
+    DictRef { kind: ByteGetVar, index: 132 }
+    DictRef { kind: PushByte, index: 133 }
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 122 }
+    DictRef { kind: ByteGetVar, index: 28 }
+    DictRef { kind: PushByte, index: 134 }
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 122 }
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 124 }
+    DictRef { kind: PushByte, index: 135 }
+    CallMethod
+    StoreRegister(2)
+    Pop
+    DictRef { kind: PushByte, index: 134 }
+    DictRef { kind: PushByte, index: 133 }
+    PushRegister(2)
+    PushByte(3)
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 124 }
+    DictRef { kind: CallMethodPop, index: 136 }
+  }
+  DefineFunction2 "onSaveActiveSquadSuccess"() {
+    DictRef { kind: PushByte, index: 137 }
+    Trace
+    DictRef { kind: PushByte, index: 128 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 118 }
+    DictRef { kind: PushByte, index: 129 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 184 }
+    EA:Push1
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 7 }
+    DictRef { kind: ByteGetMember, index: 185 }
+    DictRef { kind: CallMethodPop, index: 186 }
+    EA:Push0
+    DictRef { kind: CallFuncPop, index: 212 }
+  }
+  DefineFunction2 "DownloadSquadList"() {
+    DictRef { kind: PushByte, index: 213 }
+    Trace
+    DictRef { kind: ByteGetVar, index: 214 }
+    DictRef { kind: PushByte, index: 121 }
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 122 }
+    DictRef { kind: ByteGetVar, index: 28 }
+    DictRef { kind: PushByte, index: 123 }
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 122 }
+    DictRef { kind: PushByte, index: 123 }
+    DictRef { kind: PushByte, index: 121 }
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 124 }
+    DictRef { kind: CallMethodPop, index: 125 }
+  }
+  DefineFunction2 "DownloadActiveSquadDeck"() {
+    DictRef { kind: PushByte, index: 215 }
+    Trace
+    EA:Push0
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 124 }
+    DictRef { kind: PushByte, index: 216 }
+    CallMethod
+    StoreRegister(2)
+    Pop
+    DictRef { kind: PushByte, index: 217 }
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 88 }
+    Add2
+    Trace
+    PushRegister(2)
+    DictRef { kind: ByteGetMember, index: 88 }
+    EA:Push1
+    LessThan2
+    Not
+    BranchIfTrue { target: 23 }
+    EA:Push0
+    DictRef { kind: CallFuncPop, index: 28 }
+    BranchAlways { target: 39 }
+    DictRef { kind: ByteGetVar, index: 218 }
+    DictRef { kind: PushByte, index: 128 }
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 122 }
+    DictRef { kind: ByteGetVar, index: 28 }
+    DictRef { kind: PushByte, index: 129 }
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: CallMethodPop, index: 122 }
+    DictRef { kind: PushByte, index: 129 }
+    DictRef { kind: PushByte, index: 128 }
+    PushByte(2)
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 124 }
+    DictRef { kind: CallMethodPop, index: 130 }
+  }
+  DefineFunction2 "GoToNextScreen_ExistingUser"() {
+    DictRef { kind: PushByte, index: 219 }
+    Trace
+    PushRegister(1)
+    DictRef { kind: ByteGetMember, index: 20 }
+    DictRef { kind: ByteGetMember, index: 21 }

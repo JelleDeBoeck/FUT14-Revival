@@ -1,0 +1,358 @@
+INFO:     Started server process [17164]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8099 (Press CTRL+C to quit)
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/user/accountinfo
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/user/accountinfo
+==========================================================================================
+INFO:     127.0.0.1:31706 - "GET /ut/game/fifa14/user/accountinfo HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] POST /ut/auth
+[REQUEST] WC_BY_QUERY=False
+[REQUEST BODY] {"isReadOnly":false,"priorityLevel":5,"sku":"FFA14PCC","nucleusPersonaPlatform":"pc","clientVersion":1,"nuc":1000001,"nucleusPersonaId":1000001,"nucleusPersonaDisplayName":"LocalFUT","locale":"en-US","deviceId":"5051c428b36400c6357c48e3cab26a57","macAddress":"b4:2e:99:5e:c8:55","method":"cas","identification":{"EASW-Session":"LOCAL-FIFA14-EASW-SESSION","EASW-Token":"LOCAL-FIFA14-EASW-TOKEN"}}
+[RESPONSE] 200 POST /ut/auth
+==========================================================================================
+INFO:     127.0.0.1:31708 - "POST /ut/auth HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/phishing/trusteddevice?deviceId=5051c428b36400c6357c48e3cab26a57
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/phishing/trusteddevice
+==========================================================================================
+INFO:     127.0.0.1:31709 - "GET /ut/game/fifa14/phishing/trusteddevice?deviceId=5051c428b36400c6357c48e3cab26a57 HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/phishing/question?deviceId=5051c428b36400c6357c48e3cab26a57
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/phishing/question
+==========================================================================================
+INFO:     127.0.0.1:31709 - "GET /ut/game/fifa14/phishing/question?deviceId=5051c428b36400c6357c48e3cab26a57 HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] POST /ut/game/fifa14/phishing/validate?deviceId=5051c428b36400c6357c48e3cab26a57&answer=cf92ff10902a9ab44d095e391b14604f
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 POST /ut/game/fifa14/phishing/validate
+==========================================================================================
+INFO:     127.0.0.1:31709 - "POST /ut/game/fifa14/phishing/validate?deviceId=5051c428b36400c6357c48e3cab26a57&answer=cf92ff10902a9ab44d095e391b14604f HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/settings
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/settings
+==========================================================================================
+INFO:     127.0.0.1:31709 - "GET /ut/game/fifa14/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:31710 - "GET /fut/loc/PC/leaderboards.ENG_US.xml HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] PUT /ut/game/fifa14/match/reset
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 PUT /ut/game/fifa14/match/reset
+==========================================================================================
+INFO:     127.0.0.1:31709 - "PUT /ut/game/fifa14/match/reset HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/user
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/user
+==========================================================================================
+INFO:     127.0.0.1:31709 - "GET /ut/game/fifa14/user HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/userdata
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/userdata
+==========================================================================================
+INFO:     127.0.0.1:31709 - "GET /ut/game/fifa14/userdata HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/v2/game/fifa14/store/transaction
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/v2/game/fifa14/store/transaction
+==========================================================================================
+INFO:     127.0.0.1:31709 - "GET /ut/v2/game/fifa14/store/transaction HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/clientdata/tutorialpopups
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/clientdata/tutorialpopups
+==========================================================================================
+INFO:     127.0.0.1:31709 - "GET /ut/game/fifa14/clientdata/tutorialpopups HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/user/action?actionType=
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/user/action
+==========================================================================================
+INFO:     127.0.0.1:31709 - "GET /ut/game/fifa14/user/action?actionType= HTTP/1.1" 200 OK
+INFO:     127.0.0.1:31711 - "GET /fut/packs/icebreaker/icebreakerpacklist.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:31712 - "GET /fut/loc/PC/icebreaker.ENG_US.xml HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] POST /ut/game/fifa14/user/action/ICEBREAKER_ENGLISH_CAPTAIN_SELECTED
+[REQUEST] WC_BY_QUERY=False
+[FUT] user action: ICEBREAKER_ENGLISH_CAPTAIN_SELECTED
+[FUT] provisioned Local FUT / Local XI formation=f442 players=23
+[RESPONSE] 200 POST /ut/game/fifa14/user/action/ICEBREAKER_ENGLISH_CAPTAIN_SELECTED
+==========================================================================================
+INFO:     127.0.0.1:31713 - "POST /ut/game/fifa14/user/action/ICEBREAKER_ENGLISH_CAPTAIN_SELECTED HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] POST /ut/game/fifa14/user
+[REQUEST] WC_BY_QUERY=False
+[REQUEST BODY] {"useFut1Data":false,"clubName":"Sheffield FC","clubAbbr":"She","purchased":false}
+[RESPONSE] 200 POST /ut/game/fifa14/user
+==========================================================================================
+INFO:     127.0.0.1:31713 - "POST /ut/game/fifa14/user HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/userdata
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/userdata
+==========================================================================================
+INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/userdata HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] POST /ut/game/fifa14/user/action/CHARITY_MATCH_PLAYED
+[REQUEST] WC_BY_QUERY=False
+[FUT] user action: CHARITY_MATCH_PLAYED
+[RESPONSE] 200 POST /ut/game/fifa14/user/action/CHARITY_MATCH_PLAYED
+==========================================================================================
+INFO:     127.0.0.1:31713 - "POST /ut/game/fifa14/user/action/CHARITY_MATCH_PLAYED HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/purchased/items
+[REQUEST] WC_BY_QUERY=False
+[FUT PACKS] Returning New Items: 0 items
+[RESPONSE] 200 GET /ut/game/fifa14/purchased/items
+==========================================================================================
+INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/purchased/items HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/club/stats/staff
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/club/stats/staff
+==========================================================================================
+INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/club/stats/staff HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/user
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/user
+==========================================================================================
+INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/user HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/clientdata/pileSize
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/clientdata/pileSize
+==========================================================================================
+INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/clientdata/pileSize HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/clientdata/userHubData
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/clientdata/userHubData
+==========================================================================================
+INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/clientdata/userHubData HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/clientdata/managerquest
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/clientdata/managerquest
+==========================================================================================
+INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/clientdata/managerquest HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/squad/list
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/squad/list
+==========================================================================================
+INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/squad/list HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/squad/active?active=true
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/squad/active
+==========================================================================================
+INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/squad/active?active=true HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/eventfeed
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 404 GET /ut/game/fifa14/eventfeed
+==========================================================================================
+INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/eventfeed HTTP/1.1" 404 Not Found
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/leaderboards/options
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/leaderboards/options
+==========================================================================================
+INFO:     127.0.0.1:31714 - "GET /ut/game/fifa14/leaderboards/options HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/clubUser
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/clubUser
+==========================================================================================
+INFO:     127.0.0.1:31714 - "GET /ut/game/fifa14/clubUser HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/hub
+[REQUEST] WC_BY_QUERY=False
+[RESPONSE] 200 GET /ut/game/fifa14/hub
+==========================================================================================
+INFO:     127.0.0.1:31714 - "GET /ut/game/fifa14/hub HTTP/1.1" 200 OK
+INFO:     127.0.0.1:31715 - "GET /fut/loc/PC/leaderboards.ENG_US.xml HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/settings?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/settings
+==========================================================================================
+INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/settings?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] PUT /ut/game/fifa14/match/reset?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 PUT /ut/game/fifa14/match/reset
+==========================================================================================
+INFO:     127.0.0.1:31716 - "PUT /ut/game/fifa14/match/reset?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/user?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/user
+==========================================================================================
+INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/user?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/userdata?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/userdata
+==========================================================================================
+INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/userdata?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/clientdata/tutorialpopups?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/clientdata/tutorialpopups
+==========================================================================================
+INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/clientdata/tutorialpopups?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] POST /ut/game/fifa14/user?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[REQUEST BODY] {"useFut1Data":false,"clubName":"0001370","clubAbbr":"LFT","purchased":false}
+[WC] POST /user body = {"useFut1Data":false,"clubName":"0001370","clubAbbr":"LFT","purchased":false}
+[WC] starter squad provisioned players=23 new_items=23 formation=f442
+[WC] support_nation saved = 0001370
+[RESPONSE] 200 POST /ut/game/fifa14/user
+==========================================================================================
+INFO:     127.0.0.1:31716 - "POST /ut/game/fifa14/user?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/userdata?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/userdata
+==========================================================================================
+INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/userdata?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] POST /ut/game/fifa14/user/action/CHARITY_MATCH_PLAYED?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[WC] CHARITY_MATCH_PLAYED hook reached
+[WC] TEST: injected purchased_items = 23
+[FUT] user action: CHARITY_MATCH_PLAYED
+[RESPONSE] 200 POST /ut/game/fifa14/user/action/CHARITY_MATCH_PLAYED
+==========================================================================================
+INFO:     127.0.0.1:31716 - "POST /ut/game/fifa14/user/action/CHARITY_MATCH_PLAYED?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/purchased/items?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[FUT PACKS] Returning New Items: 23 items
+[RESPONSE] 200 GET /ut/game/fifa14/purchased/items
+==========================================================================================
+INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/purchased/items?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/club/stats/staff?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/club/stats/staff
+==========================================================================================
+INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/club/stats/staff?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/user?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/user
+==========================================================================================
+INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/user?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/clientdata/pileSize?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/clientdata/pileSize
+==========================================================================================
+INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/clientdata/pileSize?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/clientdata/userHubData?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/clientdata/userHubData
+==========================================================================================
+INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/clientdata/userHubData?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/squad/list?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/squad/list
+==========================================================================================
+INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/squad/list?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/squad/active?active=true&skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/squad/active
+==========================================================================================
+INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/squad/active?active=true&skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/user/credits?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/user/credits
+==========================================================================================
+INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/user/credits?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/club/stats/newcards?skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/club/stats/newcards
+==========================================================================================
+INFO:     127.0.0.1:31717 - "GET /ut/game/fifa14/club/stats/newcards?skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/squad/active?active=true&skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/squad/active
+==========================================================================================
+INFO:     127.0.0.1:31717 - "GET /ut/game/fifa14/squad/active?active=true&skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/tradePile?skuMode=WC&skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/tradePile
+==========================================================================================
+INFO:     127.0.0.1:31717 - "GET /ut/game/fifa14/tradePile?skuMode=WC&skuMode=WC HTTP/1.1" 200 OK
+
+==========================================================================================
+[REQUEST] GET /ut/game/fifa14/squad/active?active=true&skuMode=WC
+[REQUEST] WC_BY_QUERY=True
+[RESPONSE] 200 GET /ut/game/fifa14/squad/active
+==========================================================================================
+INFO:     127.0.0.1:31717 - "GET /ut/game/fifa14/squad/active?active=true&skuMode=WC HTTP/1.1" 200 OK

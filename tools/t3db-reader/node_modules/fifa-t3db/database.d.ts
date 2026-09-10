@@ -1,0 +1,23 @@
+import { BinaryView } from "./binary.js";
+import type { FifaDatabase, FifaDatabaseHeader, FifaDatabaseSchema, FifaFieldInfo, FifaTableData, FifaTableInfo, OpenFifaDatabaseInput } from "./types.js";
+export interface InternalTable {
+    readonly info: FifaTableInfo;
+    readonly fieldsByBitOffset: readonly FifaFieldInfo[];
+    readonly recordsOffset: number;
+    readonly recordsCrcOffset: number;
+    readonly endOffset: number;
+}
+export declare function openFifaDatabase(input: OpenFifaDatabaseInput): FifaDatabase;
+export declare class ParsedFifaDatabase implements FifaDatabase {
+    readonly header: FifaDatabaseHeader;
+    readonly schema: FifaDatabaseSchema;
+    readonly binary: BinaryView;
+    readonly tables: readonly InternalTable[];
+    readonly tablesByName: Map<string, InternalTable>;
+    readonly cache: Map<string, FifaTableData>;
+    constructor(bytes: Uint8Array, schema: FifaDatabaseSchema);
+    listTables(): readonly FifaTableInfo[];
+    readTable(nameOrShortName: string): FifaTableData;
+    getInternalTable(nameOrShortName: string): InternalTable;
+}
+//# sourceMappingURL=database.d.ts.map

@@ -1,0 +1,48 @@
+
+> extracted\fcc_login2_actions.txt:578:  DefineFunction2 "onGetSquadListSuccess"() {
+  extracted\fcc_login2_actions.txt:579:    DictRef { kind: PushByte, index: 126 }
+  extracted\fcc_login2_actions.txt:580:    Trace
+  extracted\fcc_login2_actions.txt:581:    DictRef { kind: PushByte, index: 121 }
+  extracted\fcc_login2_actions.txt:582:    EA:Push1
+  extracted\fcc_login2_actions.txt:583:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:584:    DictRef { kind: CallMethodPop, index: 118 }
+  extracted\fcc_login2_actions.txt:585:    DictRef { kind: PushByte, index: 123 }
+  extracted\fcc_login2_actions.txt:586:    EA:Push1
+  extracted\fcc_login2_actions.txt:587:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:588:    DictRef { kind: CallMethodPop, index: 118 }
+  extracted\fcc_login2_actions.txt:589:    DictRef { kind: ByteGetVar, index: 127 }
+  extracted\fcc_login2_actions.txt:590:    DictRef { kind: PushByte, index: 128 }
+  extracted\fcc_login2_actions.txt:591:    PushByte(2)
+  extracted\fcc_login2_actions.txt:592:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:593:    DictRef { kind: CallMethodPop, index: 122 }
+  extracted\fcc_login2_actions.txt:594:    DictRef { kind: ByteGetVar, index: 28 }
+  extracted\fcc_login2_actions.txt:595:    DictRef { kind: PushByte, index: 129 }
+  extracted\fcc_login2_actions.txt:596:    PushByte(2)
+  extracted\fcc_login2_actions.txt:597:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:598:    DictRef { kind: CallMethodPop, index: 122 }
+  extracted\fcc_login2_actions.txt:599:    DictRef { kind: PushByte, index: 129 }
+  extracted\fcc_login2_actions.txt:600:    DictRef { kind: PushByte, index: 128 }
+  extracted\fcc_login2_actions.txt:601:    PushByte(2)
+  extracted\fcc_login2_actions.txt:602:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:603:    DictRef { kind: ByteGetMember, index: 124 }
+  extracted\fcc_login2_actions.txt:604:    DictRef { kind: CallMethodPop, index: 130 }
+  extracted\fcc_login2_actions.txt:605:  }
+  extracted\fcc_login2_actions.txt:606:  DefineFunction2 "onLoadActiveSquadSuccess"() {
+  extracted\fcc_login2_actions.txt:607:    DictRef { kind: PushByte, index: 131 }
+  extracted\fcc_login2_actions.txt:608:    Trace
+  extracted\fcc_login2_actions.txt:609:    DictRef { kind: PushByte, index: 128 }
+  extracted\fcc_login2_actions.txt:610:    EA:Push1
+  extracted\fcc_login2_actions.txt:611:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:612:    DictRef { kind: CallMethodPop, index: 118 }
+  extracted\fcc_login2_actions.txt:613:    DictRef { kind: PushByte, index: 129 }
+  extracted\fcc_login2_actions.txt:614:    EA:Push1
+  extracted\fcc_login2_actions.txt:615:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:616:    DictRef { kind: CallMethodPop, index: 118 }
+  extracted\fcc_login2_actions.txt:617:    DictRef { kind: ByteGetVar, index: 132 }
+  extracted\fcc_login2_actions.txt:618:    DictRef { kind: PushByte, index: 133 }
+  extracted\fcc_login2_actions.txt:619:    PushByte(2)
+  extracted\fcc_login2_actions.txt:620:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:621:    DictRef { kind: CallMethodPop, index: 122 }
+  extracted\fcc_login2_actions.txt:622:    DictRef { kind: ByteGetVar, index: 28 }
+  extracted\fcc_login2_actions.txt:623:    DictRef { kind: PushByte, index: 134 }
+

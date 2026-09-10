@@ -123,25 +123,516 @@ function installRealSetterProbe() {
 let wcIndex1Seen = false;
 let wcObject = null;
 
+function dumpLoadActiveTarget(target, m) {
+    try {
+        console.log("[WC-LOADACTIVE-DISASM] ===== BEGIN =====");
+        console.log(
+            "[WC-LOADACTIVE-DISASM] target=" + target +
+            " | " + moduleInfo(target)
+        );
+
+        let p = target;
+
+        for (let i = 0; i < 100; i++) {
+            const ins = Instruction.parse(p);
+
+            console.log(
+                "[WC-LOADACTIVE-DISASM] " +
+                p.sub(m.base) +
+                "  " +
+                ins.mnemonic +
+                " " +
+                ins.opStr
+            );
+
+            p = ins.next;
+
+            if (ins.mnemonic === "ret") {
+                break;
+            }
+        }
+
+        console.log("[WC-LOADACTIVE-DISASM] ===== END =====");
+    } catch (e) {
+        console.log("[WC-LOADACTIVE-DISASM] fout: " + e);
+    }
+}
+
 function install(m) {
 
+        // WC LoadActiveSquad callback bridge.
+    // A7F90 bewaart:
+    //   OUTER+0x1B4 = callback uit native arg1
+    //   OUTER+0x1CC = callback uit native arg2
+    //
+    // We observeren eerst welke callback A6A50 werkelijk kiest.
+    // Geen branchpatch en geen resultcodepatch.
+    let wcLoadActiveCompletionArmed = false;
+
+        try {
+        Interceptor.attach(m.base.add(0xA6A50), {
+            onEnter(args) {
+                try {
+                    if (!wcFirstTimeInitSeen || !wcLoadActiveCompletionArmed) {
+                        return;
+                    }
+
+                    wcLoadActiveCompletionArmed = false;
+
+                    const result = ptr(args[0]);
+
+                    if (result.isNull()) {
+                        console.log("[WC-CALLBACK-BRIDGE] result=NULL");
+                        return;
+                    }
+
+                    const code = result.add(0x18).readS32();
+
+                    console.log(
+                        "[WC-CALLBACK-BRIDGE] completion code=" + code
+                    );
+
+                    if (code !== 0) {
+                        console.log(
+                            "[WC-CALLBACK-BRIDGE] geen success; niets geforceerd"
+                        );
+                        return;
+                    }
+
+                    const outer = ptr(this.context.ecx);
+
+                    if (outer.isNull()) {
+                        console.log("[WC-CALLBACK-BRIDGE] OUTER=NULL");
+                        return;
+                    }
+
+                    const cb1 = outer.add(0x1B4).readPointer();
+                    const cb2 = outer.add(0x1CC).readPointer();
+
+                    console.log(
+                        "[WC-CALLBACK-BRIDGE] OUTER=" + outer +
+                        " cb+1B4=" + cb1 +
+                        " cb+1CC=" + cb2
+                    );
+
+                    console.log(
+                        "[WC-DISPATCH-CHECK] code=0" +
+                        " OUTER=" + outer +
+                        " success(+1B4)=" + cb1 +
+                        " failure(+1CC)=" + cb2
+                    );
+
+                    this.wcDispatchCheck = true;
+
+                } catch (e) {
+                    console.log(
+                        "[WC-CALLBACK-BRIDGE] fout: " + e
+                    );
+                }
+            },
+
+            onLeave(retval) {
+                if (this.wcDispatchCheck) {
+                    console.log(
+                        "[WC-DISPATCH-CHECK] A6A50 RETURNED"
+                    );
+                }
+            }
+        });
+
+        console.log("[WC-CALLBACK-BRIDGE] A6A50 hook actief");
+
+    } catch (e) {
+        console.log(
+            "[WC-CALLBACK-BRIDGE] install fout: " + e
+        );
+    }
+
+        // =========================================================
+    
+
+        // =========================================================
+    // WC native 23-player build probe
+    // =========================================================
     try {
-        Interceptor.attach(m.base.add(0x73AF0), {
-            onEnter() {
-                const holder = m.base.add(0x1D6B5C).readPointer();
-                const vt = holder.readPointer();
-                const target = vt.add(0x70).readPointer();
+        Interceptor.attach(m.base.add(0xA6590), {
+            onEnter(args) {
+                if (!wcFirstTimeInitSeen) {
+                    return;
+                }
+
+                this.wcHit = true;
 
                 console.log(
-                    "[WC-LOADACTIVE] HIT wrapper | holder=" + holder +
-                    " vt=" + vt +
-                    " target+0x70=" + target +
-                    " | " + moduleInfo(target)
+                    "[WC-23BUILD] ENTER" +
+                    " this=" + this.context.ecx +
+                    " arg1=" + args[0] +
+                    " arg2=" + args[1] +
+                    " arg3=" + args[2]
+                );
+            },
+
+            onLeave(retval) {
+                if (!this.wcHit) {
+                    return;
+                }
+
+                console.log(
+                    "[WC-23BUILD] LEAVE retval=" + retval +
+                    " bool=" + (retval.toInt32() & 0xff)
                 );
             }
         });
 
+        console.log("[WC-23BUILD] probe actief @ +0xA6590");
+
+    } catch (e) {
+        console.log("[WC-23BUILD] install fout: " + e);
+    }
+
+    /*    // =========================================================
+    // WC A75D0 guard intervention
+    // TEST: force internal squad/card count to >= 11
+    // only while WC FirstTime flow is active
+    // =========================================================
+    try {
+        Interceptor.attach(m.base.add(0xA75D0), {
+            onEnter() {
+                if (!wcFirstTimeInitSeen) {
+                    return;
+                }
+
+                try {
+                    // ED80 service object that BuildSquad uses.
+                    const root = m.base.add(0x1D0C98);
+                    const rootVt = root.readPointer();
+
+                    const lookup1 =
+                        rootVt.add(0x18).readPointer();
+
+                    const level1 =
+                        new NativeFunction(
+                            lookup1,
+                            "pointer",
+                            ["uint"]
+                        )(0x0ED80ED8);
+
+                    if (level1.isNull()) {
+                        console.log(
+                            "[WC-A75-GUARD] level1=NULL"
+                        );
+                        return;
+                    }
+
+                    const level1Vt = level1.readPointer();
+                    const lookup2 =
+                        level1Vt.add(0x0C).readPointer();
+
+                    const esi =
+                        new NativeFunction(
+                            lookup2,
+                            "pointer",
+                            ["uint"],
+                            "thiscall"
+                        ).call(level1, 0x0ED80ED9);
+
+                    if (esi.isNull()) {
+                        console.log(
+                            "[WC-A75-GUARD] ESI=NULL"
+                        );
+                        return;
+                    }
+
+                    const oldValue =
+                        esi.add(0x674).readU32();
+
+                    console.log(
+                        "[WC-A75-GUARD] ESI=" + esi +
+                        " old=" + oldValue
+                    );
+
+                    if (oldValue < 11) {
+                        esi.add(0x674).writeU32(11);
+
+                        console.log(
+                            "[WC-A75-GUARD] FORCED " +
+                            oldValue + " -> 11"
+                        );
+                    } else {
+                        console.log(
+                            "[WC-A75-GUARD] already >= 11"
+                        );
+                    }
+
+                } catch (e) {
+                    console.log(
+                        "[WC-A75-GUARD] fout: " + e
+                    );
+                }
+            }
+        });
+
+        console.log(
+            "[WC-A75-GUARD] intervention actief @ +0xA75D0"
+        );
+
+    } catch (e) {
+        console.log(
+            "[WC-A75-GUARD] install fout: " + e
+        );
+    }*/
+
+    try {
+        Interceptor.attach(m.base.add(0x3B4D0), {
+            onEnter(args) {
+                this.wc = wcFirstTimeInitSeen === true;
+
+                if (!this.wc) {
+                    return;
+                }
+
+                try {
+                    console.log(
+                        "[WC-3B4D0] ENTER" +
+                        " this=" + this.context.ecx +
+                        " arg1=" + args[0] +
+                        " arg2=" + args[1] +
+                        " arg3=" + args[2]
+                    );
+                } catch (e) {
+                    console.log("[WC-3B4D0] enter fout: " + e);
+                }
+            }
+        });
+
+        Interceptor.attach(m.base.add(0x3B50B), {
+            onEnter() {
+                if (!wcFirstTimeInitSeen) {
+                    return;
+                }
+
+                try {
+                    const ebx = ptr(this.context.ebx);
+
+                    if (ebx.isNull()) {
+                        console.log("[WC-3B4D0] EBX=NULL");
+                        return;
+                    }
+
+                    const vt = ebx.readPointer();
+                    const target70 = vt.add(0x70).readPointer();
+
+                    console.log(
+                        "[WC-3B4D0] VMOBJ=" + ebx +
+                        " VT=" + vt +
+                        " VT+70=" + target70 +
+                        " VT+70_RVA=" + target70.sub(m.base)
+                    );
+                } catch (e) {
+                    console.log("[WC-3B4D0] VMOBJ fout: " + e);
+                }
+            }
+        });
+/*
+        Interceptor.attach(m.base.add(0x3B52A), {
+            onEnter() {
+                if (!wcFirstTimeInitSeen) {
+                    return;
+                }
+
+                try {
+                    console.log(
+                        "[WC-3B4D0] CALL+70" +
+                        " ecx=" + this.context.ecx +
+                        " value=" + this.context.eax
+                    );
+                } catch (e) {
+                    console.log("[WC-3B4D0] CALL+70 fout: " + e);
+                }
+            }
+        });
+*/
+        console.log("[WC-3B4D0] probes actief");
+
+    } catch (e) {
+        console.log("[WC-3B4D0] install fout: " + e);
+    }
+
+
+    try {
+        Interceptor.attach(m.base.add(0x73AF0), {
+            onEnter() {
+                if (wcFirstTimeInitSeen) {
+                    wcLoadActiveCompletionArmed = true;
+                    console.log(
+                        "[WC-CALLBACK-BRIDGE] armed door WC LoadActiveSquad"
+                    );
+                }
+
+                try {
+                    const globalPtr = m.base.add(0x1D6B5C);
+                    const obj = globalPtr.readPointer();
+
+                    if (obj.isNull()) {
+                        console.log("[WC-FAST] LoadActive: object=NULL");
+                        return;
+                    }
+
+                    const vt = obj.readPointer();
+                    const fn70 = vt.add(0x70).readPointer();
+
+                    console.log("[WC-FAST] ===== LoadActiveSquad =====");
+                    console.log("[WC-FAST] object=" + obj);
+                    console.log("[WC-FAST] vtable=" + vt);
+                    console.log(
+                        "[WC-FAST] slot70=" + fn70 +
+                        " | " + moduleInfo(fn70)
+                    );
+                } catch (e) {
+                    console.log("[WC-FAST] error: " + e);
+                }
+            }
+        });
+
+        let wcLookup2Hooked = false;
+
+        const root = m.base.add(0x1D0C98);
+        const rootVt = root.readPointer();
+        const lookup1Target = rootVt.add(0x18).readPointer();
+
+        console.log(
+            "[WC-LOADACTIVE-REAL] root=" + root +
+            " rootVt=" + rootVt +
+            " lookup1=" + lookup1Target +
+            " | " + moduleInfo(lookup1Target)
+        );
+
+        Interceptor.attach(lookup1Target, {
+            onEnter(args) {
+                this.wcMatch = false;
+
+                try {
+                    const hash = args[0].toUInt32();
+
+                    if (hash === 0x0E9E4F96) {
+                        this.wcMatch = true;
+
+                        /*console.log(
+                            "[WC-LOADACTIVE-REAL] lookup1 hash=0x" +
+                            hash.toString(16)
+                        );*/
+                    }
+                } catch (e) {
+                    console.log("[WC-LOADACTIVE-REAL] lookup1 enter fout: " + e);
+                }
+            },
+
+            onLeave(retval) {
+                if (!this.wcMatch) return;
+
+                try {
+                    const level1 = ptr(retval);
+
+                    /*console.log(
+                        "[WC-LOADACTIVE-REAL] level1=" + level1
+                    );*/
+
+                    if (level1.isNull()) {
+                        console.log("[WC-LOADACTIVE-REAL] level1 NULL");
+                        return;
+                    }
+
+                    if (wcLookup2Hooked) return;
+
+                    const level1Vt = level1.readPointer();
+                    const lookup2Target =
+                        level1Vt.add(0x0C).readPointer();
+
+                    console.log(
+                        "[WC-LOADACTIVE-REAL] level1Vt=" + level1Vt +
+                        " lookup2=" + lookup2Target +
+                        " | " + moduleInfo(lookup2Target)
+                    );
+
+                    wcLookup2Hooked = true;
+
+                    Interceptor.attach(lookup2Target, {
+                        onEnter(args) {
+                            this.wcMatch = false;
+
+                            try {
+                                const hash = args[0].toUInt32();
+
+                                if (hash === 0x0E9E4F97) {
+                                    this.wcMatch = true;
+
+                                    /*console.log(
+                                        "[WC-LOADACTIVE-REAL] lookup2 hash=0x" +
+                                        hash.toString(16)
+                                    );*/
+                                }
+                            } catch (e) {
+                                console.log(
+                                    "[WC-LOADACTIVE-REAL] lookup2 enter fout: " + e
+                                );
+                            }
+                        },
+
+                        onLeave(retval) {
+                            if (!this.wcMatch) return;
+
+                            try {
+                                const obj = ptr(retval);
+
+                                /*console.log(
+                                    "[WC-LOADACTIVE-REAL] obj=" + obj
+                                );*/
+
+                                if (obj.isNull()) {
+                                    console.log(
+                                        "[WC-LOADACTIVE-REAL] obj NULL"
+                                    );
+                                    return;
+                                }
+
+                                const vt = obj.readPointer();
+                                const fn18 =
+                                    vt.add(0x18).readPointer();
+
+                                /*console.log(
+                                    "[WC-LOADACTIVE-REAL] vt=" + vt
+                                );
+
+                                console.log(
+                                    "[WC-LOADACTIVE-REAL] fn18=" +
+                                    fn18 +
+                                    " | " +
+                                    moduleInfo(fn18)
+                                );
+
+                                /*dumpCode(
+                                    "LOADACTIVE_REAL_IMPL",
+                                    fn18
+                                );*/
+
+                            } catch (e) {
+                                console.log(
+                                    "[WC-LOADACTIVE-REAL] lookup2 leave fout: " + e
+                                );
+                            }
+                        }
+                    });
+
+                } catch (e) {
+                    console.log(
+                        "[WC-LOADACTIVE-REAL] lookup1 leave fout: " + e
+                    );
+                }
+            }
+        });
+
         console.log("[WC-LOADACTIVE] hook actief @ CardsDLLzf+0x73AF0");
+        console.log("[WC-LOADACTIVE-REAL] lookup hooks actief");
 
     } catch (e) {
         console.log("[WC-LOADACTIVE] hook fout: " + e);
@@ -152,6 +643,10 @@ function install(m) {
 
     console.log("[AUTH+WC] Cards gevonden @ " + m.base);
 
+    /*dumpCode(
+        "CARDS_RESOLVER_1158E0",
+        m.base.add(0x1158E0)
+    );*/
     // =========================================================
     // AUTH BRIDGE
     // =========================================================
@@ -572,12 +1067,11 @@ function install(m) {
                 if (!wcCardsDownloadedHooked) {
                     wcCardsDownloadedHooked = true;
 
-                    Interceptor.attach(cardsDownloadedTarget, {
-                        onEnter() {
-                            console.log("[WC-CARDSDOWNLOADED] FIRED");
-
-                        }
-                    });
+                Interceptor.attach(cardsDownloadedTarget, {
+                    onEnter() {
+                        console.log("[WC-CARDSDOWNLOADED] FIRED");
+                    }
+                });
 
                     console.log(
                         "[WC-CARDSDOWNLOADED] hook actief"
@@ -743,6 +1237,9 @@ function install(m) {
     // We loggen alleen de binnenkomende argumenten.
     Interceptor.attach(wcCreateUser, {
         onEnter(args) {
+
+            wcCreateUserThis = ptr(args[0]);
+
             console.log(
                 "[WC-CREATEUSER] ================================="
             );
@@ -753,7 +1250,7 @@ function install(m) {
 
             console.log(
                 "[WC-CREATEUSER] this = " +
-                args[0]
+                wcCreateUserThis
             );
 
             console.log(
@@ -886,6 +1383,7 @@ function install(m) {
 
 let wcFirstTimeInitSeen = false;
 let wcFccPatched = false;
+let wcCreateUserThis = null;
 
 function findFccLogin2Branch(patchForWC = false) {
     const pattern =
@@ -893,7 +1391,7 @@ function findFccLogin2Branch(patchForWC = false) {
         "AE 21 AF 4C 12 9D 00 08 00 00 00 59 " +
         "B0 4D 99 03 00 00 00 59 B0 4E";
 
-    let hits = 0;
+    const allHits = [];
 
     for (const r of Process.enumerateRanges("r--")) {
         try {
@@ -904,9 +1402,10 @@ function findFccLogin2Branch(patchForWC = false) {
             );
 
             for (const m of matches) {
-                hits++;
+                allHits.push(m.address);
 
-                const secondBranch = m.address.add(0x11);
+                const secondBranch =
+                    m.address.add(0x11);
 
                 console.log(
                     "[FCC-LOGIN2-BRANCH] HIT @ " +
@@ -921,106 +1420,125 @@ function findFccLogin2Branch(patchForWC = false) {
                     "[FCC-LOGIN2-BRANCH] second BranchIfTrue @ " +
                     secondBranch
                 );
-
-                if (
-                    patchForWC &&
-                    wcFirstTimeInitSeen &&
-                    !wcFccPatched
-                ) {
-                    console.log(
-                        "[WC-FCC-PATCH] WC instance gevonden"
-                    );
-
-                    try {
-
-                        // =================================================
-                        // PATCH 1
-                        // LoginFinalizedSuccessContinue()
-                        // -> NewUserFlow()
-                        // =================================================
-
-                        console.log(
-                            "[WC-FCC-PATCH] PATCH 1 branch @ " +
-                            secondBranch
-                        );
-
-                        console.log(
-                            "[WC-FCC-PATCH] PATCH 1 verwacht: " +
-                            "9D 00 08 00 00 00"
-                        );
-
-                        Memory.protect(
-                            secondBranch,
-                            6,
-                            "rwx"
-                        );
-
-                        secondBranch.writeByteArray([
-                            0x9D,
-                            0x00,
-                            0x00,
-                            0x00,
-                            0x00,
-                            0x00
-                        ]);
-
-                        console.log(
-                            "[WC-FCC-PATCH] PATCH 1 AFTER = " +
-                            Array.from(
-                                new Uint8Array(
-                                    secondBranch.readByteArray(6)
-                                )
-                            )
-                            .map(
-                                b =>
-                                    b
-                                        .toString(16)
-                                        .padStart(2, "0")
-                            )
-                            .join(" ")
-                        );
-
-                        Memory.protect(
-                            secondBranch,
-                            6,
-                            "rwx"
-                        );
-
-
-                        // =================================================
-                        // PATCH 2 UITGESCHAKELD
-                        // =================================================
-
-                        console.log(
-                            "[WC-FORCE-LOADSUCCESS] PATCH 2 UITGESCHAKELD"
-                        );
-
-                        wcFccPatched = true;
-
-                        console.log(
-                            "[WC-FCC-PATCH] PATCH 1 actief, PATCH 2 UIT"
-                        );
-
-                    } catch (e) {
-                        console.log(
-                            "[WC-FCC-PATCH] fout: " +
-                            e
-                        );
-                    }
-                }
             }
 
         } catch (e) {
-            // scan range kan ongeldig zijn; volgende range proberen
+            // onleesbare range overslaan
         }
     }
 
     console.log(
         "[FCC-LOGIN2-BRANCH] scan klaar, hits=" +
-        hits
+        allHits.length
     );
 
-    return hits;
+    if (
+        patchForWC &&
+        wcFirstTimeInitSeen &&
+        !wcFccPatched &&
+        wcCreateUserThis !== null &&
+        allHits.length > 0
+    ) {
+        let best = null;
+        let bestDistance = Number.MAX_SAFE_INTEGER;
+
+        const createUserAddr =
+            wcCreateUserThis.toUInt32();
+
+        for (const hit of allHits) {
+            const hitAddr =
+                hit.toUInt32();
+
+            const distance =
+                Math.abs(
+                    hitAddr -
+                    createUserAddr
+                );
+
+            console.log(
+                "[WC-FCC-PATCH] kandidaat=" +
+                hit +
+                " distance=0x" +
+                distance.toString(16)
+            );
+
+            if (distance < bestDistance) {
+                best = hit;
+                bestDistance = distance;
+            }
+        }
+
+        if (best !== null) {
+            const secondBranch =
+                best.add(0x11);
+
+            console.log(
+                "[WC-FCC-PATCH] GEKOZEN instance=" +
+                best
+            );
+
+            console.log(
+                "[WC-FCC-PATCH] PATCH 1 branch @ " +
+                secondBranch
+            );
+
+            console.log(
+                "[WC-FCC-PATCH] PATCH 1 verwacht: " +
+                "9D 00 08 00 00 00"
+            );
+
+            try {
+                Memory.protect(
+                    secondBranch,
+                    6,
+                    "rwx"
+                );
+
+                secondBranch.writeByteArray([
+                    0x9D,
+                    0x00,
+                    0x00,
+                    0x00,
+                    0x00,
+                    0x00
+                ]);
+
+                console.log(
+                    "[WC-FCC-PATCH] PATCH 1 AFTER = " +
+                    Array.from(
+                        new Uint8Array(
+                            secondBranch.readByteArray(6)
+                        )
+                    )
+                    .map(
+                        b =>
+                            b
+                                .toString(16)
+                                .padStart(2, "0")
+                    )
+                    .join(" ")
+                );
+
+                console.log(
+                    "[WC-FORCE-LOADSUCCESS] PATCH 2 UITGESCHAKELD"
+                );
+
+                wcFccPatched = true;
+
+                console.log(
+                    "[WC-FCC-PATCH] PATCH 1 actief op gekozen WC instance"
+                );
+
+            } catch (e) {
+                console.log(
+                    "[WC-FCC-PATCH] fout: " +
+                    e
+                );
+            }
+        }
+    }
+
+    return allHits.length;
 }
 
 /*const ionObj = ptr("0x101D73B0").readPointer();
@@ -1072,12 +1590,12 @@ function dumpRuntimeCode(label, rva, count = 25) {
     }
 }
 
-setTimeout(() => {
+/*setTimeout(() => {
     dumpRuntimeCode("F8131", 0xF8131, 30);
     dumpRuntimeCode("F8DBA", 0xF8DBA, 30);
     dumpRuntimeCode("BA1AF", 0xBA1AF, 30);
     dumpRuntimeCode("C4450", 0xC4450, 100);
-}, 16000);
+}, 16000);*/
 
 setTimeout(() => {
     findFccLogin2Branch(false);
@@ -1195,3 +1713,31 @@ setInterval(() => {
 
 }, 100);
 
+function hookOutputDebugString(name, wide) {
+    const addr = Module.findGlobalExportByName(name);
+
+    if (addr === null) {
+        console.log("[FIFA-TRACE] " + name + " not found");
+        return;
+    }
+
+    Interceptor.attach(addr, {
+        onEnter(args) {
+            try {
+                const text = wide
+                    ? args[0].readUtf16String()
+                    : args[0].readCString();
+
+                if (text) {
+                    console.log("[FIFA-TRACE] " + text);
+                }
+            } catch (e) {
+                // Ignore unreadable strings.
+            }
+        }
+    });
+
+    console.log("[FIFA-TRACE] hooked " + name + " @ " + addr);
+}
+
+hookOutputDebugString("OutputDebugStringA", false);

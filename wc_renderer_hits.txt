@@ -1,0 +1,335 @@
+
+Path                                                                 LineNumber Line
+----                                                                 ---------- ----
+D:\Afbeeldingen\FUT14-Revival\futwc_meta_hits.txt                            93        284       <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\futwc_meta_hits.txt                           188        620       <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\futwc_meta_hits.txt                           237        801       <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                              51       "cardsubtype": 231,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                              63       "cardsubtype": 231,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                              75       "cardsubtype": 231,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                              87       "cardsubtype": 231,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                              99       "cardsubtype": 231,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             111       "cardsubtype": 231,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             123       "cardsubtype": 232,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             135       "cardsubtype": 232,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             147       "cardsubtype": 232,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             159       "cardsubtype": 232,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             171       "cardsubtype": 232,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             183       "cardsubtype": 232,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             195       "cardsubtype": 233,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             207       "cardsubtype": 233,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             219       "cardsubtype": 233,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             231       "cardsubtype": 231,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             243       "cardsubtype": 231,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             255       "cardsubtype": 231,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             267       "cardsubtype": 231,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             279       "cardsubtype": 231,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             291       "cardsubtype": 231,
+D:\Afbeeldingen\FUT14-Revival\wc_card_data.json                             303       "cardsubtype": 234,
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                              2   extracted\futwc_db\futwc_ng_db-meta.xml:107:  </indices>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                              3   extracted\futwc_db\futwc_ng_db-meta.xml:108:  <table name="fcc_badgecards" shortname="atGo">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                              4   extracted\futwc_db\futwc_ng_db-meta.xml:109:    <fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                              5 > extracted\futwc_db\futwc_ng_db-meta.xml:110:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" key="True" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                              6   extracted\futwc_db\futwc_ng_db-meta.xml:111:      <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                              7   extracted\futwc_db\futwc_ng_db-meta.xml:112:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                              8   extracted\futwc_db\futwc_ng_db-meta.xml:113:      <field name="header" shortname="VuYu" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                              9   extracted\futwc_db\futwc_ng_db-meta.xml:114:      <field name="name" shortname="vIys" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             10 > extracted\futwc_db\futwc_ng_db-meta.xml:115:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             11   extracted\futwc_db\futwc_ng_db-meta.xml:116:      <field name="biodescription" shortname="FKtG" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             12   extracted\futwc_db\futwc_ng_db-meta.xml:117:      <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             13   extracted\futwc_db\futwc_ng_db-meta.xml:118:      <field name="description" shortname="JSVI" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             14   extracted\futwc_db\futwc_ng_db-meta.xml:119:      <field name="category" shortname="jPMu" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             15 > extracted\futwc_db\futwc_ng_db-meta.xml:120:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             16   extracted\futwc_db\futwc_ng_db-meta.xml:121:    </fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             17   extracted\futwc_db\futwc_ng_db-meta.xml:122:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             18   extracted\futwc_db\futwc_ng_db-meta.xml:123:  <table name="stadiumassignments" shortname="esAj" maxupdate="-1" maxinsert="600" maxdelete="600" savegroups="squads">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             19   extracted\futwc_db\futwc_ng_db-meta.xml:211:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             20   extracted\futwc_db\futwc_ng_db-meta.xml:212:  <table name="fcc_leaguelogostickers" shortname="BAMJ">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             21   extracted\futwc_db\futwc_ng_db-meta.xml:213:    <fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             22 > extracted\futwc_db\futwc_ng_db-meta.xml:214:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" key="True" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             23   extracted\futwc_db\futwc_ng_db-meta.xml:215:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             24   extracted\futwc_db\futwc_ng_db-meta.xml:216:      <field name="name" shortname="vIys" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             25 > extracted\futwc_db\futwc_ng_db-meta.xml:217:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             26   extracted\futwc_db\futwc_ng_db-meta.xml:218:      <field name="biodescription" shortname="FKtG" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             27   extracted\futwc_db\futwc_ng_db-meta.xml:219:      <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="12" null="False" rangehigh="3000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             28   extracted\futwc_db\futwc_ng_db-meta.xml:220:      <field name="description" shortname="JSVI" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             29   extracted\futwc_db\futwc_ng_db-meta.xml:221:      <field name="leagueid" shortname="aQrQ" type="DBOFIELDTYPE_INTEGER" depth="12" null="False" rangehigh="3000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             30   extracted\futwc_db\futwc_ng_db-meta.xml:222:      <field name="category" shortname="jPMu" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             31 > extracted\futwc_db\futwc_ng_db-meta.xml:223:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             32   extracted\futwc_db\futwc_ng_db-meta.xml:224:    </fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             33   extracted\futwc_db\futwc_ng_db-meta.xml:225:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             34   extracted\futwc_db\futwc_ng_db-meta.xml:226:  <table name="nations" shortname="Crbb" maxupdate="-1">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             35   extracted\futwc_db\futwc_ng_db-meta.xml:280:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             36   extracted\futwc_db\futwc_ng_db-meta.xml:281:  <table name="fcc_trainingcards" shortname="OWfL">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             37   extracted\futwc_db\futwc_ng_db-meta.xml:282:    <fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             38 > extracted\futwc_db\futwc_ng_db-meta.xml:283:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="31" null="False" rangehigh="2001001001" rangelow="0" key="True" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             39 > extracted\futwc_db\futwc_ng_db-meta.xml:284:      <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             40 > extracted\futwc_db\futwc_ng_db-meta.xml:285:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             41   extracted\futwc_db\futwc_ng_db-meta.xml:286:      <field name="rating" shortname="Xxmh" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             42 > extracted\futwc_db\futwc_ng_db-meta.xml:287:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             43   extracted\futwc_db\futwc_ng_db-meta.xml:288:      <field name="amount" shortname="ZZwZ" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             44   extracted\futwc_db\futwc_ng_db-meta.xml:289:    </fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             45   extracted\futwc_db\futwc_ng_db-meta.xml:290:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             46   extracted\futwc_db\futwc_ng_db-meta.xml:347:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             47   extracted\futwc_db\futwc_ng_db-meta.xml:348:  <table name="headcoachcards" shortname="TiUk">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             48   extracted\futwc_db\futwc_ng_db-meta.xml:349:    <fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             49 > extracted\futwc_db\futwc_ng_db-meta.xml:350:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             50   extracted\futwc_db\futwc_ng_db-meta.xml:351:      <field name="firstname" shortname="HdeP" type="DBOFIELDTYPE_STRING" depth="152" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             51   extracted\futwc_db\futwc_ng_db-meta.xml:352:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             52   extracted\futwc_db\futwc_ng_db-meta.xml:353:      <field name="attribute" shortname="KvvE" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="10" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             53   extracted\futwc_db\futwc_ng_db-meta.xml:600:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             54   extracted\futwc_db\futwc_ng_db-meta.xml:601:  <table name="fcc_kitcards" shortname="BPUM">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             55   extracted\futwc_db\futwc_ng_db-meta.xml:602:    <fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             56 > extracted\futwc_db\futwc_ng_db-meta.xml:603:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="-1" key="True" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             57   extracted\futwc_db\futwc_ng_db-meta.xml:604:      <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-1" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             58   extracted\futwc_db\futwc_ng_db-meta.xml:605:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="255" rangelow="-1" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             59   extracted\futwc_db\futwc_ng_db-meta.xml:606:      <field name="header" shortname="VuYu" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             60   extracted\futwc_db\futwc_ng_db-meta.xml:607:      <field name="name" shortname="vIys" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             61 > extracted\futwc_db\futwc_ng_db-meta.xml:608:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="255" rangelow="-1" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             62   extracted\futwc_db\futwc_ng_db-meta.xml:609:      <field name="biodescription" shortname="FKtG" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             63   extracted\futwc_db\futwc_ng_db-meta.xml:610:      <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="255" rangelow="-1" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             64   extracted\futwc_db\futwc_ng_db-meta.xml:611:      <field name="description" shortname="JSVI" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             65   extracted\futwc_db\futwc_ng_db-meta.xml:612:      <field name="category" shortname="jPMu" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="255" rangelow="-1" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             66   extracted\futwc_db\futwc_ng_db-meta.xml:613:      <field name="year" shortname="qFnd" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             67 > extracted\futwc_db\futwc_ng_db-meta.xml:614:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             68   extracted\futwc_db\futwc_ng_db-meta.xml:615:    </fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             69   extracted\futwc_db\futwc_ng_db-meta.xml:616:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             70   extracted\futwc_db\futwc_ng_db-meta.xml:617:  <table name="fcc_contractcards" shortname="Bpmk">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             71   extracted\futwc_db\futwc_ng_db-meta.xml:618:    <fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             72 > extracted\futwc_db\futwc_ng_db-meta.xml:619:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="31" null="False" rangehigh="2001001001" rangelow="0" key="True" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             73 > extracted\futwc_db\futwc_ng_db-meta.xml:620:      <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             74 > extracted\futwc_db\futwc_ng_db-meta.xml:621:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             75   extracted\futwc_db\futwc_ng_db-meta.xml:622:      <field name="gold" shortname="CqVP" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             76   extracted\futwc_db\futwc_ng_db-meta.xml:623:      <field name="silver" shortname="gTww" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             77   extracted\futwc_db\futwc_ng_db-meta.xml:624:      <field name="rating" shortname="Xxmh" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             78 > extracted\futwc_db\futwc_ng_db-meta.xml:625:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             79   extracted\futwc_db\futwc_ng_db-meta.xml:626:      <field name="bronze" shortname="Vcpq" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             80   extracted\futwc_db\futwc_ng_db-meta.xml:627:    </fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             81   extracted\futwc_db\futwc_ng_db-meta.xml:628:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             82   extracted\futwc_db\futwc_ng_db-meta.xml:649:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             83   extracted\futwc_db\futwc_ng_db-meta.xml:650:  <table name="fcc_balls" shortname="GuQh">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             84   extracted\futwc_db\futwc_ng_db-meta.xml:651:    <fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             85 > extracted\futwc_db\futwc_ng_db-meta.xml:652:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" key="True" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             86   extracted\futwc_db\futwc_ng_db-meta.xml:653:      <field name="detaildescription" shortname="MRSr" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             87   extracted\futwc_db\futwc_ng_db-meta.xml:654:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             88   extracted\futwc_db\futwc_ng_db-meta.xml:655:      <field name="name" shortname="vIys" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             89 > extracted\futwc_db\futwc_ng_db-meta.xml:656:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             90   extracted\futwc_db\futwc_ng_db-meta.xml:657:      <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             91   extracted\futwc_db\futwc_ng_db-meta.xml:658:      <field name="rare" shortname="cZox" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             92   extracted\futwc_db\futwc_ng_db-meta.xml:659:      <field name="category" shortname="jPMu" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             93   extracted\futwc_db\futwc_ng_db-meta.xml:755:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             94   extracted\futwc_db\futwc_ng_db-meta.xml:756:  <table name="fcc_stadium" shortname="WqSK">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             95   extracted\futwc_db\futwc_ng_db-meta.xml:757:    <fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             96 > extracted\futwc_db\futwc_ng_db-meta.xml:758:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" key="True" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             97   extracted\futwc_db\futwc_ng_db-meta.xml:759:      <field name="capacity" shortname="wPID" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             98   extracted\futwc_db\futwc_ng_db-meta.xml:760:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                             99   extracted\futwc_db\futwc_ng_db-meta.xml:761:      <field name="header" shortname="VuYu" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            100   extracted\futwc_db\futwc_ng_db-meta.xml:762:      <field name="name" shortname="vIys" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            101 > extracted\futwc_db\futwc_ng_db-meta.xml:763:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            102   extracted\futwc_db\futwc_ng_db-meta.xml:764:      <field name="biodescription" shortname="FKtG" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            103   extracted\futwc_db\futwc_ng_db-meta.xml:765:      <field name="boost" shortname="ZssP" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            104   extracted\futwc_db\futwc_ng_db-meta.xml:766:      <field name="stadiumid" shortname="fwCQ" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="511" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            105   extracted\futwc_db\futwc_ng_db-meta.xml:767:      <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="511" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            106   extracted\futwc_db\futwc_ng_db-meta.xml:768:      <field name="description" shortname="JSVI" type="DBOFIELDTYPE_STRING" depth="2040" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            107   extracted\futwc_db\futwc_ng_db-meta.xml:769:      <field name="category" shortname="jPMu" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            108 > extracted\futwc_db\futwc_ng_db-meta.xml:770:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            109   extracted\futwc_db\futwc_ng_db-meta.xml:771:    </fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            110   extracted\futwc_db\futwc_ng_db-meta.xml:772:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            111   extracted\futwc_db\futwc_ng_db-meta.xml:773:  <table name="customteamstyles" shortname="WpTz" maxupdate="-1" maxinsert="28" maxdelete="28" savegroups="customteamstyles">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            112   extracted\futwc_db\futwc_ng_db-meta.xml:797:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            113   extracted\futwc_db\futwc_ng_db-meta.xml:798:  <table name="fcc_healingcards" shortname="aAgi">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            114   extracted\futwc_db\futwc_ng_db-meta.xml:799:    <fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            115 > extracted\futwc_db\futwc_ng_db-meta.xml:800:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="31" null="False" rangehigh="2001001001" rangelow="0" key="True" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            116 > extracted\futwc_db\futwc_ng_db-meta.xml:801:      <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            117 > extracted\futwc_db\futwc_ng_db-meta.xml:802:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            118   extracted\futwc_db\futwc_ng_db-meta.xml:803:      <field name="rating" shortname="Xxmh" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            119 > extracted\futwc_db\futwc_ng_db-meta.xml:804:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            120   extracted\futwc_db\futwc_ng_db-meta.xml:805:      <field name="amount" shortname="ZZwZ" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            121   extracted\futwc_db\futwc_ng_db-meta.xml:806:    </fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            122   extracted\futwc_db\futwc_ng_db-meta.xml:807:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            123   extracted\futwc_db\futwc_ng_db-meta.xml:1159:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            124   extracted\futwc_db\futwc_ng_db-meta.xml:1160:  <table name="gkcoachcards" shortname="BROZ">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            125   extracted\futwc_db\futwc_ng_db-meta.xml:1161:    <fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            126 > extracted\futwc_db\futwc_ng_db-meta.xml:1162:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            127   extracted\futwc_db\futwc_ng_db-meta.xml:1163:      <field name="firstname" shortname="HdeP" type="DBOFIELDTYPE_STRING" depth="152" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            128   extracted\futwc_db\futwc_ng_db-meta.xml:1164:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            129   extracted\futwc_db\futwc_ng_db-meta.xml:1165:      <field name="attribute" shortname="KvvE" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="10" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            130   extracted\futwc_db\futwc_ng_db-meta.xml:1910:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            131   extracted\futwc_db\futwc_ng_db-meta.xml:1911:  <table name="managercards" shortname="vjfq">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            132   extracted\futwc_db\futwc_ng_db-meta.xml:1912:    <fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            133 > extracted\futwc_db\futwc_ng_db-meta.xml:1913:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            134   extracted\futwc_db\futwc_ng_db-meta.xml:1914:      <field name="firstname" shortname="HdeP" type="DBOFIELDTYPE_STRING" depth="152" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            135   extracted\futwc_db\futwc_ng_db-meta.xml:1915:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            136   extracted\futwc_db\futwc_ng_db-meta.xml:1916:      <field name="formationid" shortname="oHkj" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="40" rangelow="-1" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            137   extracted\futwc_db\futwc_ng_db-meta.xml:2189:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            138   extracted\futwc_db\futwc_ng_db-meta.xml:2190:  <table name="fitnesscoachcards" shortname="JYGQ">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            139   extracted\futwc_db\futwc_ng_db-meta.xml:2191:    <fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            140 > extracted\futwc_db\futwc_ng_db-meta.xml:2192:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            141   extracted\futwc_db\futwc_ng_db-meta.xml:2193:      <field name="fieldpos" shortname="bIZj" type="DBOFIELDTYPE_INTEGER" depth="2" null="False" rangehigh="3" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            142   extracted\futwc_db\futwc_ng_db-meta.xml:2194:      <field name="firstname" shortname="HdeP" type="DBOFIELDTYPE_STRING" depth="152" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            143   extracted\futwc_db\futwc_ng_db-meta.xml:2195:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            144   extracted\futwc_db\futwc_ng_db-meta.xml:2635:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            145   extracted\futwc_db\futwc_ng_db-meta.xml:2636:  <table name="fcc_misccards" shortname="AcEl">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            146   extracted\futwc_db\futwc_ng_db-meta.xml:2637:    <fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            147 > extracted\futwc_db\futwc_ng_db-meta.xml:2638:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="31" null="False" rangehigh="2001001001" rangelow="0" key="True" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            148   extracted\futwc_db\futwc_ng_db-meta.xml:2639:      <field name="detaildescription" shortname="MRSr" type="DBOFIELDTYPE_STRING" depth="1024" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            149 > extracted\futwc_db\futwc_ng_db-meta.xml:2640:      <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            150   extracted\futwc_db\futwc_ng_db-meta.xml:2641:      <field name="name" shortname="vIys" type="DBOFIELDTYPE_STRING" depth="1024" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            151 > extracted\futwc_db\futwc_ng_db-meta.xml:2642:      <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            152   extracted\futwc_db\futwc_ng_db-meta.xml:2643:      <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            153   extracted\futwc_db\futwc_ng_db-meta.xml:2644:      <field name="description" shortname="JSVI" type="DBOFIELDTYPE_STRING" depth="1024" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            154   extracted\futwc_db\futwc_ng_db-meta.xml:2645:      <field name="rating" shortname="Xxmh" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            155 > extracted\futwc_db\futwc_ng_db-meta.xml:2646:      <field name="weightrare" shortname="SycH" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            156   extracted\futwc_db\futwc_ng_db-meta.xml:2647:      <field name="amount" shortname="ZZwZ" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            157   extracted\futwc_db\futwc_ng_db-meta.xml:2648:    </fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            158   extracted\futwc_db\futwc_ng_db-meta.xml:2649:  </table>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            159   extracted\futwc_db\futwc_ng_db-meta.xml:2650:  <table name="physiocards" shortname="Aguh">
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            160   extracted\futwc_db\futwc_ng_db-meta.xml:2651:    <fields>
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            161 > extracted\futwc_db\futwc_ng_db-meta.xml:2652:      <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            162   extracted\futwc_db\futwc_ng_db-meta.xml:2653:      <field name="firstname" shortname="HdeP" type="DBOFIELDTYPE_STRING" depth="152" null="False" rangehigh="0" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            163   extracted\futwc_db\futwc_ng_db-meta.xml:2654:      <field name="value" shortname="SbfX" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_card_fields.txt                            164   extracted\futwc_db\futwc_ng_db-meta.xml:2655:      <field name="attribute" shortname="KvvE" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="10" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\wc_database_dump.json                           9     "wcPlayers": 1285
+D:\Afbeeldingen\FUT14-Revival\wc_database_dump.json                       24810   "wcPlayers": [
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          10 D:\Afbeeldingen\FUT14-Revival\.venv\Lib\site-packages\frida\_frida.pyd     149555      * Earlier versions of Node.js incorrectly accepted certificates for a given`hostname` if a matching `uniformResourceIdentifier` subject alternative name
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          11 D:\Afbeeldingen\FUT14-Revival\.venv\Lib\site-packages\frida\_frida.pyd     149556      * was present (see [CVE-2021-44531](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44531)). Applications that wish to accept`uniformResourceIdentifier` subject alternative names can use
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          14 D:\Afbeeldingen\FUT14-Revival\.venv\Lib\site-packages\frida\_frida.pyd     448463 ��         �RI��         �R=�d.otherName d.rfc822Name    d.dNSName   d.x400Address   d.directoryName d.ediPartyName  d.uniformResourceIdentifier d.iPAddress d.registeredID         �Q	           SGENERAL_NAME               DSZE�GeneralNames        ����0S            pSGENERAL_NAMES   ../../../openssl/crypto/x5…
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          17 D:\Afbeeldingen\FUT14-Revival\.venv\Lib\site-packages\frida\_frida.pyd     617746 golang.org/x/sys/windows.CR_INVALID_RESOURCEID �; golang.org/x/sys/windows.CR_DLVXD_NOT_FOUND �; golang.org/x/sys/windows.CR_NO_SUCH_DEVNODE �; 
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          18 D:\Afbeeldingen\FUT14-Revival\backups\enterwc-force-new-user\patch.bi…          4    0Tdata/camera/fifacamera.dat 	:�  6�data/credits/credits.fe 	q@ |Ndata/db/cards_ng_db.db #��  u*data/db/fifa_ng_db-meta.xml $c  T�data/db/fifa_ng_db.db >�   r^data/db/futwc_ng_db-meta.xml ?*� ��data/db/futwc_ng_db.db D�@  
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          24 D:\Afbeeldingen\FUT14-Revival\backups\enterwc-force-new-user\patch.bi…         58 �  Odata/ui/game/screens/teammanagement/teammanagementpanels/03_a_lineups.big �Y�  0edata/ui/game/screens/teammanagement/teammanagementpanels/playerbiocard.big ��@ Ζdata/ui/game/screens/worldcup/02_quicksettings.big �Y  X�data/ui/game/screens/worldcup/quicksettings.big ���  �!data/ui/imgassets/banners/futwchub/notfound.dds �2  …
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          25 D:\Afbeeldingen\FUT14-Revival\backups\enterwc-force-new-user\patch.bi…          4    0Tdata/camera/fifacamera.dat 	:�  6�data/credits/credits.fe 	q@ |Ndata/db/cards_ng_db.db #��  u*data/db/fifa_ng_db-meta.xml $c  T�data/db/fifa_ng_db.db >�   r^data/db/futwc_ng_db-meta.xml ?*� ��data/db/futwc_ng_db.db D�@  
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          31 D:\Afbeeldingen\FUT14-Revival\backups\enterwc-force-new-user\patch.bi…         58 �  Odata/ui/game/screens/teammanagement/teammanagementpanels/03_a_lineups.big �Y�  0edata/ui/game/screens/teammanagement/teammanagementpanels/playerbiocard.big ��@ Ζdata/ui/game/screens/worldcup/02_quicksettings.big �Y  X�data/ui/game/screens/worldcup/quicksettings.big ���  �!data/ui/imgassets/banners/futwchub/notfound.dds �2  …
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          40 D:\Afbeeldingen\FUT14-Revival\backups\fcc-login2-force-new-user\patch…          4    0Tdata/camera/fifacamera.dat 	:�  6�data/credits/credits.fe 	q@ |Ndata/db/cards_ng_db.db #��  u*data/db/fifa_ng_db-meta.xml $c  T�data/db/fifa_ng_db.db >�   r^data/db/futwc_ng_db-meta.xml ?*� ��data/db/futwc_ng_db.db D�@  
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          46 D:\Afbeeldingen\FUT14-Revival\backups\fcc-login2-force-new-user\patch…         58 �  Odata/ui/game/screens/teammanagement/teammanagementpanels/03_a_lineups.big �Y�  0edata/ui/game/screens/teammanagement/teammanagementpanels/playerbiocard.big ��@ Ζdata/ui/game/screens/worldcup/02_quicksettings.big �Y  X�data/ui/game/screens/worldcup/quicksettings.big ���  �!data/ui/imgassets/banners/futwchub/notfound.dds �2  …
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          47 D:\Afbeeldingen\FUT14-Revival\backups\fut-frontend\patch.big.original           4    0Tdata/camera/fifacamera.dat 	:�  6�data/credits/credits.fe 	q@ |Ndata/db/cards_ng_db.db #��  u*data/db/fifa_ng_db-meta.xml $c  T�data/db/fifa_ng_db.db >�   r^data/db/futwc_ng_db-meta.xml ?*� ��data/db/futwc_ng_db.db D�@  
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          53 D:\Afbeeldingen\FUT14-Revival\backups\fut-frontend\patch.big.original          58 �  Odata/ui/game/screens/teammanagement/teammanagementpanels/03_a_lineups.big �Y�  0edata/ui/game/screens/teammanagement/teammanagementpanels/playerbiocard.big ��@ Ζdata/ui/game/screens/worldcup/02_quicksettings.big �Y  X�data/ui/game/screens/worldcup/quicksettings.big ���  �!data/ui/imgassets/banners/futwchub/notfound.dds �2  …
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          59 D:\Afbeeldingen\FUT14-Revival\backups\fut-nav\data1.big.original          1332240 Ч��i<�.����k�3|��:�9|�au�S|��;fuTWC>���}�	�=񿟒V"������dz������3s��D�`A[�@ظvdą��L��I����]��/��Q��/�|��pk��W���b�W'~Ea=��<����x�z�{-��k�oc�&�B��;��g?��ж�m�(��\ޖ*� O��K��Q�?{K���E����k�}=�~z�ח�F}�O�<��j"��������_��OW����Е�|��s������'��� �;nl��%��@U�T%H觱��<���TGaz.;�'�BYl�
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          60 D:\Afbeeldingen\FUT14-Revival\backups\wc-store-route\patch.big.202609…          4    0Tdata/camera/fifacamera.dat 	:�  6�data/credits/credits.fe 	q@ |Ndata/db/cards_ng_db.db #��  u*data/db/fifa_ng_db-meta.xml $c  T�data/db/fifa_ng_db.db >�   r^data/db/futwc_ng_db-meta.xml ?*� ��data/db/futwc_ng_db.db D�@  
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          66 D:\Afbeeldingen\FUT14-Revival\backups\wc-store-route\patch.big.202609…         58 �  Odata/ui/game/screens/teammanagement/teammanagementpanels/03_a_lineups.big �Y�  0edata/ui/game/screens/teammanagement/teammanagementpanels/playerbiocard.big ��@ Ζdata/ui/game/screens/worldcup/02_quicksettings.big �Y  X�data/ui/game/screens/worldcup/quicksettings.big ���  �!data/ui/imgassets/banners/futwchub/notfound.dds �2  …
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          67 D:\Afbeeldingen\FUT14-Revival\backups\worldcup-gamehub-test\patch.big…          4    0Tdata/camera/fifacamera.dat 	:�  6�data/credits/credits.fe 	q@ |Ndata/db/cards_ng_db.db #��  u*data/db/fifa_ng_db-meta.xml $c  T�data/db/fifa_ng_db.db >�   r^data/db/futwc_ng_db-meta.xml ?*� ��data/db/futwc_ng_db.db D�@  
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          73 D:\Afbeeldingen\FUT14-Revival\backups\worldcup-gamehub-test\patch.big…         58 �  Odata/ui/game/screens/teammanagement/teammanagementpanels/03_a_lineups.big �Y�  0edata/ui/game/screens/teammanagement/teammanagementpanels/playerbiocard.big ��@ Ζdata/ui/game/screens/worldcup/02_quicksettings.big �Y  X�data/ui/game/screens/worldcup/quicksettings.big ���  �!data/ui/imgassets/banners/futwchub/notfound.dds �2  …
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                          83 D:\Afbeeldingen\FUT14-Revival\extracted\EnterWC_constants.txt                 106   [  85] String("ExitFUTWC")
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         121 D:\Afbeeldingen\FUT14-Revival\extracted\SupportNation_constants.txt            87 [ 86] 'onInviteAcceptedFutWC'
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         146 D:\Afbeeldingen\FUT14-Revival\research\worldcup_patch_strings.txt               2 !data/ui/imgassets/banners/futwchub/notfound.dds
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         195 D:\Afbeeldingen\FUT14-Revival\research\worldcup_patch_strings.txt              52 data/db/futwc_ng_db.db
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         289 D:\Afbeeldingen\FUT14-Revival\research\worldcup_patch_strings.txt             148 data/ui/imgassets/banners/futwchub/notfound.png
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         300 D:\Afbeeldingen\FUT14-Revival\research\worldcup_patch_strings.txt             160 r^data/db/futwc_ng_db-meta.xml
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         305 D:\Afbeeldingen\FUT14-Revival\server\fut_app.py                               295                 "Ongeldige player resourceId"
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         306 D:\Afbeeldingen\FUT14-Revival\server\fut_app.py                               405         "resourceId": asset_id,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         307 D:\Afbeeldingen\FUT14-Revival\server\fut_app.py                               451         "cardsubtypeid":
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         308 D:\Afbeeldingen\FUT14-Revival\server\fut_app.py                               459         "resourceGameYear": 2014,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         310 D:\Afbeeldingen\FUT14-Revival\server\fut_app.py.pre-wc-state-auto.bak         188                 "Ongeldige player resourceId"
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         311 D:\Afbeeldingen\FUT14-Revival\server\fut_app.py.pre-wc-state-auto.bak         298         "resourceId": asset_id,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         312 D:\Afbeeldingen\FUT14-Revival\server\fut_app.py.pre-wc-state-auto.bak         344         "cardsubtypeid":
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         313 D:\Afbeeldingen\FUT14-Revival\server\fut_app.py.pre-wc-state-auto.bak         352         "resourceGameYear": 2014,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         315 D:\Afbeeldingen\FUT14-Revival\server\fut_app.py.pre-wc-state.bak              188                 "Ongeldige player resourceId"
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         316 D:\Afbeeldingen\FUT14-Revival\server\fut_app.py.pre-wc-state.bak              298         "resourceId": asset_id,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         317 D:\Afbeeldingen\FUT14-Revival\server\fut_app.py.pre-wc-state.bak              344         "cardsubtypeid":
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         318 D:\Afbeeldingen\FUT14-Revival\server\fut_app.py.pre-wc-state.bak              352         "resourceGameYear": 2014,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         320 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                    18         "resourceId": 5001003,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         321 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                    20         "cardsubtypeid": 201,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         322 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                    32         "resourceId": 5001009,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         323 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                    34         "cardsubtypeid": 202,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         324 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                    46         "resourceId": 5002003,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         325 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                    48         "cardsubtypeid": 219,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         326 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                    60         "resourceId": 5002009,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         327 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                    62         "cardsubtypeid": 211,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         328 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                    74         "resourceId": 5002021,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         329 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                    76         "cardsubtypeid": 215,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         330 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                    88         "resourceId": 5003024,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         331 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                    90         "cardsubtypeid": 61,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         332 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                   102         "resourceId": 5003030,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         333 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                   104         "cardsubtypeid": 63,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         334 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                   116         "resourceId": 5003095,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         335 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                   118         "cardsubtypeid": 250,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         336 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                   130         "resourceId": 5002030,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         337 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                   132         "cardsubtypeid": 218,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         338 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                   206         "resourceId": player_id,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         339 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                   241         "cardsubtypeid":
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         340 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                   291         "resourceGameYear": 2014,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         341 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                   342             "resourceGameYear": 2014,
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         342 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\__pycache__\generator.…         11 resourceId�cardassetid�
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         343 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\__pycache__\generator.…         12 cardsubtypeid�rating�rareFlag�rareflag�amount�bronze�silver�gold�itemType�discardValuei1OL �   ��   iSL �
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         344 D:\Afbeeldingen\FUT14-Revival\server\fut\packs\__pycache__\generator.…         60 commonName�owners�   ��  )r   r   r   r   r   T)�moralerB   r   �loyaltyBonus�pile�resourceGameYear�attributeArray�
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         345 D:\Afbeeldingen\FUT14-Revival\server\__pycache__\fut_app.cpython-313.…         66 Attribute6z is geen array�   z moet 23 values bevattenr|   r   zOngeldige player resourceId)r=   rs   rt   ru   rv   rd   )rz   �required_arrays�key�values�resource_ids        r@   �validate_icebreaker_packr�     s�   � ��O� �����#����&�$�'�'���%�~�&�� 
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         346 D:\Afbeeldingen\FUT14-Revival\server\__pycache__\fut_app.cpython-313.…        108 resourceId�playerId�definitionId�
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         347 D:\Afbeeldingen\FUT14-Revival\server\__pycache__\fut_app.cpython-313.…        113 cardsubtypeid�owners�loyaltyBonus��  )r�   r_   �   )r   r   r   r   r   )
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         348 D:\Afbeeldingen\FUT14-Revival\server\__pycache__\fut_app.cpython-313.…        114 �pile�resourceGameYear�assists�lifetimeAssists�
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         352 D:\Afbeeldingen\FUT14-Revival\tools\dump_fifa_wc_context.py                    10     "FUTWC",
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         375 D:\Afbeeldingen\FUT14-Revival\tools\scan_fifa_exe_strings2.py                  22     "FUTWC",
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         388 D:\Afbeeldingen\FUT14-Revival\tools\scan_worldcup_patch.py                     10     "futwc",
+D:\Afbeeldingen\FUT14-Revival\wc_search_results.txt                         390 D:\Afbeeldingen\FUT14-Revival\tools\scan_worldcup_patch.py                     14     "futwchub",
+D:\Afbeeldingen\FUT14-Revival\database-worldcup\futwc_ng_db-meta.xml        284       <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\database-worldcup\futwc_ng_db-meta.xml        620       <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\database-worldcup\futwc_ng_db-meta.xml        801       <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\extracted\EnterWC_constants.txt               106   [  85] String("ExitFUTWC")
+D:\Afbeeldingen\FUT14-Revival\extracted\SupportNation_constants.txt          87 [ 86] 'onInviteAcceptedFutWC'
+D:\Afbeeldingen\FUT14-Revival\extracted\futwc_db\futwc_ng_db-meta.x…        284       <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\extracted\futwc_db\futwc_ng_db-meta.x…        620       <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\extracted\futwc_db\futwc_ng_db-meta.x…        801       <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\extracted\futwc_db\futwc_ng_db-meta.x…       2640       <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+D:\Afbeeldingen\FUT14-Revival\research\worldcup_patch_strings.txt             2 !data/ui/imgassets/banners/futwchub/notfound.dds
+D:\Afbeeldingen\FUT14-Revival\research\worldcup_patch_strings.txt            52 data/db/futwc_ng_db.db
+D:\Afbeeldingen\FUT14-Revival\research\worldcup_patch_strings.txt           148 data/ui/imgassets/banners/futwchub/notfound.png
+D:\Afbeeldingen\FUT14-Revival\research\worldcup_patch_strings.txt           160 r^data/db/futwc_ng_db-meta.xml
+D:\Afbeeldingen\FUT14-Revival\server\fut_app.py                             295                 "Ongeldige player resourceId"
+D:\Afbeeldingen\FUT14-Revival\server\fut_app.py                             405         "resourceId": asset_id,
+D:\Afbeeldingen\FUT14-Revival\server\fut_app.py                             448         "rareflag": rare_flag,
+D:\Afbeeldingen\FUT14-Revival\server\fut_app.py                             449         "rareFlag": rare_flag,
+D:\Afbeeldingen\FUT14-Revival\server\fut_app.py                             451         "cardsubtypeid":
+D:\Afbeeldingen\FUT14-Revival\server\fut_app.py                             459         "resourceGameYear": 2014,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  18         "resourceId": 5001003,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  20         "cardsubtypeid": 201,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  22         "rareFlag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  23         "rareflag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  32         "resourceId": 5001009,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  34         "cardsubtypeid": 202,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  36         "rareFlag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  37         "rareflag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  46         "resourceId": 5002003,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  48         "cardsubtypeid": 219,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  50         "rareFlag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  51         "rareflag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  60         "resourceId": 5002009,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  62         "cardsubtypeid": 211,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  64         "rareFlag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  65         "rareflag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  74         "resourceId": 5002021,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  76         "cardsubtypeid": 215,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  78         "rareFlag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  79         "rareflag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  88         "resourceId": 5003024,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  90         "cardsubtypeid": 61,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  92         "rareFlag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                  93         "rareflag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 102         "resourceId": 5003030,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 104         "cardsubtypeid": 63,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 106         "rareFlag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 107         "rareflag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 116         "resourceId": 5003095,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 118         "cardsubtypeid": 250,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 120         "rareFlag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 121         "rareflag": 0,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 130         "resourceId": 5002030,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 132         "cardsubtypeid": 218,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 134         "rareFlag": 1,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 135         "rareflag": 1,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 206         "resourceId": player_id,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 240         "rareflag": rare_flag,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 241         "cardsubtypeid":
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 284         "rareFlag": rare_flag,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 291         "resourceGameYear": 2014,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 342             "resourceGameYear": 2014,
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 346     payload["rareflag"] = int(
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 348             "rareFlag",
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 349             payload.get("rareflag", 0),
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 353     payload["rareFlag"] = (
+D:\Afbeeldingen\FUT14-Revival\server\fut\packs\generator.py                 354         payload["rareflag"]
+D:\Afbeeldingen\FUT14-Revival\tools\dump_fifa_wc_context.py                  10     "FUTWC",
+D:\Afbeeldingen\FUT14-Revival\tools\extract_patch_futwc_db.py                10     "data/db/futwc_ng_db.db",
+D:\Afbeeldingen\FUT14-Revival\tools\extract_patch_futwc_db.py                11     "data/db/futwc_ng_db-meta.xml",
+D:\Afbeeldingen\FUT14-Revival\tools\extract_patch_futwc_db.py                15     r"D:\Afbeeldingen\FUT14-Revival\extracted\futwc_db"
+D:\Afbeeldingen\FUT14-Revival\tools\scan_fifa_exe_strings2.py                22     "FUTWC",
+D:\Afbeeldingen\FUT14-Revival\tools\scan_worldcup_patch.py                   10     "futwc",
+D:\Afbeeldingen\FUT14-Revival\tools\scan_worldcup_patch.py                   14     "futwchub",
+

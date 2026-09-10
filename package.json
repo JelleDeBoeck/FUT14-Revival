@@ -1,0 +1,23 @@
+{
+  "name": "fut14-revival",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JelleDeBoeck/FUT14-Revival.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JelleDeBoeck/FUT14-Revival/issues"
+  },
+  "homepage": "https://github.com/JelleDeBoeck/FUT14-Revival#readme",
+  "description": "",
+  "dependencies": {
+    "fifa-t3db": "^0.0.2"
+  }
+}

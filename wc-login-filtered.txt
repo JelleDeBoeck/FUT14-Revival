@@ -1,0 +1,281 @@
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:7:[REQUEST] GET /ut/game/fifa14/user/accountinfo
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:8:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:9:[RESPONSE] 200 GET /ut/game/fifa14/user/accountinfo
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:10:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:11:INFO:     127.0.0.1:31706 - "GET /ut/game/fifa14/user/accountinfo HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:12:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:13:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:43:[REQUEST] GET /ut/game/fifa14/settings
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:44:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:45:[RESPONSE] 200 GET /ut/game/fifa14/settings
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:46:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:47:INFO:     127.0.0.1:31709 - "GET /ut/game/fifa14/settings HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:48:INFO:     127.0.0.1:31710 - "GET /fut/loc/PC/leaderboards.ENG_US.xml HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:49:
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:58:[REQUEST] GET /ut/game/fifa14/user
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:59:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:60:[RESPONSE] 200 GET /ut/game/fifa14/user
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:61:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:62:INFO:     127.0.0.1:31709 - "GET /ut/game/fifa14/user HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:63:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:64:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:65:[REQUEST] GET /ut/game/fifa14/userdata
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:66:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:67:[RESPONSE] 200 GET /ut/game/fifa14/userdata
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:68:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:69:INFO:     127.0.0.1:31709 - "GET /ut/game/fifa14/userdata HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:70:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:71:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:79:[REQUEST] GET /ut/game/fifa14/clientdata/tutorialpopups
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:80:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:81:[RESPONSE] 200 GET /ut/game/fifa14/clientdata/tutorialpopups
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:82:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:83:INFO:     127.0.0.1:31709 - "GET /ut/game/fifa14/clientdata/tutorialpopups HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:84:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:85:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:86:[REQUEST] GET /ut/game/fifa14/user/action?actionType=
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:87:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:88:[RESPONSE] 200 GET /ut/game/fifa14/user/action
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:89:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:90:INFO:     127.0.0.1:31709 - "GET /ut/game/fifa14/user/action?actionType= HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:91:INFO:     127.0.0.1:31711 - "GET /fut/packs/icebreaker/icebreakerpacklist.json HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:92:INFO:     127.0.0.1:31712 - "GET /fut/loc/PC/icebreaker.ENG_US.xml HTTP/1.1" 200 OK
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:95:[REQUEST] POST /ut/game/fifa14/user/action/ICEBREAKER_ENGLISH_CAPTAIN_SELECTED
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:96:[REQUEST] WC_BY_QUERY=False
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:97:[FUT] user action: ICEBREAKER_ENGLISH_CAPTAIN_SELECTED
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:99:[RESPONSE] 200 POST /ut/game/fifa14/user/action/ICEBREAKER_ENGLISH_CAPTAIN_SELECTED
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:100:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:101:INFO:     127.0.0.1:31713 - "POST /ut/game/fifa14/user/action/ICEBREAKER_ENGLISH_CAPTAIN_SELECTED HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:102:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:103:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:104:[REQUEST] POST /ut/game/fifa14/user
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:105:[REQUEST] WC_BY_QUERY=False
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:106:[REQUEST BODY] {"useFut1Data":false,"clubName":"Sheffield FC","clubAbbr":"She","purchased":false}
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:107:[RESPONSE] 200 POST /ut/game/fifa14/user
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:108:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:109:INFO:     127.0.0.1:31713 - "POST /ut/game/fifa14/user HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:110:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:111:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:112:[REQUEST] GET /ut/game/fifa14/userdata
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:113:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:114:[RESPONSE] 200 GET /ut/game/fifa14/userdata
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:115:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:116:INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/userdata HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:117:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:118:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:119:[REQUEST] POST /ut/game/fifa14/user/action/CHARITY_MATCH_PLAYED
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:120:[REQUEST] WC_BY_QUERY=False
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:121:[FUT] user action: CHARITY_MATCH_PLAYED
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:122:[RESPONSE] 200 POST /ut/game/fifa14/user/action/CHARITY_MATCH_PLAYED
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:123:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:124:INFO:     127.0.0.1:31713 - "POST /ut/game/fifa14/user/action/CHARITY_MATCH_PLAYED HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:125:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:126:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:127:[REQUEST] GET /ut/game/fifa14/purchased/items
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:128:[REQUEST] WC_BY_QUERY=False
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:129:[FUT PACKS] Returning New Items: 0 items
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:130:[RESPONSE] 200 GET /ut/game/fifa14/purchased/items
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:131:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:132:INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/purchased/items HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:133:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:134:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:135:[REQUEST] GET /ut/game/fifa14/club/stats/staff
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:136:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:137:[RESPONSE] 200 GET /ut/game/fifa14/club/stats/staff
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:138:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:139:INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/club/stats/staff HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:140:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:141:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:142:[REQUEST] GET /ut/game/fifa14/user
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:143:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:144:[RESPONSE] 200 GET /ut/game/fifa14/user
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:145:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:146:INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/user HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:147:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:148:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:149:[REQUEST] GET /ut/game/fifa14/clientdata/pileSize
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:150:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:151:[RESPONSE] 200 GET /ut/game/fifa14/clientdata/pileSize
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:152:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:153:INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/clientdata/pileSize HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:154:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:155:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:156:[REQUEST] GET /ut/game/fifa14/clientdata/userHubData
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:157:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:158:[RESPONSE] 200 GET /ut/game/fifa14/clientdata/userHubData
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:159:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:160:INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/clientdata/userHubData HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:161:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:162:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:163:[REQUEST] GET /ut/game/fifa14/clientdata/managerquest
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:164:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:165:[RESPONSE] 200 GET /ut/game/fifa14/clientdata/managerquest
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:166:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:167:INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/clientdata/managerquest HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:168:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:169:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:170:[REQUEST] GET /ut/game/fifa14/squad/list
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:171:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:172:[RESPONSE] 200 GET /ut/game/fifa14/squad/list
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:173:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:174:INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/squad/list HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:175:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:176:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:177:[REQUEST] GET /ut/game/fifa14/squad/active?active=true
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:178:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:179:[RESPONSE] 200 GET /ut/game/fifa14/squad/active
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:180:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:181:INFO:     127.0.0.1:31713 - "GET /ut/game/fifa14/squad/active?active=true HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:182:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:183:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:198:[REQUEST] GET /ut/game/fifa14/clubUser
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:199:[REQUEST] WC_BY_QUERY=False
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:200:[RESPONSE] 200 GET /ut/game/fifa14/clubUser
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:201:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:202:INFO:     127.0.0.1:31714 - "GET /ut/game/fifa14/clubUser HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:203:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:204:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:213:[REQUEST] GET /ut/game/fifa14/settings?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:214:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:215:[RESPONSE] 200 GET /ut/game/fifa14/settings
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:216:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:217:INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/settings?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:218:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:219:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:220:[REQUEST] PUT /ut/game/fifa14/match/reset?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:221:[REQUEST] WC_BY_QUERY=True
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:222:[RESPONSE] 200 PUT /ut/game/fifa14/match/reset
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:224:INFO:     127.0.0.1:31716 - "PUT /ut/game/fifa14/match/reset?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:225:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:226:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:227:[REQUEST] GET /ut/game/fifa14/user?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:228:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:229:[RESPONSE] 200 GET /ut/game/fifa14/user
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:230:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:231:INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/user?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:232:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:233:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:234:[REQUEST] GET /ut/game/fifa14/userdata?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:235:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:236:[RESPONSE] 200 GET /ut/game/fifa14/userdata
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:237:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:238:INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/userdata?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:239:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:240:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:241:[REQUEST] GET /ut/game/fifa14/clientdata/tutorialpopups?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:242:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:243:[RESPONSE] 200 GET /ut/game/fifa14/clientdata/tutorialpopups
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:244:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:245:INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/clientdata/tutorialpopups?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:246:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:247:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:248:[REQUEST] POST /ut/game/fifa14/user?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:249:[REQUEST] WC_BY_QUERY=True
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:250:[REQUEST BODY] {"useFut1Data":false,"clubName":"0001370","clubAbbr":"LFT","purchased":false}
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:251:[WC] POST /user body = {"useFut1Data":false,"clubName":"0001370","clubAbbr":"LFT","purchased":false}
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:252:[WC] starter squad provisioned players=23 new_items=23 formation=f442
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:253:[WC] support_nation saved = 0001370
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:254:[RESPONSE] 200 POST /ut/game/fifa14/user
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:255:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:256:INFO:     127.0.0.1:31716 - "POST /ut/game/fifa14/user?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:257:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:258:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:259:[REQUEST] GET /ut/game/fifa14/userdata?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:260:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:261:[RESPONSE] 200 GET /ut/game/fifa14/userdata
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:262:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:263:INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/userdata?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:264:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:265:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:266:[REQUEST] POST /ut/game/fifa14/user/action/CHARITY_MATCH_PLAYED?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:267:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:268:[WC] CHARITY_MATCH_PLAYED hook reached
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:269:[WC] TEST: injected purchased_items = 23
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:270:[FUT] user action: CHARITY_MATCH_PLAYED
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:271:[RESPONSE] 200 POST /ut/game/fifa14/user/action/CHARITY_MATCH_PLAYED
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:272:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:273:INFO:     127.0.0.1:31716 - "POST /ut/game/fifa14/user/action/CHARITY_MATCH_PLAYED?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:274:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:275:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:276:[REQUEST] GET /ut/game/fifa14/purchased/items?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:277:[REQUEST] WC_BY_QUERY=True
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:278:[FUT PACKS] Returning New Items: 23 items
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:279:[RESPONSE] 200 GET /ut/game/fifa14/purchased/items
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:280:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:281:INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/purchased/items?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:282:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:283:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:284:[REQUEST] GET /ut/game/fifa14/club/stats/staff?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:285:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:286:[RESPONSE] 200 GET /ut/game/fifa14/club/stats/staff
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:287:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:288:INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/club/stats/staff?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:289:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:290:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:291:[REQUEST] GET /ut/game/fifa14/user?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:292:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:293:[RESPONSE] 200 GET /ut/game/fifa14/user
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:294:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:295:INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/user?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:296:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:297:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:298:[REQUEST] GET /ut/game/fifa14/clientdata/pileSize?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:299:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:300:[RESPONSE] 200 GET /ut/game/fifa14/clientdata/pileSize
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:301:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:302:INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/clientdata/pileSize?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:303:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:304:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:305:[REQUEST] GET /ut/game/fifa14/clientdata/userHubData?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:306:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:307:[RESPONSE] 200 GET /ut/game/fifa14/clientdata/userHubData
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:308:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:309:INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/clientdata/userHubData?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:310:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:311:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:312:[REQUEST] GET /ut/game/fifa14/squad/list?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:313:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:314:[RESPONSE] 200 GET /ut/game/fifa14/squad/list
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:315:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:316:INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/squad/list?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:317:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:318:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:319:[REQUEST] GET /ut/game/fifa14/squad/active?active=true&skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:320:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:321:[RESPONSE] 200 GET /ut/game/fifa14/squad/active
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:322:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:323:INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/squad/active?active=true&skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:324:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:325:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:326:[REQUEST] GET /ut/game/fifa14/user/credits?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:327:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:328:[RESPONSE] 200 GET /ut/game/fifa14/user/credits
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:329:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:330:INFO:     127.0.0.1:31716 - "GET /ut/game/fifa14/user/credits?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:331:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:332:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:333:[REQUEST] GET /ut/game/fifa14/club/stats/newcards?skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:334:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:335:[RESPONSE] 200 GET /ut/game/fifa14/club/stats/newcards
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:336:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:337:INFO:     127.0.0.1:31717 - "GET /ut/game/fifa14/club/stats/newcards?skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:338:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:339:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:340:[REQUEST] GET /ut/game/fifa14/squad/active?active=true&skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:341:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:342:[RESPONSE] 200 GET /ut/game/fifa14/squad/active
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:343:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:344:INFO:     127.0.0.1:31717 - "GET /ut/game/fifa14/squad/active?active=true&skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:345:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:346:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:347:[REQUEST] GET /ut/game/fifa14/tradePile?skuMode=WC&skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:348:[REQUEST] WC_BY_QUERY=True
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:349:[RESPONSE] 200 GET /ut/game/fifa14/tradePile
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:351:INFO:     127.0.0.1:31717 - "GET /ut/game/fifa14/tradePile?skuMode=WC&skuMode=WC HTTP/1.1" 200 OK
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:352:
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:353:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:354:[REQUEST] GET /ut/game/fifa14/squad/active?active=true&skuMode=WC
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:355:[REQUEST] WC_BY_QUERY=True
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:356:[RESPONSE] 200 GET /ut/game/fifa14/squad/active
+  D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:357:==========================================================================================
+> D:\Afbeeldingen\FUT14-Revival\wc-login-test.log:358:INFO:     127.0.0.1:31717 - "GET /ut/game/fifa14/squad/active?active=true&skuMode=WC HTTP/1.1" 200 OK

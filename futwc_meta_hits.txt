@@ -1,0 +1,533 @@
+
+LineNumber Line
+---------- ----
+         6   <index shortname="dWCS" tableshortname="kISL">
+        12   <index shortname="EGOz" tableshortname="tQVJ">
+        17   <index shortname="eNjV" tableshortname="ywcP">
+        22   <index shortname="EXJD" tableshortname="ZrAO">
+        27   <index shortname="hjxp" tableshortname="Knen">
+        32   <index shortname="HlgW" tableshortname="mDGw">
+        37   <index shortname="kRMh" tableshortname="DFeB">
+        43   <index shortname="LeHZ" tableshortname="GdtI">
+        50   <index shortname="nALj" tableshortname="nQVU">
+        55   <index shortname="OMpg" tableshortname="RrqT">
+        61   <index shortname="PFRA" tableshortname="mMQM">
+        66   <index shortname="Pjcs" tableshortname="onMQ">
+        71   <index shortname="QVtz" tableshortname="CZUM">
+        76   <index shortname="sfEQ" tableshortname="lyxL">
+        81   <index shortname="SfYJ" tableshortname="BGwe">
+        86   <index shortname="TNxp" tableshortname="QYeR">
+        91   <index shortname="xyfF" tableshortname="qdZF">
+        96   <index shortname="YZlj" tableshortname="Sidb">
+       102   <index shortname="ZCvh" tableshortname="bneD">
+       108   <table name="fcc_badgecards" shortname="atGo">
+       110       <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" key="True" />
+       111       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="0" />
+       115       <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+       117       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" />
+       122   </table>
+       123   <table name="stadiumassignments" shortname="esAj" maxupdate="-1" maxinsert="600" maxdelete="600" savegroups="squads">
+       125       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="0" update="True" key="True" />
+       128   </table>
+       129   <table name="fcc_myclubscategories" shortname="ffvN">
+       132       <field name="isteamcategory" shortname="ebHQ" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="128" rangelow="0" />
+       138   </table>
+       139   <table name="attributeprefpositionformula" shortname="jhTx">
+       141       <field name="position" shortname="vjla" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="54" rangelow="1" key="True" />
+       145   </table>
+       146   <table name="BigAttendance" shortname="kcnb">
+       152   </table>
+       153   <table name="createplayerviews" shortname="nJco">
+       158   </table>
+       159   <table name="fcc_nationcalc" shortname="oZIV">
+       161       <field name="nationid" shortname="LEtt" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="215" rangelow="0" key="True" />
+       162       <field name="nationname" shortname="zMVU" type="DBOFIELDTYPE_STRING" depth="1024" null="False" rangehigh="0" rangelow="0" />
+       165   </table>
+       166   <table name="previousteam" shortname="rIsB" maxupdate="-1" maxinsert="5000" maxdelete="5000" savegroups="squads">
+       168       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" fkparenttable="players" />
+       169       <field name="previousteamid" shortname="wDHM" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" update="True" fkparenttable="teams" />
+       171   </table>
+       172   <table name="dlcboots" shortname="rFEr" maxupdate="-1" maxinsert="50" maxdelete="50">
+       174       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="11" null="False" rangehigh="2000" rangelow="0" update="True" key="True" />
+       177   </table>
+       178   <table name="leaguerefereelinks" shortname="tfLS">
+       180       <field name="leagueid" shortname="aQrQ" type="DBOFIELDTYPE_INTEGER" depth="12" null="False" rangehigh="3000" rangelow="1" key="True" fkparenttable="leagues" />
+       181       <field name="refereeid" shortname="Lfmt" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="512" rangelow="1" fkparenttable="referee" />
+       183   </table>
+       184   <table name="dna" shortname="ywcP">
+       186       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" fkparenttable="players" />
+       189   </table>
+       190   <table name="fcc_bonusvalues" shortname="ycrS">
+       197   </table>
+       198   <table name="NoAttendance" shortname="zuHF">
+       204   </table>
+       205   <table name="starratingboundaries" shortname="AThf">
+       207       <field name="starratingfrom" shortname="CGmr" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" key="True" />
+       209       <field name="starratingto" shortname="tpnz" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" />
+       211   </table>
+       212   <table name="fcc_leaguelogostickers" shortname="BAMJ">
+       214       <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" key="True" />
+       217       <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+       219       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="12" null="False" rangehigh="3000" rangelow="0" />
+       225   </table>
+       226   <table name="nations" shortname="Crbb" maxupdate="-1">
+       228       <field name="nationid" shortname="LEtt" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="250" rangelow="1" key="True" />
+       229       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-1" fkparenttable="teams" />
+       230       <field name="nationname" shortname="zMVU" type="DBOFIELDTYPE_STRING" depth="360" null="False" rangehigh="0" rangelow="0" update="True" />
+       231       <field name="nationstartingfirstletter" shortname="lfjX" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="26" rangelow="1" update="True" />
+       238   </table>
+       239   <table name="version" shortname="DbIl" maxupdate="-1" savegroups="squads">
+       248   </table>
+       249   <table name="MatchIntensity" shortname="GZKc">
+       260   </table>
+       261   <table name="rivals" shortname="LbKk" maxupdate="-1" maxinsert="1464" maxdelete="1464" savegroups="squads">
+       263       <field name="teamid1" shortname="fmFo" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" fkparenttable="teams" />
+       264       <field name="teamid2" shortname="afAW" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" fkparenttable="teams" />
+       267   </table>
+       268   <table name="celebrations" shortname="NspG">
+       272   </table>
+       273   <table name="career_commonnames" shortname="NtND">
+       280   </table>
+       281   <table name="fcc_trainingcards" shortname="OWfL">
+       283       <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="31" null="False" rangehigh="2001001001" rangelow="0" key="True" />
+       284       <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+       285       <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+       286       <field name="rating" shortname="Xxmh" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+       290   </table>
+       291   <table name="teamformdiff" shortname="OIcD" maxupdate="-1" maxinsert="50" maxdelete="50" savegroups="squads">
+       293       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" fkparenttable="teams" />
+       294       <field name="oldmidfieldrating" shortname="YxAQ" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" />
+       295       <field name="newmidfieldrating" shortname="jjwz" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" />
+       296       <field name="newoverallrating" shortname="xKVG" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" />
+       297       <field name="overallratingdiff" shortname="BssH" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="99" rangelow="-99" />
+       298       <field name="newdefenserating" shortname="WjAg" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" />
+       299       <field name="oldoverallrating" shortname="HjSL" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" />
+       300       <field name="olddefenserating" shortname="kePB" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" />
+       301       <field name="oldattackrating" shortname="ArvO" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" />
+       302       <field name="newattackrating" shortname="Kjlq" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" />
+       304   </table>
+       305   <table name="commentarynames" shortname="PrWZ">
+       312   </table>
+       313   <table name="fcc_formationcardspositions_kc" shortname="RhoQ">
+       339   </table>
+       340   <table name="teamformationteamstylelinks" shortname="TKgq" maxupdate="-1" maxinsert="700" maxdelete="700" savegroups="squads,onlsquads">
+       342       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-2" update="True" key="True" />
+       345       <field name="teamstyleid" shortname="KjhG" type="DBOFIELDTYPE_INTEGER" depth="10" null="False" rangehigh="1000" rangelow="0" update="True" />
+       347   </table>
+       348   <table name="headcoachcards" shortname="TiUk">
+       350       <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
+       354       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="16777215" rangelow="0" />
+       359   </table>
+       360   <table name="fcc_preferredformationcalcst" shortname="WTdJ">
+       381   </table>
+       382   <table name="fcc_chemlinkcalc" shortname="dpEH">
+       416   </table>
+       417   <table name="stories" shortname="kgGh" maxupdate="-1" maxinsert="8500" maxdelete="8500" savegroups="squads">
+       427   </table>
+       428   <table name="temp_formations" shortname="qwYG" maxupdate="-1" maxinsert="1" maxdelete="1" savegroups="tempsquads">
+       431       <field name="position3" shortname="cGsr" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+       434       <field name="position7" shortname="fvcy" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+       437       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-2" />
+       442       <field name="offensiverating" shortname="QraJ" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="4" rangelow="0" update="True" />
+       461       <field name="position6" shortname="ksMI" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+       464       <field name="position2" shortname="nNch" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+       470       <field name="position10" shortname="FuLD" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+       478       <field name="position8" shortname="TMpL" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+       480       <field name="position0" shortname="ZzVx" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" update="True" />
+       481       <field name="position4" shortname="aCho" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+       504       <field name="position9" shortname="sPtx" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+       510       <field name="position5" shortname="BBlW" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+       511       <field name="position1" shortname="CEZz" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+       518   </table>
+       519   <table name="career_firstnames" shortname="sYnV">
+       525   </table>
+       526   <table name="career_lastnames" shortname="vInR">
+       532   </table>
+       533   <table name="temp_arenateam" shortname="xnxw" maxupdate="-1" maxinsert="1" maxdelete="1" savegroups="temparenaplayer">
+       535       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" />
+       536       <field name="penaltytakerid" shortname="hPku" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" fkparenttable="players" />
+       538       <field name="captainid" shortname="FVzk" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" fkparenttable="players" />
+       542       <field name="buspositioning" shortname="Yfep" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="2" rangelow="1" update="True" />
+       545       <field name="leftcornerkicktakerid" shortname="xcde" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" fkparenttable="players" />
+       551       <field name="midfieldrating" shortname="SqFN" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+       553       <field name="attackrating" shortname="UAKP" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+       558       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="-2147483648" update="True" />
+       559       <field name="matchdaydefenserating" shortname="zHfR" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+       561       <field name="teamcolor3b" shortname="Gzty" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+       563       <field name="ccpositioning" shortname="IuVq" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="2" rangelow="1" update="True" />
+       564       <field name="teamcolor2r" shortname="KzYP" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+       565       <field name="freekicktakerid" shortname="LfBw" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" fkparenttable="players" />
+       566       <field name="teamcolor2b" shortname="PcIL" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+       568       <field name="teamcolor3r" shortname="Tsda" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+       569       <field name="internationalprestige" shortname="edvw" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="20" rangelow="0" update="True" />
+       570       <field name="rivalteam" shortname="erSL" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" update="True" />
+       571       <field name="matchdayattackrating" shortname="jmRz" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+       573       <field name="defteamwidth" shortname="jVDV" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="1" update="True" />
+       575       <field name="teamcolor1r" shortname="lWTE" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+       576       <field name="matchdayoverallrating" shortname="sqCP" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+       577       <field name="teamcolor1b" shortname="EVjc" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+       578       <field name="matchdaymidfieldrating" shortname="HHDP" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+       579       <field name="physioid_primary" shortname="KNKP" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="14000" rangelow="0" update="True" fkparenttable="physio" />
+       584       <field name="teamcolor1g" shortname="UrDD" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+       587       <field name="defenserating" shortname="btsS" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+       588       <field name="rightcornerkicktakerid" shortname="fBiX" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" fkparenttable="players" />
+       590       <field name="teamcolor2g" shortname="rags" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+       593       <field name="physioid_secondary" shortname="AisD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="14000" rangelow="0" update="True" fkparenttable="physio" />
+       594       <field name="teamname" shortname="AUsv" type="DBOFIELDTYPE_STRING" depth="480" null="False" rangehigh="0" rangelow="0" update="True" />
+       596       <field name="teamcolor3g" shortname="Olxh" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+       598       <field name="overallrating" shortname="UERs" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+       600   </table>
+       601   <table name="fcc_kitcards" shortname="BPUM">
+       603       <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="-1" key="True" />
+       604       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-1" />
+       608       <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="255" rangelow="-1" />
+       610       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="255" rangelow="-1" />
+       616   </table>
+       617   <table name="fcc_contractcards" shortname="Bpmk">
+       619       <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="31" null="False" rangehigh="2001001001" rangelow="0" key="True" />
+       620       <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+       621       <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+       624       <field name="rating" shortname="Xxmh" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+       628   </table>
+       629   <table name="shoecolors" shortname="EVxj">
+       636   </table>
+       637   <table name="assetcryptokeys" shortname="EROE" maxupdate="-1" maxinsert="80" maxdelete="80" savegroups="assets">
+       643   </table>
+       644   <table name="competition" shortname="FMpz">
+       649   </table>
+       650   <table name="fcc_balls" shortname="GuQh">
+       652       <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" key="True" />
+       656       <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+       657       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" />
+       662   </table>
+       663   <table name="manager" shortname="Knen" maxupdate="-1" maxinsert="318" maxdelete="318" savegroups="squads">
+       665       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" fkparenttable="teams" />
+       669   </table>
+       670   <table name="fieldpositionboundingboxes" shortname="MdTF">
+       672       <field name="positionid" shortname="XyZq" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="0" key="True" />
+       682   </table>
+       683   <table name="stadiums" shortname="QYeR" maxupdate="-1" maxinsert="10" maxdelete="10">
+       689       <field name="iseditable" shortname="xnTn" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" update="True" />
+       691       <field name="hometeamid" shortname="KbVA" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="0" update="True" />
+       739   </table>
+       740   <table name="trainingteamplayernames" shortname="RWuR" maxupdate="-1">
+       746   </table>
+       747   <table name="playerformdiff" shortname="UlaA" maxupdate="-1" maxinsert="50" maxdelete="50" savegroups="squads">
+       749       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" fkparenttable="teams" />
+       750       <field name="newoverallrating" shortname="xKVG" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" />
+       751       <field name="overallratingdiff" shortname="BssH" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="99" rangelow="-99" />
+       752       <field name="oldoverallrating" shortname="HjSL" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" />
+       753       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" fkparenttable="players" />
+       755   </table>
+       756   <table name="fcc_stadium" shortname="WqSK">
+       758       <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="0" key="True" />
+       763       <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+       767       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="511" rangelow="0" />
+       772   </table>
+       773   <table name="customteamstyles" shortname="WpTz" maxupdate="-1" maxinsert="28" maxdelete="28" savegroups="customteamstyles">
+       775       <field name="teamstyleid" shortname="KjhG" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="1000" rangelow="900" update="True" key="True" />
+       778       <field name="buspositioning" shortname="Yfep" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="2" rangelow="1" update="True" />
+       781       <field name="ccpositioning" shortname="IuVq" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="2" rangelow="1" update="True" />
+       782       <field name="defteamwidth" shortname="jVDV" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="1" update="True" />
+       789   </table>
+       790   <table name="videos" shortname="aOcx">
+       797   </table>
+       798   <table name="fcc_healingcards" shortname="aAgi">
+       800       <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="31" null="False" rangehigh="2001001001" rangelow="0" key="True" />
+       801       <field name="cardsubtype" shortname="etwD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+       802       <field name="cardassetid" shortname="BbKI" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="10000" rangelow="0" />
+       803       <field name="rating" shortname="Xxmh" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+       807   </table>
+       808   <table name="temp_teamplayerlinks" shortname="cMPf" maxupdate="-1" maxinsert="40" maxdelete="1" savegroups="tempsquads">
+       811       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" update="True" fkparenttable="teams" />
+       820       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" fkparenttable="players" />
+       823       <field name="isamongtopscorersinteam" shortname="pchV" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" update="True" />
+       824       <field name="position" shortname="vjla" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="33" rangelow="0" update="True" />
+       826   </table>
+       827   <table name="temp_arenaplayer" shortname="fKCJ" maxupdate="-1" maxinsert="1" maxdelete="1" savegroups="temparenaplayer">
+       829       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
+       844       <field name="preferredposition1" shortname="wZQU" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="31" rangelow="0" update="True" />
+       864       <field name="gkpositioning" shortname="yfhq" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" update="True" />
+       868       <field name="preferredposition4" shortname="YnYz" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="-1" update="True" />
+       870       <field name="nationality" shortname="enmm" type="DBOFIELDTYPE_INTEGER" depth="12" null="False" rangehigh="3000" rangelow="0" update="True" />
+       881       <field name="playerjointeamdate" shortname="vTpl" type="DBOFIELDTYPE_DATE" depth="32" null="False" rangehigh="2147483647" rangelow="-2147483648" update="True" />
+       889       <field name="preferredposition2" shortname="NgVS" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="-1" update="True" />
+       915       <field name="playerjerseynameid" shortname="Vqpv" type="DBOFIELDTYPE_INTEGER" depth="15" null="False" rangehigh="32767" rangelow="0" update="True" />
+       916       <field name="internationalrep" shortname="WVsa" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="5" rangelow="1" update="True" />
+       917       <field name="positioning" shortname="XsFD" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" update="True" />
+       929       <field name="preferredposition3" shortname="OblE" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="-1" update="True" />
+       930       <field name="overallrating" shortname="UERs" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" update="True" />
+       933   </table>
+       934   <table name="fcc_preferredformationcalcmid" shortname="fMMF">
+       955   </table>
+       956   <table name="playerattributesmapping" shortname="iyPy">
+       963       <field name="gkpositioning" shortname="yfhq" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="-1" />
+       974   </table>
+       975   <table name="dlcballs" shortname="jfBw" maxupdate="-1" maxinsert="50" maxdelete="50">
+       977       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="11" null="False" rangehigh="2000" rangelow="0" update="True" key="True" />
+       980   </table>
+       981   <table name="fcc_navcoords_hd" shortname="juoX">
+       991       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="64" rangelow="0" />
+       995   </table>
+       996   <table name="formationlayout" shortname="kBQB">
+      1013   </table>
+      1014   <table name="referee" shortname="mMQM">
+      1036       <field name="cardstrictness" shortname="sUgF" type="DBOFIELDTYPE_INTEGER" depth="2" null="False" rangehigh="2" rangelow="0" />
+      1053       <field name="nationalitycode" shortname="UScu" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="208" rangelow="0" />
+      1056   </table>
+      1057   <table name="fcc_preferredpositioncalc" shortname="oTDR">
+      1071       <field name="positions" shortname="mGFj" type="DBOFIELDTYPE_STRING" depth="64" null="False" rangehigh="0" rangelow="0" />
+      1090   </table>
+      1091   <table name="clubcommentarynames" shortname="oqeq">
+      1096   </table>
+      1097   <table name="fcc_textposvalues_kc" shortname="rcQH">
+      1123   </table>
+      1124   <table name="cz_teams" shortname="sloG" maxupdate="-1" maxinsert="60" maxdelete="60" savegroups="squads">
+      1126       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="0" key="True" />
+      1127       <field name="teamabbrev3" shortname="cCBB" type="DBOFIELDTYPE_STRING" depth="72" null="False" rangehigh="0" rangelow="0" update="True" />
+      1132   </table>
+      1133   <table name="physio" shortname="tQVJ">
+      1150       <field name="nationalitycode" shortname="UScu" type="DBOFIELDTYPE_INTEGER" depth="12" null="False" rangehigh="3000" rangelow="0" />
+      1152   </table>
+      1153   <table name="trainingteamplayerlinks" shortname="uvKl">
+      1155       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
+      1157       <field name="position" shortname="vjla" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="33" rangelow="0" />
+      1159   </table>
+      1160   <table name="gkcoachcards" shortname="BROZ">
+      1162       <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
+      1166       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="16777215" rangelow="0" />
+      1171   </table>
+      1172   <table name="players" shortname="CZUM" maxupdate="-1" maxinsert="14729" maxdelete="14729" savegroups="squads,players">
+      1174       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
+      1189       <field name="preferredposition1" shortname="wZQU" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="31" rangelow="0" update="True" />
+      1209       <field name="gkpositioning" shortname="yfhq" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" update="True" />
+      1213       <field name="preferredposition4" shortname="YnYz" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="-1" update="True" />
+      1215       <field name="nationality" shortname="enmm" type="DBOFIELDTYPE_INTEGER" depth="12" null="False" rangehigh="3000" rangelow="0" update="True" />
+      1226       <field name="playerjointeamdate" shortname="vTpl" type="DBOFIELDTYPE_DATE" depth="32" null="False" rangehigh="2147483647" rangelow="-2147483648" update="True" />
+      1234       <field name="preferredposition2" shortname="NgVS" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="-1" update="True" />
+      1260       <field name="playerjerseynameid" shortname="Vqpv" type="DBOFIELDTYPE_INTEGER" depth="15" null="False" rangehigh="32767" rangelow="0" update="True" />
+      1261       <field name="internationalrep" shortname="WVsa" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="5" rangelow="1" update="True" />
+      1262       <field name="positioning" shortname="XsFD" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" update="True" />
+      1274       <field name="preferredposition3" shortname="OblE" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="-1" update="True" />
+      1275       <field name="overallrating" shortname="UERs" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" update="True" />
+      1278   </table>
+      1279   <table name="createplayerpositiontemplates" shortname="Flrt">
+      1283       <field name="positionid" shortname="XyZq" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="0" />
+      1285   </table>
+      1286   <table name="temp_players" shortname="HvYq" maxupdate="-1" maxinsert="40" maxdelete="1" savegroups="tempsquads">
+      1288       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
+      1303       <field name="preferredposition1" shortname="wZQU" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="31" rangelow="0" update="True" />
+      1323       <field name="gkpositioning" shortname="yfhq" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" update="True" />
+      1327       <field name="preferredposition4" shortname="YnYz" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="-1" update="True" />
+      1329       <field name="nationality" shortname="enmm" type="DBOFIELDTYPE_INTEGER" depth="12" null="False" rangehigh="3000" rangelow="0" update="True" />
+      1340       <field name="playerjointeamdate" shortname="vTpl" type="DBOFIELDTYPE_DATE" depth="32" null="False" rangehigh="2147483647" rangelow="-2147483648" update="True" />
+      1348       <field name="preferredposition2" shortname="NgVS" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="-1" update="True" />
+      1374       <field name="playerjerseynameid" shortname="Vqpv" type="DBOFIELDTYPE_INTEGER" depth="15" null="False" rangehigh="32767" rangelow="0" update="True" />
+      1375       <field name="internationalrep" shortname="WVsa" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="5" rangelow="1" update="True" />
+      1376       <field name="positioning" shortname="XsFD" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" update="True" />
+      1388       <field name="preferredposition3" shortname="OblE" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="-1" update="True" />
+      1389       <field name="overallrating" shortname="UERs" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" update="True" />
+      1392   </table>
+      1393   <table name="fcc_managerbonusvalues" shortname="HVqM">
+      1397       <field name="cardlevel" shortname="HdyB" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="4" rangelow="0" />
+      1401   </table>
+      1402   <table name="fcc_leagues" shortname="IClP">
+      1409   </table>
+      1410   <table name="trainingteamplayers" shortname="JOhL" maxupdate="-1">
+      1412       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
+      1427       <field name="preferredposition1" shortname="wZQU" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="31" rangelow="0" update="True" />
+      1447       <field name="gkpositioning" shortname="yfhq" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" update="True" />
+      1451       <field name="preferredposition4" shortname="YnYz" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="-1" update="True" />
+      1453       <field name="nationality" shortname="enmm" type="DBOFIELDTYPE_INTEGER" depth="12" null="False" rangehigh="3000" rangelow="0" update="True" />
+      1464       <field name="playerjointeamdate" shortname="vTpl" type="DBOFIELDTYPE_DATE" depth="32" null="False" rangehigh="2147483647" rangelow="-2147483648" update="True" />
+      1472       <field name="preferredposition2" shortname="NgVS" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="-1" update="True" />
+      1498       <field name="playerjerseynameid" shortname="Vqpv" type="DBOFIELDTYPE_INTEGER" depth="15" null="False" rangehigh="32767" rangelow="0" update="True" />
+      1499       <field name="internationalrep" shortname="WVsa" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="5" rangelow="1" update="True" />
+      1500       <field name="positioning" shortname="XsFD" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" update="True" />
+      1512       <field name="preferredposition3" shortname="OblE" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="-1" update="True" />
+      1513       <field name="overallrating" shortname="UERs" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="1" update="True" />
+      1516   </table>
+      1517   <table name="career_squadranking" shortname="JPRd" maxupdate="-1" maxinsert="42" maxdelete="42" savegroups="careermode">
+      1519       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="-1" update="True" key="True" />
+      1523   </table>
+      1524   <table name="fcc_preferredformationcalcgk" shortname="RJjN">
+      1545   </table>
+      1546   <table name="temp_createplayer" shortname="Yvvv" maxupdate="-1" maxinsert="30" maxdelete="30" savegroups="tempsquads">
+      1550       <field name="cpmorphcomposite_cheekplacement_position_lsy" shortname="emxF" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      1553       <field name="create_originalplayerid" shortname="pXwC" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" />
+      1564       <field name="cpmorphcomposite_browplacement_position_lsy" shortname="OJrj" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      1566       <field name="cpmorphcomposite_mouthposition_position_lsy" shortname="RKoc" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      1569       <field name="cpmorphcomposite_mouthposition_width_lsx" shortname="aKIQ" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      1576       <field name="cpmorphcomposite_noseplacement_position_rsy" shortname="pSUy" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      1582       <field name="cpmorphcomposite_noseplacement_position_lsy" shortname="HqyQ" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      1600       <field name="cpmorphcomposite_mouthposition_bite_rsy" shortname="yJgI" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      1601       <field name="create_playerid" shortname="JAOM" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" />
+      1607       <field name="cpmorphcomposite_mouthposition_protrusion_rsx" shortname="gfAB" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      1618       <field name="cpmorphcomposite_jaw_position_lsy" shortname="RpOU" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      1620   </table>
+      1621   <table name="cz_players" shortname="YOKt" maxupdate="-1" maxinsert="1500" maxdelete="1500" savegroups="squads">
+      1623       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" />
+      1624       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" />
+      1627   </table>
+      1628   <table name="playerloans" shortname="ZrAO" maxupdate="-1" maxinsert="1500" maxdelete="1500" savegroups="squads">
+      1630       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" fkparenttable="players" />
+      1631       <field name="teamidloanedfrom" shortname="GlCc" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" fkparenttable="teams" />
+      1634   </table>
+      1635   <table name="eatrax" shortname="bBVN">
+      1643   </table>
+      1644   <table name="fcc_formationcardspositions_hd" shortname="ckeY">
+      1670   </table>
+      1671   <table name="playerboots" shortname="cQNG" maxupdate="-1" maxinsert="121" maxdelete="121" savegroups="assets">
+      1685   </table>
+      1686   <table name="fcc_preferredformationcalcback" shortname="irxF">
+      1707   </table>
+      1708   <table name="teamstadiumlinks" shortname="kISL" maxupdate="-1" maxinsert="60" maxdelete="60" savegroups="squads">
+      1710       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" update="True" key="True" fkparenttable="teams" />
+      1711       <field name="stadiumid" shortname="fwCQ" type="DBOFIELDTYPE_INTEGER" depth="9" null="False" rangehigh="511" rangelow="0" update="True" fkparenttable="stadiums" />
+      1713   </table>
+      1714   <table name="teams" shortname="lyxL" maxupdate="-1" maxinsert="64" maxdelete="64" savegroups="squads,onlsquads">
+      1716       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" />
+      1717       <field name="penaltytakerid" shortname="hPku" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" fkparenttable="players" />
+      1719       <field name="captainid" shortname="FVzk" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" fkparenttable="players" />
+      1723       <field name="buspositioning" shortname="Yfep" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="2" rangelow="1" update="True" />
+      1726       <field name="leftcornerkicktakerid" shortname="xcde" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" fkparenttable="players" />
+      1732       <field name="midfieldrating" shortname="SqFN" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1734       <field name="attackrating" shortname="UAKP" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1739       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="-2147483648" update="True" />
+      1740       <field name="matchdaydefenserating" shortname="zHfR" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1742       <field name="teamcolor3b" shortname="Gzty" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1744       <field name="ccpositioning" shortname="IuVq" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="2" rangelow="1" update="True" />
+      1745       <field name="teamcolor2r" shortname="KzYP" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1746       <field name="freekicktakerid" shortname="LfBw" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" fkparenttable="players" />
+      1747       <field name="teamcolor2b" shortname="PcIL" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1749       <field name="teamcolor3r" shortname="Tsda" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1750       <field name="internationalprestige" shortname="edvw" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="20" rangelow="0" update="True" />
+      1751       <field name="rivalteam" shortname="erSL" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" update="True" />
+      1752       <field name="matchdayattackrating" shortname="jmRz" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1754       <field name="defteamwidth" shortname="jVDV" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="1" update="True" />
+      1756       <field name="teamcolor1r" shortname="lWTE" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1757       <field name="matchdayoverallrating" shortname="sqCP" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1758       <field name="teamcolor1b" shortname="EVjc" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1759       <field name="matchdaymidfieldrating" shortname="HHDP" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1760       <field name="physioid_primary" shortname="KNKP" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="14000" rangelow="0" update="True" fkparenttable="physio" />
+      1765       <field name="teamcolor1g" shortname="UrDD" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1768       <field name="defenserating" shortname="btsS" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1769       <field name="rightcornerkicktakerid" shortname="fBiX" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="1" update="True" fkparenttable="players" />
+      1771       <field name="teamcolor2g" shortname="rags" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1774       <field name="physioid_secondary" shortname="AisD" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="14000" rangelow="0" update="True" fkparenttable="physio" />
+      1775       <field name="teamname" shortname="AUsv" type="DBOFIELDTYPE_STRING" depth="480" null="False" rangehigh="0" rangelow="0" update="True" />
+      1777       <field name="teamcolor3g" shortname="Olxh" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1779       <field name="overallrating" shortname="UERs" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1781   </table>
+      1782   <table name="temp_arenateamplayerlinks" shortname="lUEz" maxupdate="-1" maxinsert="1" maxdelete="1" savegroups="temparenaplayer">
+      1785       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" update="True" fkparenttable="teams" />
+      1794       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" fkparenttable="players" />
+      1797       <field name="isamongtopscorersinteam" shortname="pchV" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" update="True" />
+      1798       <field name="position" shortname="vjla" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="33" rangelow="0" update="True" />
+      1800   </table>
+      1801   <table name="formations" shortname="mDGw" maxupdate="-1" maxinsert="76" maxdelete="76" savegroups="squads">
+      1804       <field name="position3" shortname="cGsr" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+      1807       <field name="position7" shortname="fvcy" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+      1810       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="-2" />
+      1815       <field name="offensiverating" shortname="QraJ" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="4" rangelow="0" update="True" />
+      1834       <field name="position6" shortname="ksMI" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+      1837       <field name="position2" shortname="nNch" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+      1843       <field name="position10" shortname="FuLD" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+      1851       <field name="position8" shortname="TMpL" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+      1853       <field name="position0" shortname="ZzVx" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="1" rangelow="0" update="True" />
+      1854       <field name="position4" shortname="aCho" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+      1877       <field name="position9" shortname="sPtx" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+      1883       <field name="position5" shortname="BBlW" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+      1884       <field name="position1" shortname="CEZz" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="32" rangelow="1" update="True" />
+      1891   </table>
+      1892   <table name="editedplayernames" shortname="nQVU" maxupdate="-1" maxinsert="1530" maxdelete="1530" savegroups="squads">
+      1894       <field name="playerid" shortname="ykFq" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" key="True" fkparenttable="players" />
+      1897       <field name="playerjerseyname" shortname="kRfb" type="DBOFIELDTYPE_STRING" depth="360" null="False" rangehigh="0" rangelow="0" update="True" />
+      1900   </table>
+      1901   <table name="leagues" shortname="onMQ" maxupdate="-1" maxinsert="5" maxdelete="5" savegroups="squads">
+      1910   </table>
+      1911   <table name="managercards" shortname="vjfq">
+      1913       <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
+      1917       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="16777215" rangelow="0" />
+      1918       <field name="nation" shortname="LSlc" type="DBOFIELDTYPE_INTEGER" depth="27" null="False" rangehigh="99999999" rangelow="-1" />
+      1921       <field name="talkrating" shortname="iZFC" type="DBOFIELDTYPE_INTEGER" depth="4" null="False" rangehigh="10" rangelow="-5" />
+      1924   </table>
+      1925   <table name="factory_teams" shortname="xIfB">
+      1927       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" />
+      1934       <field name="buspositioning" shortname="Yfep" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="2" rangelow="1" update="True" />
+      1942       <field name="midfieldrating" shortname="SqFN" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1944       <field name="attackrating" shortname="UAKP" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1949       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="32" null="False" rangehigh="2147483647" rangelow="-2147483648" update="True" />
+      1950       <field name="matchdaydefenserating" shortname="zHfR" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1952       <field name="teamcolor3b" shortname="Gzty" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1953       <field name="ccpositioning" shortname="IuVq" type="DBOFIELDTYPE_INTEGER" depth="1" null="False" rangehigh="2" rangelow="1" update="True" />
+      1954       <field name="teamcolor2r" shortname="KzYP" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1956       <field name="teamcolor2b" shortname="PcIL" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1958       <field name="teamcolor3r" shortname="Tsda" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1959       <field name="internationalprestige" shortname="edvw" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="20" rangelow="0" update="True" />
+      1960       <field name="rivalteam" shortname="erSL" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" update="True" />
+      1961       <field name="matchdayattackrating" shortname="jmRz" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1963       <field name="defteamwidth" shortname="jVDV" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="100" rangelow="1" update="True" />
+      1965       <field name="teamcolor1r" shortname="lWTE" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1966       <field name="matchdayoverallrating" shortname="sqCP" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1967       <field name="teamcolor1b" shortname="EVjc" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1968       <field name="matchdaymidfieldrating" shortname="HHDP" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1974       <field name="teamcolor1g" shortname="UrDD" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1977       <field name="defenserating" shortname="btsS" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1980       <field name="teamcolor2g" shortname="rags" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1984       <field name="teamname" shortname="AUsv" type="DBOFIELDTYPE_STRING" depth="480" null="False" rangehigh="0" rangelow="0" update="True" />
+      1986       <field name="teamcolor3g" shortname="Olxh" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" update="True" />
+      1988       <field name="overallrating" shortname="UERs" type="DBOFIELDTYPE_INTEGER" depth="7" null="False" rangehigh="99" rangelow="0" update="True" />
+      1990   </table>
+      1991   <table name="cz_leagues" shortname="yAGl" maxupdate="-1" maxinsert="5" maxdelete="5" savegroups="squads">
+      2008       <field name="numteams" shortname="LGyG" type="DBOFIELDTYPE_INTEGER" depth="6" null="False" rangehigh="32" rangelow="0" update="True" />
+      2009       <field name="fixturevseachteam" shortname="NOnw" type="DBOFIELDTYPE_INTEGER" depth="2" null="False" rangehigh="2" rangelow="0" update="True" />
+      2019       <field name="teampergroup" shortname="WITa" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="16" rangelow="0" update="True" />
+      2024       <field name="teamadvancingpergroup" shortname="PYjP" type="DBOFIELDTYPE_INTEGER" depth="3" null="False" rangehigh="4" rangelow="0" update="True" />
+      2027   </table>
+      2028   <table name="temp_arenacreateplayer" shortname="BDOL" maxupdate="-1" maxinsert="1" maxdelete="1" savegroups="temparenaplayer">
+      2032       <field name="cpmorphcomposite_cheekplacement_position_lsy" shortname="emxF" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      2035       <field name="create_originalplayerid" shortname="pXwC" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" />
+      2046       <field name="cpmorphcomposite_browplacement_position_lsy" shortname="OJrj" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      2048       <field name="cpmorphcomposite_mouthposition_position_lsy" shortname="RKoc" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      2051       <field name="cpmorphcomposite_mouthposition_width_lsx" shortname="aKIQ" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      2058       <field name="cpmorphcomposite_noseplacement_position_rsy" shortname="pSUy" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      2064       <field name="cpmorphcomposite_noseplacement_position_lsy" shortname="HqyQ" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      2082       <field name="cpmorphcomposite_mouthposition_bite_rsy" shortname="yJgI" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      2083       <field name="create_playerid" shortname="JAOM" type="DBOFIELDTYPE_INTEGER" depth="19" null="False" rangehigh="300000" rangelow="0" update="True" />
+      2089       <field name="cpmorphcomposite_mouthposition_protrusion_rsx" shortname="gfAB" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      2100       <field name="cpmorphcomposite_jaw_position_lsy" shortname="RpOU" type="DBOFIELDTYPE_REAL" depth="32" null="False" rangehigh="0" rangelow="0" update="True" />
+      2102   </table>
+      2103   <table name="fcc_myclubs" shortname="EVOt">
+      2108   </table>
+      2109   <table name="teamstadiumlinkscache" shortname="FPYB" maxupdate="-1" maxinsert="5" maxdelete="5">
+      2111       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" />
+      2114   </table>
+      2115   <table name="rowteamnationlinks" shortname="FroO" maxupdate="-1" maxinsert="5" maxdelete="5" savegroups="squads">
+      2117       <field name="teamid" shortname="mCXg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="1" key="True" fkparenttable="teams" />
+      2118       <field name="nationid" shortname="LEtt" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="250" rangelow="1" fkparenttable="nations" />
+      2120   </table>
+      2121   <table name="career_calendar" shortname="GJUr" maxupdate="-1" savegroups="careermode">
+      2133   </table>
+      2134   <table name="teamkits" shortname="GdtI" maxupdate="-1" maxinsert="1200" maxdelete="1200">
+      2136       <field name="teamtechid" shortname="qljg" type="DBOFIELDTYPE_INTEGER" depth="18" null="False" rangehigh="200000" rangelow="0" key="True" />
+      2141       <field name="teamcolorprimb" shortname="Qhfp" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+      2142       <field name="teamcolorprimr" shortname="dSvZ" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+      2146       <field name="teamkittypetechid" shortname="MlXB" type="DBOFIELDTYPE_INTEGER" depth="5" null="False" rangehigh="22" rangelow="0" />
+      2147       <field name="teamcolorprimg" shortname="MHXK" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+      2149       <field name="teamcolortertr" shortname="CPDe" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+      2153       <field name="teamcolortertb" shortname="XAnO" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+      2158       <field name="teamcolorsecg" shortname="neKc" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+      2162       <field name="teamcolorsecr" shortname="OvKn" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+      2165       <field name="teamcolorsecb" shortname="jUaD" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+      2168       <field name="teamcolortertg" shortname="zyzx" type="DBOFIELDTYPE_INTEGER" depth="8" null="False" rangehigh="255" rangelow="0" />
+      2169       <field name="teamkitid" shortname="DPYU" type="DBOFIELDTYPE_INTEGER" depth="14" null="False" rangehigh="16383" rangelow="0" />
+      2173   </table>
+      2174   <table name="fcc_coinrewards" shortname="Itis">
+      2181   </table>
+      2182   <table name="songplaylistlinks" shortname="JVoI" maxupdate="-1" savegroups="eatrax">
+      2189   </table>
+      2190   <table name="fitnesscoachcards" shortname="JYGQ">
+      2192       <field name="carddbid" shortname="cflB" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="9999999" rangelow="0" key="True" />
+      2196       <field name="assetid" shortname="yeEP" type="DBOFIELDTYPE_INTEGER" depth="24" null="False" rangehigh="16777215" rangelow="0" />
+

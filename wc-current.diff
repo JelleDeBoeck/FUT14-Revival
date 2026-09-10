@@ -1,0 +1,661 @@
+diff --git a/server/fut_app.py b/server/fut_app.py
+index 04ef23d..cd6d12a 100644
+--- a/server/fut_app.py
++++ b/server/fut_app.py
+@@ -162,6 +162,54 @@ def state_for_request(
+ 
+     return FUT_STATE
+ 
++@app.middleware("http")
++async def debug_request_mode(request: Request, call_next):
++    path = request.url.path
++    query = request.url.query
++
++    if path.startswith("/ut/"):
++        wc = is_world_cup_request(request)
++
++        print()
++        print("=" * 90)
++        print(
++            f"[REQUEST] {request.method} {path}"
++            + (f"?{query}" if query else "")
++        )
++        print(f"[REQUEST] WC_BY_QUERY={wc}")
++
++        try:
++            body = await request.body()
++
++            if body:
++                try:
++                    body_text = body.decode(
++                        "utf-8",
++                        errors="replace",
++                    )
++                except Exception:
++                    body_text = repr(body)
++
++                print(
++                    "[REQUEST BODY] "
++                    + body_text[:4000]
++                )
++        except Exception as exc:
++            print(
++                f"[REQUEST BODY ERROR] {exc}"
++            )
++
++    response = await call_next(request)
++
++    if path.startswith("/ut/"):
++        print(
++            f"[RESPONSE] {response.status_code} "
++            f"{request.method} {path}"
++        )
++        print("=" * 90)
++
++    return response
++
+ # ============================================================
+ # Helpers
+ # ============================================================
+@@ -1091,6 +1139,35 @@ def health():
+         "status": "ok",
+     }
+ 
++def reset_wc_session() -> None:
++    WC_STATE["club_created"] = False
++    WC_STATE["starter_pack_claimed"] = False
++
++    WC_STATE["club_name"] = LOCAL_CLUB_NAME
++    WC_STATE["club_abbr"] = LOCAL_CLUB_ABBR
++    WC_STATE["badge_id"] = 0
++    WC_STATE["team_id"] = 0
++
++    WC_STATE["active_squad_id"] = 1
++    WC_STATE["formation"] = "f442"
++    WC_STATE["squad_name"] = "World Cup"
++    WC_STATE["chemistry"] = 0
++    WC_STATE["star_rating"] = 0
++
++    WC_STATE["players"] = []
++    WC_STATE["purchased_items"] = []
++    WC_STATE["club_items"] = []
++
++    WC_STATE["support_nation"] = None
++    WC_STATE["first_time_complete"] = False
++
++    WC_STATE["clientdata"] = {
++        "tutorialpopups": {},
++        "userHubData": {},
++        "managerquest": {},
++    }
++
++    print("[WC-RESET] fresh WC session")
+ 
+ # ============================================================
+ # Account info
+@@ -1391,7 +1468,19 @@ def provision_wc_starter_club() -> None:
+         pack.get("formation") or "f442"
+     )
+     WC_STATE["squad_name"] = "World Cup"
+-    WC_STATE["players"] = players
++    # TEST: native WC onboarding moet zelf de starter squad vullen
++    WC_STATE["players"] = []
++    WC_STATE["purchased_items"] = []
++
++    print(
++        "[WC-TEST] players=0 purchased_items=0; "
++        "waiting for native starter flow"
++    )
++
++    print(
++        "[WC-TEST] native starter flow: "
++        "purchased_items forced EMPTY"
++    )
+     WC_STATE["chemistry"] = 0
+     WC_STATE["star_rating"] = (
+         int(sum(ratings) / len(ratings))
+@@ -1402,6 +1491,7 @@ def provision_wc_starter_club() -> None:
+     print(
+         "[WC] starter squad provisioned "
+         f"players={len(players)} "
++        f"new_items={len(WC_STATE['purchased_items'])} "
+         f"formation={WC_STATE['formation']}"
+     )
+ 
+@@ -1443,8 +1533,9 @@ async def fut_user(
+         )
+ 
+         WC_STATE["club_created"] = True
+-
+-        provision_wc_starter_club()
++        WC_STATE["starter_pack_claimed"] = False
++        WC_STATE["players"] = []
++        WC_STATE["purchased_items"] = []
+ 
+         print(
+             "[WC] support_nation saved =",
+@@ -1469,7 +1560,7 @@ async def fut_user(
+                 0,
+ 
+             "returningUser":
+-                1,
++                0,
+ 
+             "clubName":
+                 profile_state[
+@@ -1503,7 +1594,7 @@ async def fut_user(
+             ],
+ 
+             "INTRO_DONE":
+-                True,
++                False,
+         }
+ 
+     return {
+@@ -1684,6 +1775,7 @@ def fut_store_transaction():
+ async def fut_tutorial_popups(
+     request: Request,
+ ):
++    state = state_for_request(request)
+     key = "tutorialpopups"
+ 
+     if request.method in {
+@@ -1691,9 +1783,7 @@ async def fut_tutorial_popups(
+         "POST",
+     }:
+         try:
+-            body = (
+-                await request.json()
+-            )
++            body = await request.json()
+         except Exception:
+             raise HTTPException(
+                 status_code=400,
+@@ -1712,12 +1802,12 @@ async def fut_tutorial_popups(
+                 ),
+             )
+ 
+-        FUT_STATE[
++        state[
+             "clientdata"
+         ][key] = body
+ 
+     return copy.deepcopy(
+-        FUT_STATE[
++        state[
+             "clientdata"
+         ][key]
+     )
+@@ -1756,6 +1846,7 @@ def fut_clientdata_pile_size():
+ async def fut_clientdata_user_hub_data(
+     request: Request,
+ ):
++    state = state_for_request(request)
+     key = "userHubData"
+ 
+     if request.method in {
+@@ -1763,9 +1854,7 @@ async def fut_clientdata_user_hub_data(
+         "POST",
+     }:
+         try:
+-            body = (
+-                await request.json()
+-            )
++            body = await request.json()
+         except Exception:
+             raise HTTPException(
+                 status_code=400,
+@@ -1784,12 +1873,12 @@ async def fut_clientdata_user_hub_data(
+                 ),
+             )
+ 
+-        FUT_STATE[
++        state[
+             "clientdata"
+         ][key] = body
+ 
+     return copy.deepcopy(
+-        FUT_STATE[
++        state[
+             "clientdata"
+         ][key]
+     )
+@@ -1806,6 +1895,7 @@ async def fut_clientdata_user_hub_data(
+ async def fut_clientdata_managerquest(
+     request: Request,
+ ):
++    state = state_for_request(request)
+     key = "managerquest"
+ 
+     if request.method in {
+@@ -1813,9 +1903,7 @@ async def fut_clientdata_managerquest(
+         "POST",
+     }:
+         try:
+-            body = (
+-                await request.json()
+-            )
++            body = await request.json()
+         except Exception:
+             raise HTTPException(
+                 status_code=400,
+@@ -1834,12 +1922,12 @@ async def fut_clientdata_managerquest(
+                 ),
+             )
+ 
+-        FUT_STATE[
++        state[
+             "clientdata"
+         ][key] = body
+ 
+     return copy.deepcopy(
+-        FUT_STATE[
++        state[
+             "clientdata"
+         ][key]
+     )
+@@ -1921,7 +2009,12 @@ def fut_user_action_update(
+     ):
+         print("[WC] CHARITY_MATCH_PLAYED hook reached")
+ 
+-        print("[WC] TEST: injected purchased_items =", len(WC_STATE["purchased_items"]))
++        provision_wc_starter_club()
++
++        print(
++            "[WC] starter items now available =",
++            len(WC_STATE["purchased_items"]),
++        )
+ 
+     print(
+         "[FUT] user action: "
+@@ -2192,26 +2285,19 @@ def fut_squad_list(
+ ):
+     state = state_for_request(request)
+ 
+-    if not state[
+-        "club_created"
+-    ]:
++    if not state["club_created"]:
+         return {
+             "activeSquadId": 0,
+             "squad": [],
+         }
+ 
+     return {
+-        "activeSquadId":
+-            state[
+-                "active_squad_id"
+-            ],
+-
++        "activeSquadId": state["active_squad_id"],
+         "squad": [
+             compact_squad_record(state)
+         ],
+     }
+ 
+-
+ # ============================================================
+ # Active squad
+ # ============================================================
+diff --git a/tools/fifa14_local_auth_bridge.js b/tools/fifa14_local_auth_bridge.js
+index 0551b64..a5aaa13 100644
+--- a/tools/fifa14_local_auth_bridge.js
++++ b/tools/fifa14_local_auth_bridge.js
+@@ -152,6 +152,7 @@ function install(m) {
+ 
+     console.log("[AUTH+WC] Cards gevonden @ " + m.base);
+ 
++
+     // =========================================================
+     // AUTH BRIDGE
+     // =========================================================
+@@ -572,12 +573,11 @@ function install(m) {
+                 if (!wcCardsDownloadedHooked) {
+                     wcCardsDownloadedHooked = true;
+ 
+-                    Interceptor.attach(cardsDownloadedTarget, {
+-                        onEnter() {
+-                            console.log("[WC-CARDSDOWNLOADED] FIRED");
+-
+-                        }
+-                    });
++                Interceptor.attach(cardsDownloadedTarget, {
++                    onEnter() {
++                        console.log("[WC-CARDSDOWNLOADED] FIRED");
++                    }
++                });
+ 
+                     console.log(
+                         "[WC-CARDSDOWNLOADED] hook actief"
+@@ -743,6 +743,9 @@ function install(m) {
+     // We loggen alleen de binnenkomende argumenten.
+     Interceptor.attach(wcCreateUser, {
+         onEnter(args) {
++
++            wcCreateUserThis = ptr(args[0]);
++
+             console.log(
+                 "[WC-CREATEUSER] ================================="
+             );
+@@ -753,7 +756,7 @@ function install(m) {
+ 
+             console.log(
+                 "[WC-CREATEUSER] this = " +
+-                args[0]
++                wcCreateUserThis
+             );
+ 
+             console.log(
+@@ -849,16 +852,38 @@ function install(m) {
+                 "fcc_login2 scan over 750ms"
+             );
+ 
+-        setTimeout(() => {
++        let wcScanTry = 0;
++
++        const wcScanTimer = setInterval(() => {
++            wcScanTry++;
++
+             try {
+-                findFccLogin2Branch(true);
++                console.log(
++                    "[FCC-LOGIN2-BRANCH] retry " +
++                    wcScanTry +
++                    " firstTime=" +
++                    wcFirstTimeInitSeen
++                );
++
++                const hits = findFccLogin2Branch(true);
++
++                if (wcFccPatched || hits > 0) {
++                    clearInterval(wcScanTimer);
++                }
+             } catch (e) {
+                 console.log(
+-                    "[FCC-LOGIN2-BRANCH] delayed scan fout: " +
++                    "[FCC-LOGIN2-BRANCH] retry fout: " +
+                     e
+                 );
+             }
+-        }, 750);
++
++            if (wcScanTry >= 40) {
++                clearInterval(wcScanTimer);
++                console.log(
++                    "[FCC-LOGIN2-BRANCH] retries klaar"
++                );
++            }
++        }, 100);
+         }
+     });
+ 
+@@ -886,6 +911,7 @@ function install(m) {
+ 
+ let wcFirstTimeInitSeen = false;
+ let wcFccPatched = false;
++let wcCreateUserThis = null;
+ 
+ function findFccLogin2Branch(patchForWC = false) {
+     const pattern =
+@@ -893,7 +919,7 @@ function findFccLogin2Branch(patchForWC = false) {
+         "AE 21 AF 4C 12 9D 00 08 00 00 00 59 " +
+         "B0 4D 99 03 00 00 00 59 B0 4E";
+ 
+-    let hits = 0;
++    const allHits = [];
+ 
+     for (const r of Process.enumerateRanges("r--")) {
+         try {
+@@ -904,9 +930,10 @@ function findFccLogin2Branch(patchForWC = false) {
+             );
+ 
+             for (const m of matches) {
+-                hits++;
++                allHits.push(m.address);
+ 
+-                const secondBranch = m.address.add(0x11);
++                const secondBranch =
++                    m.address.add(0x11);
+ 
+                 console.log(
+                     "[FCC-LOGIN2-BRANCH] HIT @ " +
+@@ -921,106 +948,125 @@ function findFccLogin2Branch(patchForWC = false) {
+                     "[FCC-LOGIN2-BRANCH] second BranchIfTrue @ " +
+                     secondBranch
+                 );
++            }
+ 
+-                if (
+-                    patchForWC &&
+-                    wcFirstTimeInitSeen &&
+-                    !wcFccPatched
+-                ) {
+-                    console.log(
+-                        "[WC-FCC-PATCH] WC instance gevonden"
+-                    );
++        } catch (e) {
++            // onleesbare range overslaan
++        }
++    }
+ 
+-                    try {
++    console.log(
++        "[FCC-LOGIN2-BRANCH] scan klaar, hits=" +
++        allHits.length
++    );
+ 
+-                        // =================================================
+-                        // PATCH 1
+-                        // LoginFinalizedSuccessContinue()
+-                        // -> NewUserFlow()
+-                        // =================================================
++    if (
++        patchForWC &&
++        wcFirstTimeInitSeen &&
++        !wcFccPatched &&
++        wcCreateUserThis !== null &&
++        allHits.length > 0
++    ) {
++        let best = null;
++        let bestDistance = Number.MAX_SAFE_INTEGER;
++
++        const createUserAddr =
++            wcCreateUserThis.toUInt32();
++
++        for (const hit of allHits) {
++            const hitAddr =
++                hit.toUInt32();
++
++            const distance =
++                Math.abs(
++                    hitAddr -
++                    createUserAddr
++                );
+ 
+-                        console.log(
+-                            "[WC-FCC-PATCH] PATCH 1 branch @ " +
+-                            secondBranch
+-                        );
++            console.log(
++                "[WC-FCC-PATCH] kandidaat=" +
++                hit +
++                " distance=0x" +
++                distance.toString(16)
++            );
+ 
+-                        console.log(
+-                            "[WC-FCC-PATCH] PATCH 1 verwacht: " +
+-                            "9D 00 08 00 00 00"
+-                        );
++            if (distance < bestDistance) {
++                best = hit;
++                bestDistance = distance;
++            }
++        }
+ 
+-                        Memory.protect(
+-                            secondBranch,
+-                            6,
+-                            "rwx"
+-                        );
++        if (best !== null) {
++            const secondBranch =
++                best.add(0x11);
+ 
+-                        secondBranch.writeByteArray([
+-                            0x9D,
+-                            0x00,
+-                            0x00,
+-                            0x00,
+-                            0x00,
+-                            0x00
+-                        ]);
++            console.log(
++                "[WC-FCC-PATCH] GEKOZEN instance=" +
++                best
++            );
+ 
+-                        console.log(
+-                            "[WC-FCC-PATCH] PATCH 1 AFTER = " +
+-                            Array.from(
+-                                new Uint8Array(
+-                                    secondBranch.readByteArray(6)
+-                                )
+-                            )
+-                            .map(
+-                                b =>
+-                                    b
+-                                        .toString(16)
+-                                        .padStart(2, "0")
+-                            )
+-                            .join(" ")
+-                        );
++            console.log(
++                "[WC-FCC-PATCH] PATCH 1 branch @ " +
++                secondBranch
++            );
+ 
+-                        Memory.protect(
+-                            secondBranch,
+-                            6,
+-                            "rwx"
+-                        );
++            console.log(
++                "[WC-FCC-PATCH] PATCH 1 verwacht: " +
++                "9D 00 08 00 00 00"
++            );
+ 
++            try {
++                Memory.protect(
++                    secondBranch,
++                    6,
++                    "rwx"
++                );
+ 
+-                        // =================================================
+-                        // PATCH 2 UITGESCHAKELD
+-                        // =================================================
++                secondBranch.writeByteArray([
++                    0x9D,
++                    0x00,
++                    0x00,
++                    0x00,
++                    0x00,
++                    0x00
++                ]);
+ 
+-                        console.log(
+-                            "[WC-FORCE-LOADSUCCESS] PATCH 2 UITGESCHAKELD"
+-                        );
++                console.log(
++                    "[WC-FCC-PATCH] PATCH 1 AFTER = " +
++                    Array.from(
++                        new Uint8Array(
++                            secondBranch.readByteArray(6)
++                        )
++                    )
++                    .map(
++                        b =>
++                            b
++                                .toString(16)
++                                .padStart(2, "0")
++                    )
++                    .join(" ")
++                );
+ 
+-                        wcFccPatched = true;
++                console.log(
++                    "[WC-FORCE-LOADSUCCESS] PATCH 2 UITGESCHAKELD"
++                );
+ 
+-                        console.log(
+-                            "[WC-FCC-PATCH] PATCH 1 actief, PATCH 2 UIT"
+-                        );
++                wcFccPatched = true;
+ 
+-                    } catch (e) {
+-                        console.log(
+-                            "[WC-FCC-PATCH] fout: " +
+-                            e
+-                        );
+-                    }
+-                }
+-            }
++                console.log(
++                    "[WC-FCC-PATCH] PATCH 1 actief op gekozen WC instance"
++                );
+ 
+-        } catch (e) {
+-            // scan range kan ongeldig zijn; volgende range proberen
++            } catch (e) {
++                console.log(
++                    "[WC-FCC-PATCH] fout: " +
++                    e
++                );
++            }
+         }
+     }
+ 
+-    console.log(
+-        "[FCC-LOGIN2-BRANCH] scan klaar, hits=" +
+-        hits
+-    );
+-
+-    return hits;
++    return allHits.length;
+ }
+ 
+ /*const ionObj = ptr("0x101D73B0").readPointer();
+@@ -1195,3 +1241,31 @@ setInterval(() => {
+ 
+ }, 100);
+ 
++function hookOutputDebugString(name, wide) {
++    const addr = Module.findGlobalExportByName(name);
++
++    if (addr === null) {
++        console.log("[FIFA-TRACE] " + name + " not found");
++        return;
++    }
++
++    Interceptor.attach(addr, {
++        onEnter(args) {
++            try {
++                const text = wide
++                    ? args[0].readUtf16String()
++                    : args[0].readCString();
++
++                if (text) {
++                    console.log("[FIFA-TRACE] " + text);
++                }
++            } catch (e) {
++                // Ignore unreadable strings.
++            }
++        }
++    });
++
++    console.log("[FIFA-TRACE] hooked " + name + " @ " + addr);
++}
++
++hookOutputDebugString("OutputDebugStringA", false);
+\ No newline at end of file

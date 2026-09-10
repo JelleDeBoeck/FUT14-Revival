@@ -1,0 +1,78 @@
+
+  extracted\fcc_login2_actions.txt:422:    BranchIfTrue { target: 35 }
+  extracted\fcc_login2_actions.txt:423:    Pop
+  extracted\fcc_login2_actions.txt:424:    DictRef { kind: ByteGetVar, index: 33 }
+  extracted\fcc_login2_actions.txt:425:    DictRef { kind: ByteGetMember, index: 76 }
+  extracted\fcc_login2_actions.txt:426:    Not
+  extracted\fcc_login2_actions.txt:427:    BranchIfTrue { target: 40 }
+  extracted\fcc_login2_actions.txt:428:    EA:Push0
+  extracted\fcc_login2_actions.txt:429:    DictRef { kind: CallFuncPop, index: 77 }
+  extracted\fcc_login2_actions.txt:430:    BranchAlways { target: 42 }
+  extracted\fcc_login2_actions.txt:431:    EA:Push0
+  extracted\fcc_login2_actions.txt:432:    DictRef { kind: CallFuncPop, index: 78 }
+  extracted\fcc_login2_actions.txt:433:  }
+> extracted\fcc_login2_actions.txt:434:  DefineFunction2 "NewUserFlow"() {
+  extracted\fcc_login2_actions.txt:435:    DictRef { kind: PushByte, index: 79 }
+  extracted\fcc_login2_actions.txt:436:    Trace
+  extracted\fcc_login2_actions.txt:437:    DictRef { kind: PushByte, index: 80 }
+  extracted\fcc_login2_actions.txt:438:    EA:Push1
+  extracted\fcc_login2_actions.txt:439:    PushRegister(2)
+  extracted\fcc_login2_actions.txt:440:    DictRef { kind: ByteGetMember, index: 81 }
+  extracted\fcc_login2_actions.txt:441:    DictRef { kind: ByteGetMember, index: 82 }
+  extracted\fcc_login2_actions.txt:442:    DictRef { kind: CallMethodPop, index: 83 }
+  extracted\fcc_login2_actions.txt:443:    EA:Push0
+  extracted\fcc_login2_actions.txt:444:    DictRef { kind: CallFuncPop, index: 84 }
+  extracted\fcc_login2_actions.txt:445:    DictRef { kind: PushByte, index: 85 }
+  extracted\fcc_login2_actions.txt:446:    PushByte(25)
+  extracted\fcc_login2_actions.txt:447:    EA:Push1
+  extracted\fcc_login2_actions.txt:448:    DictRef { kind: PushByte, index: 86 }
+  extracted\fcc_login2_actions.txt:449:    NewObject
+  extracted\fcc_login2_actions.txt:450:    SetVariable
+  extracted\fcc_login2_actions.txt:451:    DictRef { kind: PushByte, index: 87 }
+  extracted\fcc_login2_actions.txt:452:    DictRef { kind: ByteGetVar, index: 85 }
+  extracted\fcc_login2_actions.txt:453:    DictRef { kind: ByteGetMember, index: 88 }
+  extracted\fcc_login2_actions.txt:454:    Add2
+  extracted\fcc_login2_actions.txt:455:    Trace
+  extracted\fcc_login2_actions.txt:456:    DictRef { kind: PushByte, index: 89 }
+  extracted\fcc_login2_actions.txt:457:    EA:PushTrue
+  extracted\fcc_login2_actions.txt:458:    DictRef { kind: PushByte, index: 90 }
+  extracted\fcc_login2_actions.txt:459:    DictRef { kind: ByteGetVar, index: 85 }
+  extracted\fcc_login2_actions.txt:538:    DictRef { kind: CallMethodPop, index: 114 }
+  extracted\fcc_login2_actions.txt:539:    BranchAlways { target: 37 }
+  extracted\fcc_login2_actions.txt:540:    DictRef { kind: ByteGetVar, index: 85 }
+  extracted\fcc_login2_actions.txt:541:    PushRegister(2)
+  extracted\fcc_login2_actions.txt:542:    GetMember
+  extracted\fcc_login2_actions.txt:543:    EA:Push1
+  extracted\fcc_login2_actions.txt:544:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:545:    DictRef { kind: CallMethodPop, index: 114 }
+  extracted\fcc_login2_actions.txt:546:    EA:Push0
+  extracted\fcc_login2_actions.txt:547:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:548:    DictRef { kind: CallMethodPop, index: 115 }
+  extracted\fcc_login2_actions.txt:549:  }
+> extracted\fcc_login2_actions.txt:550:  DefineFunction2 "onCreateFirstSquadSuccess"() {
+  extracted\fcc_login2_actions.txt:551:    DictRef { kind: PushByte, index: 116 }
+  extracted\fcc_login2_actions.txt:552:    Trace
+  extracted\fcc_login2_actions.txt:553:    DictRef { kind: PushByte, index: 117 }
+  extracted\fcc_login2_actions.txt:554:    EA:Push1
+  extracted\fcc_login2_actions.txt:555:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:556:    DictRef { kind: CallMethodPop, index: 118 }
+  extracted\fcc_login2_actions.txt:557:    DictRef { kind: PushByte, index: 119 }
+  extracted\fcc_login2_actions.txt:558:    EA:Push1
+  extracted\fcc_login2_actions.txt:559:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:560:    DictRef { kind: CallMethodPop, index: 118 }
+  extracted\fcc_login2_actions.txt:561:    DictRef { kind: ByteGetVar, index: 120 }
+  extracted\fcc_login2_actions.txt:562:    DictRef { kind: PushByte, index: 121 }
+  extracted\fcc_login2_actions.txt:563:    PushByte(2)
+  extracted\fcc_login2_actions.txt:564:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:565:    DictRef { kind: CallMethodPop, index: 122 }
+  extracted\fcc_login2_actions.txt:566:    DictRef { kind: ByteGetVar, index: 28 }
+  extracted\fcc_login2_actions.txt:567:    DictRef { kind: PushByte, index: 123 }
+  extracted\fcc_login2_actions.txt:568:    PushByte(2)
+  extracted\fcc_login2_actions.txt:569:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:570:    DictRef { kind: CallMethodPop, index: 122 }
+  extracted\fcc_login2_actions.txt:571:    DictRef { kind: PushByte, index: 123 }
+  extracted\fcc_login2_actions.txt:572:    DictRef { kind: PushByte, index: 121 }
+  extracted\fcc_login2_actions.txt:573:    PushByte(2)
+  extracted\fcc_login2_actions.txt:574:    PushRegister(1)
+  extracted\fcc_login2_actions.txt:575:    DictRef { kind: ByteGetMember, index: 124 }
+
